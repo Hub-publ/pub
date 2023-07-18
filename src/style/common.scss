@@ -5,3 +5,9 @@ body {
 .area:not(:first-child) {
   margin-top: 40px;
 }
+
+.gap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
