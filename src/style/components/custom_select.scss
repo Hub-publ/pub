@@ -1,0 +1,22 @@
+.custom_select {
+  display: inline-block;
+  min-width: 150px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  p {
+    padding: 6px 12px;
+  }
+
+  ul {
+    li {
+      a {
+        border-top: 1px solid #ccc;
+        display: block;
+        padding: 6px 12px;
+      }
+      &:hover {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+}

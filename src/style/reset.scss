@@ -1,0 +1,301 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+/*===========================================================================
+	RESET
+============================================================================*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button,
+input,
+br {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+  /*letter-spacing:-0.36px;*/
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Pretendard", sans-serif;
+  color: #4a4a4a;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+// a:link,
+// a:visited {
+// }
+
+// a:hover,
+// a:active {
+//     text-decoration: none;
+// }
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+  line-height: 0;
+  font-size: 0;
+  position: absolute;
+  left: -999px;
+}
+
+button,
+input[type="button"] {
+  padding: 0;
+  margin: 0;
+  border: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background: transparent;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input[type="text"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input,
+select,
+button,
+textarea {
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  height: 45px;
+  padding: 0 12px;
+  border: 1px solid rgba(218, 220, 224, 0.7);
+  border-radius: 7px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #26282d;
+  transition: all 0.3s;
+  font-size: 13px;
+  font-weight: 400;
+
+  &:disabled {
+    background-color: #f5f6f7;
+    color: #787f8f;
+  }
+}
+
+textarea {
+  height: auto;
+  resize: none;
+  font-family: "Pretendard", sans-serif;
+  box-sizing: border-box;
+  padding: 10px 12px;
+}
+
+/*input[type="text"]:focus, input[type="password"]:focus, textarea:focus {border-color: #FB46A0;}*/
+/*input[type="text"]:read-only,
+input[type="password"]:read-only,
+textarea:read-only {
+    background-color: #EFEFEF;
+}*/
+
+input[type="text"]:read-only:focus,
+textarea:read-only:focus {
+  border-color: #efefef;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b5bac4;
+}
+
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"] {
+  & + label {
+    cursor: pointer;
+  }
+
+  display: none;
+}
+
+select {
+  //   background: right 12px center/12px no-repeat #ffffff url("../../public/icon/icon_select_arrow.svg");
+  padding-right: 34px;
+  font-family: "Pretendard", sans-serif;
+  cursor: pointer;
+
+  &.type2 {
+    // background-image: url("../../public/icon/icon_select_arrow_type4.svg");
+    background-position: center right 0;
+    border: none;
+    padding-right: 18px;
+  }
+}
+
+/*reset end*/
+
+@font-face {
+  font-family: "KOTRA_BOLD";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b5bac4;
+  border-radius: 2px;
+}
