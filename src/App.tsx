@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./page/index";
+import IndexAjy from "./_ajy/page/index";
 import LhjMain from "./_lhj/page/index";
 import Swiper from "./page/swiper";
 
@@ -13,6 +14,7 @@ const App = () => {
           <Route path="/" element={<Main />}></Route>
           <Route path="/swiper" element={<Swiper />}></Route>
           {/* 지연 */}
+          <Route path="/ajy" element={<IndexAjy />}></Route>
           {/* 한주 */}
           <Route path="/lhj" element={<LhjMain />}></Route>
         </Routes>
