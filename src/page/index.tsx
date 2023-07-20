@@ -6,8 +6,9 @@ import Tag from "../components/tag";
 import Accordion from "../components/accordion";
 import Checkbox from "../components/checkbox";
 import Radio from "../components/radio";
-import GrayBox from "../components/gray_card";
+import ContentsCard from "../components/contents_card";
 import Image from "../components/image";
+import Button from "../components/button";
 
 function Main() {
   return (
@@ -40,11 +41,18 @@ function Main() {
         </div>
       </div>
       <div className="area">
-        <GrayBox className="large">
+        <ContentsCard bgColor="pink" size="large" round>
           <Image src="logo512.png" alt="리엑트 로고" />
           <p className="title">리엑트 공부중임;</p>
           <p className="detail">오늘은 한주님 레전드</p>
-        </GrayBox>
+        </ContentsCard>
+      </div>
+      <div className="area">
+        <Button bgColor="purple" size="h_28" text="버튼버튼" />
+        <Button bgColor="gray" size="h_32" text="버튼버튼" />
+        <Button bgColor="pink" size="h_36" text="버튼버튼" />
+        <Button bgColor="khaki" size="h_40" text="버튼버튼" />
+        <Button bgColor="purple_line" size="h_50" text="버튼버튼" />
       </div>
     </div>
   );
