@@ -1,0 +1,29 @@
+.accordion {
+  .top {
+    cursor: pointer;
+    border-top: 1px solid #e7e9ec;
+    padding: 20px;
+    width: 100%;
+    font-size: 15px;
+    transition: all 0.2s;
+    color: #373b42;
+    &:first-child {
+      border-top-color: #333;
+    }
+  }
+  .bottom {
+    background: #f5f6f7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    p {
+      padding: 16px 24px;
+    }
+  }
+  &.on {
+    .bottom {
+      max-height: 999px;
+      overflow: visible;
+    }
+  }
+}
