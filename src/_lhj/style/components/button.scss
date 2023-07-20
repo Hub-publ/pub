@@ -1,0 +1,41 @@
+.button_wrap {
+  display: flex;
+  gap: 4px;
+  align-items: end;
+  .button {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+
+    //size
+    &.small {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+    &.medium {
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    &.large {
+      padding: 8px 16px;
+      font-size: 24px;
+    }
+    // color
+    &.green {
+      background-color: green;
+      color: white;
+    }
+    &.blue {
+      background-color: blue;
+      color: white;
+    }
+    &.red {
+      background-color: red;
+      color: white;
+    }
+    &.black {
+      background-color: black;
+      color: white;
+    }
+  }
+}
