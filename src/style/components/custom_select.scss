@@ -3,20 +3,44 @@
   min-width: 150px;
   border-radius: 8px;
   border: 1px solid #ccc;
+  position: relative;
   p {
     padding: 6px 12px;
   }
 
   ul {
-    li {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: calc(100% + 2px);
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    margin-left: -1px;
+    li:not(:first-child) {
       a {
         border-top: 1px solid #ccc;
+      }
+    }
+    li {
+      a {
         display: block;
         padding: 6px 12px;
       }
       &:hover {
         background-color: #f1f1f1;
       }
+    }
+  }
+  &.on {
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+    p {
+      border-bottom: 1px solid #ccc;
+    }
+    ul {
+      max-height: 999px;
+      border: 1px solid #ccc;
+      border-top: none;
     }
   }
 }
