@@ -1,0 +1,13 @@
+.ajy {
+  .custom_select {
+    ul {
+      display: none;
+    }
+
+    &.on {
+      ul {
+        display: block;
+      }
+    }
+  }
+}
