@@ -11,7 +11,7 @@ function Button(props: Props) {
   const { size, color, children } = props;
   return (
     <div>
-      <button className={`button ${color} ${size}`}>{children}</button>
+      <button className={`btn ${color} ${size}`}>{children}</button>
     </div>
   );
 }
