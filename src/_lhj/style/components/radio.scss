@@ -1,0 +1,6 @@
+.radio_wrap {
+  display: flex;
+  label:not(:first-of-type) {
+    margin-left: 20px;
+  }
+}
