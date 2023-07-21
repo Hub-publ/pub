@@ -1,3 +1,4 @@
+import React from "react";
 import "../style/components/button_ajy.scss";
 
 interface Props {
