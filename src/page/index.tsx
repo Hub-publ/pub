@@ -11,7 +11,7 @@ function Main() {
           <ul>
             <li>
               <p className="label">타이틀</p>
-              <input type="text" />
+              <input type="text" disabled />
             </li>
             <li>
               <p className="label">타이틀</p>
@@ -19,7 +19,12 @@ function Main() {
             </li>
             <li>
               <p className="label">타이틀</p>
-              <input type="text" />
+              <select>
+                <option value="">옵션1</option>
+                <option value="">옵션2</option>
+                <option value="">옵션3</option>
+                <option value="">옵션4</option>
+              </select>
             </li>
             <li>
               <p className="label">타이틀</p>

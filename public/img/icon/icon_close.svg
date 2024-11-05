@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+	<title>icon_close-svg</title>
+	<defs>
+		<image  width="17" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAASBAMAAABP1yhnAAAAAXNSR0IB2cksfwAAAC1QTFRF////////////////////////////////////////////////////////////oNIwBQAAAA90Uk5TSXkLAIAGCnUCBAgDbEt4EermJgAAAH9JREFUeJxjZFQSYACBv4wu/z4CaSb+PYwuDPIXGBgUP+gwthxgegsUYvBhtOBhiJ+g+IH1OaNx4AG299wM/nMZjTk4GR4oML77y2jM0DiBgYH/AYgFFGR8xwBisXHDWHBZhI7GCVBTrDmBJiduAJqMsA3mghq4q3oY+UShLgUA3/gwczPGz6QAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="레이어 1" href="#img1" x="1" y="0"/>
+</svg>
