@@ -10,7 +10,30 @@ $black5: #555;
 $black6: #666;
 $black7: #888;
 
+/* black 계열 (투명도)*/
+$black-opc1: rgba(0, 0, 0, 0.1);
+$black-opc2: rgba(0, 0, 0, 0.2);
+
 /* gray 계열 */
+$gray1: #808080;
+$gray2: #909090;
+$gray3: #a0a0a0;
+$gray4: #a9a9a9;
+$gray5: #bebebe;
+$gray6: #c8c8c8;
+$gray7: #d3d3d3;
+
+/* white 계열 */
+$white1: #ffffff;
+$white2: #f8f8f8;
+$white3: #f5f5f5;
+$white4: #f0f0f0;
+$white5: #e8e8e8;
+$white6: #e0e0e0;
+$white7: #dcdcdc;
+
+/* white 계열 (투명도)*/
+$white-opc1: rgba(255, 255, 255, 0.1);
 
 /* red 계열 */
 $red1: #e61919;
