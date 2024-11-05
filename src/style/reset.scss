@@ -4,7 +4,11 @@
 	RESET
 ============================================================================*/
 html,
-body,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
 div,
 span,
 applet,
@@ -91,10 +95,10 @@ br {
   box-sizing: border-box;
   line-height: 1.2;
   /*letter-spacing:-0.36px;*/
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Pretendard", sans-serif;
-  color: #4a4a4a;
+  color: $black3;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -118,15 +122,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-// a:link,
-// a:visited {
-// }
-
-// a:hover,
-// a:active {
-//     text-decoration: none;
-// }
 
 img {
   border: none;
@@ -207,20 +202,20 @@ input[type="number"],
 textarea,
 select {
   width: 100%;
-  height: 45px;
+  height: 32px;
   padding: 0 12px;
-  border: 1px solid rgba(218, 220, 224, 0.7);
+  border: 1px solid $black7;
   border-radius: 7px;
-  background-color: #ffffff;
+  background-color: $white;
   font-size: 14px;
-  color: #26282d;
+  color: $black2;
   transition: all 0.3s;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 400;
 
   &:disabled {
-    background-color: #f5f6f7;
-    color: #787f8f;
+    background-color: $gray1;
+    color: $black6;
   }
 }
 
@@ -229,7 +224,7 @@ textarea {
   resize: none;
   font-family: "Pretendard", sans-serif;
   box-sizing: border-box;
-  padding: 10px 12px;
+  padding: 0.625rem 0.75rem;
 }
 
 /*input[type="text"]:focus, input[type="password"]:focus, textarea:focus {border-color: #FB46A0;}*/
@@ -241,12 +236,12 @@ textarea:read-only {
 
 input[type="text"]:read-only:focus,
 textarea:read-only:focus {
-  border-color: #efefef;
+  border-color: $gray1;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #b5bac4;
+  color: $black6;
 }
 
 input[type="file"],
@@ -292,10 +287,10 @@ select {
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
-  background-color: transparent;
+  background-color: $transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b5bac4;
+  background: $black7;
   border-radius: 2px;
 }
