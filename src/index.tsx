@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./style/reset.scss";
-import "./style/common.scss";
+import "./style/_module.scss";
 // swiper style
 import "swiper/css";
 import "swiper/css/navigation";
