@@ -4,10 +4,36 @@
 
 /* Text Overflow */
 .ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .ellipsis2 {
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+.ellipsis3 {
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
 }
 .ellipsis_td {
+  position: relative;
+  .ellipsis {
+    width: calc(100% - 16px);
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font: inherit;
+  }
 }
 
 /* Text Align */
@@ -274,12 +300,20 @@ header {
   우리 지연님 자리 👻
 ================================================================== */
 /* Table (Default - list) */
+.table_wrap {
+  width: 100%;
+  &.list {
+    overflow-x: auto;
+  }
+}
 table {
   width: 100%;
-  overflow-x: auto;
+  table-layout: fixed;
+  // min-width: max-content;
   /* 상세 테이블 */
   &.detail {
-    table-layout: fixed;
+    // table-layout: fixed;
+    min-width: unset;
     tbody {
       tr {
         &:nth-child(even) {
@@ -305,6 +339,9 @@ table {
     td {
       padding: 4px 10px;
       background-color: $white1;
+      border-top: 1px solid $black-opc1;
+      border-left: none;
+      border-right: 1px solid $black-opc1;
     }
   }
 }
@@ -320,8 +357,8 @@ tbody {
 th,
 td {
   padding: 4px 8px;
-  font-size: 0.8125rem;
-  line-height: 1.25rem;
+  font-size: 0.92857rem;
+  line-height: 1.42857rem;
   text-align: center;
   span {
     font: inherit;
