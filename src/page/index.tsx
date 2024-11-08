@@ -84,12 +84,31 @@ function Main() {
           <div className="container">
             <div className="area">
               <div className="table_wrap list">
-                <div className="flex justify_end">
-                  <Button title="버튼버튼" size="h_44" color="black" />
-                  <Button title="버튼버튼" size="h_38" color="blue" />
-                  <Button title="버튼버튼" size="h_32" color="green" />
-                  <Button title="버튼버튼" size="h_28" color="green" />
+                {/* 오른쪽 영역에 버튼만 있을 때 */}
+                {/* <div className="table_top flex justify_start">
+                  <p className="num">총 갯수</p>
+                </div> */}
+                {/* 양쪽 영역에 버튼만 있을 때 */}
+                <div className="table_top flex align_center justify_between">
+                  <p className="num">총 갯수</p>
+                  <div>
+                    <Button title="버튼버튼" size="h_28" color="black" />
+                    <Button title="버튼버튼" size="h_28" color="black_line" />
+                    <Button title="버튼버튼" size="h_28" color="blue" />
+                    <Button title="버튼버튼" size="h_28" color="blue_line" />
+                    <Button title="버튼버튼" size="h_28" color="green" />
+                    <Button title="버튼버튼" size="h_28" color="green_line" />
+                  </div>
                 </div>
+                {/* 왼쪽 영역에 버튼만 있을 때 */}
+                {/* <div className="table_top flex justify_end">
+                  <Button title="버튼버튼" size="h_28" color="black" />
+                  <Button title="버튼버튼" size="h_28" color="black_line" />
+                  <Button title="버튼버튼" size="h_28" color="blue" />
+                  <Button title="버튼버튼" size="h_28" color="blue_line" />
+                  <Button title="버튼버튼" size="h_28" color="green" />
+                  <Button title="버튼버튼" size="h_28" color="green_line" />
+                </div> */}
                 <div className="scroll_area">
                   <table>
                     <colgroup>
@@ -173,6 +192,14 @@ function Main() {
                     </tbody>
                   </table>
                 </div>
+              </div>
+              <div className="page_btn center_t">
+                <Button title="버튼버튼" size="h_38" color="black" />
+                <Button title="버튼버튼" size="h_38" color="black_line" />
+                <Button title="버튼버튼" size="h_38" color="blue" />
+                <Button title="버튼버튼" size="h_38" color="blue_line" />
+                <Button title="버튼버튼" size="h_38" color="green" />
+                <Button title="버튼버튼" size="h_38" color="green_line" />
               </div>
             </div>
           </div>

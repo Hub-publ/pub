@@ -1,7 +1,7 @@
 interface Props {
   title: string;
   size: "h_44" | "h_38" | "h_32" | "h_28";
-  color: "black" | "blue" | "green";
+  color: "black" | "black_line" | "blue" | "blue_line" | "green" | "green_line";
   className?: string;
 }
 
