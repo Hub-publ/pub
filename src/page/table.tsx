@@ -36,15 +36,24 @@ function Table() {
             <div className="area">
               <div className="table_wrap list">
                 <table>
+                  <colgroup>
+                    <col width={56} />
+                    <col />
+                    <col width={120} />
+                    <col width={120} />
+                    <col width={120} />
+                    <col width={180} />
+                    <col width={180} />
+                  </colgroup>
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th>TH</th>
-                      <th>TH</th>
-                      <th>TH</th>
-                      <th>TH</th>
-                      <th>TH</th>
-                      <th>TH</th>
+                      <th>제목</th>
+                      <th>작성자</th>
+                      <th>직급</th>
+                      <th>직책</th>
+                      <th>핸드폰</th>
+                      <th>이메일</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -61,10 +70,10 @@ function Table() {
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td className="black5">-</td>
                       <td className="black5">사원</td>
-                      <td className="black5">010-1234-1234</td>
-                      <td className="black5">hk1@hubdnc.com</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
                     </tr>
                     <tr>
                       <td>
@@ -72,14 +81,14 @@ function Table() {
                       </td>
                       <td className="ellipsis_td">
                         <p className="ellipsis">
-                          한국경제신문&gt;기획조정실1&gt;기획조정실1-1&gt;기획조정실1-2&gt;기획조정실1-3
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td className="black5">-</td>
                       <td className="black5">사원</td>
-                      <td className="black5">010-1234-1234</td>
-                      <td className="black5">hk1@hubdnc.com</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
                     </tr>
                     <tr>
                       <td>
@@ -87,14 +96,14 @@ function Table() {
                       </td>
                       <td className="ellipsis_td">
                         <p className="ellipsis">
-                          한국경제신문&gt;기획조정실1&gt;기획조정실1-1&gt;기획조정실1-2&gt;기획조정실1-3
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td className="black5">-</td>
                       <td className="black5">사원</td>
-                      <td className="black5">010-1234-1234</td>
-                      <td className="black5">hk1@hubdnc.com</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
                     </tr>
                     <tr>
                       <td>
@@ -102,14 +111,149 @@ function Table() {
                       </td>
                       <td className="ellipsis_td">
                         <p className="ellipsis">
-                          한국경제신문&gt;기획조정실1&gt;기획조정실1-1&gt;기획조정실1-2&gt;기획조정실1-3
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td className="black5">-</td>
                       <td className="black5">사원</td>
-                      <td className="black5">010-1234-1234</td>
-                      <td className="black5">hk1@hubdnc.com</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black5">사원</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black5">사원</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black5">사원</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black5">사원</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black5">사원</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black5">사원</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black5">사원</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black5">사원</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black5">사원</td>
+                      <td className="black5">-</td>
+                      <td className="black5">010-1234-5678</td>
+                      <td className="black5">test@hubdnc.com</td>
                     </tr>
                   </tbody>
                 </table>
