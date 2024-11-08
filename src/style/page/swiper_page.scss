@@ -1,11 +1,11 @@
 .mySwiper {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 4.2857rem);
   background-color: khaki;
   .swiper-wrapper {
     height: 100%;
   }
   .swiper-slide {
-    border: 1px solid red;
+    border: 0.0714rem solid red;
     height: 100%;
   }
 }
