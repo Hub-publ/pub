@@ -13,7 +13,7 @@ function SearchInput(props: Props) {
   };
   return (
     <div className="search_input">
-      <div className="top">
+      <div className="parent">
         <input type="text" onChange={handleChange} />
         <button></button>
       </div>

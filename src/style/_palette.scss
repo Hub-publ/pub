@@ -1,59 +1,164 @@
-/*===========================================================================
-	COLOR
-============================================================================*/
 :root {
-  /* transparent 계열 */
+  /*================
+    공통
+  ================*/
+  /* 🌟 transparent 계열 */
   --transparent: transparent;
 
-  /* black 계열 */
-  --black1: #000;
-  --black2: #222;
-  --black3: #333;
-  --black4: #444;
-  --black5: #555;
-  --black6: #666;
-  --black7: #888;
-  --dark-bg: #181b20;
+  /*===================
+    Text Color
+  ====================*/
 
-  /* black 계열 (투명도)*/
-  --black-opc1: rgba(0, 0, 0, 0.1);
-  --black-opc2: rgba(0, 0, 0, 0.2);
+  /* 🌟 black 계열 */
+  --text-black1: #000;
+  --text-black2: #444;
+  --text-black3: #888;
 
-  /* gray 계열 */
-  --gray1: #808080;
-  --gray2: #909090;
-  --gray3: #a0a0a0;
-  --gray4: #a9a9a9;
-  --gray5: #bebebe;
-  --gray6: #c8c8c8;
-  --gray7: #d3d3d3;
-  --dark-text: #bfc2c4;
+  /* 🌟 gray 계열 */
+  --text-placeholer: #a9a9a9;
+  --text-gray1: #808080;
+  --text-gray2: #a9a9a9;
+  --text-gray3: #bfc2c4;
 
-  /* white 계열 */
-  --white1: #ffffff;
-  --white2: #f8f8f8;
-  --white3: #f5f5f5;
-  --white4: #f0f0f0;
-  --white5: #e8e8e8;
-  --white6: #e0e0e0;
-  --white7: #dcdcdc;
+  /* 🌟 white 계열 */
+  --text-white1: #ffffff;
+  --text-white2: #f0f0f0;
+  --text-white3: #dcdcdc;
 
-  /* white 계열 (투명도)*/
-  --white-opc1: rgba(255, 255, 255, 0.1);
+  /* 🌟 red 계열 */
+  --text-red1: #dc143c;
+  --text-red2: #e61919;
+  --text-red3: #ff0000;
 
-  /* red 계열 */
-  --red1: #e61919;
-  --red2: #dc143c;
-  --red3: #ff0000;
+  /* 🌟 blue 계열 */
+  --text-blue1: #0083ff;
+  --text-blue2: #009aff;
+  --text-blue3: #00aaff;
 
-  /* blue 계열 */
-  --blue1: #0083ff;
-  --blue2: #009aff;
-  --blue3: #00aaff;
+  /* 🌟 green 계열 */
+  --text-green1: #66cc66;
+  --text-green2: #33ff33;
+  --text-green3: #99cc99;
 
-  /* green 계열 */
-  --green1: #669966;
-  --green2: #66cc66;
-  --green3: #99cc99;
-  --green4: #33ff33;
+  /*===================
+    Background Color
+  ====================*/
+
+  /* 🌟 Dark Mode 전용 */
+  --dark-bg: #3c3c3c;
+
+  /* 🌟 black 계열 */
+  --bg-header: #444;
+  --bg-black1: #000;
+  --bg-black2: #444;
+  --bg-black3: #888;
+
+  /* 🌟 gray 계열 */
+  --bg-gray1: #808080;
+  --bg-gray2: #a9a9a9;
+  --bg-gray3: #bfc2c4;
+
+  /* 🌟 white 계열 */
+  --bg-table-hover: #ffffff;
+  --bg-white1: #ffffff;
+  --bg-white2: #f0f0f0;
+  --bg-white3: #dcdcdc;
+
+  /* 🌟 red 계열 */
+  --bg-red1: #dc143c;
+  --bg-red2: #e61919;
+  --bg-red3: #ff0000;
+
+  /* 🌟 blue 계열 */
+  --bg-blue1: #0083ff;
+  --bg-blue2: #009aff;
+  --bg-blue3: #00aaff;
+
+  /* 🌟 green 계열 */
+  --bg-green1: #66cc66;
+  --bg-green2: #33ff33;
+  --bg-green3: #99cc99;
+
+  /* 🌟 black 계열 (투명도)*/
+  --bg-black-opc1: rgba(0, 0, 0, 0.1);
+  --bg-black-opc2: rgba(0, 0, 0, 0.2);
+
+  /* 🌟 white 계열 (투명도)*/
+  --bg-white-opc1: rgba(255, 255, 255, 0.1);
+
+  /*===================
+    Button Color
+  ====================*/
+
+  /* 🌟 black 계열 */
+  --btn-black1: #000;
+  --btn-black-line1: #000;
+  --btn-black2: #444;
+  --btn-black3: #888;
+
+  /* 🌟 gray 계열 */
+  --btn-gray1: #808080;
+  --btn-gray2: #a9a9a9;
+  --btn-gray3: #bfc2c4;
+
+  /* 🌟 white 계열 */
+  --btn-white1: #ffffff;
+  --btn-white2: #f0f0f0;
+  --btn-white3: #dcdcdc;
+
+  /* 🌟 red 계열 */
+  --btn-red1: #dc143c;
+  --btn-red2: #e61919;
+  --btn-red3: #ff0000;
+
+  /* 🌟 blue 계열 */
+  --btn-blue1: #0083ff;
+  --btn-blue2: #009aff;
+  --btn-blue3: #00aaff;
+
+  /* 🌟 green 계열 */
+  --btn-green1: #66cc66;
+  --btn-green2: #33ff33;
+  --btn-green3: #99cc99;
+
+  /*===================
+    Border Color
+  ====================*/
+
+  /* 🌟 black 계열 */
+  --border-black1: #000;
+  --border-black2: #444;
+  --border-black3: #888;
+
+  /* 🌟 gray 계열 */
+  --border-gray1: #808080;
+  --border-gray2: #a9a9a9;
+  --border-gray3: #bfc2c4;
+
+  /* 🌟 white 계열 */
+  --border-white1: #ffffff;
+  --border-white2: #f0f0f0;
+  --border-white3: #dcdcdc;
+
+  /* 🌟 red 계열 */
+  --border-red1: #dc143c;
+  --border-red2: #e61919;
+  --border-red3: #ff0000;
+
+  /* 🌟 blue 계열 */
+  --border-blue1: #0083ff;
+  --border-blue2: #009aff;
+  --border-blue3: #00aaff;
+
+  /* 🌟 green 계열 */
+  --border-green1: #66cc66;
+  --border-green2: #33ff33;
+  --border-green3: #99cc99;
+
+  /* 🌟 black 계열 (투명도)*/
+  --border-black-opc1: rgba(0, 0, 0, 0.1);
+  --border-black-opc2: rgba(0, 0, 0, 0.2);
+
+  /* 🌟 white 계열 (투명도)*/
+  --border-white-opc1: rgba(255, 255, 255, 0.1);
 }

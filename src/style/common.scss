@@ -81,102 +81,63 @@ body {
 
 /* black 계열 */
 .black1 {
-  color: var(--black1) !important;
+  color: var(--text-black1) !important;
 }
 .black2 {
-  color: var(--black2) !important;
+  color: var(--text-black2) !important;
 }
 .black3 {
-  color: var(--black3) !important;
-}
-.black4 {
-  color: var(--black4) !important;
-}
-.black5 {
-  color: var(--black5) !important;
-}
-.black6 {
-  color: var(--black6) !important;
-}
-.black7 {
-  color: var(--black7) !important;
+  color: var(--text-black3) !important;
 }
 /* gray 계열 */
 .gray1 {
-  color: var(--gray1) !important;
+  color: var(--text-gray1) !important;
 }
 .gray2 {
-  color: var(--gray2) !important;
+  color: var(--text-gray2) !important;
 }
 .gray3 {
-  color: var(--gray3) !important;
-}
-.gray4 {
-  color: var(--gray4) !important;
-}
-.gray5 {
-  color: var(--gray5) !important;
-}
-.gray6 {
-  color: var(--gray6) !important;
-}
-.gray7 {
-  color: var(--gray7) !important;
+  color: var(--text-gray3) !important;
 }
 /* white 계열 */
 .white1 {
-  color: var(--white1) !important;
+  color: var(--text-white1) !important;
 }
 .white2 {
-  color: var(--white2) !important;
+  color: var(--text-white2) !important;
 }
 .white3 {
-  color: var(--white3) !important;
-}
-.white4 {
-  color: var(--white4) !important;
-}
-.white5 {
-  color: var(--white5) !important;
-}
-.white6 {
-  color: var(--white6) !important;
-}
-.white7 {
-  color: var(--white7) !important;
+  color: var(--text-white3) !important;
 }
 /* red 계열 */
 .red1 {
-  color: var(--red1) !important;
+  color: var(--text-red1) !important;
 }
 .red2 {
-  color: var(--red2) !important;
+  color: var(--text-red2) !important;
 }
 .red3 {
-  color: var(--red3) !important;
+  color: var(--text-red3) !important;
 }
 /* blue 계열 */
 .blue1 {
-  color: var(--blue1) !important;
+  color: var(--text-blue1) !important;
 }
 .blue2 {
-  color: var(--blue2) !important;
+  color: var(--text-blue2) !important;
 }
 .blue3 {
-  color: var(--blue3) !important;
+  color: var(--text-blue3) !important;
 }
 /* green 계열 */
 .green1 {
-  color: var(--green1) !important;
+  color: var(--text-green1) !important;
 }
 .green2 {
-  color: var(--green2) !important;
+  color: var(--text-green2) !important;
 }
 .green3 {
-  color: var(--green3) !important;
-}
-.green4 {
-  color: var(--green1) !important;
+  color: var(--text-green3) !important;
 }
 
 /* ===== 📌 버튼 ===== */
@@ -190,29 +151,29 @@ body {
   }
   /* 컬러 */
   &.black {
-    background-color: var(--black1);
-    color: var(--white1);
+    background-color: var(--btn-black1);
+    color: var(--btn-white1);
   }
   &.blue {
-    background-color: var(--blue1);
-    color: var(--white1);
+    background-color: var(--btn-blue1);
+    color: var(--btn-white1);
   }
   &.green {
-    background-color: var(--green1);
-    color: var(--white1);
+    background-color: var(--btn-green1);
+    color: var(--btn-white1);
   }
   /* 컬러 */
   &.black_line {
-    border-color: var(--black1);
-    color: var(--black1);
+    border-color: var(--btn-black-line1);
+    color: var(--text-black1);
   }
   &.blue_line {
-    border-color: var(--blue1);
-    color: var(--blue1);
+    border-color: var(--btn-blue1);
+    color: var(--btn-blue1);
   }
   &.green_line {
-    border-color: var(--green1);
-    color: var(--green1);
+    border-color: var(--btn-green1);
+    color: var(--btn-green1);
   }
   /* 사이즈 */
   &.h_28 {
@@ -256,7 +217,7 @@ body {
     position: relative;
     width: 4.2857rem;
     height: 2.2857rem;
-    background: #999;
+    background: var(--bg-white3);
     border-radius: 714.2143rem;
     transition: 0.21s;
     cursor: pointer;
@@ -269,7 +230,7 @@ body {
       transform: translateY(-50%);
       width: 1.5714rem;
       height: 1.5714rem;
-      background: #fff;
+      background: var(--bg-white1);
       border-radius: 50%;
       transition: 0.21s;
     }
@@ -277,7 +238,7 @@ body {
   input {
     &:checked {
       & + label {
-        background: var(--black1);
+        background: var(--bg-gray1);
         &:after {
           right: 0.2857rem;
         }
@@ -297,7 +258,7 @@ body {
       width: 1.1429rem;
       height: 1.1429rem;
       border-radius: 0.2143rem;
-      border: 1px solid var(--gray7);
+      border: 1px solid var(--border-white3);
       flex-shrink: 0;
       margin-right: 0.4286rem;
     }
@@ -305,19 +266,19 @@ body {
       display: inline-block;
       vertical-align: middle;
       font-size: 0.9286rem;
-      color: var(--gray1);
+      color: var(--text-gray1);
     }
   }
   input {
     &:checked {
       & + label {
         i {
-          border-color: var(--black1);
+          border-color: var(--border-black1);
           background: url("../../public/img/icon/icon_chk.svg") no-repeat center /
             0.7143rem;
         }
         span {
-          color: var(--black1);
+          color: var(--text-black1);
         }
         // &:after {
         //   right: 0.2857rem;
@@ -338,7 +299,7 @@ body {
       width: 1.1429rem;
       height: 1.1429rem;
       border-radius: 50%;
-      border: 1px solid var(--gray7);
+      border: 1px solid var(--border-white3);
       flex-shrink: 0;
       margin-right: 0.4286rem;
     }
@@ -346,7 +307,7 @@ body {
       display: inline-block;
       vertical-align: middle;
       font-size: 0.9286rem;
-      color: var(--gray1);
+      color: var(--text-gray1);
     }
   }
   input {
@@ -354,14 +315,14 @@ body {
       & + label {
         i {
           position: relative;
-          border-color: var(--black1);
+          border-color: var(--border-black1);
           &:after {
             content: "";
             display: block;
             width: 70%;
             height: 70%;
             border-radius: 50%;
-            background-color: var(--black1);
+            background-color: var(--bg-black1);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -369,7 +330,7 @@ body {
           }
         }
         span {
-          color: var(--black1);
+          color: var(--text-black1);
         }
       }
     }
@@ -380,15 +341,15 @@ body {
 
 header {
   padding: 1.1429rem 1.4286rem;
-  border-bottom: 1px solid var(--black7);
+  border-bottom: 1px solid var(--border-black3);
   position: sticky;
   top: 0;
-  background-color: var(--black3);
+  background-color: var(--bg-header);
   .left {
     display: flex;
     align-items: center;
     .logo {
-      color: var(--white1);
+      color: var(--text-white1);
     }
   }
   .menu_btn {
@@ -416,7 +377,7 @@ header {
         position: absolute;
         height: 0.1429rem;
         width: 100%;
-        background-color: var(--white1);
+        background-color: var(--bg-white1);
         border-radius: 0.6429rem;
         opacity: 1;
         left: 0;
@@ -486,8 +447,8 @@ header {
   height: 100%;
   padding: 3.5714rem 1.1429rem;
   transform: translateX(-100%);
-  background-color: var(--black2);
-  color: var(--white1);
+  background-color: var(--bg-black2);
+  color: var(--text-white1);
   transition: all 0.4s;
   &.active {
     transform: translateX(0);
@@ -511,7 +472,7 @@ header {
 ================================================================== */
 .search_area {
   padding: 0.8571rem 1.7143rem;
-  border-bottom: 1px solid var(--white4);
+  border-bottom: 1px solid var(--border-white3);
   & > ul {
     display: flex;
     flex-wrap: wrap;
@@ -540,7 +501,7 @@ header {
 }
 .search_input {
   position: relative;
-  .top {
+  .parent {
     position: relative;
     button {
       width: 1.1429rem;
@@ -556,15 +517,15 @@ header {
     position: absolute;
     width: 100%;
     margin-top: 0.5714rem;
-    border: 1px solid var(--gray7);
-    background-color: var(--white1);
+    border: 1px solid var(--border-white3);
+    background-color: var(--bg-white1);
     border-radius: 0.5714rem;
     li {
       a {
         padding: 0.5714rem 0.8571rem;
       }
       &:not(:first-of-type) {
-        border-top: 1px solid var(--gray7);
+        border-top: 1px solid var(--border-white3);
       }
     }
   }
@@ -609,12 +570,12 @@ table {
         cursor: default;
         &:nth-child(even) {
           td {
-            background-color: var(--white1);
+            background-color: var(--bg-white1);
           }
         }
         &:hover {
           td {
-            background-color: var(--white1);
+            background-color: var(--bg-white1);
           }
         }
       }
@@ -626,18 +587,18 @@ table {
     th {
       padding: 0.7143rem;
       line-height: 1rem;
-      background-color: var(--white5);
-      color: var(--black5);
-      border-top: 1px solid var(--black-opc1);
-      border-left: 1px solid var(--black-opc1);
-      border-bottom: 1px solid var(--black-opc1);
+      background-color: var(--bg-white3);
+      color: var(--text-black3);
+      border-top: 1px solid var(--border-white3);
+      border-left: 1px solid var(--border-white3);
+      border-bottom: 1px solid var(--border-white3);
     }
     td {
       padding: 0.2857rem 0.7143rem;
-      background-color: var(--white1);
-      border-top: 1px solid var(--black-opc1);
+      background-color: var(--bg-white1);
+      border-top: 1px solid var(--border-white3);
       border-left: none;
-      border-right: 1px solid var(--black-opc1);
+      border-right: 1px solid var(--border-white3);
     }
   }
 }
@@ -654,12 +615,12 @@ tbody {
     cursor: pointer;
     &:nth-child(even) {
       td {
-        background-color: var(--white3);
+        background-color: var(--bg-white2);
       }
     }
     &:hover {
       td {
-        background-color: var(--white6);
+        background-color: var(--bg-table-hover);
       }
     }
   }
@@ -677,20 +638,20 @@ td {
 th {
   position: sticky;
   top: 0;
-  background-color: var(--black4);
-  color: var(--white1);
-  border-top: 1px solid var(--white5);
-  border-bottom: 1px solid var(--white-opc1);
+  background-color: var(--bg-black3);
+  color: var(--text-white1);
+  border-top: 1px solid var(--border-white3);
+  border-bottom: 1px solid var(--border-white3);
   &:not(:first-child) {
-    border-left: 1px solid var(--white-opc1);
+    border-left: 1px solid var(--border-white3);
   }
 }
 td {
-  background-color: var(--white1);
-  color: var(--black2);
-  border-bottom: 1px solid var(--black-opc1);
+  background-color: var(--bg-white1);
+  color: var(--text-black2);
+  border-bottom: 1px solid var(--border-white3);
   &:not(:first-child) {
-    border-left: 1px solid var(--black-opc1);
+    border-left: 1px solid var(--border-white3);
   }
 }
 

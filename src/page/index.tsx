@@ -25,7 +25,7 @@ function Main() {
           <ul>
             <li>
               <p className="label">input</p>
-              <input type="text" />
+              <input type="text" placeholder="placeholder" />
             </li>
             <li>
               <p className="label">input disabled</p>
@@ -139,10 +139,10 @@ function Main() {
                           </p>
                         </td>
                         <td>홍길동</td>
-                        <td className="black5">-</td>
-                        <td className="black5">사원</td>
-                        <td className="black5">010-1234-1234</td>
-                        <td className="black5">hk1@hubdnc.com</td>
+                        <td className="black1">-</td>
+                        <td className="black1">사원</td>
+                        <td className="black1">010-1234-1234</td>
+                        <td className="black1">hk1@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -154,10 +154,10 @@ function Main() {
                           </p>
                         </td>
                         <td>홍길동</td>
-                        <td className="black5">-</td>
-                        <td className="black5">사원</td>
-                        <td className="black5">010-1234-1234</td>
-                        <td className="black5">hk1@hubdnc.com</td>
+                        <td className="black1">-</td>
+                        <td className="black1">사원</td>
+                        <td className="black1">010-1234-1234</td>
+                        <td className="black1">hk1@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -169,10 +169,10 @@ function Main() {
                           </p>
                         </td>
                         <td>홍길동</td>
-                        <td className="black5">-</td>
-                        <td className="black5">사원</td>
-                        <td className="black5">010-1234-1234</td>
-                        <td className="black5">hk1@hubdnc.com</td>
+                        <td className="black1">-</td>
+                        <td className="black1">사원</td>
+                        <td className="black1">010-1234-1234</td>
+                        <td className="black1">hk1@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -184,10 +184,10 @@ function Main() {
                           </p>
                         </td>
                         <td>홍길동</td>
-                        <td className="black5">-</td>
-                        <td className="black5">사원</td>
-                        <td className="black5">010-1234-1234</td>
-                        <td className="black5">hk1@hubdnc.com</td>
+                        <td className="black1">-</td>
+                        <td className="black1">사원</td>
+                        <td className="black1">010-1234-1234</td>
+                        <td className="black1">hk1@hubdnc.com</td>
                       </tr>
                     </tbody>
                   </table>

@@ -1,3 +1,4 @@
+import { DarkMode } from "../../function/darkmode";
 import React, { useState } from "react";
 import Switch from "../form/switch";
 
@@ -8,22 +9,7 @@ interface Props {
 
 function Header(props: Props) {
   const [fold, setFold] = useState(false);
-  const [isChecked, setIsChecked] = useState(false);
 
-  const body = document.querySelector("body");
-  const darkMode = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setIsChecked(event.target.checked);
-    if (body) {
-      if (isChecked === true) {
-        body.classList.add("dark");
-        document.documentElement.style.setProperty("--black1", "#ff0000");
-      } else {
-        body.classList.remove("dark");
-        document.documentElement.style.setProperty("--black1", "#000000");
-      }
-    }
-    console.log(isChecked);
-  };
   return (
     <>
       <header className="flex align_center justify_between">
@@ -41,7 +27,7 @@ function Header(props: Props) {
           <h1 className="logo">HUBDNC PUBLISHING GUIDE</h1>
         </div>
         <div className="right">
-          <Switch id="dark_switch" onChange={(event) => darkMode(event)} />
+          <Switch id="dark_switch" onChange={(event) => DarkMode(event)} />
         </div>
       </header>
       <nav className={`gnb ${fold === true ? "active" : ""}`}>
