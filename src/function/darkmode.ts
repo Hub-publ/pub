@@ -24,6 +24,7 @@ export function DarkMode(event: React.ChangeEvent<HTMLInputElement>) {
   }
 }
 
+// Font Size Change
 export function FontReSize(event: SingleValue<OptionType>) {
   // 선택된 옵션이 단일 값인지 배열인지 확인
   if (!Array.isArray(event) && event !== null) {

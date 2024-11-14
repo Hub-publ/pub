@@ -90,9 +90,21 @@ body {
         url("../../public/img/icon/icon_dark_select_arrow.svg");
     }
     .css-1nmdiq5-menu {
+      border-color: var(--white-opc2);
+      background-color: var(--black2);
       * {
-        color: var(--black2);
+        color: var(--white1);
       }
+    }
+    /* CSS 파일 */
+    .custom__option--is-focused {
+      background-color: rgba(0, 0, 0, 0.3); /* 원하는 hover 배경색 */
+      color: var(--white1); /* 원하는 텍스트 색상 */
+    }
+
+    .custom__option {
+      background-color: white; /* 기본 옵션 배경색 */
+      color: gray; /* 기본 텍스트 색상 */
     }
 
     /* ==============================
@@ -105,9 +117,11 @@ body {
         }
       }
       ul {
+        border-color: var(--white-opc2);
+        background-color: var(--black2);
         li {
           a {
-            color: var(--black1);
+            color: var(--white1);
           }
         }
       }

@@ -33,6 +33,11 @@ function Header(props: Props) {
         </div>
         <div className="right flex align_center">
           <Select
+            // styles={{
+            //   control: (state) => ({
+            //     backgroundColor: state.isFocused ? "red" : "grey",
+            //   }),
+            // }}
             options={[
               { value: "Font Size Small", label: "Font Size Small" },
               { value: "Font Size Normal", label: "Font Size Normal" },
