@@ -40,6 +40,17 @@
   --text-green2: #33ff33;
   --text-green3: #99cc99;
 
+  /* 🌟 black 계열 (투명도)*/
+  --text-black-opc1: rgba(0, 0, 0, 0.2);
+  --text-black-opc2: rgba(0, 0, 0, 0.4);
+  --text-black-opc3: rgba(0, 0, 0, 0.6);
+  --text-black-opc4: rgba(0, 0, 0, 0.8);
+
+  /* 🌟 white 계열 (투명도)*/
+  --text-white-opc1: rgba(255, 255, 255, 0.2);
+  --text-white-opc2: rgba(255, 255, 255, 0.6);
+  --text-white-opc3: rgba(255, 255, 255, 0.8);
+
   /*===================
     Background Color
   ====================*/
@@ -48,7 +59,6 @@
   --dark-bg: #3c3c3c;
 
   /* 🌟 black 계열 */
-  --bg-header: #444;
   --bg-black1: #000;
   --bg-black2: #444;
   --bg-black3: #888;
@@ -59,7 +69,6 @@
   --bg-gray3: #bfc2c4;
 
   /* 🌟 white 계열 */
-  --bg-table-hover: #ffffff;
   --bg-white1: #ffffff;
   --bg-white2: #f0f0f0;
   --bg-white3: #dcdcdc;
@@ -80,11 +89,15 @@
   --bg-green3: #99cc99;
 
   /* 🌟 black 계열 (투명도)*/
-  --bg-black-opc1: rgba(0, 0, 0, 0.1);
-  --bg-black-opc2: rgba(0, 0, 0, 0.2);
+  --bg-black-opc1: rgba(0, 0, 0, 0.2);
+  --bg-black-opc2: rgba(0, 0, 0, 0.4);
+  --bg-black-opc3: rgba(0, 0, 0, 0.6);
+  --bg-black-opc4: rgba(0, 0, 0, 0.8);
 
   /* 🌟 white 계열 (투명도)*/
-  --bg-white-opc1: rgba(255, 255, 255, 0.1);
+  --bg-white-opc1: rgba(255, 255, 255, 0.2);
+  --bg-white-opc2: rgba(255, 255, 255, 0.4);
+  --bg-white-opc3: rgba(255, 255, 255, 0.8);
 
   /*===================
     Button Color
@@ -156,9 +169,13 @@
   --border-green3: #99cc99;
 
   /* 🌟 black 계열 (투명도)*/
-  --border-black-opc1: rgba(0, 0, 0, 0.1);
-  --border-black-opc2: rgba(0, 0, 0, 0.2);
+  --border-black-opc1: rgba(0, 0, 0, 0.2);
+  --border-black-opc2: rgba(0, 0, 0, 0.4);
+  --border-black-opc3: rgba(0, 0, 0, 0.6);
+  --border-black-opc4: rgba(0, 0, 0, 0.8);
 
   /* 🌟 white 계열 (투명도)*/
-  --border-white-opc1: rgba(255, 255, 255, 0.1);
+  --border-white-opc1: rgba(255, 255, 255, 0.2);
+  --border-white-opc2: rgba(255, 255, 255, 0.6);
+  --border-white-opc3: rgba(255, 255, 255, 0.8);
 }

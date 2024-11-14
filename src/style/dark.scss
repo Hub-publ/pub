@@ -1,0 +1,165 @@
+body {
+  transition: all 0.4s;
+  &.dark {
+    background-color: var(--dark-bg);
+
+    /* ==============================
+        📌 Button
+    ============================== */
+    .btn {
+      &.black {
+        background-color: var(--bg-black-opc3);
+      }
+      &.black_line {
+        border-color: var(--border-white-opc2);
+        color: var(--text-white-opc2);
+      }
+    }
+    /* ==============================
+        📌 Input Text
+    ============================== */
+    input[type="text"],
+    input[type="password"] {
+      background-color: var(--transparent);
+      color: var(--text-white1);
+    }
+    /* ==============================
+        📌 Checkbox, Radio 
+    ============================== */
+    .checkbox,
+    .radio {
+      input {
+        & + label {
+          i {
+            border-color: var(--border-white-opc2);
+          }
+          span {
+            color: var(--text-white-opc2);
+          }
+        }
+        &:checked {
+          & + label {
+            i {
+              border-color: var(--border-white1);
+              &::after {
+                background-color: var(--bg-white1);
+              }
+            }
+            span {
+              color: var(--text-white1);
+            }
+          }
+        }
+      }
+    }
+    .checkbox {
+      input {
+        &:checked {
+          & + label {
+            i {
+              background-image: url("../../public/img/icon/icon_chk_white.svg");
+            }
+          }
+        }
+      }
+    }
+
+    /* ==============================
+        📌 React Select
+    ============================== */
+    .css-13cymwt-control,
+    .css-t3ipsp-control {
+      background-color: var(--transparent);
+      .css-1dimb5e-singleValue,
+      .css-19bb58m {
+        color: var(--text-white1);
+      }
+    }
+    .css-16xfy0z-control {
+      background-color: var(--bg-white-opc1);
+      .css-olqui2-singleValue {
+        color: var(--bg-white-opc3);
+      }
+    }
+    .css-1xc3v61-indicatorContainer,
+    .css-15lsz6c-indicatorContainer {
+      background: center/0.7143rem no-repeat
+        url("../../public/img/icon/icon_dark_select_arrow.svg");
+    }
+    .css-1nmdiq5-menu {
+      * {
+        color: var(--text-black2);
+      }
+    }
+
+    /* ==============================
+        📌 Search Input
+    ============================== */
+    .search_input {
+      .parent {
+        button {
+          background-image: url("../../public/img/icon/icon_dark_search.svg");
+        }
+      }
+      ul {
+        li {
+          a {
+            color: var(--text-black1);
+          }
+        }
+      }
+    }
+
+    /* ==============================
+        📌 Search Area
+    ============================== */
+    .search_area {
+      & > ul {
+        & > li {
+          .label {
+            color: var(--text-white1);
+          }
+        }
+      }
+    }
+
+    /* ==============================
+        📌 Table 
+    ============================== */
+    .table_wrap {
+      &.list {
+        tr {
+          .black1 {
+            color: var(--text-white1) !important;
+          }
+          th,
+          td {
+            border-left-color: var(--border-white-opc1);
+            border-top-color: var(--border-white-opc1);
+            border-bottom-color: var(--border-white-opc1);
+            color: var(--text-white1);
+          }
+          td {
+            background-color: var(--transparent);
+          }
+          &:nth-child(even) {
+            td {
+              background-color: var(--bg-white-opc1);
+            }
+          }
+          &:hover {
+            td {
+              background-color: var(--bg-black-opc2);
+            }
+          }
+        }
+      }
+    }
+    /* ==============================
+        📌 Layout 
+    ============================== */
+    header {
+      background-color: var(--bg-black2);
+    }
+  }
+}

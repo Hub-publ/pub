@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from "react";
 import Container from "../component/layout/container";
 import Header from "../component/layout/header";
 import Select from "react-select";
@@ -54,6 +53,7 @@ function Main() {
                   { value: "Peanut", label: "Peanut" },
                   { value: "Macadamia", label: "Macadamia" },
                 ]}
+                value={{ value: "Almond", label: "Almond" }}
                 onChange={handleChange}
                 isDisabled
               />
