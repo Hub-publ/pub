@@ -508,6 +508,9 @@ header {
   position: relative;
   .parent {
     position: relative;
+    input {
+      padding-right: 2rem;
+    }
     button {
       width: 1.1429rem;
       height: 1.1429rem;
@@ -618,15 +621,10 @@ header {
       min-width: unset;
       tbody {
         tr {
-          cursor: default;
-          &:nth-child(even) {
+          &:not(:first-child) {
+            th,
             td {
-              background-color: var(--white1);
-            }
-          }
-          &:hover {
-            td {
-              background-color: var(--white1);
+              border-top: none;
             }
           }
         }
@@ -638,23 +636,29 @@ header {
       th {
         padding: 0.7143rem;
         line-height: 1rem;
-        background-color: var(--white3);
+        background-color: var(--white2);
         color: var(--black3);
         border-top: 1px solid var(--white3);
         border-left: 1px solid var(--white3);
         border-bottom: 1px solid var(--white3);
       }
       td {
-        padding: 0.2857rem 0.7143rem;
+        padding: 0.4286rem 0.7143rem;
         background-color: var(--white1);
         border-top: 1px solid var(--white3);
-        border-left: none;
         border-right: 1px solid var(--white3);
+        border-bottom: 1px solid var(--white3);
+        &.no_form {
+          padding: 0.7143rem;
+        }
       }
     }
   }
 }
-
+/* Table Col */
+.col_th {
+  width: 10rem;
+}
 /* Table Button */
 .ham_btn {
   width: 1.5714rem;

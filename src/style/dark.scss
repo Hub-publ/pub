@@ -27,6 +27,16 @@ body {
       }
     }
     /* ==============================
+        📌 Textarea
+    ============================== */
+    textarea {
+      background-color: var(--transparent);
+      color: var(--white1);
+      &:disabled {
+        background-color: var(--white-opc1);
+      }
+    }
+    /* ==============================
         📌 Checkbox, Radio 
     ============================== */
     .checkbox,
@@ -130,7 +140,13 @@ body {
         📌 Table 
     ============================== */
     .table_wrap {
+      .table_top {
+        .num {
+          color: var(--white1);
+        }
+      }
       table {
+        /* 리스트 테이블 */
         &.list {
           tr {
             .black1 {
@@ -157,6 +173,30 @@ body {
               }
             }
           }
+        }
+        /* 상세 테이블 */
+        &.detail {
+          th {
+            color: var(--white-opc3);
+            background-color: var(--white-opc1);
+            border-color: var(--white-opc1);
+          }
+          td {
+            color: var(--white-opc3);
+            background-color: var(--transparent);
+            border-color: var(--white-opc1);
+          }
+        }
+        /* 테이블 내부 form 요소 */
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        textarea,
+        select {
+          border-color: var(--white-opc1);
+        }
+        .css-16xfy0z-control {
+          border-color: var(--white-opc1) !important;
         }
       }
     }

@@ -134,6 +134,20 @@ function Table() {
                             텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                             텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                             텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                          </p>
+                        </td>
+                        <td>홍길동</td>
+                        <td>-</td>
+                        <td>사원</td>
+                        <td>010-1234-1234</td>
+                        <td>test@hubdnc.com</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <button className="icon ham_btn"></button>
+                        </td>
+                        <td className="ellipsis_td">
+                          <p className="ellipsis">
                             텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                           </p>
                         </td>
@@ -141,7 +155,7 @@ function Table() {
                         <td>-</td>
                         <td>사원</td>
                         <td>010-1234-1234</td>
-                        <td>hk1@hubdnc.com</td>
+                        <td>test@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -149,14 +163,14 @@ function Table() {
                         </td>
                         <td className="ellipsis_td">
                           <p className="ellipsis">
-                            한국경제신문&gt;기획조정실1&gt;기획조정실1-1&gt;기획조정실1-2&gt;기획조정실1-3
+                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                           </p>
                         </td>
                         <td>홍길동</td>
                         <td>-</td>
                         <td>사원</td>
                         <td>010-1234-1234</td>
-                        <td>hk1@hubdnc.com</td>
+                        <td>test@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -164,29 +178,14 @@ function Table() {
                         </td>
                         <td className="ellipsis_td">
                           <p className="ellipsis">
-                            한국경제신문&gt;기획조정실1&gt;기획조정실1-1&gt;기획조정실1-2&gt;기획조정실1-3
+                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                           </p>
                         </td>
                         <td>홍길동</td>
                         <td>-</td>
                         <td>사원</td>
                         <td>010-1234-1234</td>
-                        <td>hk1@hubdnc.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <button className="icon ham_btn"></button>
-                        </td>
-                        <td className="ellipsis_td">
-                          <p className="ellipsis">
-                            한국경제신문&gt;기획조정실1&gt;기획조정실1-1&gt;기획조정실1-2&gt;기획조정실1-3
-                          </p>
-                        </td>
-                        <td>홍길동</td>
-                        <td>-</td>
-                        <td>사원</td>
-                        <td>010-1234-1234</td>
-                        <td>hk1@hubdnc.com</td>
+                        <td>test@hubdnc.com</td>
                       </tr>
                     </tbody>
                   </table>
@@ -196,29 +195,91 @@ function Table() {
             <div className="area">
               <div className="table_wrap">
                 <table className="detail">
+                  <colgroup>
+                    <col className="col_th" />
+                    <col />
+                    <col className="col_th" />
+                    <col />
+                  </colgroup>
                   <tbody>
                     <tr>
                       <th>
                         TH<span className="red1">*</span>
                       </th>
-                      <td>
-                        텍스트가 들어갑니다. 텍스트가 들어갑니다. 텍스트가
-                        들어갑니다. 텍스트가 들어갑니다. 텍스트가 들어갑니다.
-                        텍스트가 들어갑니다. 텍스트가 들어갑니다. 텍스트가
-                        들어갑니다. 텍스트가 들어갑니다. 텍스트가 들어갑니다.
-                        텍스트가 들어갑니다. 텍스트가 들어갑니다.
+                      <td colSpan={3}>
+                        <input
+                          type="text"
+                          placeholder="100자 이내"
+                          maxLength={100}
+                        />
                       </td>
                     </tr>
                     <tr>
                       <th>
                         TH<span className="red1">*</span>
                       </th>
-                      <td></td>
+                      <td>
+                        <Select
+                          placeholder="선택"
+                          options={[
+                            { value: "Development", label: "개발팀" },
+                            { value: "Plan", label: "기획팀" },
+                            { value: "Design", label: "디자인팀" },
+                            { value: "Publishing", label: "퍼블팀" },
+                          ]}
+                          onChange={handleChange}
+                          isDisabled
+                        />
+                      </td>
+                      <th>
+                        TH<span className="red1">*</span>
+                      </th>
+                      <td>
+                        <div className="form_wrap">
+                          <Radio id="radio_a1" name="radio_a" label="선택1" />
+                          <Radio id="radio_a2" name="radio_a" label="선택2" />
+                          <Radio id="radio_a3" name="radio_a" label="선택3" />
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <th>TH</th>
-                      <td></td>
+                      <th>
+                        TH / TH<span className="red1">*</span>
+                      </th>
+                      <td>홍길동 / 2024-11-14</td>
+                      <th>
+                        TH<span className="red1">*</span>
+                      </th>
+                      <td>1,234,567</td>
                     </tr>
+                    <tr>
+                      <th>
+                        TH<span className="red1">*</span>
+                      </th>
+                      <td colSpan={3}>
+                        <textarea
+                          name=""
+                          id=""
+                          rows={5}
+                          placeholder="500자 이내"
+                          maxLength={500}
+                        />
+                      </td>
+                    </tr>
+                    {/* <tr>
+                      <th>TH</th>
+                      <td colSpan={3}>
+                        <div className="attach_wrap">
+                          <input type="file" id="attach_01" />
+                          <label htmlFor="attach_01"></label>
+                          <ul>
+                            <li>
+                              <button type="button"></button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr> */}
                   </tbody>
                 </table>
               </div>
