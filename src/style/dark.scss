@@ -8,11 +8,11 @@ body {
     ============================== */
     .btn {
       &.black {
-        background-color: var(--bg-black-opc3);
+        background-color: var(--black-opc3);
       }
       &.black_line {
-        border-color: var(--border-white-opc2);
-        color: var(--text-white-opc2);
+        border-color: var(--white-opc2);
+        color: var(--white-opc2);
       }
     }
     /* ==============================
@@ -21,7 +21,10 @@ body {
     input[type="text"],
     input[type="password"] {
       background-color: var(--transparent);
-      color: var(--text-white1);
+      color: var(--white1);
+      &:disabled {
+        background-color: var(--white-opc1);
+      }
     }
     /* ==============================
         📌 Checkbox, Radio 
@@ -31,22 +34,22 @@ body {
       input {
         & + label {
           i {
-            border-color: var(--border-white-opc2);
+            border-color: var(--white-opc2);
           }
           span {
-            color: var(--text-white-opc2);
+            color: var(--white-opc2);
           }
         }
         &:checked {
           & + label {
             i {
-              border-color: var(--border-white1);
+              border-color: var(--white1);
               &::after {
-                background-color: var(--bg-white1);
+                background-color: var(--white1);
               }
             }
             span {
-              color: var(--text-white1);
+              color: var(--white1);
             }
           }
         }
@@ -72,13 +75,13 @@ body {
       background-color: var(--transparent);
       .css-1dimb5e-singleValue,
       .css-19bb58m {
-        color: var(--text-white1);
+        color: var(--white1);
       }
     }
     .css-16xfy0z-control {
-      background-color: var(--bg-white-opc1);
+      background-color: var(--white-opc1);
       .css-olqui2-singleValue {
-        color: var(--bg-white-opc3);
+        color: var(--white-opc3);
       }
     }
     .css-1xc3v61-indicatorContainer,
@@ -88,7 +91,7 @@ body {
     }
     .css-1nmdiq5-menu {
       * {
-        color: var(--text-black2);
+        color: var(--black2);
       }
     }
 
@@ -104,7 +107,7 @@ body {
       ul {
         li {
           a {
-            color: var(--text-black1);
+            color: var(--black1);
           }
         }
       }
@@ -117,7 +120,7 @@ body {
       & > ul {
         & > li {
           .label {
-            color: var(--text-white1);
+            color: var(--white1);
           }
         }
       }
@@ -130,26 +133,26 @@ body {
       &.list {
         tr {
           .black1 {
-            color: var(--text-white1) !important;
+            color: var(--white1) !important;
           }
           th,
           td {
-            border-left-color: var(--border-white-opc1);
-            border-top-color: var(--border-white-opc1);
-            border-bottom-color: var(--border-white-opc1);
-            color: var(--text-white1);
+            border-left-color: var(--white-opc1);
+            border-top-color: var(--white-opc1);
+            border-bottom-color: var(--white-opc1);
+            color: var(--white1);
           }
           td {
             background-color: var(--transparent);
           }
           &:nth-child(even) {
             td {
-              background-color: var(--bg-white-opc1);
+              background-color: var(--white-opc1);
             }
           }
           &:hover {
             td {
-              background-color: var(--bg-black-opc2);
+              background-color: var(--black-opc2);
             }
           }
         }
@@ -159,7 +162,6 @@ body {
         📌 Layout 
     ============================== */
     header {
-      background-color: var(--bg-black2);
     }
   }
 }

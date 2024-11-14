@@ -1,4 +1,4 @@
-import { DarkMode } from "../../function/darkmode";
+import { DarkMode, FontReSize } from "../../function/darkmode";
 import React, { useState } from "react";
 import Switch from "../form/switch";
 import Select from "react-select";
@@ -36,10 +36,10 @@ function Header(props: Props) {
             options={[
               { value: "Font Size Small", label: "Font Size Small" },
               { value: "Font Size Normal", label: "Font Size Normal" },
-              { value: "Font Size Large", label: "Font Size Normal" },
+              { value: "Font Size Large", label: "Font Size Large" },
             ]}
             placeholder="Font Size ReSizing"
-            // onChange={(event) => FontReSize(event)}
+            onChange={(event) => FontReSize(event)}
           />
           <Switch id="dark_switch" onChange={(event) => DarkMode(event)} />
         </div>

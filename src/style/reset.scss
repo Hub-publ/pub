@@ -9,6 +9,20 @@ body {
   padding: 0;
   font-size: 14px;
 }
+html {
+  &.font_size_small {
+    font-size: 12px !important;
+    body {
+      font-size: 12px !important;
+    }
+  }
+  &.font_size_large {
+    font-size: 16px !important;
+    body {
+      font-size: 16px !important;
+    }
+  }
+}
 div,
 span,
 applet,
@@ -97,7 +111,7 @@ br {
   font-size: 1rem;
   font-weight: 400;
   font-family: "Pretendard", sans-serif;
-  color: var(--text-black2);
+  color: var(--black2);
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -203,16 +217,16 @@ select {
   width: 100%;
   height: 2.2857rem;
   padding: 0 0.8571rem;
-  border: 1px solid var(--border-white3);
+  border: 1px solid var(--white3);
   border-radius: 0.5714rem;
-  background-color: var(--bg-white1);
-  color: var(--text-black2);
+  background-color: var(--white1);
+  color: var(--black2);
   transition: all 0.3s;
   font-weight: 400;
 
   &:disabled {
-    background-color: var(--bg-white3);
-    color: var(--text-black3);
+    background-color: var(--white3);
+    color: var(--black3);
   }
 }
 
@@ -226,12 +240,12 @@ textarea {
 
 input[type="text"]:read-only:focus,
 textarea:read-only:focus {
-  border-color: var(--border-white3);
+  border-color: var(--white3);
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: var(--text-placeholer);
+  color: var(--placeholer);
 }
 
 input[type="file"],
@@ -251,7 +265,7 @@ input[type="radio"] {
 }
 
 select {
-  background: right 0.8571rem center/0.7143rem no-repeat var(--bg-white1)
+  background: right 0.8571rem center/0.7143rem no-repeat var(--white1)
     url("../../public/img/icon/icon_select_arrow.svg");
   padding-right: 2.4286rem;
   font-family: "Pretendard", sans-serif;
@@ -285,6 +299,9 @@ body {
       // display: block;
       padding: 0.1429rem 0.5714rem;
     }
+  }
+  .css-1nmdiq5-menu {
+    z-index: 30;
   }
   /* 텍스트 영역 클릭 시 옵션노출 */
   .css-19bb58m,
@@ -332,6 +349,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--bg-gray1);
+  background: var(--gray1);
   border-radius: 0.1429rem;
 }
