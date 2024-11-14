@@ -127,29 +127,31 @@ body {
         📌 Table 
     ============================== */
     .table_wrap {
-      &.list {
-        tr {
-          .black1 {
-            color: var(--text-white1) !important;
-          }
-          th,
-          td {
-            border-left-color: var(--border-white-opc1);
-            border-top-color: var(--border-white-opc1);
-            border-bottom-color: var(--border-white-opc1);
-            color: var(--text-white1);
-          }
-          td {
-            background-color: var(--transparent);
-          }
-          &:nth-child(even) {
-            td {
-              background-color: var(--bg-white-opc1);
+      table {
+        &.list {
+          tr {
+            .black1 {
+              color: var(--text-white1) !important;
             }
-          }
-          &:hover {
+            th,
             td {
-              background-color: var(--bg-black-opc2);
+              border-left-color: var(--border-white-opc1);
+              border-top-color: var(--border-white-opc1);
+              border-bottom-color: var(--border-white-opc1);
+              color: var(--text-white1);
+            }
+            td {
+              background-color: var(--transparent);
+            }
+            &:nth-child(even) {
+              td {
+                background-color: var(--bg-white-opc1);
+              }
+            }
+            &:hover {
+              td {
+                background-color: var(--bg-black-opc2);
+              }
             }
           }
         }

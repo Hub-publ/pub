@@ -550,107 +550,97 @@ header {
       }
     }
   }
-  /* 리스트 테이블을 감싸는 wrap에 추가되는 클래스 */
-  // &.list {
-  //   max-height: 250px;
-  //   overflow: auto;
-  // }
-}
-table {
-  width: 100%;
-  table-layout: fixed;
-  // min-width: max-content;
-  /* 상세 테이블 */
-  &.detail {
-    // table-layout: fixed;
-    min-width: unset;
-    tbody {
-      tr {
-        cursor: default;
-        &:nth-child(even) {
-          td {
-            background-color: var(--bg-white1);
+  table {
+    width: 100%;
+    table-layout: fixed;
+    // min-width: max-content;
+    /* 리스트 테이블 */
+    &.list {
+      tbody {
+        tr {
+          cursor: pointer;
+          &:nth-child(even) {
+            td {
+              background-color: var(--bg-white2);
+            }
           }
-        }
-        &:hover {
-          td {
-            background-color: var(--bg-white1);
+          &:hover {
+            td {
+              background-color: var(--bg-white3);
+            }
           }
         }
       }
-    }
-    th,
-    td {
-      text-align: left;
-    }
-    th {
-      padding: 0.7143rem;
-      line-height: 1rem;
-      background-color: var(--bg-white3);
-      color: var(--text-black3);
-      border-top: 1px solid var(--border-white3);
-      border-left: 1px solid var(--border-white3);
-      border-bottom: 1px solid var(--border-white3);
-    }
-    td {
-      padding: 0.2857rem 0.7143rem;
-      background-color: var(--bg-white1);
-      border-top: 1px solid var(--border-white3);
-      border-left: none;
-      border-right: 1px solid var(--border-white3);
-    }
-  }
-}
-thead {
-  &.sticky_td {
-    th {
-      position: sticky;
-      top: 0;
-    }
-  }
-}
-tbody {
-  tr {
-    cursor: pointer;
-    &:nth-child(even) {
+      th,
       td {
-        background-color: var(--bg-white2);
+        padding: 0.2857rem 0.5714rem;
+        font-size: 0.92857rem;
+        line-height: 1.42857rem;
+        text-align: center;
+        span {
+          font: inherit;
+        }
+      }
+      th {
+        position: sticky;
+        top: 0;
+        background-color: var(--bg-black3);
+        color: var(--text-white1);
+        border-top: 1px solid var(--border-white3);
+        border-bottom: 1px solid var(--border-white3);
+        &:not(:first-child) {
+          border-left: 1px solid var(--border-white3);
+        }
+      }
+      td {
+        background-color: var(--bg-white1);
+        color: var(--text-black2);
+        border-bottom: 1px solid var(--border-white3);
+        &:not(:first-child) {
+          border-left: 1px solid var(--border-white3);
+        }
       }
     }
-    &:hover {
+    /* 상세 테이블 */
+    &.detail {
+      // table-layout: fixed;
+      min-width: unset;
+      tbody {
+        tr {
+          cursor: default;
+          &:nth-child(even) {
+            td {
+              background-color: var(--bg-white1);
+            }
+          }
+          &:hover {
+            td {
+              background-color: var(--bg-white1);
+            }
+          }
+        }
+      }
+      th,
       td {
+        text-align: left;
+      }
+      th {
+        padding: 0.7143rem;
+        line-height: 1rem;
         background-color: var(--bg-white3);
+        color: var(--text-black3);
+        border-top: 1px solid var(--border-white3);
+        border-left: 1px solid var(--border-white3);
+        border-bottom: 1px solid var(--border-white3);
+      }
+      td {
+        padding: 0.2857rem 0.7143rem;
+        background-color: var(--bg-white1);
+        border-top: 1px solid var(--border-white3);
+        border-left: none;
+        border-right: 1px solid var(--border-white3);
       }
     }
-  }
-}
-th,
-td {
-  padding: 0.2857rem 0.5714rem;
-  font-size: 0.92857rem;
-  line-height: 1.42857rem;
-  text-align: center;
-  span {
-    font: inherit;
-  }
-}
-th {
-  position: sticky;
-  top: 0;
-  background-color: var(--bg-black3);
-  color: var(--text-white1);
-  border-top: 1px solid var(--border-white3);
-  border-bottom: 1px solid var(--border-white3);
-  &:not(:first-child) {
-    border-left: 1px solid var(--border-white3);
-  }
-}
-td {
-  background-color: var(--bg-white1);
-  color: var(--text-black2);
-  border-bottom: 1px solid var(--border-white3);
-  &:not(:first-child) {
-    border-left: 1px solid var(--border-white3);
   }
 }
 
