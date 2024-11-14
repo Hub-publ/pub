@@ -130,56 +130,31 @@ body {
         📌 Table 
     ============================== */
     .table_wrap {
-<<<<<<< HEAD
-      &.list {
-        tr {
-          .black1 {
-            color: var(--white1) !important;
-          }
-          th,
-          td {
-            border-left-color: var(--white-opc1);
-            border-top-color: var(--white-opc1);
-            border-bottom-color: var(--white-opc1);
-            color: var(--white1);
-          }
-          td {
-            background-color: var(--transparent);
-          }
-          &:nth-child(even) {
-            td {
-              background-color: var(--white-opc1);
-=======
       table {
         &.list {
           tr {
             .black1 {
-              color: var(--text-white1) !important;
->>>>>>> 2b80a73bb36f5d73ca710fd3e08ecb9193e1b603
+              color: var(--white1) !important;
             }
             th,
             td {
-<<<<<<< HEAD
-              background-color: var(--black-opc2);
-=======
-              border-left-color: var(--border-white-opc1);
-              border-top-color: var(--border-white-opc1);
-              border-bottom-color: var(--border-white-opc1);
-              color: var(--text-white1);
+              border-left-color: var(--white-opc1);
+              border-top-color: var(--white-opc1);
+              border-bottom-color: var(--white-opc1);
+              color: var(--white1);
             }
             td {
               background-color: var(--transparent);
             }
             &:nth-child(even) {
               td {
-                background-color: var(--bg-white-opc1);
+                background-color: var(--white-opc1);
               }
             }
             &:hover {
               td {
-                background-color: var(--bg-black-opc2);
+                background-color: var(--black-opc2);
               }
->>>>>>> 2b80a73bb36f5d73ca710fd3e08ecb9193e1b603
             }
           }
         }

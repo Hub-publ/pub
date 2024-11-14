@@ -561,73 +561,6 @@ header {
       }
     }
   }
-<<<<<<< HEAD
-  /* 리스트 테이블을 감싸는 wrap에 추가되는 클래스 */
-  // &.list {
-  //   max-height: 250px;
-  //   overflow: auto;
-  // }
-}
-table {
-  width: 100%;
-  table-layout: fixed;
-  // min-width: max-content;
-  /* 상세 테이블 */
-  &.detail {
-    // table-layout: fixed;
-    min-width: unset;
-    tbody {
-      tr {
-        cursor: default;
-        &:nth-child(even) {
-          td {
-            background-color: var(--white1);
-          }
-        }
-        &:hover {
-          td {
-            background-color: var(--white1);
-          }
-        }
-      }
-    }
-    th,
-    td {
-      text-align: left;
-    }
-    th {
-      padding: 0.7143rem;
-      line-height: 1rem;
-      background-color: var(--white3);
-      color: var(--black3);
-      border-top: 1px solid var(--white3);
-      border-left: 1px solid var(--white3);
-      border-bottom: 1px solid var(--white3);
-    }
-    td {
-      padding: 0.2857rem 0.7143rem;
-      background-color: var(--white1);
-      border-top: 1px solid var(--white3);
-      border-left: none;
-      border-right: 1px solid var(--white3);
-    }
-  }
-}
-thead {
-  &.sticky_td {
-    th {
-      position: sticky;
-      top: 0;
-    }
-  }
-}
-tbody {
-  tr {
-    cursor: pointer;
-    &:nth-child(even) {
-      td {
-        background-color: var(--white2);
-=======
   table {
     width: 100%;
     table-layout: fixed;
@@ -639,12 +572,12 @@ tbody {
           cursor: pointer;
           &:nth-child(even) {
             td {
-              background-color: var(--bg-white2);
+              background-color: var(--white2);
             }
           }
           &:hover {
             td {
-              background-color: var(--bg-white3);
+              background-color: var(--white3);
             }
           }
         }
@@ -662,22 +595,21 @@ tbody {
       th {
         position: sticky;
         top: 0;
-        background-color: var(--bg-black3);
-        color: var(--text-white1);
-        border-top: 1px solid var(--border-white3);
-        border-bottom: 1px solid var(--border-white3);
+        background-color: var(--black3);
+        color: var(--white1);
+        border-top: 1px solid var(--white3);
+        border-bottom: 1px solid var(--white3);
         &:not(:first-child) {
-          border-left: 1px solid var(--border-white3);
+          border-left: 1px solid var(--white3);
         }
       }
       td {
-        background-color: var(--bg-white1);
-        color: var(--text-black2);
-        border-bottom: 1px solid var(--border-white3);
+        background-color: var(--white1);
+        color: var(--black2);
+        border-bottom: 1px solid var(--white3);
         &:not(:first-child) {
-          border-left: 1px solid var(--border-white3);
+          border-left: 1px solid var(--white3);
         }
->>>>>>> 2b80a73bb36f5d73ca710fd3e08ecb9193e1b603
       }
     }
     /* 상세 테이블 */
@@ -689,75 +621,39 @@ tbody {
           cursor: default;
           &:nth-child(even) {
             td {
-              background-color: var(--bg-white1);
+              background-color: var(--white1);
             }
           }
           &:hover {
             td {
-              background-color: var(--bg-white1);
+              background-color: var(--white1);
             }
           }
         }
       }
       th,
       td {
-<<<<<<< HEAD
-        background-color: var(--white3);
-=======
         text-align: left;
       }
       th {
         padding: 0.7143rem;
         line-height: 1rem;
-        background-color: var(--bg-white3);
-        color: var(--text-black3);
-        border-top: 1px solid var(--border-white3);
-        border-left: 1px solid var(--border-white3);
-        border-bottom: 1px solid var(--border-white3);
+        background-color: var(--white3);
+        color: var(--black3);
+        border-top: 1px solid var(--white3);
+        border-left: 1px solid var(--white3);
+        border-bottom: 1px solid var(--white3);
       }
       td {
         padding: 0.2857rem 0.7143rem;
-        background-color: var(--bg-white1);
-        border-top: 1px solid var(--border-white3);
+        background-color: var(--white1);
+        border-top: 1px solid var(--white3);
         border-left: none;
-        border-right: 1px solid var(--border-white3);
->>>>>>> 2b80a73bb36f5d73ca710fd3e08ecb9193e1b603
+        border-right: 1px solid var(--white3);
       }
     }
   }
 }
-<<<<<<< HEAD
-th,
-td {
-  padding: 0.2857rem 0.5714rem;
-  font-size: 0.92857rem;
-  line-height: 1.42857rem;
-  text-align: center;
-  span {
-    font: inherit;
-  }
-}
-th {
-  position: sticky;
-  top: 0;
-  background-color: var(--black3);
-  color: var(--white1);
-  border-top: 1px solid var(--white3);
-  border-bottom: 1px solid var(--white3);
-  &:not(:first-child) {
-    border-left: 1px solid var(--white3);
-  }
-}
-td {
-  background-color: var(--white1);
-  color: var(--black2);
-  border-bottom: 1px solid var(--white3);
-  &:not(:first-child) {
-    border-left: 1px solid var(--white3);
-  }
-}
-=======
->>>>>>> 2b80a73bb36f5d73ca710fd3e08ecb9193e1b603
 
 /* Table Button */
 .ham_btn {
