@@ -83,7 +83,7 @@ function Main() {
         <div className="contents_wrap">
           <div className="container">
             <div className="area">
-              <div className="table_wrap list">
+              <div className="table_wrap">
                 {/* 오른쪽 영역에 버튼만 있을 때 */}
                 {/* <div className="table_top flex justify_start">
                   <p className="num">총 갯수</p>
@@ -110,7 +110,7 @@ function Main() {
                   <Button title="버튼버튼" size="h_28" color="green_line" />
                 </div> */}
                 <div className="scroll_area">
-                  <table>
+                  <table className="list">
                     <colgroup>
                       <col width={50} />
                     </colgroup>

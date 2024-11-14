@@ -82,7 +82,7 @@ function Table() {
         <div className="contents_wrap">
           <div className="container">
             <div className="area">
-              <div className="table_wrap list">
+              <div className="table_wrap">
                 {/* 오른쪽 영역에 버튼만 있을 때 */}
                 {/* <div className="table_top flex justify_start">
                   <p className="num">총 갯수</p>
@@ -109,7 +109,7 @@ function Table() {
                   <Button title="버튼버튼" size="h_28" color="green_line" />
                 </div> */}
                 <div className="scroll_area">
-                  <table>
+                  <table className="list">
                     <colgroup>
                       <col width={50} />
                     </colgroup>
@@ -138,10 +138,10 @@ function Table() {
                           </p>
                         </td>
                         <td>홍길동</td>
-                        <td className="black5">-</td>
-                        <td className="black5">사원</td>
-                        <td className="black5">010-1234-1234</td>
-                        <td className="black5">hk1@hubdnc.com</td>
+                        <td>-</td>
+                        <td>사원</td>
+                        <td>010-1234-1234</td>
+                        <td>hk1@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -153,10 +153,10 @@ function Table() {
                           </p>
                         </td>
                         <td>홍길동</td>
-                        <td className="black5">-</td>
-                        <td className="black5">사원</td>
-                        <td className="black5">010-1234-1234</td>
-                        <td className="black5">hk1@hubdnc.com</td>
+                        <td>-</td>
+                        <td>사원</td>
+                        <td>010-1234-1234</td>
+                        <td>hk1@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -168,10 +168,10 @@ function Table() {
                           </p>
                         </td>
                         <td>홍길동</td>
-                        <td className="black5">-</td>
-                        <td className="black5">사원</td>
-                        <td className="black5">010-1234-1234</td>
-                        <td className="black5">hk1@hubdnc.com</td>
+                        <td>-</td>
+                        <td>사원</td>
+                        <td>010-1234-1234</td>
+                        <td>hk1@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -183,10 +183,10 @@ function Table() {
                           </p>
                         </td>
                         <td>홍길동</td>
-                        <td className="black5">-</td>
-                        <td className="black5">사원</td>
-                        <td className="black5">010-1234-1234</td>
-                        <td className="black5">hk1@hubdnc.com</td>
+                        <td>-</td>
+                        <td>사원</td>
+                        <td>010-1234-1234</td>
+                        <td>hk1@hubdnc.com</td>
                       </tr>
                     </tbody>
                   </table>
