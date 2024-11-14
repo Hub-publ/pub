@@ -143,7 +143,7 @@ function Main() {
                         <td className="black1">-</td>
                         <td className="black1">사원</td>
                         <td className="black1">010-1234-1234</td>
-                        <td className="black1">hk1@hubdnc.com</td>
+                        <td className="black1">test@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -151,14 +151,14 @@ function Main() {
                         </td>
                         <td className="ellipsis_td">
                           <p className="ellipsis">
-                            한국경제신문&gt;기획조정실1&gt;기획조정실1-1&gt;기획조정실1-2&gt;기획조정실1-3
+                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                           </p>
                         </td>
                         <td>홍길동</td>
                         <td className="black1">-</td>
                         <td className="black1">사원</td>
                         <td className="black1">010-1234-1234</td>
-                        <td className="black1">hk1@hubdnc.com</td>
+                        <td className="black1">test@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -166,14 +166,14 @@ function Main() {
                         </td>
                         <td className="ellipsis_td">
                           <p className="ellipsis">
-                            한국경제신문&gt;기획조정실1&gt;기획조정실1-1&gt;기획조정실1-2&gt;기획조정실1-3
+                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                           </p>
                         </td>
                         <td>홍길동</td>
                         <td className="black1">-</td>
                         <td className="black1">사원</td>
                         <td className="black1">010-1234-1234</td>
-                        <td className="black1">hk1@hubdnc.com</td>
+                        <td className="black1">test@hubdnc.com</td>
                       </tr>
                       <tr>
                         <td>
@@ -181,14 +181,14 @@ function Main() {
                         </td>
                         <td className="ellipsis_td">
                           <p className="ellipsis">
-                            한국경제신문&gt;기획조정실1&gt;기획조정실1-1&gt;기획조정실1-2&gt;기획조정실1-3
+                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                           </p>
                         </td>
                         <td>홍길동</td>
                         <td className="black1">-</td>
                         <td className="black1">사원</td>
                         <td className="black1">010-1234-1234</td>
-                        <td className="black1">hk1@hubdnc.com</td>
+                        <td className="black1">test@hubdnc.com</td>
                       </tr>
                     </tbody>
                   </table>
