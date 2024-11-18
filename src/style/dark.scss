@@ -223,11 +223,17 @@ body {
     /* ==============================
         📌 Element 
     ============================== */
+    /* 검색영역 > 버튼영역 */
+    .search_tool {
+      .toggle {
+        background-image: url("../../public/img/icon/icon_search_toggle_white.svg");
+      }
+    }
     /* 첨부파일 목록 */
     .attachment {
       input[type="file"] {
         & + label {
-          background-color: var(--gray2);
+          background-color: var(--white3);
           color: var(--black2);
         }
       }
@@ -240,6 +246,10 @@ body {
       .count {
         color: var(--white-opc3);
       }
+    }
+    /* Table Button */
+    .ham_btn {
+      background-image: url("../../public/img/icon/icon_table_hamburger_white.svg");
     }
   }
 }

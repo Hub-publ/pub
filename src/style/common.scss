@@ -543,9 +543,19 @@ header {
           transform: translateY(-50%);
         }
       }
+      &.on {
+        & > a {
+          &:after {
+            background-image: url("../../public/img/icon/icon_gnb_arrow_white.svg");
+            transform: translateY(-50%) scaleY(-1);
+          }
+        }
+      }
     }
   }
   .sub {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
     li {
       a {
         position: relative;
@@ -720,6 +730,39 @@ header {
 /* ==================================================================
   우리 지연님 자리 👻
 ================================================================== */
+/* 메뉴 고정 */
+.menu_fix {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.4286rem;
+  border-top: 1px solid var(--black-opc2);
+  p {
+    line-height: 1.5714rem;
+    font-weight: 500;
+    color: var(--white1);
+  }
+  .switch {
+    input {
+      &:checked {
+        & + label {
+          &:after {
+            right: 0.1429rem;
+          }
+        }
+      }
+    }
+    label {
+      width: 2.5714rem;
+      height: 1.4286rem;
+      &:after {
+        width: 1.1429rem;
+        height: 1.1429rem;
+        right: 1.2857rem;
+      }
+    }
+  }
+}
 /* Table (Default - list) */
 .table_wrap {
   width: 100%;
@@ -825,7 +868,7 @@ header {
     }
   }
 }
-/* Table Col */
+/* Table Colgroup */
 .col_th {
   width: 10rem;
 }
