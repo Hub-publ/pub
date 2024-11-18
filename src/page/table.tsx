@@ -82,9 +82,9 @@ function Table() {
           </ul>
           <div className="search_tool">
             <button type="button" className="toggle"></button>
-            <Button title="검색" size="h_32" color="gray_bgline" />
-            <Button title="입력" size="h_32" color="gray_bgline" />
-            <Button title="입력 취소" size="h_32" color="gray_bgline" />
+            <Button title="검색" size="h_32" color="gray_bg_line" />
+            <Button title="입력" size="h_32" color="gray_bg_line" />
+            <Button title="입력 취소" size="h_32" color="gray_bg_line" />
           </div>
         </div>
         <div className="contents_wrap">

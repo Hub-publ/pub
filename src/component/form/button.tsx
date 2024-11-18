@@ -8,7 +8,7 @@ interface Props {
     | "blue_line"
     | "green"
     | "green_line"
-    | "gray_bgline";
+    | "gray_bg_line";
   className?: string;
 }
 
