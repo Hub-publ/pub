@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "../form/button";
 import SearchInput from "../form/search_input";
 import Select from "react-select";
@@ -11,6 +12,7 @@ interface OptionType {
 }
 
 function TemplatePopup() {
+  const [popup, setPopup] = useState<Number | undefined>();
   const handleChange = (selectedOption: OptionType | null) => {
     console.log(selectedOption);
   };
@@ -180,7 +182,12 @@ function TemplatePopup() {
         </div>
       </div>
       <div className="pop_btns">
-        <Button size="h_38" color="gray_bg_line" title="닫기" />
+        <Button
+          size="h_38"
+          color="gray_bg_line"
+          title="닫기"
+          onClick={() => setPopup(undefined)}
+        />
         <Button size="h_38" color="black" title="완료" />
       </div>
     </>
