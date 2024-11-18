@@ -7,6 +7,7 @@ import Checkbox from "../component/form/checkbox";
 import Radio from "../component/form/radio";
 import SearchInput from "../component/form/search_input";
 import Button from "../component/form/button";
+import Attachment from "../component/form/attachment";
 interface OptionType {
   label: string;
   value: string;
@@ -16,6 +17,7 @@ function Table() {
   const handleChange = (selectedOption: OptionType | null) => {
     console.log(selectedOption);
   };
+
   return (
     <>
       <Header />
@@ -78,6 +80,12 @@ function Table() {
               </div>
             </li>
           </ul>
+          <div className="search_tool">
+            <button type="button" className="toggle"></button>
+            <Button title="검색" size="h_32" color="gray_bgline" />
+            <Button title="입력" size="h_32" color="gray_bgline" />
+            <Button title="입력 취소" size="h_32" color="gray_bgline" />
+          </div>
         </div>
         <div className="contents_wrap">
           <div className="container">
@@ -266,20 +274,12 @@ function Table() {
                         />
                       </td>
                     </tr>
-                    {/* <tr>
+                    <tr>
                       <th>TH</th>
                       <td colSpan={3}>
-                        <div className="attach_wrap">
-                          <input type="file" id="attach_01" />
-                          <label htmlFor="attach_01"></label>
-                          <ul>
-                            <li>
-                              <button type="button"></button>
-                            </li>
-                          </ul>
-                        </div>
+                        <Attachment id="attach_01" maxText={10} />
                       </td>
-                    </tr> */}
+                    </tr>
                   </tbody>
                 </table>
               </div>

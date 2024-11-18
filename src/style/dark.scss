@@ -219,5 +219,27 @@ body {
     ============================== */
     header {
     }
+
+    /* ==============================
+        📌 Element 
+    ============================== */
+    /* 첨부파일 목록 */
+    .attachment {
+      input[type="file"] {
+        & + label {
+          background-color: var(--gray2);
+          color: var(--black2);
+        }
+      }
+      ul {
+        li {
+          border-color: var(--white-opc1);
+          color: var(--white-opc3);
+        }
+      }
+      .count {
+        color: var(--white-opc3);
+      }
+    }
   }
 }
