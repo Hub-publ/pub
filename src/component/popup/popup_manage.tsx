@@ -1,4 +1,4 @@
-import { useState, Dispatch, SetStateAction } from "react";
+import { useState, Dispatch, SetStateAction, useEffect } from "react";
 
 interface Props {
   title: string;
@@ -49,11 +49,17 @@ function PopupManage(props: Props) {
         pop_btns_height -
         pop_top_mb -
         pop_btns_mt -
-        80
+        100
       }px`;
     }
   }
-  popSizeHandler();
+  useEffect(() => {
+    popSizeHandler();
+    window.addEventListener("resize", popSizeHandler);
+    return () => {
+      window.removeEventListener("resize", popSizeHandler);
+    };
+  }, []);
 
   return (
     <div className={`pop_wrap ${props.className}`}>
