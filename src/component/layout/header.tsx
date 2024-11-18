@@ -1,5 +1,5 @@
 import { DarkMode, FontReSize } from "../../function/darkmode";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Switch from "../form/switch";
 import Select from "react-select";
 
@@ -7,13 +7,40 @@ interface Props {
   className?: string;
   children?: React.ReactNode;
 }
-// interface OptionType {
-//   label: string;
-//   value: string;
-// }
 
 function Header(props: Props) {
   const [fold, setFold] = useState(false);
+  const [openMenus, setOpenMenus] = useState<number[]>([]);
+
+  // [Ref]
+  const subMenuRefs = useRef<{ [key: number]: HTMLUListElement | null }>({}); // 각 서브 메뉴별 높이에 대한 ref 배열
+
+  // 각 서브 메뉴별 높이 계산 및 반영
+  useEffect(() => {
+    Object.keys(subMenuRefs.current).forEach(menuId => {
+      const menu = subMenuRefs.current[parseInt(menuId)];
+      if (menu) {
+        const subMenuHeight = menu.scrollHeight;
+        // 서브 메뉴가 열린 상태에서 max-height 값 설정
+        if (openMenus.includes(parseInt(menuId))) {
+          menu.style.maxHeight = `${subMenuHeight}px`;
+        } else {
+          menu.style.maxHeight = "0px";
+        }
+      }
+    });
+  }, [openMenus]);
+
+  const toggleSubMenu = (menuId: number) => {
+    setOpenMenus(prevState => {
+      // 메뉴가 이미 열린 상태라면 배열에서 제거, 닫힌 상태라면 배열에 추가
+      if (prevState.includes(menuId)) {
+        return prevState.filter(id => id !== menuId);
+      } else {
+        return [...prevState, menuId];
+      }
+    });
+  };
 
   return (
     <>
@@ -62,9 +89,11 @@ function Header(props: Props) {
           </p>
         </div>
         <ul className="main">
-          <li>
-            <a href="javascript:;">상위메뉴1</a>
-            <ul className="sub">
+          <li className={`${openMenus.includes(1) ? "on" : ""}`}>
+            <a href="javascript:;" onClick={() => toggleSubMenu(1)}>
+              상위메뉴1
+            </a>
+            <ul className="sub" ref={el => (subMenuRefs.current[1] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -82,9 +111,11 @@ function Header(props: Props) {
               </li>
             </ul>
           </li>
-          <li>
-            <a href="javascript:;">상위메뉴2</a>
-            <ul className="sub">
+          <li className={`${openMenus.includes(2) ? "on" : ""}`}>
+            <a href="javascript:;" onClick={() => toggleSubMenu(2)}>
+              상위메뉴2
+            </a>
+            <ul className="sub" ref={el => (subMenuRefs.current[2] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -102,9 +133,11 @@ function Header(props: Props) {
               </li>
             </ul>
           </li>
-          <li>
-            <a href="javascript:;">상위메뉴3</a>
-            <ul className="sub">
+          <li className={`${openMenus.includes(3) ? "on" : ""}`}>
+            <a href="javascript:;" onClick={() => toggleSubMenu(3)}>
+              상위메뉴3
+            </a>
+            <ul className="sub" ref={el => (subMenuRefs.current[3] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -122,9 +155,11 @@ function Header(props: Props) {
               </li>
             </ul>
           </li>
-          <li>
-            <a href="javascript:;">상위메뉴4</a>
-            <ul className="sub">
+          <li className={`${openMenus.includes(4) ? "on" : ""}`}>
+            <a href="javascript:;" onClick={() => toggleSubMenu(4)}>
+              상위메뉴4
+            </a>
+            <ul className="sub" ref={el => (subMenuRefs.current[4] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -142,9 +177,11 @@ function Header(props: Props) {
               </li>
             </ul>
           </li>
-          <li>
-            <a href="javascript:;">상위메뉴5</a>
-            <ul className="sub">
+          <li className={`${openMenus.includes(5) ? "on" : ""}`}>
+            <a href="javascript:;" onClick={() => toggleSubMenu(5)}>
+              상위메뉴5
+            </a>
+            <ul className="sub" ref={el => (subMenuRefs.current[5] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -162,9 +199,11 @@ function Header(props: Props) {
               </li>
             </ul>
           </li>
-          <li>
-            <a href="javascript:;">상위메뉴6</a>
-            <ul className="sub">
+          <li className={`${openMenus.includes(6) ? "on" : ""}`}>
+            <a href="javascript:;" onClick={() => toggleSubMenu(6)}>
+              상위메뉴6
+            </a>
+            <ul className="sub" ref={el => (subMenuRefs.current[6] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -183,6 +222,10 @@ function Header(props: Props) {
             </ul>
           </li>
         </ul>
+        <div className="menu_fix">
+          <p>메뉴고정</p>
+          <Switch id="menu_fix" />
+        </div>
       </nav>
     </>
   );
