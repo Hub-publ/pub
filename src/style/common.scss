@@ -345,6 +345,16 @@
   z-index: 50;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  &.on {
+    opacity: 1;
+    visibility: visible;
+    .pop_contents {
+      margin-top: 0;
+    }
+  }
   .pop_dim {
     position: absolute;
     top: 0;
@@ -361,29 +371,56 @@
     background-color: var(--white1);
     border-radius: 0.5714rem;
     min-width: 400px;
+    margin-top: 1.4286rem;
+    transition: all 0.6s;
     .pop_top {
       margin-bottom: 1.7143rem;
-      padding: 1.1429rem 1.7143rem;
+      padding: 1.1429rem 1.4286rem;
       border-bottom: 1px solid var(--white2);
+      .pop_title {
+        font-size: 1.0714rem;
+        font-weight: 500;
+      }
       .pop_x {
-        width: 1.4286rem;
-        height: 1.4286rem;
+        width: 2.2857rem;
+        height: 2.2857rem;
         position: absolute;
-        top: -0.5714rem;
-        right: 0.2857rem;
+        top: -0.2857rem;
+        right: 0;
         transform: translateY(-100%);
         background: url("../../public/img/icon/icon_close_white.svg") no-repeat
-          center / contain;
+          center / cover;
       }
     }
-    .pop_cont {
-      padding: 0 1.7143rem;
-      border: 1px solid red;
+    .pop_inner {
+      padding: 0 1.4286rem;
+      .popup_scroll_area {
+        overflow-y: auto;
+        .search_area {
+          padding: 0;
+          margin-bottom: 2.2857rem;
+          border-bottom: none;
+          & > ul {
+            & > li {
+              input,
+              select,
+              .css-b62m3t-container,
+              .css-3iigni-container {
+                width: 120px;
+              }
+            }
+          }
+        }
+      }
     }
     .pop_btns {
       margin-top: 2.8571rem;
       padding: 0 1.7143rem 1.4286rem;
       text-align: center;
+      button {
+        min-width: 100px;
+        font-size: 1rem;
+      }
     }
   }
 }

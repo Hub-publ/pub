@@ -10,11 +10,16 @@ interface Props {
     | "green_line"
     | "gray_bg_line";
   className?: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 function Button(props: Props) {
   return (
-    <button type="button" className={`btn ${props.size} ${props.color} `}>
+    <button
+      type="button"
+      className={`btn ${props.size} ${props.color} `}
+      onClick={props.onClick}
+    >
       {props.title}
     </button>
   );

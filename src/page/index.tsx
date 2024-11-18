@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Container from "../component/layout/container";
 import Header from "../component/layout/header";
 import Select from "react-select";
@@ -6,13 +7,15 @@ import Checkbox from "../component/form/checkbox";
 import Radio from "../component/form/radio";
 import SearchInput from "../component/form/search_input";
 import Button from "../component/form/button";
-import PopupManage from "../component/popup_manage";
+import PopupManage from "../component/popup/popup_manage";
+import TemplatePopup from "../component/popup/template_popup";
 interface OptionType {
   label: string;
   value: string;
 }
 
 function Main() {
+  const [popup, setPopup] = useState<Number | undefined>(undefined);
   const handleChange = (selectedOption: OptionType | null) => {
     console.log(selectedOption);
   };
@@ -93,7 +96,14 @@ function Main() {
                 <div className="table_top flex align_center justify_between">
                   <p className="num">총 갯수</p>
                   <div>
-                    <Button title="버튼버튼" size="h_28" color="black" />
+                    <Button
+                      title="Popup Open"
+                      size="h_28"
+                      color="black"
+                      onClick={() => {
+                        setPopup(1);
+                      }}
+                    />
                     <Button title="버튼버튼" size="h_28" color="black_line" />
                     <Button title="버튼버튼" size="h_28" color="blue" />
                     <Button title="버튼버튼" size="h_28" color="blue_line" />
@@ -209,7 +219,14 @@ function Main() {
       <div className="area">메인 페이지의 세 번째 영역 입니다.</div>
       <div className="area">메인 페이지의 네 번째 영역 입니다.</div> */}
       </Container>
-      {/* <PopupManage></PopupManage> */}
+      <PopupManage
+        className={`${popup === 1 ? "on" : ""}`}
+        title="Template Popup"
+        setPopup={() => setPopup(undefined)}
+      >
+        {/* popup template의 구조에 맞게 작업 부탁드립니다👻 */}
+        <TemplatePopup />
+      </PopupManage>
     </>
   );
 }

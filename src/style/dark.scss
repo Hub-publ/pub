@@ -11,6 +11,11 @@ body {
         background-color: var(--black-opc3);
       }
       &.black_line {
+        border-color: var(--white-opc3);
+        color: var(--white-opc3);
+      }
+      &.gray_bg_line {
+        background-color: var(--transparent);
         border-color: var(--white-opc2);
         color: var(--white-opc2);
       }
@@ -214,6 +219,19 @@ body {
         }
       }
     }
+
+    /* ==============================
+        📌 Layout 
+    ============================== */
+    .pop_wrap {
+      .pop_contents {
+        background-color: var(--black2);
+        .pop_title {
+          color: var(--white1);
+        }
+      }
+    }
+
     /* ==============================
         📌 Layout 
     ============================== */
