@@ -97,15 +97,29 @@ function Main() {
                   <p className="num">총 갯수</p>
                   <div>
                     <Button
-                      title="Popup Open"
+                      title="Main Popup Open"
                       size="h_28"
                       color="black"
                       onClick={() => {
                         setPopup(1);
                       }}
                     />
-                    <Button title="버튼버튼" size="h_28" color="black_line" />
-                    <Button title="버튼버튼" size="h_28" color="blue" />
+                    <Button
+                      title="Side Popup Open"
+                      size="h_28"
+                      color="black_line"
+                      onClick={() => {
+                        setPopup(2);
+                      }}
+                    />
+                    <Button
+                      title="Bottom Popup Open"
+                      size="h_28"
+                      color="blue"
+                      onClick={() => {
+                        setPopup(3);
+                      }}
+                    />
                     <Button title="버튼버튼" size="h_28" color="blue_line" />
                     <Button title="버튼버튼" size="h_28" color="green" />
                     <Button title="버튼버튼" size="h_28" color="green_line" />
@@ -225,6 +239,20 @@ function Main() {
         setPopup={() => setPopup(undefined)}
       >
         {/* popup template의 구조에 맞게 작업 부탁드립니다👻 */}
+        <TemplatePopup />
+      </PopupManage>
+      <PopupManage
+        className={`${popup === 2 ? "on" : ""} side`}
+        title="Template Popup"
+        setPopup={() => setPopup(undefined)}
+      >
+        <TemplatePopup />
+      </PopupManage>
+      <PopupManage
+        className={`${popup === 3 ? "on" : ""} bottom`}
+        title="Template Popup"
+        setPopup={() => setPopup(undefined)}
+      >
         <TemplatePopup />
       </PopupManage>
     </>

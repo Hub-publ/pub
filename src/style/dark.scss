@@ -224,13 +224,25 @@ body {
     }
 
     /* ==============================
-        📌 Layout 
+        📌 Popup 
     ============================== */
+    /* 메인 팝업 */
     .pop_wrap {
       .pop_contents {
         background-color: var(--black2);
         .pop_title {
           color: var(--white1);
+        }
+      }
+    }
+    /* 📌 요소 안 팝업 */
+    .inner_popup_wrap {
+      .inner_popup {
+        background-color: var(--black2);
+        li {
+          span {
+            color: var(--white1);
+          }
         }
       }
     }

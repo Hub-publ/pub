@@ -283,6 +283,12 @@ select {
 
 /* Custom Select */
 body {
+  .css-1jqq78o-placeholder {
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
   .css-13cymwt-control,
   .css-t3ipsp-control,
   .css-16xfy0z-control {

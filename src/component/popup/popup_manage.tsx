@@ -1,4 +1,4 @@
-import { useState, Dispatch, SetStateAction, useEffect } from "react";
+import { useEffect, Dispatch, SetStateAction } from "react";
 
 interface Props {
   title: string;
@@ -8,12 +8,8 @@ interface Props {
 }
 
 function PopupManage(props: Props) {
-  const [popup, setPopup] = useState<Number | undefined>();
-  function popSizeHandler() {
-    const scroll_area = document.querySelector(
-      ".popup_scroll_area"
-    ) as HTMLElement;
-    const pop_wrap = document.querySelector(".pop_wrap") as HTMLElement;
+  const popSizeHandler = () => {
+    const pop_wrap = document.querySelectorAll(".pop_wrap");
     const pop_top = document.querySelector(".pop_top") as HTMLElement;
     const pop_btns = document.querySelector(".pop_btns") as HTMLElement;
     let popup_height;
@@ -21,45 +17,60 @@ function PopupManage(props: Props) {
     let pop_btns_height;
     let pop_top_mb;
     let pop_btns_mt;
-    if (pop_wrap) {
-      const computedStyle = window.getComputedStyle(pop_wrap);
-      popup_height = parseFloat(computedStyle.height);
+    for (let a = 0; pop_wrap.length > a; a++) {
+      const scroll_area = pop_wrap[a].querySelector(
+        ".popup_scroll_area"
+      ) as HTMLElement;
+      if (pop_wrap) {
+        const computedStyle = window.getComputedStyle(pop_wrap[a]);
+        popup_height = parseFloat(computedStyle.height);
+      }
+      if (pop_top) {
+        const computedStyle = window.getComputedStyle(pop_top);
+        pop_top_height = parseFloat(computedStyle.height);
+        pop_top_mb = parseFloat(computedStyle.marginBottom);
+      }
+      if (pop_btns) {
+        const computedStyle = window.getComputedStyle(pop_btns);
+        pop_btns_height = parseFloat(computedStyle.height);
+        pop_btns_mt = parseFloat(computedStyle.marginTop);
+      }
+      if (
+        scroll_area &&
+        popup_height &&
+        pop_top_height &&
+        pop_top_mb &&
+        pop_btns_height &&
+        pop_btns_mt
+      ) {
+        if (pop_wrap[a].classList.contains("side")) {
+          scroll_area.style.maxHeight = `${
+            popup_height -
+            pop_top_height -
+            pop_btns_height -
+            pop_top_mb -
+            pop_btns_mt
+          }px`;
+        } else {
+          scroll_area.style.maxHeight = `${
+            popup_height -
+            pop_top_height -
+            pop_btns_height -
+            pop_top_mb -
+            pop_btns_mt -
+            100
+          }px`;
+        }
+      }
     }
-    if (pop_top) {
-      const computedStyle = window.getComputedStyle(pop_top);
-      pop_top_height = parseFloat(computedStyle.height);
-      pop_top_mb = parseFloat(computedStyle.marginBottom);
-    }
-    if (pop_btns) {
-      const computedStyle = window.getComputedStyle(pop_btns);
-      pop_btns_height = parseFloat(computedStyle.height);
-      pop_btns_mt = parseFloat(computedStyle.marginTop);
-    }
-    if (
-      scroll_area &&
-      popup_height &&
-      pop_top_height &&
-      pop_top_mb &&
-      pop_btns_height &&
-      pop_btns_mt
-    ) {
-      scroll_area.style.maxHeight = `${
-        popup_height -
-        pop_top_height -
-        pop_btns_height -
-        pop_top_mb -
-        pop_btns_mt -
-        100
-      }px`;
-    }
-  }
+  };
   useEffect(() => {
     popSizeHandler();
     window.addEventListener("resize", popSizeHandler);
     return () => {
       window.removeEventListener("resize", popSizeHandler);
     };
-  }, []);
+  }, [props.setPopup]);
 
   return (
     <div className={`pop_wrap ${props.className}`}>
@@ -79,7 +90,7 @@ function PopupManage(props: Props) {
             }}
           ></button>
         </div>
-        <div>{props.children}</div>
+        {props.children}
       </div>
     </div>
   );
