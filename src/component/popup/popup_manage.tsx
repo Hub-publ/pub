@@ -3,6 +3,7 @@ import { useEffect, Dispatch, SetStateAction } from "react";
 interface Props {
   title: string;
   children: React.ReactNode;
+  popup: Number | undefined;
   setPopup: Dispatch<SetStateAction<number | undefined>>;
   className?: string;
 }
@@ -10,14 +11,14 @@ interface Props {
 function PopupManage(props: Props) {
   const popSizeHandler = () => {
     const pop_wrap = document.querySelectorAll(".pop_wrap");
-    const pop_top = document.querySelector(".pop_top") as HTMLElement;
-    const pop_btns = document.querySelector(".pop_btns") as HTMLElement;
     let popup_height;
     let pop_top_height;
     let pop_btns_height;
     let pop_top_mb;
     let pop_btns_mt;
     for (let a = 0; pop_wrap.length > a; a++) {
+      const pop_top = pop_wrap[a].querySelector(".pop_top") as HTMLElement;
+      const pop_btns = pop_wrap[a].querySelector(".pop_btns") as HTMLElement;
       const scroll_area = pop_wrap[a].querySelector(
         ".popup_scroll_area"
       ) as HTMLElement;
@@ -36,7 +37,6 @@ function PopupManage(props: Props) {
         pop_btns_mt = parseFloat(computedStyle.marginTop);
       }
       if (
-        scroll_area &&
         popup_height &&
         pop_top_height &&
         pop_top_mb &&
@@ -65,12 +65,13 @@ function PopupManage(props: Props) {
     }
   };
   useEffect(() => {
+    console.log(props.popup);
     popSizeHandler();
     window.addEventListener("resize", popSizeHandler);
     return () => {
       window.removeEventListener("resize", popSizeHandler);
     };
-  }, [props.setPopup]);
+  }, [props.popup]);
 
   return (
     <div className={`pop_wrap ${props.className}`}>

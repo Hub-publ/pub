@@ -50,7 +50,10 @@ function Header(props: Props) {
         <div className="left">
           <button
             className={`menu_btn ${fold === true ? "active" : ""}`}
-            onClick={() => setFold(!fold)}
+            onClick={() => {
+              setFold(!fold);
+              setOpenMenus([]);
+            }}
           >
             <div className="inner">
               <span></span>
@@ -108,21 +111,21 @@ function Header(props: Props) {
           <Switch id="dark_switch" onChange={(event) => DarkMode(event)} /> */}
         </div>
       </header>
+      {fold === true ? (
+        <div className="gnb_dim" onClick={() => setFold(false)}></div>
+      ) : (
+        ""
+      )}
       <nav className={`gnb ${fold === true ? "active" : ""}`}>
-        <a href="/" className="logo">
-          <img src="/img/logo_hubdnc.png" alt="HUBDNC" />
-        </a>
+        {/*
         <button className="nav_close" onClick={() => setFold(false)}>
           <img src="/img/icon/icon_close.svg" alt="" />
         </button>
-        <div className="user">
-          <p>
-            홍길동<span>(gildong1234)</span>
-          </p>
-        </div>
+        */}
         <ul className="main">
           <li className={`${openMenus.includes(1) ? "on" : ""}`}>
             <a href="javascript:;" onClick={() => toggleSubMenu(1)}>
+              <img src="/img/icon/icon_gnb01.svg" alt="상위메뉴1" />
               상위메뉴1
             </a>
             <ul className="sub" ref={(el) => (subMenuRefs.current[1] = el)}>
@@ -145,6 +148,7 @@ function Header(props: Props) {
           </li>
           <li className={`${openMenus.includes(2) ? "on" : ""}`}>
             <a href="javascript:;" onClick={() => toggleSubMenu(2)}>
+              <img src="/img/icon/icon_gnb02.svg" alt="상위메뉴2" />
               상위메뉴2
             </a>
             <ul className="sub" ref={(el) => (subMenuRefs.current[2] = el)}>
@@ -167,6 +171,7 @@ function Header(props: Props) {
           </li>
           <li className={`${openMenus.includes(3) ? "on" : ""}`}>
             <a href="javascript:;" onClick={() => toggleSubMenu(3)}>
+              <img src="/img/icon/icon_gnb03.svg" alt="상위메뉴3" />
               상위메뉴3
             </a>
             <ul className="sub" ref={(el) => (subMenuRefs.current[3] = el)}>
@@ -189,6 +194,7 @@ function Header(props: Props) {
           </li>
           <li className={`${openMenus.includes(4) ? "on" : ""}`}>
             <a href="javascript:;" onClick={() => toggleSubMenu(4)}>
+              <img src="/img/icon/icon_gnb04.svg" alt="상위메뉴4" />
               상위메뉴4
             </a>
             <ul className="sub" ref={(el) => (subMenuRefs.current[4] = el)}>
@@ -211,6 +217,7 @@ function Header(props: Props) {
           </li>
           <li className={`${openMenus.includes(5) ? "on" : ""}`}>
             <a href="javascript:;" onClick={() => toggleSubMenu(5)}>
+              <img src="/img/icon/icon_gnb05.svg" alt="상위메뉴5" />
               상위메뉴5
             </a>
             <ul className="sub" ref={(el) => (subMenuRefs.current[5] = el)}>
@@ -233,6 +240,7 @@ function Header(props: Props) {
           </li>
           <li className={`${openMenus.includes(6) ? "on" : ""}`}>
             <a href="javascript:;" onClick={() => toggleSubMenu(6)}>
+              <img src="/img/icon/icon_gnb06.svg" alt="상위메뉴6" />
               상위메뉴6
             </a>
             <ul className="sub" ref={(el) => (subMenuRefs.current[6] = el)}>
