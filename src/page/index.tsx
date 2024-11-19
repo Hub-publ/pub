@@ -9,6 +9,7 @@ import SearchInput from "../component/form/search_input";
 import Button from "../component/form/button";
 import PopupManage from "../component/popup/popup_manage";
 import TemplatePopup from "../component/popup/template_popup";
+import Pagination from "../component/form/pagination";
 interface OptionType {
   label: string;
   value: string;
@@ -85,34 +86,33 @@ function Main() {
           </ul>
         </div>
         <div className="contents_wrap">
-          <div className="container">
-            <div className="area">
-              <div className="table_wrap">
-                {/* 오른쪽 영역에 버튼만 있을 때 */}
-                {/* <div className="table_top flex justify_start">
+          <div className="area">
+            <div className="table_wrap">
+              {/* 오른쪽 영역에 버튼만 있을 때 */}
+              {/* <div className="table_top flex justify_start">
                   <p className="num">총 갯수</p>
                 </div> */}
-                {/* 양쪽 영역에 버튼만 있을 때 */}
-                <div className="table_top flex align_center justify_between">
-                  <p className="num">총 갯수</p>
-                  <div>
-                    <Button
-                      title="Popup Open"
-                      size="h_28"
-                      color="black"
-                      onClick={() => {
-                        setPopup(1);
-                      }}
-                    />
-                    <Button title="버튼버튼" size="h_28" color="black_line" />
-                    <Button title="버튼버튼" size="h_28" color="blue" />
-                    <Button title="버튼버튼" size="h_28" color="blue_line" />
-                    <Button title="버튼버튼" size="h_28" color="green" />
-                    <Button title="버튼버튼" size="h_28" color="green_line" />
-                  </div>
+              {/* 양쪽 영역에 버튼만 있을 때 */}
+              <div className="table_top flex align_center justify_between">
+                <p className="num">총 갯수</p>
+                <div>
+                  <Button
+                    title="Popup Open"
+                    size="h_28"
+                    color="black"
+                    onClick={() => {
+                      setPopup(1);
+                    }}
+                  />
+                  <Button title="버튼버튼" size="h_28" color="black_line" />
+                  <Button title="버튼버튼" size="h_28" color="blue" />
+                  <Button title="버튼버튼" size="h_28" color="blue_line" />
+                  <Button title="버튼버튼" size="h_28" color="green" />
+                  <Button title="버튼버튼" size="h_28" color="green_line" />
                 </div>
-                {/* 왼쪽 영역에 버튼만 있을 때 */}
-                {/* <div className="table_top flex justify_end">
+              </div>
+              {/* 왼쪽 영역에 버튼만 있을 때 */}
+              {/* <div className="table_top flex justify_end">
                   <Button title="버튼버튼" size="h_28" color="black" />
                   <Button title="버튼버튼" size="h_28" color="black_line" />
                   <Button title="버튼버튼" size="h_28" color="blue" />
@@ -120,98 +120,98 @@ function Main() {
                   <Button title="버튼버튼" size="h_28" color="green" />
                   <Button title="버튼버튼" size="h_28" color="green_line" />
                 </div> */}
-                <div className="scroll_area">
-                  <table className="list">
-                    <colgroup>
-                      <col width={50} />
-                    </colgroup>
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>TH</th>
-                        <th>TH</th>
-                        <th>TH</th>
-                        <th>TH</th>
-                        <th>TH</th>
-                        <th>TH</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <button className="icon ham_btn"></button>
-                        </td>
-                        <td className="ellipsis_td">
-                          <p className="ellipsis">
-                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
-                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
-                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
-                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
-                          </p>
-                        </td>
-                        <td>홍길동</td>
-                        <td className="black1">-</td>
-                        <td className="black1">사원</td>
-                        <td className="black1">010-1234-1234</td>
-                        <td className="black1">test@hubdnc.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <button className="icon ham_btn"></button>
-                        </td>
-                        <td className="ellipsis_td">
-                          <p className="ellipsis">
-                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
-                          </p>
-                        </td>
-                        <td>홍길동</td>
-                        <td className="black1">-</td>
-                        <td className="black1">사원</td>
-                        <td className="black1">010-1234-1234</td>
-                        <td className="black1">test@hubdnc.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <button className="icon ham_btn"></button>
-                        </td>
-                        <td className="ellipsis_td">
-                          <p className="ellipsis">
-                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
-                          </p>
-                        </td>
-                        <td>홍길동</td>
-                        <td className="black1">-</td>
-                        <td className="black1">사원</td>
-                        <td className="black1">010-1234-1234</td>
-                        <td className="black1">test@hubdnc.com</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <button className="icon ham_btn"></button>
-                        </td>
-                        <td className="ellipsis_td">
-                          <p className="ellipsis">
-                            텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
-                          </p>
-                        </td>
-                        <td>홍길동</td>
-                        <td className="black1">-</td>
-                        <td className="black1">사원</td>
-                        <td className="black1">010-1234-1234</td>
-                        <td className="black1">test@hubdnc.com</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div className="scroll_area">
+                <table className="list">
+                  <colgroup>
+                    <col width={50} />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black1">-</td>
+                      <td className="black1">사원</td>
+                      <td className="black1">010-1234-1234</td>
+                      <td className="black1">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black1">-</td>
+                      <td className="black1">사원</td>
+                      <td className="black1">010-1234-1234</td>
+                      <td className="black1">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black1">-</td>
+                      <td className="black1">사원</td>
+                      <td className="black1">010-1234-1234</td>
+                      <td className="black1">test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td className="black1">-</td>
+                      <td className="black1">사원</td>
+                      <td className="black1">010-1234-1234</td>
+                      <td className="black1">test@hubdnc.com</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div className="page_btn center_t">
-                <Button title="버튼버튼" size="h_38" color="black" />
-                <Button title="버튼버튼" size="h_38" color="black_line" />
-                <Button title="버튼버튼" size="h_38" color="blue" />
-                <Button title="버튼버튼" size="h_38" color="blue_line" />
-                <Button title="버튼버튼" size="h_38" color="green" />
-                <Button title="버튼버튼" size="h_38" color="green_line" />
-              </div>
+            </div>
+            <Pagination perPage={5} totalPage={12} />
+            <div className="page_btn center_t">
+              <Button title="버튼버튼" size="h_38" color="black" />
+              <Button title="버튼버튼" size="h_38" color="black_line" />
+              <Button title="버튼버튼" size="h_38" color="blue" />
+              <Button title="버튼버튼" size="h_38" color="blue_line" />
+              <Button title="버튼버튼" size="h_38" color="green" />
+              <Button title="버튼버튼" size="h_38" color="green_line" />
             </div>
           </div>
         </div>
