@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Button from "../form/button";
-import SearchInput from "../form/search_input";
 import Select from "react-select";
-import Switch from "../form/switch";
-import Checkbox from "../form/checkbox";
-import Radio from "../form/radio";
+import Button from "../../form/button";
+import SearchInput from "../../form/search_input";
+import Switch from "../../form/switch";
+import Checkbox from "../../form/checkbox";
+import Radio from "../../form/radio";
 
 interface OptionType {
   label: string;

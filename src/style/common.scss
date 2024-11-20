@@ -2,6 +2,11 @@
   공통이 자리 👻
 ================================================================== */
 
+/* ===== 📌 Size ===== */
+:root {
+  --header_height: 56px;
+}
+
 /* ===== 📌 정렬 ===== */
 
 /* flex */
@@ -108,31 +113,13 @@
 .red1 {
   color: var(--red1) !important;
 }
-.red2 {
-  color: var(--red2) !important;
-}
-.red3 {
-  color: var(--red3) !important;
-}
 /* blue 계열 */
 .blue1 {
   color: var(--blue1) !important;
 }
-.blue2 {
-  color: var(--blue2) !important;
-}
-.blue3 {
-  color: var(--blue3) !important;
-}
 /* green 계열 */
 .green1 {
   color: var(--green1) !important;
-}
-.green2 {
-  color: var(--green2) !important;
-}
-.green3 {
-  color: var(--green3) !important;
 }
 
 /* ===== 📌 버튼 ===== */
@@ -544,13 +531,17 @@
 
 /* ===== 📌 레이아웃 ===== */
 
+body {
+  background-color: var(--body-bg);
+}
 header {
+  height: var(--header_height);
   padding: 1.1429rem 1.4286rem;
   border-bottom: 1px solid var(--black3);
   position: sticky;
   top: 0;
   z-index: 40;
-  background-color: var(--black1);
+  background-color: var(--header-bg);
   .left {
     display: flex;
     align-items: center;
@@ -657,13 +648,13 @@ header {
 }
 .gnb {
   position: fixed;
-  top: 3.7144rem;
+  top: var(--header_height);
   left: 0;
   z-index: 40;
   width: 4.2857rem;
-  height: calc(100% - 4.5715rem);
+  height: calc(100% - #{var(--header_height)});
   // transform: translateX(-100%);
-  background-color: var(--black2);
+  background-color: var(--gnb-bg);
   color: var(--white1);
   transition: all 0.4s;
   &.active {
@@ -729,7 +720,6 @@ header {
         white-space: nowrap;
         overflow: hidden;
         color: var(--transparent);
-        background-color: var(--black2);
         transition: all 0.4s;
         &:after {
           content: "";
@@ -1205,6 +1195,19 @@ header {
       border: 1px solid var(--white3);
       color: var(--black3);
     }
+  }
+}
+
+.color_palette_template {
+  display: flex;
+  gap: 1.4286rem;
+  h2 {
+    font-size: 1.4rem;
+    color: var(--text-bk-to-wh1);
+    margin-bottom: 1.7143rem;
+  }
+  p {
+    font-size: 1.1rem;
   }
 }
 

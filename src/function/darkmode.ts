@@ -6,21 +6,30 @@ type OptionType = {
   value: string;
 };
 
+// 공통 변수
 const html = document.querySelector("html");
 const body = document.querySelector("body");
 // script에서 color 변수의 hex값을 한번에 변경할 수 있지만, 공통적인 문제로 style에서 제어
-export function DarkMode(event: React.ChangeEvent<HTMLInputElement>) {
+/*export function DarkMode(event: React.ChangeEvent<HTMLInputElement>) {
   const target = event.target as HTMLInputElement;
   if (body) {
     if (target.checked === true) {
       body.classList.add("dark");
-      /* 기본 텍스트 */
-      // document.documentElement.style.setProperty("--text-black2", "#ffffff");
+      document.documentElement.style.setProperty("--text-black2", "#ffffff");
     } else {
       body.classList.remove("dark");
-      /* 기본 텍스트 */
-      // document.documentElement.style.setProperty("--text-black2", "#444444");
+      document.documentElement.style.setProperty("--text-black2", "#444444");
     }
+  }
+}*/
+// Color Palette를 Script에서 제어하지 않고 Scss 에서 제어
+export function DarkMode(event: React.ChangeEvent<HTMLInputElement>) {
+  const root = document.documentElement;
+  const target = event.target as HTMLInputElement;
+  if (target.checked === true) {
+    root.setAttribute("data-theme", "dark");
+  } else {
+    root.setAttribute("data-theme", "light");
   }
 }
 

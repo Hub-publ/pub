@@ -8,8 +8,8 @@ import Radio from "../component/form/radio";
 import SearchInput from "../component/form/search_input";
 import Button from "../component/form/button";
 import PopupManage from "../component/popup/popup_manage";
-import TemplatePopup from "../component/popup/template_popup";
 import Pagination from "../component/form/pagination";
+import TemplatePopup from "../component/popup/template/template_popup";
 interface OptionType {
   label: string;
   value: string;
@@ -229,9 +229,6 @@ function Main() {
             </div>
           </div>
         </div>
-        {/* <div className="area">메인 페이지의 두 번째 영역 입니다.</div>
-      <div className="area">메인 페이지의 세 번째 영역 입니다.</div>
-      <div className="area">메인 페이지의 네 번째 영역 입니다.</div> */}
       </Container>
       <PopupManage
         className={`${popup === 1 ? "on" : ""}`}
