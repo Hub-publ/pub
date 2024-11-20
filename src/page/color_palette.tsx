@@ -1,3 +1,4 @@
+import Button from "../component/form/button";
 import Container from "../component/layout/container";
 import Header from "../component/layout/header";
 
@@ -469,6 +470,601 @@ function ColorPalette() {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="color_palette_template background">
+            {/* Black */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk1)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-gr1)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-wh1)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk2)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-gr2)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-wh2)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk3)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-gr3)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-wh3)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk4)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-gr4)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-wh4)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk5)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-gr5)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-wh5)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk6)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-gr6)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-wh6)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk7)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-gr7)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-wh7)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk8)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-gr8)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-wh8)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk9)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-gr9)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-to-wh9)" }}></li>
+              </ul>
+            </div>
+            {/* Gray */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-gr1)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-wh1)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-bk1)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-gr2)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-wh2)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-bk2)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-gr3)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-wh3)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-bk3)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-gr4)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-wh4)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-bk4)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-gr5)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-wh5)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-bk5)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-gr6)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-wh6)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-bk6)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-gr7)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-wh7)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-bk7)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-gr8)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-wh8)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-bk8)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-gr9)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-wh9)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-gr-to-bk9)" }}></li>
+              </ul>
+            </div>
+            {/* White */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh1)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-gr1)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-bk1)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh2)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-gr2)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-bk2)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh3)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-gr3)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-bk3)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh4)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-gr4)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-bk4)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh5)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-gr5)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-bk5)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh6)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-gr6)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-bk6)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh7)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-gr7)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-bk7)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh8)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-gr8)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-bk8)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh9)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-gr9)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-to-bk9)" }}></li>
+              </ul>
+            </div>
+            {/* Black Opacity */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk-opc1)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-opc-to-wh1)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk-opc2)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-opc-to-wh2)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk-opc3)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-opc-to-wh3)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk-opc4)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-opc-to-wh4)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk-opc5)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-opc-to-wh5)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk-opc6)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-opc-to-wh6)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk-opc7)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-opc-to-wh7)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk-opc8)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-opc-to-wh8)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-bk-opc9)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-bk-opc-to-wh9)" }}></li>
+              </ul>
+            </div>
+            {/* White Opacity */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh-opc1)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-opc-to-bk1)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh-opc2)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-opc-to-bk2)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh-opc3)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-opc-to-bk3)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh-opc4)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-opc-to-bk4)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh-opc5)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-opc-to-bk5)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh-opc6)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-opc-to-bk6)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh-opc7)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-opc-to-bk7)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh-opc8)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-opc-to-bk8)" }}></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--bg-wh-opc9)" }}></li>
+                <li style={{ backgroundColor: "var(--bg-wh-opc-to-bk9)" }}></li>
+              </ul>
+            </div>
+          </div>
+          <div className="color_palette_template background card">
+            {/* Black */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk1)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-gr1)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-wh1)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk2)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-gr2)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-wh2)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk3)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-gr3)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-wh3)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk4)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-gr4)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-wh4)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk5)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-gr5)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-wh5)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk6)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-gr6)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-wh6)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk7)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-gr7)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-wh7)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk8)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-gr8)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-wh8)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk9)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-gr9)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-to-wh9)" }}
+                ></li>
+              </ul>
+            </div>
+            {/* Gray */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-gr1)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-wh1)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-bk1)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-gr2)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-wh2)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-bk2)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-gr3)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-wh3)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-bk3)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-gr4)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-wh4)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-bk4)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-gr5)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-wh5)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-bk5)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-gr6)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-wh6)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-bk6)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-gr7)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-wh7)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-bk7)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-gr8)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-wh8)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-bk8)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-gr9)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-wh9)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-gr-to-bk9)" }}
+                ></li>
+              </ul>
+            </div>
+            {/* White */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh1)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-gr1)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-bk1)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh2)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-gr2)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-bk2)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh3)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-gr3)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-bk3)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh4)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-gr4)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-bk4)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh5)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-gr5)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-bk5)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh6)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-gr6)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-bk6)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh7)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-gr7)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-bk7)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh8)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-gr8)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-bk8)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh9)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-gr9)" }}
+                ></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-to-bk9)" }}
+                ></li>
+              </ul>
+            </div>
+            {/* Black Opacity */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk-opc1)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh1)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk-opc2)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh2)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk-opc3)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh3)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk-opc4)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh4)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk-opc5)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh5)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk-opc6)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh6)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk-opc7)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh7)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk-opc8)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh8)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-bk-opc9)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh9)" }}
+                ></li>
+              </ul>
+            </div>
+            {/* White Opacity */}
+            <div>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh-opc1)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk1)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh-opc2)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk2)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh-opc3)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk3)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh-opc4)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk4)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh-opc5)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk5)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh-opc6)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk6)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh-opc7)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk7)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh-opc8)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk8)" }}
+                ></li>
+              </ul>
+              <ul>
+                <li style={{ backgroundColor: "var(--card-bg-wh-opc9)" }}></li>
+                <li
+                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk9)" }}
+                ></li>
+              </ul>
+            </div>
+          </div>
+          <div className="color_palette_template">
+            <Button title="Black Scale" size="h_38" color="green" />
           </div>
         </div>
       </Container>

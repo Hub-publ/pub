@@ -1,11 +1,14 @@
 .mySwiper {
-  height: calc(100vh - 4.2857rem);
+  height: calc(100vh - 2.8571rem - #{var(--header_height)});
   background-color: khaki;
+  border: 1px solid red;
   .swiper-wrapper {
     height: 100%;
   }
   .swiper-slide {
-    border: 1px solid red;
     height: 100%;
+    &:not(:first-of-type) {
+      border-left: 1px solid red;
+    }
   }
 }

@@ -546,7 +546,7 @@ header {
     display: flex;
     align-items: center;
     .logo {
-      color: var(--white1);
+      color: var(--text-wh1);
     }
   }
   & > .right {
@@ -1201,7 +1201,11 @@ header {
 // 🐤 삐약이 테스트
 .color_palette_template {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.4286rem;
+  & + .color_palette_template {
+    margin-top: 200px;
+  }
   h2 {
     font-size: 1.4rem;
     color: var(--text-bk-to-wh1);
@@ -1209,6 +1213,32 @@ header {
   }
   p {
     font-size: 1.1rem;
+  }
+  &.background {
+    gap: 2.8571rem;
+    ul {
+      display: flex;
+      li {
+        width: 4.2857rem;
+        height: 4.2857rem;
+      }
+    }
+    &.card {
+      gap: 1.4286rem;
+      ul {
+        gap: 0.8571rem;
+        li {
+          width: 7.1429rem;
+          height: 2.8571rem;
+          border-radius: 0.5714rem;
+        }
+        &:not(:first-of-type) {
+          li {
+            margin-top: 0.8571rem;
+          }
+        }
+      }
+    }
   }
 }
 
