@@ -1,57 +1,35 @@
+import React from "react";
+import { useState } from "react";
+
 interface Props {
-  text: Array<string>;
+  options: Array<string>;
   children?: React.ReactNode;
 }
 
 function Tab(props: Props) {
+  const { options, children } = props;
+  const [tab, setTab] = useState(0);
+  const tabContents = React.Children.toArray(children);
+
   return (
     <>
-      <div>
+      <div className="tab_wrap">
         <ul className="tab">
-          <li className="on">
-            <a href="javascript:;">빨간색</a>
-          </li>
-          <li>
-            <a href="javascript:;">노란색</a>
-          </li>
-          <li>
-            <a href="javascript:;">주황색</a>
-          </li>
-          <li>
-            <a href="javascript:;">초록색</a>
-          </li>
+          {options.map((text, index) => (
+            <li key={index} className={tab === index ? "on" : ""}>
+              <a
+                href="javascript:;"
+                onClick={e => {
+                  e.preventDefault();
+                  setTab(index);
+                }}
+              >
+                {text}
+              </a>
+            </li>
+          ))}
         </ul>
-        <div className="tab_contents">
-          탭 콘텐츠 영역
-          {/* <div className="tab_item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/800px-Red_Apple.jpg"
-              alt=""
-              style={{ width: 500 }}
-            />
-          </div>
-          <div className="tab_item">
-            <img
-              src="https://cdn.sisajournal.com/news/photo/202105/216731_124666_4150.jpg"
-              alt=""
-              style={{ width: 500 }}
-            />
-          </div>
-          <div className="tab_item">
-            <img
-              src="https://m.dyaga.com/web/product/big/20200207/52f33c96359d028cd59e7fac11ee5afb.jpg"
-              alt=""
-              style={{ width: 500 }}
-            />
-          </div>
-          <div className="tab_item">
-            <img
-              src="https://www.dailysecu.com/news/photo/201906/53502_45794_3555.jpg"
-              alt=""
-              style={{ width: 500 }}
-            />
-          </div> */}
-        </div>
+        <div className="tab_contents">{tabContents[tab]}</div>
       </div>
     </>
   );

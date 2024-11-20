@@ -6,6 +6,9 @@ import Checkbox from "../component/form/checkbox";
 import Radio from "../component/form/radio";
 import SearchInput from "../component/form/search_input";
 import Tab from "../component/tab/tab";
+import SampleTabContents1 from "../component/tab/tab_content/sample/sample_tab_contents1";
+import SampleTabContents2 from "../component/tab/tab_content/sample/sample_tab_contents2";
+import SampleTabContents3 from "../component/tab/tab_content/sample/sample_tab_contents3";
 
 interface OptionType {
   label: string;
@@ -82,38 +85,18 @@ function TabSample() {
         </div>
         <div className="contents_wrap">
           <div className="area">
-            <Tab text={["빨간색", "노란색", "주황색", "초록색"]}>
-              <div className="tab_item">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/800px-Red_Apple.jpg"
-                  alt=""
-                  style={{ width: 500 }}
-                />
-              </div>
-              <div className="tab_item">
-                <img
-                  src="https://cdn.sisajournal.com/news/photo/202105/216731_124666_4150.jpg"
-                  alt=""
-                  style={{ width: 500 }}
-                />
-              </div>
-              <div className="tab_item">
-                <img
-                  src="https://m.dyaga.com/web/product/big/20200207/52f33c96359d028cd59e7fac11ee5afb.jpg"
-                  alt=""
-                  style={{ width: 500 }}
-                />
-              </div>
-              <div className="tab_item">
-                <img
-                  src="https://www.dailysecu.com/news/photo/201906/53502_45794_3555.jpg"
-                  alt=""
-                  style={{ width: 500 }}
-                />
-              </div>
-              {/* <div>탭1 내용</div>
-              <div>탭2 내용</div>
-              <div>탭3 내용</div> */}
+            {/*
+             - <Tab> 컴포넌트 사용법
+             - 1. options 배열에 탭 메뉴명을 순서대로 기재.
+             - 2. 각 탭의 콘텐츠 내용을 <Tab>의 Children으로 탭 순서에 맞게 콘텐츠 작업. 
+             */}
+            <Tab options={["빨간색", "노란색", "초록색"]}>
+              {/* 1번째 탭(빨간색) 내용 */}
+              <SampleTabContents1 />
+              {/* 2번째 탭(노란색) 내용 */}
+              <SampleTabContents2 />
+              {/* 3번째 탭(초록색) 내용 */}
+              <SampleTabContents3 />
             </Tab>
           </div>
         </div>

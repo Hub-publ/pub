@@ -1252,9 +1252,9 @@ header {
       line-height: 2rem;
       font-size: 0.8571rem;
       font-weight: 500;
-      color: var(--black2);
-      background-color: var(--white1);
-      border: 1px solid var(--black2);
+      color: #444;
+      background-color: #fff;
+      border: 1px solid #444;
     }
     &:not(:first-child) {
       a {
@@ -1273,8 +1273,8 @@ header {
     }
     &.on {
       a {
-        color: var(--white1);
-        background-color: var(--black2);
+        color: #fff;
+        background-color: #444;
       }
     }
   }
@@ -1282,7 +1282,7 @@ header {
 .tab_contents {
   padding: 1.4286rem;
   border-radius: 0.2857rem;
-  border: 1px solid var(--black2);
+  border: 1px solid #444;
 }
 
 @media screen and (min-width: 1921px) {
