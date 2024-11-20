@@ -283,7 +283,7 @@ function Table() {
                 </tbody>
               </table>
             </div>
-            <Pagination perPage={5} totalPage={12} />
+            <Pagination totalPage={5} />
             <div className="page_btn center_t">
               <Button title="버튼버튼" size="h_38" color="black" />
               <Button title="버튼버튼" size="h_38" color="black_line" />
