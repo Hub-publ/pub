@@ -158,6 +158,146 @@
   --text-wh-opc-to-bk9: rgba(255, 255, 255, 0.9);
 
   /* =============================
+    Button TEXT
+  ============================= */
+
+  /* 🌟 Black 계열 */
+  --btn-text-bk1: #000;
+  --btn-text-bk-to-wh1: #000;
+  --btn-text-bk-to-gr1: #000;
+  --btn-text-bk2: #040404;
+  --btn-text-bk-to-wh2: #040404;
+  --btn-text-bk-to-gr2: #040404;
+  --btn-text-bk3: #080808;
+  --btn-text-bk-to-wh3: #080808;
+  --btn-text-bk-to-gr3: #080808;
+  --btn-text-bk4: #121212;
+  --btn-text-bk-to-wh4: #121212;
+  --btn-text-bk-to-gr4: #121212;
+  --btn-text-bk5: #161616;
+  --btn-text-bk-to-wh5: #161616;
+  --btn-text-bk-to-gr5: #161616;
+  --btn-text-bk6: #202020;
+  --btn-text-bk-to-wh6: #202020;
+  --btn-text-bk-to-gr6: #202020;
+  --btn-text-bk7: #242424;
+  --btn-text-bk-to-wh7: #242424;
+  --btn-text-bk-to-gr7: #242424;
+  --btn-text-bk8: #282828;
+  --btn-text-bk-to-wh8: #282828;
+  --btn-text-bk-to-gr8: #282828;
+  --btn-text-bk9: #323232;
+  --btn-text-bk-to-wh9: #323232;
+  --btn-text-bk-to-gr9: #323232;
+
+  /* 🌟 Gray 계열 */
+  --btn-text-gr1: #696969;
+  --btn-text-gr-to-bk1: #696969;
+  --btn-text-gr-to-wh1: #696969;
+  --btn-text-gr2: #707070;
+  --btn-text-gr-to-bk2: #707070;
+  --btn-text-gr-to-wh2: #707070;
+  --btn-text-gr3: #787878;
+  --btn-text-gr-to-bk3: #787878;
+  --btn-text-gr-to-wh3: #787878;
+  --btn-text-gr4: #888888;
+  --btn-text-gr-to-bk4: #888888;
+  --btn-text-gr-to-wh4: #888888;
+  --btn-text-gr5: #909090;
+  --btn-text-gr-to-bk5: #909090;
+  --btn-text-gr-to-wh5: #909090;
+  --btn-text-gr6: #989898;
+  --btn-text-gr-to-bk6: #989898;
+  --btn-text-gr-to-wh6: #989898;
+  --btn-text-gr7: #a0a0a0;
+  --btn-text-gr-to-bk7: #a0a0a0;
+  --btn-text-gr-to-wh7: #a0a0a0;
+  --btn-text-gr8: #a8a8a8;
+  --btn-text-gr-to-bk8: #a8a8a8;
+  --btn-text-gr-to-wh8: #a8a8a8;
+  --btn-text-gr9: #a9a9a9;
+  --btn-text-gr-to-bk9: #a9a9a9;
+  --btn-text-gr-to-wh9: #a9a9a9;
+
+  /* 🌟 White 계열 */
+  --btn-text-wh1: #ffffff;
+  --btn-text-wh-to-bk1: #ffffff;
+  --btn-text-wh-to-gr1: #ffffff;
+  --btn-text-wh2: #f8f8f8;
+  --btn-text-wh-to-bk2: #f8f8f8;
+  --btn-text-wh-to-gr2: #f8f8f8;
+  --btn-text-wh3: #f5f5f5;
+  --btn-text-wh-to-bk3: #f5f5f5;
+  --btn-text-wh-to-gr3: #f5f5f5;
+  --btn-text-wh4: #f0f0f0;
+  --btn-text-wh-to-bk4: #f0f0f0;
+  --btn-text-wh-to-gr4: #f0f0f0;
+  --btn-text-wh5: #e8e8e8;
+  --btn-text-wh-to-bk5: #e8e8e8;
+  --btn-text-wh-to-gr5: #e8e8e8;
+  --btn-text-wh6: #e0e0e0;
+  --btn-text-wh-to-bk6: #e0e0e0;
+  --btn-text-wh-to-gr6: #e0e0e0;
+  --btn-text-wh7: #dcdcdc;
+  --btn-text-wh-to-bk7: #dcdcdc;
+  --btn-text-wh-to-gr7: #dcdcdc;
+  --btn-text-wh8: #d8d8d8;
+  --btn-text-wh-to-bk8: #d8d8d8;
+  --btn-text-wh-to-gr8: #d8d8d8;
+  --btn-text-wh9: #d3d3d3;
+  --btn-text-wh-to-bk9: #d3d3d3;
+  --btn-text-wh-to-gr9: #d3d3d3;
+
+  /* 🌟 red 계열 */
+  --btn-text-red1: #dc143c;
+
+  /* 🌟 blue 계열 */
+  --btn-text-blue1: #0083ff;
+
+  /* 🌟 green 계열 */
+  --btn-text-green1: #66cc66;
+
+  /* 🌟 Black 계열 (투명도)*/
+  --btn-text-bk-opc1: rgba(0, 0, 0, 0.1);
+  --btn-text-bk-opc-to-wh1: rgba(0, 0, 0, 0.1);
+  --btn-text-bk-opc2: rgba(0, 0, 0, 0.2);
+  --btn-text-bk-opc-to-wh2: rgba(0, 0, 0, 0.2);
+  --btn-text-bk-opc3: rgba(0, 0, 0, 0.3);
+  --btn-text-bk-opc-to-wh3: rgba(0, 0, 0, 0.3);
+  --btn-text-bk-opc4: rgba(0, 0, 0, 0.4);
+  --btn-text-bk-opc-to-wh4: rgba(0, 0, 0, 0.4);
+  --btn-text-bk-opc5: rgba(0, 0, 0, 0.5);
+  --btn-text-bk-opc-to-wh5: rgba(0, 0, 0, 0.5);
+  --btn-text-bk-opc6: rgba(0, 0, 0, 0.6);
+  --btn-text-bk-opc-to-wh6: rgba(0, 0, 0, 0.6);
+  --btn-text-bk-opc7: rgba(0, 0, 0, 0.7);
+  --btn-text-bk-opc-to-wh7: rgba(0, 0, 0, 0.7);
+  --btn-text-bk-opc8: rgba(0, 0, 0, 0.8);
+  --btn-text-bk-opc-to-wh8: rgba(0, 0, 0, 0.8);
+  --btn-text-bk-opc9: rgba(0, 0, 0, 0.9);
+  --btn-text-bk-opc-to-wh9: rgba(0, 0, 0, 0.9);
+
+  /* 🌟 White 계열 (투명도)*/
+  --btn-text-wh-opc1: rgba(255, 255, 255, 0.1);
+  --btn-text-wh-opc-to-bk1: rgba(255, 255, 255, 0.1);
+  --btn-text-wh-opc2: rgba(255, 255, 255, 0.2);
+  --btn-text-wh-opc-to-bk2: rgba(255, 255, 255, 0.2);
+  --btn-text-wh-opc3: rgba(255, 255, 255, 0.3);
+  --btn-text-wh-opc-to-bk3: rgba(255, 255, 255, 0.3);
+  --btn-text-wh-opc4: rgba(255, 255, 255, 0.4);
+  --btn-text-wh-opc-to-bk4: rgba(255, 255, 255, 0.4);
+  --btn-text-wh-opc5: rgba(255, 255, 255, 0.5);
+  --btn-text-wh-opc-to-bk5: rgba(255, 255, 255, 0.5);
+  --btn-text-wh-opc6: rgba(255, 255, 255, 0.6);
+  --btn-text-wh-opc-to-bk6: rgba(255, 255, 255, 0.6);
+  --btn-text-wh-opc7: rgba(255, 255, 255, 0.7);
+  --btn-text-wh-opc-to-bk7: rgba(255, 255, 255, 0.7);
+  --btn-text-wh-opc8: rgba(255, 255, 255, 0.8);
+  --btn-text-wh-opc-to-bk8: rgba(255, 255, 255, 0.8);
+  --btn-text-wh-opc9: rgba(255, 255, 255, 0.9);
+  --btn-text-wh-opc-to-bk9: rgba(255, 255, 255, 0.9);
+
+  /* =============================
     Background
   ============================= */
 
@@ -537,44 +677,44 @@
   --btn-bg-green1: #66cc66;
 
   /* 🌟 Black 계열 (투명도)*/
-  --card-bg-bk-opc1: rgba(0, 0, 0, 0.1);
-  --card-bg-bk-opc-to-wh1: rgba(0, 0, 0, 0.1);
-  --card-bg-bk-opc2: rgba(0, 0, 0, 0.2);
-  --card-bg-bk-opc-to-wh2: rgba(0, 0, 0, 0.2);
-  --card-bg-bk-opc3: rgba(0, 0, 0, 0.3);
-  --card-bg-bk-opc-to-wh3: rgba(0, 0, 0, 0.3);
-  --card-bg-bk-opc4: rgba(0, 0, 0, 0.4);
-  --card-bg-bk-opc-to-wh4: rgba(0, 0, 0, 0.4);
-  --card-bg-bk-opc5: rgba(0, 0, 0, 0.5);
-  --card-bg-bk-opc-to-wh5: rgba(0, 0, 0, 0.5);
-  --card-bg-bk-opc6: rgba(0, 0, 0, 0.6);
-  --card-bg-bk-opc-to-wh6: rgba(0, 0, 0, 0.6);
-  --card-bg-bk-opc7: rgba(0, 0, 0, 0.7);
-  --card-bg-bk-opc-to-wh7: rgba(0, 0, 0, 0.7);
-  --card-bg-bk-opc8: rgba(0, 0, 0, 0.8);
-  --card-bg-bk-opc-to-wh8: rgba(0, 0, 0, 0.8);
-  --card-bg-bk-opc9: rgba(0, 0, 0, 0.9);
-  --card-bg-bk-opc-to-wh9: rgba(0, 0, 0, 0.9);
+  --btn-bg-bk-opc1: rgba(0, 0, 0, 0.1);
+  --btn-bg-bk-opc-to-wh1: rgba(0, 0, 0, 0.1);
+  --btn-bg-bk-opc2: rgba(0, 0, 0, 0.2);
+  --btn-bg-bk-opc-to-wh2: rgba(0, 0, 0, 0.2);
+  --btn-bg-bk-opc3: rgba(0, 0, 0, 0.3);
+  --btn-bg-bk-opc-to-wh3: rgba(0, 0, 0, 0.3);
+  --btn-bg-bk-opc4: rgba(0, 0, 0, 0.4);
+  --btn-bg-bk-opc-to-wh4: rgba(0, 0, 0, 0.4);
+  --btn-bg-bk-opc5: rgba(0, 0, 0, 0.5);
+  --btn-bg-bk-opc-to-wh5: rgba(0, 0, 0, 0.5);
+  --btn-bg-bk-opc6: rgba(0, 0, 0, 0.6);
+  --btn-bg-bk-opc-to-wh6: rgba(0, 0, 0, 0.6);
+  --btn-bg-bk-opc7: rgba(0, 0, 0, 0.7);
+  --btn-bg-bk-opc-to-wh7: rgba(0, 0, 0, 0.7);
+  --btn-bg-bk-opc8: rgba(0, 0, 0, 0.8);
+  --btn-bg-bk-opc-to-wh8: rgba(0, 0, 0, 0.8);
+  --btn-bg-bk-opc9: rgba(0, 0, 0, 0.9);
+  --btn-bg-bk-opc-to-wh9: rgba(0, 0, 0, 0.9);
 
   /* 🌟 White 계열 (투명도)*/
-  --card-bg-wh-opc1: rgba(255, 255, 255, 0.1);
-  --card-bg-wh-opc-to-bk1: rgba(255, 255, 255, 0.1);
-  --card-bg-wh-opc2: rgba(255, 255, 255, 0.2);
-  --card-bg-wh-opc-to-bk2: rgba(255, 255, 255, 0.2);
-  --card-bg-wh-opc3: rgba(255, 255, 255, 0.3);
-  --card-bg-wh-opc-to-bk3: rgba(255, 255, 255, 0.3);
-  --card-bg-wh-opc4: rgba(255, 255, 255, 0.4);
-  --card-bg-wh-opc-to-bk4: rgba(255, 255, 255, 0.4);
-  --card-bg-wh-opc5: rgba(255, 255, 255, 0.5);
-  --card-bg-wh-opc-to-bk5: rgba(255, 255, 255, 0.5);
-  --card-bg-wh-opc6: rgba(255, 255, 255, 0.6);
-  --card-bg-wh-opc-to-bk6: rgba(255, 255, 255, 0.6);
-  --card-bg-wh-opc7: rgba(255, 255, 255, 0.7);
-  --card-bg-wh-opc-to-bk7: rgba(255, 255, 255, 0.7);
-  --card-bg-wh-opc8: rgba(255, 255, 255, 0.8);
-  --card-bg-wh-opc-to-bk8: rgba(255, 255, 255, 0.8);
-  --card-bg-wh-opc9: rgba(255, 255, 255, 0.9);
-  --card-bg-wh-opc-to-bk9: rgba(255, 255, 255, 0.9);
+  --btn-bg-wh-opc1: rgba(255, 255, 255, 0.1);
+  --btn-bg-wh-opc-to-bk1: rgba(255, 255, 255, 0.1);
+  --btn-bg-wh-opc2: rgba(255, 255, 255, 0.2);
+  --btn-bg-wh-opc-to-bk2: rgba(255, 255, 255, 0.2);
+  --btn-bg-wh-opc3: rgba(255, 255, 255, 0.3);
+  --btn-bg-wh-opc-to-bk3: rgba(255, 255, 255, 0.3);
+  --btn-bg-wh-opc4: rgba(255, 255, 255, 0.4);
+  --btn-bg-wh-opc-to-bk4: rgba(255, 255, 255, 0.4);
+  --btn-bg-wh-opc5: rgba(255, 255, 255, 0.5);
+  --btn-bg-wh-opc-to-bk5: rgba(255, 255, 255, 0.5);
+  --btn-bg-wh-opc6: rgba(255, 255, 255, 0.6);
+  --btn-bg-wh-opc-to-bk6: rgba(255, 255, 255, 0.6);
+  --btn-bg-wh-opc7: rgba(255, 255, 255, 0.7);
+  --btn-bg-wh-opc-to-bk7: rgba(255, 255, 255, 0.7);
+  --btn-bg-wh-opc8: rgba(255, 255, 255, 0.8);
+  --btn-bg-wh-opc-to-bk8: rgba(255, 255, 255, 0.8);
+  --btn-bg-wh-opc9: rgba(255, 255, 255, 0.9);
+  --btn-bg-wh-opc-to-bk9: rgba(255, 255, 255, 0.9);
 
   /* =============================
     Table Background
@@ -778,32 +918,90 @@
 
   /* 🌟 Black 계열 */
   --btn-bd-bk1: #000;
-  --btn-bd-bk2: #111;
-  --btn-bd-bk3: #222;
-  --btn-bd-bk4: #333;
-  --btn-bd-bk5: #444;
-  --btn-bd-bk6: #555;
-  --btn-bd-bk7: #666;
-  --btn-bd-bk8: #777;
-  --btn-bd-bk9: #888;
+  --btn-bd-bk-to-wh1: #000;
+  --btn-bd-bk-to-gr1: #000;
+  --btn-bd-bk2: #040404;
+  --btn-bd-bk-to-wh2: #040404;
+  --btn-bd-bk-to-gr2: #040404;
+  --btn-bd-bk3: #080808;
+  --btn-bd-bk-to-wh3: #080808;
+  --btn-bd-bk-to-gr3: #080808;
+  --btn-bd-bk4: #121212;
+  --btn-bd-bk-to-wh4: #121212;
+  --btn-bd-bk-to-gr4: #121212;
+  --btn-bd-bk5: #161616;
+  --btn-bd-bk-to-wh5: #161616;
+  --btn-bd-bk-to-gr5: #161616;
+  --btn-bd-bk6: #202020;
+  --btn-bd-bk-to-wh6: #202020;
+  --btn-bd-bk-to-gr6: #202020;
+  --btn-bd-bk7: #242424;
+  --btn-bd-bk-to-wh7: #242424;
+  --btn-bd-bk-to-gr7: #242424;
+  --btn-bd-bk8: #282828;
+  --btn-bd-bk-to-wh8: #282828;
+  --btn-bd-bk-to-gr8: #282828;
+  --btn-bd-bk9: #323232;
+  --btn-bd-bk-to-wh9: #323232;
+  --btn-bd-bk-to-gr9: #323232;
 
   /* 🌟 Gray 계열 */
-  --btn-bd-gr1: #808080;
-  --btn-bd-gr2: #909090;
-  --btn-bd-gr3: #a0a0a0;
-  --btn-bd-gr4: #a9a9a9;
-  --btn-bd-gr5: #bebebe;
-  --btn-bd-gr6: #c8c8c8;
-  --btn-bd-gr7: #d3d3d3;
+  --btn-bd-gr1: #696969;
+  --btn-bd-gr-to-bk1: #696969;
+  --btn-bd-gr-to-wh1: #696969;
+  --btn-bd-gr2: #707070;
+  --btn-bd-gr-to-bk2: #707070;
+  --btn-bd-gr-to-wh2: #707070;
+  --btn-bd-gr3: #787878;
+  --btn-bd-gr-to-bk3: #787878;
+  --btn-bd-gr-to-wh3: #787878;
+  --btn-bd-gr4: #888888;
+  --btn-bd-gr-to-bk4: #888888;
+  --btn-bd-gr-to-wh4: #888888;
+  --btn-bd-gr5: #909090;
+  --btn-bd-gr-to-bk5: #909090;
+  --btn-bd-gr-to-wh5: #909090;
+  --btn-bd-gr6: #989898;
+  --btn-bd-gr-to-bk6: #989898;
+  --btn-bd-gr-to-wh6: #989898;
+  --btn-bd-gr7: #a0a0a0;
+  --btn-bd-gr-to-bk7: #a0a0a0;
+  --btn-bd-gr-to-wh7: #a0a0a0;
+  --btn-bd-gr8: #a8a8a8;
+  --btn-bd-gr-to-bk8: #a8a8a8;
+  --btn-bd-gr-to-wh8: #a8a8a8;
+  --btn-bd-gr9: #a9a9a9;
+  --btn-bd-gr-to-bk9: #a9a9a9;
+  --btn-bd-gr-to-wh9: #a9a9a9;
 
   /* 🌟 White 계열 */
   --btn-bd-wh1: #ffffff;
+  --btn-bd-wh-to-bk1: #ffffff;
+  --btn-bd-wh-to-gr1: #ffffff;
   --btn-bd-wh2: #f8f8f8;
+  --btn-bd-wh-to-bk2: #f8f8f8;
+  --btn-bd-wh-to-gr2: #f8f8f8;
   --btn-bd-wh3: #f5f5f5;
+  --btn-bd-wh-to-bk3: #f5f5f5;
+  --btn-bd-wh-to-gr3: #f5f5f5;
   --btn-bd-wh4: #f0f0f0;
+  --btn-bd-wh-to-bk4: #f0f0f0;
+  --btn-bd-wh-to-gr4: #f0f0f0;
   --btn-bd-wh5: #e8e8e8;
+  --btn-bd-wh-to-bk5: #e8e8e8;
+  --btn-bd-wh-to-gr5: #e8e8e8;
   --btn-bd-wh6: #e0e0e0;
+  --btn-bd-wh-to-bk6: #e0e0e0;
+  --btn-bd-wh-to-gr6: #e0e0e0;
   --btn-bd-wh7: #dcdcdc;
+  --btn-bd-wh-to-bk7: #dcdcdc;
+  --btn-bd-wh-to-gr7: #dcdcdc;
+  --btn-bd-wh8: #d8d8d8;
+  --btn-bd-wh-to-bk8: #d8d8d8;
+  --btn-bd-wh-to-gr8: #d8d8d8;
+  --btn-bd-wh9: #d3d3d3;
+  --btn-bd-wh-to-bk9: #d3d3d3;
+  --btn-bd-wh-to-gr9: #d3d3d3;
 
   /* 🌟 red 계열 */
   --btn-bd-red1: #dc143c;
@@ -816,25 +1014,43 @@
 
   /* 🌟 Black 계열 (투명도)*/
   --btn-bd-bk-opc1: rgba(0, 0, 0, 0.1);
+  --btn-bd-bk-opc-to-wh1: rgba(0, 0, 0, 0.1);
   --btn-bd-bk-opc2: rgba(0, 0, 0, 0.2);
+  --btn-bd-bk-opc-to-wh2: rgba(0, 0, 0, 0.2);
   --btn-bd-bk-opc3: rgba(0, 0, 0, 0.3);
+  --btn-bd-bk-opc-to-wh3: rgba(0, 0, 0, 0.3);
   --btn-bd-bk-opc4: rgba(0, 0, 0, 0.4);
+  --btn-bd-bk-opc-to-wh4: rgba(0, 0, 0, 0.4);
   --btn-bd-bk-opc5: rgba(0, 0, 0, 0.5);
+  --btn-bd-bk-opc-to-wh5: rgba(0, 0, 0, 0.5);
   --btn-bd-bk-opc6: rgba(0, 0, 0, 0.6);
+  --btn-bd-bk-opc-to-wh6: rgba(0, 0, 0, 0.6);
   --btn-bd-bk-opc7: rgba(0, 0, 0, 0.7);
+  --btn-bd-bk-opc-to-wh7: rgba(0, 0, 0, 0.7);
   --btn-bd-bk-opc8: rgba(0, 0, 0, 0.8);
+  --btn-bd-bk-opc-to-wh8: rgba(0, 0, 0, 0.8);
   --btn-bd-bk-opc9: rgba(0, 0, 0, 0.9);
+  --btn-bd-bk-opc-to-wh9: rgba(0, 0, 0, 0.9);
 
   /* 🌟 White 계열 (투명도)*/
   --btn-bd-wh-opc1: rgba(255, 255, 255, 0.1);
+  --btn-bd-wh-opc-to-bk1: rgba(255, 255, 255, 0.1);
   --btn-bd-wh-opc2: rgba(255, 255, 255, 0.2);
+  --btn-bd-wh-opc-to-bk2: rgba(255, 255, 255, 0.2);
   --btn-bd-wh-opc3: rgba(255, 255, 255, 0.3);
+  --btn-bd-wh-opc-to-bk3: rgba(255, 255, 255, 0.3);
   --btn-bd-wh-opc4: rgba(255, 255, 255, 0.4);
+  --btn-bd-wh-opc-to-bk4: rgba(255, 255, 255, 0.4);
   --btn-bd-wh-opc5: rgba(255, 255, 255, 0.5);
+  --btn-bd-wh-opc-to-bk5: rgba(255, 255, 255, 0.5);
   --btn-bd-wh-opc6: rgba(255, 255, 255, 0.6);
+  --btn-bd-wh-opc-to-bk6: rgba(255, 255, 255, 0.6);
   --btn-bd-wh-opc7: rgba(255, 255, 255, 0.7);
+  --btn-bd-wh-opc-to-bk7: rgba(255, 255, 255, 0.7);
   --btn-bd-wh-opc8: rgba(255, 255, 255, 0.8);
+  --btn-bd-wh-opc-to-bk8: rgba(255, 255, 255, 0.8);
   --btn-bd-wh-opc9: rgba(255, 255, 255, 0.9);
+  --btn-bd-wh-opc-to-bk9: rgba(255, 255, 255, 0.9);
 
   /* =============================
     Box Shadow Color
@@ -955,6 +1171,92 @@
   --text-wh-opc-to-bk7: var(--text-bk-opc7);
   --text-wh-opc-to-bk8: var(--text-bk-opc8);
   --text-wh-opc-to-bk9: var(--text-bk-opc9);
+
+  /* =============================
+    Button Font Color
+  ============================= */
+
+  /* 🌟 Black 계열 */
+  --btn-text-bk-to-wh1: var(--btn-text-wh1);
+  --btn-text-bk-to-gr1: var(--btn-text-gr1);
+  --btn-text-bk-to-wh2: var(--btn-text-wh2);
+  --btn-text-bk-to-gr2: var(--btn-text-gr2);
+  --btn-text-bk-to-wh3: var(--btn-text-wh3);
+  --btn-text-bk-to-gr3: var(--btn-text-gr3);
+  --btn-text-bk-to-wh4: var(--btn-text-wh4);
+  --btn-text-bk-to-gr4: var(--btn-text-gr4);
+  --btn-text-bk-to-wh5: var(--btn-text-wh5);
+  --btn-text-bk-to-gr5: var(--btn-text-gr5);
+  --btn-text-bk-to-wh6: var(--btn-text-wh6);
+  --btn-text-bk-to-gr6: var(--btn-text-gr6);
+  --btn-text-bk-to-wh7: var(--btn-text-wh7);
+  --btn-text-bk-to-gr7: var(--btn-text-gr7);
+  --btn-text-bk-to-wh8: var(--btn-text-wh8);
+  --btn-text-bk-to-gr8: var(--btn-text-gr8);
+  --btn-text-bk-to-wh9: var(--btn-text-wh9);
+  --btn-text-bk-to-gr9: var(--btn-text-gr9);
+
+  /* 🌟 Gray 계열 */
+  --btn-text-gr-to-bk1: var(--btn-text-bk1);
+  --btn-text-gr-to-wh1: var(--btn-text-wh1);
+  --btn-text-gr-to-bk2: var(--btn-text-bk2);
+  --btn-text-gr-to-wh2: var(--btn-text-wh2);
+  --btn-text-gr-to-bk3: var(--btn-text-bk3);
+  --btn-text-gr-to-wh3: var(--btn-text-wh3);
+  --btn-text-gr-to-bk4: var(--btn-text-bk4);
+  --btn-text-gr-to-wh4: var(--btn-text-wh4);
+  --btn-text-gr-to-bk5: var(--btn-text-bk5);
+  --btn-text-gr-to-wh5: var(--btn-text-wh5);
+  --btn-text-gr-to-bk6: var(--btn-text-bk6);
+  --btn-text-gr-to-wh6: var(--btn-text-wh6);
+  --btn-text-gr-to-bk7: var(--btn-text-bk7);
+  --btn-text-gr-to-wh7: var(--btn-text-wh7);
+  --btn-text-gr-to-bk8: var(--btn-text-bk8);
+  --btn-text-gr-to-wh8: var(--btn-text-wh8);
+  --btn-text-gr-to-bk9: var(--btn-text-bk9);
+  --btn-text-gr-to-wh9: var(--btn-text-wh9);
+
+  /* 🌟 White 계열 */
+  --btn-text-wh-to-bk1: var(--btn-text-bk1);
+  --btn-text-wh-to-gr1: var(--btn-text-gr1);
+  --btn-text-wh-to-bk2: var(--btn-text-bk2);
+  --btn-text-wh-to-gr2: var(--btn-text-gr2);
+  --btn-text-wh-to-bk3: var(--btn-text-bk3);
+  --btn-text-wh-to-gr3: var(--btn-text-gr3);
+  --btn-text-wh-to-bk4: var(--btn-text-bk4);
+  --btn-text-wh-to-gr4: var(--btn-text-gr4);
+  --btn-text-wh-to-bk5: var(--btn-text-bk5);
+  --btn-text-wh-to-gr5: var(--btn-text-gr5);
+  --btn-text-wh-to-bk6: var(--btn-text-bk6);
+  --btn-text-wh-to-gr6: var(--btn-text-gr6);
+  --btn-text-wh-to-bk7: var(--btn-text-bk7);
+  --btn-text-wh-to-gr7: var(--btn-text-gr7);
+  --btn-text-wh-to-bk8: var(--btn-text-bk8);
+  --btn-text-wh-to-gr8: var(--btn-text-gr8);
+  --btn-text-wh-to-bk9: var(--btn-text-bk9);
+  --btn-text-wh-to-gr9: var(--btn-text-gr9);
+
+  /* 🌟 Black 계열 (투명도) */
+  --btn-text-bk-opc-to-wh1: var(--btn-text-wh-opc1);
+  --btn-text-bk-opc-to-wh2: var(--btn-text-wh-opc2);
+  --btn-text-bk-opc-to-wh3: var(--btn-text-wh-opc3);
+  --btn-text-bk-opc-to-wh4: var(--btn-text-wh-opc4);
+  --btn-text-bk-opc-to-wh5: var(--btn-text-wh-opc5);
+  --btn-text-bk-opc-to-wh6: var(--btn-text-wh-opc6);
+  --btn-text-bk-opc-to-wh7: var(--btn-text-wh-opc7);
+  --btn-text-bk-opc-to-wh8: var(--btn-text-wh-opc8);
+  --btn-text-bk-opc-to-wh9: var(--btn-text-wh-opc9);
+
+  /* 🌟 White 계열 (투명도) */
+  --btn-text-wh-opc-to-bk1: var(--btn-text-bk-opc1);
+  --btn-text-wh-opc-to-bk2: var(--btn-text-bk-opc2);
+  --btn-text-wh-opc-to-bk3: var(--btn-text-bk-opc3);
+  --btn-text-wh-opc-to-bk4: var(--btn-text-bk-opc4);
+  --btn-text-wh-opc-to-bk5: var(--btn-text-bk-opc5);
+  --btn-text-wh-opc-to-bk6: var(--btn-text-bk-opc6);
+  --btn-text-wh-opc-to-bk7: var(--btn-text-bk-opc7);
+  --btn-text-wh-opc-to-bk8: var(--btn-text-bk-opc8);
+  --btn-text-wh-opc-to-bk9: var(--btn-text-bk-opc9);
 
   /* =============================
     Background Color
@@ -1213,4 +1515,90 @@
   --btn-bg-wh-opc-to-bk7: var(--btn-bg-bk-opc7);
   --btn-bg-wh-opc-to-bk8: var(--btn-bg-bk-opc8);
   --btn-bg-wh-opc-to-bk9: var(--btn-bg-bk-opc9);
+
+  /* =============================
+    Button Border Color
+  ============================= */
+
+  /* 🌟 Black 계열 */
+  --btn-bd-bk-to-wh1: var(--btn-bd-wh1);
+  --btn-bd-bk-to-gr1: var(--btn-bd-gr1);
+  --btn-bd-bk-to-wh2: var(--btn-bd-wh2);
+  --btn-bd-bk-to-gr2: var(--btn-bd-gr2);
+  --btn-bd-bk-to-wh3: var(--btn-bd-wh3);
+  --btn-bd-bk-to-gr3: var(--btn-bd-gr3);
+  --btn-bd-bk-to-wh4: var(--btn-bd-wh4);
+  --btn-bd-bk-to-gr4: var(--btn-bd-gr4);
+  --btn-bd-bk-to-wh5: var(--btn-bd-wh5);
+  --btn-bd-bk-to-gr5: var(--btn-bd-gr5);
+  --btn-bd-bk-to-wh6: var(--btn-bd-wh6);
+  --btn-bd-bk-to-gr6: var(--btn-bd-gr6);
+  --btn-bd-bk-to-wh7: var(--btn-bd-wh7);
+  --btn-bd-bk-to-gr7: var(--btn-bd-gr7);
+  --btn-bd-bk-to-wh8: var(--btn-bd-wh8);
+  --btn-bd-bk-to-gr8: var(--btn-bd-gr8);
+  --btn-bd-bk-to-wh9: var(--btn-bd-wh9);
+  --btn-bd-bk-to-gr9: var(--btn-bd-gr9);
+
+  /* 🌟 Gray 계열 */
+  --btn-bd-gr-to-wh1: var(--btn-bd-wh1);
+  --btn-bd-gr-to-bk1: var(--btn-bd-bk1);
+  --btn-bd-gr-to-wh2: var(--btn-bd-wh2);
+  --btn-bd-gr-to-bk2: var(--btn-bd-bk2);
+  --btn-bd-gr-to-wh3: var(--btn-bd-wh3);
+  --btn-bd-gr-to-bk3: var(--btn-bd-bk3);
+  --btn-bd-gr-to-wh4: var(--btn-bd-wh4);
+  --btn-bd-gr-to-bk4: var(--btn-bd-bk4);
+  --btn-bd-gr-to-wh5: var(--btn-bd-wh5);
+  --btn-bd-gr-to-bk5: var(--btn-bd-bk5);
+  --btn-bd-gr-to-wh6: var(--btn-bd-wh6);
+  --btn-bd-gr-to-bk6: var(--btn-bd-bk6);
+  --btn-bd-gr-to-wh7: var(--btn-bd-wh7);
+  --btn-bd-gr-to-bk7: var(--btn-bd-bk7);
+  --btn-bd-gr-to-wh8: var(--btn-bd-wh8);
+  --btn-bd-gr-to-bk8: var(--btn-bd-bk8);
+  --btn-bd-gr-to-wh9: var(--btn-bd-wh9);
+  --btn-bd-gr-to-bk9: var(--btn-bd-bk9);
+
+  /* 🌟 White 계열 */
+  --btn-bd-wh-to-gr1: var(--btn-bd-gr1);
+  --btn-bd-wh-to-bk1: var(--btn-bd-bk1);
+  --btn-bd-wh-to-gr2: var(--btn-bd-gr2);
+  --btn-bd-wh-to-bk2: var(--btn-bd-bk2);
+  --btn-bd-wh-to-gr3: var(--btn-bd-gr3);
+  --btn-bd-wh-to-bk3: var(--btn-bd-bk3);
+  --btn-bd-wh-to-gr4: var(--btn-bd-gr4);
+  --btn-bd-wh-to-bk4: var(--btn-bd-bk4);
+  --btn-bd-wh-to-gr5: var(--btn-bd-gr5);
+  --btn-bd-wh-to-bk5: var(--btn-bd-bk5);
+  --btn-bd-wh-to-gr6: var(--btn-bd-gr6);
+  --btn-bd-wh-to-bk6: var(--btn-bd-bk6);
+  --btn-bd-wh-to-gr7: var(--btn-bd-gr7);
+  --btn-bd-wh-to-bk7: var(--btn-bd-bk7);
+  --btn-bd-wh-to-gr8: var(--btn-bd-gr8);
+  --btn-bd-wh-to-bk8: var(--btn-bd-bk8);
+  --btn-bd-wh-to-gr9: var(--btn-bd-gr9);
+  --btn-bd-wh-to-bk9: var(--btn-bd-bk9);
+
+  /* 🌟 Black 계열 (투명도) */
+  --btn-bd-bk-opc-to-wh1: var(--btn-bd-wh-opc1);
+  --btn-bd-bk-opc-to-wh2: var(--btn-bd-wh-opc2);
+  --btn-bd-bk-opc-to-wh3: var(--btn-bd-wh-opc3);
+  --btn-bd-bk-opc-to-wh4: var(--btn-bd-wh-opc4);
+  --btn-bd-bk-opc-to-wh5: var(--btn-bd-wh-opc5);
+  --btn-bd-bk-opc-to-wh6: var(--btn-bd-wh-opc6);
+  --btn-bd-bk-opc-to-wh7: var(--btn-bd-wh-opc7);
+  --btn-bd-bk-opc-to-wh8: var(--btn-bd-wh-opc8);
+  --btn-bd-bk-opc-to-wh9: var(--btn-bd-wh-opc9);
+
+  /* 🌟 White 계열 (투명도) */
+  --btn-bd-wh-opc-to-bk1: var(--btn-bd-bk-opc1);
+  --btn-bd-wh-opc-to-bk2: var(--btn-bd-bk-opc2);
+  --btn-bd-wh-opc-to-bk3: var(--btn-bd-bk-opc3);
+  --btn-bd-wh-opc-to-bk4: var(--btn-bd-bk-opc4);
+  --btn-bd-wh-opc-to-bk5: var(--btn-bd-bk-opc5);
+  --btn-bd-wh-opc-to-bk6: var(--btn-bd-bk-opc6);
+  --btn-bd-wh-opc-to-bk7: var(--btn-bd-bk-opc7);
+  --btn-bd-wh-opc-to-bk8: var(--btn-bd-bk-opc8);
+  --btn-bd-wh-opc-to-bk9: var(--btn-bd-bk-opc9);
 }

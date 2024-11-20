@@ -132,36 +132,37 @@
     margin-left: 0.5714rem;
   }
   /* 컬러(Background) */
-  &.black {
-    background-color: var(--black1);
-    color: var(--white1);
-  }
-  &.blue {
-    background-color: var(--blue1);
-    color: var(--white1);
-  }
-  &.green {
-    background-color: var(--green1);
-    color: var(--white1);
-  }
-  /* 컬러(Line) */
-  &.black_line {
-    border-color: var(--black1);
-    color: var(--black1);
-  }
-  &.blue_line {
-    border-color: var(--blue1);
-    color: var(--blue1);
-  }
-  &.green_line {
-    border-color: var(--green1);
-    color: var(--green1);
-  }
-  /* 컬러(Background + Line) */
-  &.gray_bg_line {
-    background-color: var(--white2);
-    border-color: var(--gray2);
-  }
+  // &.black {
+  //   background-color: var(--btn-bg-bk1);
+  //   color: var(--btn-text-wh1);
+  // }
+  // &.blue {
+  //   background-color: var(--btn-bg-blue1);
+  //   color: var(--text-wh1);
+  // }
+  // &.green {
+  //   background-color: var(--btn-bg-green1);
+  //   color: var(--text-wh1);
+  // }
+  // /* 컬러(Line) */
+  // &.black_line {
+  //   border-color: var(--btn-bd-bk1);
+  //   color: var(--btn-text-bk1);
+  // }
+  // &.blue_line {
+  //   border-color: var(--btn-bd-blue1);
+  //   color: var(--btn-text-blue1);
+  // }
+  // &.green_line {
+  //   border-color: var(--btn-bd-green1);
+  //   color: var(--btn-text-green1);
+  // }
+  // /* 컬러(Background + Line) */
+  // &.gray_bg_line {
+  //   background-color: var(--btn-bg-gr2);
+  //   border-color: var(--btn-bd-gr2);
+  //   color: var(--btn-text-gr2);
+  // }
   /* 사이즈 */
   &.h_28 {
     height: 2rem;
@@ -1237,6 +1238,13 @@ header {
             margin-top: 0.8571rem;
           }
         }
+      }
+    }
+  }
+  &.button {
+    li {
+      &:not(:first-of-type) {
+        margin-top: 0.8571rem;
       }
     }
   }

@@ -84,8 +84,57 @@ function TemplatePopup() {
             <div className="table_top flex align_center justify_between">
               <p className="num">총 갯수</p>
               <div>
-                <Button title="버튼버튼" size="h_28" color="black" />
-                <Button title="버튼버튼" size="h_28" color="black_line" />
+                <Button
+                  title="Main Popup Open"
+                  size="h_28"
+                  bg_color="btn-bg-bk1"
+                  bd_color="btn-bd-bk1"
+                  color="btn-text-wh1"
+                  onClick={() => {
+                    setPopup(1);
+                  }}
+                />
+                <Button
+                  title="Side Popup Open"
+                  size="h_28"
+                  bg_color="transparent"
+                  bd_color="btn-bd-bk1"
+                  color="btn-text-bk1"
+                  onClick={() => {
+                    setPopup(2);
+                  }}
+                />
+                <Button
+                  title="Bottom Popup Open"
+                  size="h_28"
+                  bg_color="btn-bg-blue1"
+                  bd_color="btn-bd-blue1"
+                  color="btn-text-wh1"
+                  onClick={() => {
+                    setPopup(3);
+                  }}
+                />
+                <Button
+                  title="버튼버튼"
+                  size="h_28"
+                  bg_color="transparent"
+                  bd_color="btn-bd-blue1"
+                  color="btn-text-blue1"
+                />
+                <Button
+                  title="버튼버튼"
+                  size="h_28"
+                  bg_color="btn-bg-green1"
+                  bd_color="btn-bd-green1"
+                  color="btn-text-wh1"
+                />
+                <Button
+                  title="버튼버튼"
+                  size="h_28"
+                  bg_color="transparent"
+                  bd_color="btn-bd-green1"
+                  color="btn-text-green1"
+                />
               </div>
             </div>
             <div className="scroll_area">
@@ -534,11 +583,19 @@ function TemplatePopup() {
       <div className="pop_btns">
         <Button
           size="h_38"
-          color="gray_bg_line"
+          bg_color="transparent"
+          bd_color="btn-bd-gr6"
+          color="btn-text-bk9"
           title="닫기"
           onClick={() => setPopup(undefined)}
         />
-        <Button size="h_38" color="black" title="완료" />
+        <Button
+          size="h_38"
+          bg_color="btn-bg-bk1"
+          bd_color="btn-bd-bk1"
+          color="btn-text-wh1"
+          title="완료"
+        />
       </div>
     </>
   );

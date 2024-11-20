@@ -7,8 +7,8 @@ import Checkbox from "../component/form/checkbox";
 import Radio from "../component/form/radio";
 import SearchInput from "../component/form/search_input";
 import Button from "../component/form/button";
-import PopupManage from "../component/popup/popup_manage";
 import Pagination from "../component/form/pagination";
+import PopupManage from "../component/popup/popup_manage";
 import TemplatePopup from "../component/popup/template/template_popup";
 interface OptionType {
   label: string;
@@ -99,7 +99,9 @@ function Main() {
                   <Button
                     title="Main Popup Open"
                     size="h_28"
-                    color="black"
+                    bg_color="btn-bg-bk1"
+                    bd_color="btn-bd-bk1"
+                    color="btn-text-wh1"
                     onClick={() => {
                       setPopup(1);
                     }}
@@ -107,7 +109,9 @@ function Main() {
                   <Button
                     title="Side Popup Open"
                     size="h_28"
-                    color="black_line"
+                    bg_color="transparent"
+                    bd_color="btn-bd-bk1"
+                    color="btn-text-bk1"
                     onClick={() => {
                       setPopup(2);
                     }}
@@ -115,14 +119,34 @@ function Main() {
                   <Button
                     title="Bottom Popup Open"
                     size="h_28"
-                    color="blue"
+                    bg_color="btn-bg-blue1"
+                    bd_color="btn-bd-blue1"
+                    color="btn-text-wh1"
                     onClick={() => {
                       setPopup(3);
                     }}
                   />
-                  <Button title="버튼버튼" size="h_28" color="blue_line" />
-                  <Button title="버튼버튼" size="h_28" color="green" />
-                  <Button title="버튼버튼" size="h_28" color="green_line" />
+                  <Button
+                    title="버튼버튼"
+                    size="h_28"
+                    bg_color="transparent"
+                    bd_color="btn-bd-blue1"
+                    color="btn-text-blue1"
+                  />
+                  <Button
+                    title="버튼버튼"
+                    size="h_28"
+                    bg_color="btn-bg-green1"
+                    bd_color="btn-bd-green1"
+                    color="btn-text-wh1"
+                  />
+                  <Button
+                    title="버튼버튼"
+                    size="h_28"
+                    bg_color="transparent"
+                    bd_color="btn-bd-green1"
+                    color="btn-text-green1"
+                  />
                 </div>
               </div>
               {/* 왼쪽 영역에 버튼만 있을 때 */}
@@ -220,12 +244,57 @@ function Main() {
             </div>
             <Pagination totalPage={5} />
             <div className="page_btn center_t">
-              <Button title="버튼버튼" size="h_38" color="black" />
-              <Button title="버튼버튼" size="h_38" color="black_line" />
-              <Button title="버튼버튼" size="h_38" color="blue" />
-              <Button title="버튼버튼" size="h_38" color="blue_line" />
-              <Button title="버튼버튼" size="h_38" color="green" />
-              <Button title="버튼버튼" size="h_38" color="green_line" />
+              <Button
+                title="Main Popup Open"
+                size="h_38"
+                bg_color="btn-bg-bk1"
+                bd_color="btn-bd-bk1"
+                color="btn-text-wh1"
+                onClick={() => {
+                  setPopup(1);
+                }}
+              />
+              <Button
+                title="Side Popup Open"
+                size="h_38"
+                bg_color="transparent"
+                bd_color="btn-bd-bk1"
+                color="btn-text-bk1"
+                onClick={() => {
+                  setPopup(2);
+                }}
+              />
+              <Button
+                title="Bottom Popup Open"
+                size="h_38"
+                bg_color="btn-bg-blue1"
+                bd_color="btn-bd-blue1"
+                color="btn-text-wh1"
+                onClick={() => {
+                  setPopup(3);
+                }}
+              />
+              <Button
+                title="버튼버튼"
+                size="h_38"
+                bg_color="transparent"
+                bd_color="btn-bd-blue1"
+                color="btn-text-blue1"
+              />
+              <Button
+                title="버튼버튼"
+                size="h_38"
+                bg_color="btn-bg-green1"
+                bd_color="btn-bd-green1"
+                color="btn-text-wh1"
+              />
+              <Button
+                title="버튼버튼"
+                size="h_38"
+                bg_color="transparent"
+                bd_color="btn-bd-green1"
+                color="btn-text-green1"
+              />
             </div>
           </div>
         </div>
