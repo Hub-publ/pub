@@ -188,10 +188,10 @@ function Main() {
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td className="black1">-</td>
-                      <td className="black1">사원</td>
-                      <td className="black1">010-1234-1234</td>
-                      <td className="black1">test@hubdnc.com</td>
+                      <td>-</td>
+                      <td>사원</td>
+                      <td>010-1234-1234</td>
+                      <td>test@hubdnc.com</td>
                     </tr>
                     <tr>
                       <td>
@@ -203,10 +203,10 @@ function Main() {
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td className="black1">-</td>
-                      <td className="black1">사원</td>
-                      <td className="black1">010-1234-1234</td>
-                      <td className="black1">test@hubdnc.com</td>
+                      <td>-</td>
+                      <td>사원</td>
+                      <td>010-1234-1234</td>
+                      <td>test@hubdnc.com</td>
                     </tr>
                     <tr>
                       <td>
@@ -218,10 +218,10 @@ function Main() {
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td className="black1">-</td>
-                      <td className="black1">사원</td>
-                      <td className="black1">010-1234-1234</td>
-                      <td className="black1">test@hubdnc.com</td>
+                      <td>-</td>
+                      <td>사원</td>
+                      <td>010-1234-1234</td>
+                      <td>test@hubdnc.com</td>
                     </tr>
                     <tr>
                       <td>
@@ -233,10 +233,10 @@ function Main() {
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td className="black1">-</td>
-                      <td className="black1">사원</td>
-                      <td className="black1">010-1234-1234</td>
-                      <td className="black1">test@hubdnc.com</td>
+                      <td>-</td>
+                      <td>사원</td>
+                      <td>010-1234-1234</td>
+                      <td>test@hubdnc.com</td>
                     </tr>
                   </tbody>
                 </table>

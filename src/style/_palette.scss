@@ -18,7 +18,7 @@
   --transparent: transparent;
 
   /* =============================
-    TEXT
+    Font Color
   ============================= */
 
   /* 🌟 Black 계열 */
@@ -158,7 +158,7 @@
   --text-wh-opc-to-bk9: rgba(255, 255, 255, 0.9);
 
   /* =============================
-    Button TEXT
+    Button Font Color
   ============================= */
 
   /* 🌟 Black 계열 */
@@ -296,6 +296,97 @@
   --btn-text-wh-opc-to-bk8: rgba(255, 255, 255, 0.8);
   --btn-text-wh-opc9: rgba(255, 255, 255, 0.9);
   --btn-text-wh-opc-to-bk9: rgba(255, 255, 255, 0.9);
+
+  /* =============================
+    Table Font Color
+  ============================= */
+
+  /* 🌟 Black 계열 */
+  --table-text-bk1: #000;
+  --table-text-bk-to-wh1: #000;
+  --table-text-bk-to-gr1: #000;
+  --table-text-bk2: #040404;
+  --table-text-bk-to-wh2: #040404;
+  --table-text-bk-to-gr2: #040404;
+  --table-text-bk3: #080808;
+  --table-text-bk-to-wh3: #080808;
+  --table-text-bk-to-gr3: #080808;
+  --table-text-bk4: #121212;
+  --table-text-bk-to-wh4: #121212;
+  --table-text-bk-to-gr4: #121212;
+  --table-text-bk5: #161616;
+  --table-text-bk-to-wh5: #161616;
+  --table-text-bk-to-gr5: #161616;
+  --table-text-bk6: #202020;
+  --table-text-bk-to-wh6: #202020;
+  --table-text-bk-to-gr6: #202020;
+  --table-text-bk7: #242424;
+  --table-text-bk-to-wh7: #242424;
+  --table-text-bk-to-gr7: #242424;
+  --table-text-bk8: #282828;
+  --table-text-bk-to-wh8: #282828;
+  --table-text-bk-to-gr8: #282828;
+  --table-text-bk9: #323232;
+  --table-text-bk-to-wh9: #323232;
+  --table-text-bk-to-gr9: #323232;
+
+  /* 🌟 Gray 계열 */
+  --table-text-gr1: #696969;
+  --table-text-gr-to-bk1: #696969;
+  --table-text-gr-to-wh1: #696969;
+  --table-text-gr2: #707070;
+  --table-text-gr-to-bk2: #707070;
+  --table-text-gr-to-wh2: #707070;
+  --table-text-gr3: #787878;
+  --table-text-gr-to-bk3: #787878;
+  --table-text-gr-to-wh3: #787878;
+  --table-text-gr4: #888888;
+  --table-text-gr-to-bk4: #888888;
+  --table-text-gr-to-wh4: #888888;
+  --table-text-gr5: #909090;
+  --table-text-gr-to-bk5: #909090;
+  --table-text-gr-to-wh5: #909090;
+  --table-text-gr6: #989898;
+  --table-text-gr-to-bk6: #989898;
+  --table-text-gr-to-wh6: #989898;
+  --table-text-gr7: #a0a0a0;
+  --table-text-gr-to-bk7: #a0a0a0;
+  --table-text-gr-to-wh7: #a0a0a0;
+  --table-text-gr8: #a8a8a8;
+  --table-text-gr-to-bk8: #a8a8a8;
+  --table-text-gr-to-wh8: #a8a8a8;
+  --table-text-gr9: #a9a9a9;
+  --table-text-gr-to-bk9: #a9a9a9;
+  --table-text-gr-to-wh9: #a9a9a9;
+
+  /* 🌟 White 계열 */
+  --table-text-wh1: #ffffff;
+  --table-text-wh-to-bk1: #ffffff;
+  --table-text-wh-to-gr1: #ffffff;
+  --table-text-wh2: #f8f8f8;
+  --table-text-wh-to-bk2: #f8f8f8;
+  --table-text-wh-to-gr2: #f8f8f8;
+  --table-text-wh3: #f5f5f5;
+  --table-text-wh-to-bk3: #f5f5f5;
+  --table-text-wh-to-gr3: #f5f5f5;
+  --table-text-wh4: #f0f0f0;
+  --table-text-wh-to-bk4: #f0f0f0;
+  --table-text-wh-to-gr4: #f0f0f0;
+  --table-text-wh5: #e8e8e8;
+  --table-text-wh-to-bk5: #e8e8e8;
+  --table-text-wh-to-gr5: #e8e8e8;
+  --table-text-wh6: #e0e0e0;
+  --table-text-wh-to-bk6: #e0e0e0;
+  --table-text-wh-to-gr6: #e0e0e0;
+  --table-text-wh7: #dcdcdc;
+  --table-text-wh-to-bk7: #dcdcdc;
+  --table-text-wh-to-gr7: #dcdcdc;
+  --table-text-wh8: #d8d8d8;
+  --table-text-wh-to-bk8: #d8d8d8;
+  --table-text-wh-to-gr8: #d8d8d8;
+  --table-text-wh9: #d3d3d3;
+  --table-text-wh-to-bk9: #d3d3d3;
+  --table-text-wh-to-gr9: #d3d3d3;
 
   /* =============================
     Background
@@ -720,14 +811,12 @@
     Table Background
   ============================= */
 
-  /* 🌟 Gray 계열 */
-  --table-bg-gr1: #808080;
-  --table-bg-gr2: #909090;
-  --table-bg-gr3: #a0a0a0;
-  --table-bg-gr4: #a9a9a9;
-  --table-bg-gr5: #bebebe;
-  --table-bg-gr6: #c8c8c8;
-  --table-bg-gr7: #d3d3d3;
+  /* 🌟 Th color */
+  --table-list-th-bg: #696969;
+  --table-detail-th-bg: #d3d3d3;
+
+  /* 🌟 Td color */
+  --table-list-td-bg: rgba(0, 0, 0, 0.1);
 
   /* =============================
     Border Color
@@ -735,32 +824,90 @@
 
   /* 🌟 Black 계열 */
   --bd-bk1: #000;
-  --bd-bk2: #111;
-  --bd-bk3: #222;
-  --bd-bk4: #333;
-  --bd-bk5: #444;
-  --bd-bk6: #555;
-  --bd-bk7: #666;
-  --bd-bk8: #777;
-  --bd-bk9: #888;
+  --bd-bk-to-wh1: #000;
+  --bd-bk-to-gr1: #000;
+  --bd-bk2: #040404;
+  --bd-bk-to-wh2: #040404;
+  --bd-bk-to-gr2: #040404;
+  --bd-bk3: #080808;
+  --bd-bk-to-wh3: #080808;
+  --bd-bk-to-gr3: #080808;
+  --bd-bk4: #121212;
+  --bd-bk-to-wh4: #121212;
+  --bd-bk-to-gr4: #121212;
+  --bd-bk5: #161616;
+  --bd-bk-to-wh5: #161616;
+  --bd-bk-to-gr5: #161616;
+  --bd-bk6: #202020;
+  --bd-bk-to-wh6: #202020;
+  --bd-bk-to-gr6: #202020;
+  --bd-bk7: #242424;
+  --bd-bk-to-wh7: #242424;
+  --bd-bk-to-gr7: #242424;
+  --bd-bk8: #282828;
+  --bd-bk-to-wh8: #282828;
+  --bd-bk-to-gr8: #282828;
+  --bd-bk9: #323232;
+  --bd-bk-to-wh9: #323232;
+  --bd-bk-to-gr9: #323232;
 
   /* 🌟 Gray 계열 */
-  --bd-gr1: #808080;
-  --bd-gr2: #909090;
-  --bd-gr3: #a0a0a0;
-  --bd-gr4: #a9a9a9;
-  --bd-gr5: #bebebe;
-  --bd-gr6: #c8c8c8;
-  --bd-gr7: #d3d3d3;
+  --bd-gr1: #696969;
+  --bd-gr-to-bk1: #696969;
+  --bd-gr-to-wh1: #696969;
+  --bd-gr2: #707070;
+  --bd-gr-to-bk2: #707070;
+  --bd-gr-to-wh2: #707070;
+  --bd-gr3: #787878;
+  --bd-gr-to-bk3: #787878;
+  --bd-gr-to-wh3: #787878;
+  --bd-gr4: #888888;
+  --bd-gr-to-bk4: #888888;
+  --bd-gr-to-wh4: #888888;
+  --bd-gr5: #909090;
+  --bd-gr-to-bk5: #909090;
+  --bd-gr-to-wh5: #909090;
+  --bd-gr6: #989898;
+  --bd-gr-to-bk6: #989898;
+  --bd-gr-to-wh6: #989898;
+  --bd-gr7: #a0a0a0;
+  --bd-gr-to-bk7: #a0a0a0;
+  --bd-gr-to-wh7: #a0a0a0;
+  --bd-gr8: #a8a8a8;
+  --bd-gr-to-bk8: #a8a8a8;
+  --bd-gr-to-wh8: #a8a8a8;
+  --bd-gr9: #a9a9a9;
+  --bd-gr-to-bk9: #a9a9a9;
+  --bd-gr-to-wh9: #a9a9a9;
 
   /* 🌟 White 계열 */
   --bd-wh1: #ffffff;
+  --bd-wh-to-bk1: #ffffff;
+  --bd-wh-to-gr1: #ffffff;
   --bd-wh2: #f8f8f8;
+  --bd-wh-to-bk2: #f8f8f8;
+  --bd-wh-to-gr2: #f8f8f8;
   --bd-wh3: #f5f5f5;
+  --bd-wh-to-bk3: #f5f5f5;
+  --bd-wh-to-gr3: #f5f5f5;
   --bd-wh4: #f0f0f0;
+  --bd-wh-to-bk4: #f0f0f0;
+  --bd-wh-to-gr4: #f0f0f0;
   --bd-wh5: #e8e8e8;
+  --bd-wh-to-bk5: #e8e8e8;
+  --bd-wh-to-gr5: #e8e8e8;
   --bd-wh6: #e0e0e0;
+  --bd-wh-to-bk6: #e0e0e0;
+  --bd-wh-to-gr6: #e0e0e0;
   --bd-wh7: #dcdcdc;
+  --bd-wh-to-bk7: #dcdcdc;
+  --bd-wh-to-gr7: #dcdcdc;
+  --bd-wh8: #d8d8d8;
+  --bd-wh-to-bk8: #d8d8d8;
+  --bd-wh-to-gr8: #d8d8d8;
+  --bd-wh9: #d3d3d3;
+  --bd-wh-to-bk9: #d3d3d3;
+  --bd-wh-to-gr9: #d3d3d3;
 
   /* 🌟 red 계열 */
   --bd-red1: #dc143c;
@@ -773,80 +920,43 @@
 
   /* 🌟 Black 계열 (투명도)*/
   --bd-bk-opc1: rgba(0, 0, 0, 0.1);
+  --bd-bk-opc-to-wh1: rgba(0, 0, 0, 0.1);
   --bd-bk-opc2: rgba(0, 0, 0, 0.2);
+  --bd-bk-opc-to-wh2: rgba(0, 0, 0, 0.2);
   --bd-bk-opc3: rgba(0, 0, 0, 0.3);
+  --bd-bk-opc-to-wh3: rgba(0, 0, 0, 0.3);
   --bd-bk-opc4: rgba(0, 0, 0, 0.4);
+  --bd-bk-opc-to-wh4: rgba(0, 0, 0, 0.4);
   --bd-bk-opc5: rgba(0, 0, 0, 0.5);
+  --bd-bk-opc-to-wh5: rgba(0, 0, 0, 0.5);
   --bd-bk-opc6: rgba(0, 0, 0, 0.6);
+  --bd-bk-opc-to-wh6: rgba(0, 0, 0, 0.6);
   --bd-bk-opc7: rgba(0, 0, 0, 0.7);
+  --bd-bk-opc-to-wh7: rgba(0, 0, 0, 0.7);
   --bd-bk-opc8: rgba(0, 0, 0, 0.8);
+  --bd-bk-opc-to-wh8: rgba(0, 0, 0, 0.8);
   --bd-bk-opc9: rgba(0, 0, 0, 0.9);
+  --bd-bk-opc-to-wh9: rgba(0, 0, 0, 0.9);
 
   /* 🌟 White 계열 (투명도)*/
   --bd-wh-opc1: rgba(255, 255, 255, 0.1);
+  --bd-wh-opc-to-bk1: rgba(255, 255, 255, 0.1);
   --bd-wh-opc2: rgba(255, 255, 255, 0.2);
+  --bd-wh-opc-to-bk2: rgba(255, 255, 255, 0.2);
   --bd-wh-opc3: rgba(255, 255, 255, 0.3);
+  --bd-wh-opc-to-bk3: rgba(255, 255, 255, 0.3);
   --bd-wh-opc4: rgba(255, 255, 255, 0.4);
+  --bd-wh-opc-to-bk4: rgba(255, 255, 255, 0.4);
   --bd-wh-opc5: rgba(255, 255, 255, 0.5);
+  --bd-wh-opc-to-bk5: rgba(255, 255, 255, 0.5);
   --bd-wh-opc6: rgba(255, 255, 255, 0.6);
+  --bd-wh-opc-to-bk6: rgba(255, 255, 255, 0.6);
   --bd-wh-opc7: rgba(255, 255, 255, 0.7);
+  --bd-wh-opc-to-bk7: rgba(255, 255, 255, 0.7);
   --bd-wh-opc8: rgba(255, 255, 255, 0.8);
+  --bd-wh-opc-to-bk8: rgba(255, 255, 255, 0.8);
   --bd-wh-opc9: rgba(255, 255, 255, 0.9);
-
-  /* =============================
-    Table Border Color
-  ============================= */
-
-  /* 🌟 Black 계열 */
-  --table-bd-bk1: #000;
-  --table-bd-bk2: #111;
-  --table-bd-bk3: #222;
-  --table-bd-bk4: #333;
-  --table-bd-bk5: #444;
-  --table-bd-bk6: #555;
-  --table-bd-bk7: #666;
-  --table-bd-bk8: #777;
-  --table-bd-bk9: #888;
-
-  /* 🌟 Gray 계열 */
-  --table-bd-gr1: #808080;
-  --table-bd-gr2: #909090;
-  --table-bd-gr3: #a0a0a0;
-  --table-bd-gr4: #a9a9a9;
-  --table-bd-gr5: #bebebe;
-  --table-bd-gr6: #c8c8c8;
-  --table-bd-gr7: #d3d3d3;
-
-  /* 🌟 White 계열 */
-  --table-bd-wh1: #ffffff;
-  --table-bd-wh2: #f8f8f8;
-  --table-bd-wh3: #f5f5f5;
-  --table-bd-wh4: #f0f0f0;
-  --table-bd-wh5: #e8e8e8;
-  --table-bd-wh6: #e0e0e0;
-  --table-bd-wh7: #dcdcdc;
-
-  /* 🌟 Black 계열 (투명도)*/
-  --table-bd-bk-opc1: rgba(0, 0, 0, 0.1);
-  --table-bd-bk-opc2: rgba(0, 0, 0, 0.2);
-  --table-bd-bk-opc3: rgba(0, 0, 0, 0.3);
-  --table-bd-bk-opc4: rgba(0, 0, 0, 0.4);
-  --table-bd-bk-opc5: rgba(0, 0, 0, 0.5);
-  --table-bd-bk-opc6: rgba(0, 0, 0, 0.6);
-  --table-bd-bk-opc7: rgba(0, 0, 0, 0.7);
-  --table-bd-bk-opc8: rgba(0, 0, 0, 0.8);
-  --table-bd-bk-opc9: rgba(0, 0, 0, 0.9);
-
-  /* 🌟 White 계열 (투명도)*/
-  --table-bd-wh-opc1: rgba(255, 255, 255, 0.1);
-  --table-bd-wh-opc2: rgba(255, 255, 255, 0.2);
-  --table-bd-wh-opc3: rgba(255, 255, 255, 0.3);
-  --table-bd-wh-opc4: rgba(255, 255, 255, 0.4);
-  --table-bd-wh-opc5: rgba(255, 255, 255, 0.5);
-  --table-bd-wh-opc6: rgba(255, 255, 255, 0.6);
-  --table-bd-wh-opc7: rgba(255, 255, 255, 0.7);
-  --table-bd-wh-opc8: rgba(255, 255, 255, 0.8);
-  --table-bd-wh-opc9: rgba(255, 255, 255, 0.9);
+  --bd-wh-opc-to-bk9: rgba(255, 255, 255, 0.9);
 
   /* =============================
     Card Border Color
@@ -1053,6 +1163,32 @@
   --btn-bd-wh-opc-to-bk9: rgba(255, 255, 255, 0.9);
 
   /* =============================
+    Table Border Color
+  ============================= */
+
+  /* 🌟 White 계열 */
+  --table-bd-wh1: #ffffff;
+  --table-bd-wh2: #f8f8f8;
+  --table-bd-wh3: #f5f5f5;
+  --table-bd-wh4: #f0f0f0;
+  --table-bd-wh5: #e8e8e8;
+  --table-bd-wh6: #e0e0e0;
+  --table-bd-wh7: #dcdcdc;
+  --table-bd-wh8: #d8d8d8;
+  --table-bd-wh9: #d3d3d3;
+
+  /* 🌟 Gray 계열 */
+  --table-bd-gr1: #696969;
+  --table-bd-gr2: #707070;
+  --table-bd-gr3: #787878;
+  --table-bd-gr4: #888888;
+  --table-bd-gr5: #909090;
+  --table-bd-gr6: #989898;
+  --table-bd-gr7: #a0a0a0;
+  --table-bd-gr8: #a8a8a8;
+  --table-bd-gr9: #a9a9a9;
+
+  /* =============================
     Box Shadow Color
   ============================= */
 
@@ -1079,7 +1215,7 @@
   --shadow-wh-opc9: rgba(255, 255, 255, 0.9);
 }
 
-/* 다크 모드 변수 설정 */
+/* Darkmode 시 변수 재 설정 */
 [data-theme="dark"] {
   /* 🌟 Layout Background Color */
   --body-bg: #5a5a5a;
@@ -1257,6 +1393,70 @@
   --btn-text-wh-opc-to-bk7: var(--btn-text-bk-opc7);
   --btn-text-wh-opc-to-bk8: var(--btn-text-bk-opc8);
   --btn-text-wh-opc-to-bk9: var(--btn-text-bk-opc9);
+
+  /* =============================
+    Table Font Color
+  ============================= */
+
+  /* 🌟 Black 계열 */
+  --table-text-bk-to-wh1: var(--table-text-wh1);
+  --table-text-bk-to-gr1: var(--table-text-gr1);
+  --table-text-bk-to-wh2: var(--table-text-wh2);
+  --table-text-bk-to-gr2: var(--table-text-gr2);
+  --table-text-bk-to-wh3: var(--table-text-wh3);
+  --table-text-bk-to-gr3: var(--table-text-gr3);
+  --table-text-bk-to-wh4: var(--table-text-wh4);
+  --table-text-bk-to-gr4: var(--table-text-gr4);
+  --table-text-bk-to-wh5: var(--table-text-wh5);
+  --table-text-bk-to-gr5: var(--table-text-gr5);
+  --table-text-bk-to-wh6: var(--table-text-wh6);
+  --table-text-bk-to-gr6: var(--table-text-gr6);
+  --table-text-bk-to-wh7: var(--table-text-wh7);
+  --table-text-bk-to-gr7: var(--table-text-gr7);
+  --table-text-bk-to-wh8: var(--table-text-wh8);
+  --table-text-bk-to-gr8: var(--table-text-gr8);
+  --table-text-bk-to-wh9: var(--table-text-wh9);
+  --table-text-bk-to-gr9: var(--table-text-gr9);
+
+  /* 🌟 Gray 계열 */
+  --table-text-gr-to-bk1: var(--table-text-bk1);
+  --table-text-gr-to-wh1: var(--table-text-wh1);
+  --table-text-gr-to-bk2: var(--table-text-bk2);
+  --table-text-gr-to-wh2: var(--table-text-wh2);
+  --table-text-gr-to-bk3: var(--table-text-bk3);
+  --table-text-gr-to-wh3: var(--table-text-wh3);
+  --table-text-gr-to-bk4: var(--table-text-bk4);
+  --table-text-gr-to-wh4: var(--table-text-wh4);
+  --table-text-gr-to-bk5: var(--table-text-bk5);
+  --table-text-gr-to-wh5: var(--table-text-wh5);
+  --table-text-gr-to-bk6: var(--table-text-bk6);
+  --table-text-gr-to-wh6: var(--table-text-wh6);
+  --table-text-gr-to-bk7: var(--table-text-bk7);
+  --table-text-gr-to-wh7: var(--table-text-wh7);
+  --table-text-gr-to-bk8: var(--table-text-bk8);
+  --table-text-gr-to-wh8: var(--table-text-wh8);
+  --table-text-gr-to-bk9: var(--table-text-bk9);
+  --table-text-gr-to-wh9: var(--table-text-wh9);
+
+  /* 🌟 White 계열 */
+  --table-text-wh-to-bk1: var(--table-text-bk1);
+  --table-text-wh-to-gr1: var(--table-text-gr1);
+  --table-text-wh-to-bk2: var(--table-text-bk2);
+  --table-text-wh-to-gr2: var(--table-text-gr2);
+  --table-text-wh-to-bk3: var(--table-text-bk3);
+  --table-text-wh-to-gr3: var(--table-text-gr3);
+  --table-text-wh-to-bk4: var(--table-text-bk4);
+  --table-text-wh-to-gr4: var(--table-text-gr4);
+  --table-text-wh-to-bk5: var(--table-text-bk5);
+  --table-text-wh-to-gr5: var(--table-text-gr5);
+  --table-text-wh-to-bk6: var(--table-text-bk6);
+  --table-text-wh-to-gr6: var(--table-text-gr6);
+  --table-text-wh-to-bk7: var(--table-text-bk7);
+  --table-text-wh-to-gr7: var(--table-text-gr7);
+  --table-text-wh-to-bk8: var(--table-text-bk8);
+  --table-text-wh-to-gr8: var(--table-text-gr8);
+  --table-text-wh-to-bk9: var(--table-text-bk9);
+  --table-text-wh-to-gr9: var(--table-text-gr9);
 
   /* =============================
     Background Color
@@ -1517,6 +1717,103 @@
   --btn-bg-wh-opc-to-bk9: var(--btn-bg-bk-opc9);
 
   /* =============================
+    Table Background
+  ============================= */
+
+  /* 🌟 Th color */
+  --table-list-th-bg: #888888;
+  --table-detail-th-bg: #787878;
+
+  /* 🌟 Td color */
+  --table-list-td-bg: #696969;
+
+  /* =============================
+    Border Color
+  ============================= */
+
+  /* 🌟 Black 계열 */
+  --bd-bk-to-wh1: var(--bd-wh1);
+  --bd-bk-to-gr1: var(--bd-gr1);
+  --bd-bk-to-wh2: var(--bd-wh2);
+  --bd-bk-to-gr2: var(--bd-gr2);
+  --bd-bk-to-wh3: var(--bd-wh3);
+  --bd-bk-to-gr3: var(--bd-gr3);
+  --bd-bk-to-wh4: var(--bd-wh4);
+  --bd-bk-to-gr4: var(--bd-gr4);
+  --bd-bk-to-wh5: var(--bd-wh5);
+  --bd-bk-to-gr5: var(--bd-gr5);
+  --bd-bk-to-wh6: var(--bd-wh6);
+  --bd-bk-to-gr6: var(--bd-gr6);
+  --bd-bk-to-wh7: var(--bd-wh7);
+  --bd-bk-to-gr7: var(--bd-gr7);
+  --bd-bk-to-wh8: var(--bd-wh8);
+  --bd-bk-to-gr8: var(--bd-gr8);
+  --bd-bk-to-wh9: var(--bd-wh9);
+  --bd-bk-to-gr9: var(--bd-gr9);
+
+  /* 🌟 Gray 계열 */
+  --bd-gr-to-wh1: var(--bd-wh1);
+  --bd-gr-to-bk1: var(--bd-bk1);
+  --bd-gr-to-wh2: var(--bd-wh2);
+  --bd-gr-to-bk2: var(--bd-bk2);
+  --bd-gr-to-wh3: var(--bd-wh3);
+  --bd-gr-to-bk3: var(--bd-bk3);
+  --bd-gr-to-wh4: var(--bd-wh4);
+  --bd-gr-to-bk4: var(--bd-bk4);
+  --bd-gr-to-wh5: var(--bd-wh5);
+  --bd-gr-to-bk5: var(--bd-bk5);
+  --bd-gr-to-wh6: var(--bd-wh6);
+  --bd-gr-to-bk6: var(--bd-bk6);
+  --bd-gr-to-wh7: var(--bd-wh7);
+  --bd-gr-to-bk7: var(--bd-bk7);
+  --bd-gr-to-wh8: var(--bd-wh8);
+  --bd-gr-to-bk8: var(--bd-bk8);
+  --bd-gr-to-wh9: var(--bd-wh9);
+  --bd-gr-to-bk9: var(--bd-bk9);
+
+  /* 🌟 White 계열 */
+  --bd-wh-to-gr1: var(--bd-gr1);
+  --bd-wh-to-bk1: var(--bd-bk1);
+  --bd-wh-to-gr2: var(--bd-gr2);
+  --bd-wh-to-bk2: var(--bd-bk2);
+  --bd-wh-to-gr3: var(--bd-gr3);
+  --bd-wh-to-bk3: var(--bd-bk3);
+  --bd-wh-to-gr4: var(--bd-gr4);
+  --bd-wh-to-bk4: var(--bd-bk4);
+  --bd-wh-to-gr5: var(--bd-gr5);
+  --bd-wh-to-bk5: var(--bd-bk5);
+  --bd-wh-to-gr6: var(--bd-gr6);
+  --bd-wh-to-bk6: var(--bd-bk6);
+  --bd-wh-to-gr7: var(--bd-gr7);
+  --bd-wh-to-bk7: var(--bd-bk7);
+  --bd-wh-to-gr8: var(--bd-gr8);
+  --bd-wh-to-bk8: var(--bd-bk8);
+  --bd-wh-to-gr9: var(--bd-gr9);
+  --bd-wh-to-bk9: var(--bd-bk9);
+
+  /* 🌟 Black 계열 (투명도) */
+  --bd-bk-opc-to-wh1: var(--bd-wh-opc1);
+  --bd-bk-opc-to-wh2: var(--bd-wh-opc2);
+  --bd-bk-opc-to-wh3: var(--bd-wh-opc3);
+  --bd-bk-opc-to-wh4: var(--bd-wh-opc4);
+  --bd-bk-opc-to-wh5: var(--bd-wh-opc5);
+  --bd-bk-opc-to-wh6: var(--bd-wh-opc6);
+  --bd-bk-opc-to-wh7: var(--bd-wh-opc7);
+  --bd-bk-opc-to-wh8: var(--bd-wh-opc8);
+  --bd-bk-opc-to-wh9: var(--bd-wh-opc9);
+
+  /* 🌟 White 계열 (투명도) */
+  --bd-wh-opc-to-bk1: var(--bd-bk-opc1);
+  --bd-wh-opc-to-bk2: var(--bd-bk-opc2);
+  --bd-wh-opc-to-bk3: var(--bd-bk-opc3);
+  --bd-wh-opc-to-bk4: var(--bd-bk-opc4);
+  --bd-wh-opc-to-bk5: var(--bd-bk-opc5);
+  --bd-wh-opc-to-bk6: var(--bd-bk-opc6);
+  --bd-wh-opc-to-bk7: var(--bd-bk-opc7);
+  --bd-wh-opc-to-bk8: var(--bd-bk-opc8);
+  --bd-wh-opc-to-bk9: var(--bd-bk-opc9);
+
+  /* =============================
     Button Border Color
   ============================= */
 
@@ -1601,4 +1898,19 @@
   --btn-bd-wh-opc-to-bk7: var(--btn-bd-bk-opc7);
   --btn-bd-wh-opc-to-bk8: var(--btn-bd-bk-opc8);
   --btn-bd-wh-opc-to-bk9: var(--btn-bd-bk-opc9);
+
+  /* =============================
+    Table Border Color
+  ============================= */
+
+  /* 🌟 White 계열 */
+  --table-bd-wh1: var(--table-bd-gr1);
+  --table-bd-wh2: var(--table-bd-gr2);
+  --table-bd-wh3: var(--table-bd-gr3);
+  --table-bd-wh4: var(--table-bd-gr4);
+  --table-bd-wh5: var(--table-bd-gr5);
+  --table-bd-wh6: var(--table-bd-gr6);
+  --table-bd-wh7: var(--table-bd-gr7);
+  --table-bd-wh8: var(--table-bd-gr8);
+  --table-bd-wh9: var(--table-bd-gr9);
 }

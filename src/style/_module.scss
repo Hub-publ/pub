@@ -1,7 +1,11 @@
-/* Color Palette */
+/* Sizing, Color Palette */
+@import "./_sizing.scss";
 @import "./_palette.scss";
+
 /* Reset, Common */
 @import "./reset.scss";
+@import "./color.scss";
 @import "./common.scss";
+
 /* DarkMode */
 @import "./dark.scss";

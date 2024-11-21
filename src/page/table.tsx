@@ -278,7 +278,7 @@ function Table() {
                 <tbody>
                   <tr>
                     <th>
-                      TH<span className="red1">*</span>
+                      TH<span className="red_t">*</span>
                     </th>
                     <td colSpan={3}>
                       <input
@@ -290,7 +290,7 @@ function Table() {
                   </tr>
                   <tr>
                     <th>
-                      TH<span className="red1">*</span>
+                      TH<span className="red_t">*</span>
                     </th>
                     <td>
                       <Select
@@ -306,7 +306,7 @@ function Table() {
                       />
                     </td>
                     <th>
-                      TH<span className="red1">*</span>
+                      TH<span className="red_t">*</span>
                     </th>
                     <td>
                       <div className="form_wrap">
@@ -318,17 +318,17 @@ function Table() {
                   </tr>
                   <tr>
                     <th>
-                      TH / TH<span className="red1">*</span>
+                      TH / TH<span className="red_t">*</span>
                     </th>
                     <td>홍길동 / 2024-11-14</td>
                     <th>
-                      TH<span className="red1">*</span>
+                      TH<span className="red_t">*</span>
                     </th>
                     <td>1,234,567</td>
                   </tr>
                   <tr>
                     <th>
-                      TH<span className="red1">*</span>
+                      TH<span className="red_t">*</span>
                     </th>
                     <td colSpan={3}>
                       <textarea

@@ -1,6 +1,10 @@
-import Button from "../component/form/button";
-import Container from "../component/layout/container";
 import Header from "../component/layout/header";
+import Container from "../component/layout/container";
+import Select from "react-select";
+import Attachment from "../component/form/attachment";
+import Button from "../component/form/button";
+import Radio from "../component/form/radio";
+import Pagination from "../component/form/pagination";
 
 function ColorPalette() {
   return (
@@ -1612,21 +1616,21 @@ function ColorPalette() {
                   size="h_38"
                   bg_color="btn-bg-bk-opc-to-wh7"
                   bd_color="btn-bd-bk-opc-to-wh7"
-                  color="btn-text-wh-to-bk1"
+                  color="btn-text-wh1"
                 />
                 <Button
                   title="버튼버튼"
                   size="h_38"
                   bg_color="btn-bg-bk-opc-to-wh8"
                   bd_color="btn-bd-bk-opc-to-wh8"
-                  color="btn-text-wh-to-bk1"
+                  color="btn-text-wh1"
                 />
                 <Button
                   title="버튼버튼"
                   size="h_38"
                   bg_color="btn-bg-bk-opc-to-wh9"
                   bd_color="btn-bd-bk-opc-to-wh9"
-                  color="btn-text-wh-to-bk1"
+                  color="btn-text-wh1"
                 />
               </li>
               <li>
@@ -1760,6 +1764,236 @@ function ColorPalette() {
                 />
               </li>
             </ul>
+          </div>
+          <div className="color_palette_template">
+            <div className="table_wrap">
+              <table className="detail">
+                <colgroup>
+                  <col className="col_th" />
+                  <col />
+                  <col className="col_th" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>
+                      TH<span className="red_t">*</span>
+                    </th>
+                    <td colSpan={3}>
+                      <input
+                        type="text"
+                        placeholder="100자 이내"
+                        maxLength={100}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      TH<span className="red_t">*</span>
+                    </th>
+                    <td>
+                      <Select
+                        placeholder="선택"
+                        options={[
+                          { value: "Development", label: "개발팀" },
+                          { value: "Plan", label: "기획팀" },
+                          { value: "Design", label: "디자인팀" },
+                          { value: "Publishing", label: "퍼블팀" },
+                        ]}
+                        isDisabled
+                      />
+                    </td>
+                    <th>
+                      TH<span className="red_t">*</span>
+                    </th>
+                    <td>
+                      <div className="form_wrap">
+                        <Radio id="radio_a1" name="radio_a" label="선택1" />
+                        <Radio id="radio_a2" name="radio_a" label="선택2" />
+                        <Radio id="radio_a3" name="radio_a" label="선택3" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      TH / TH<span className="red_t">*</span>
+                    </th>
+                    <td>홍길동 / 2024-11-14</td>
+                    <th>
+                      TH<span className="red_t">*</span>
+                    </th>
+                    <td>1,234,567</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      TH<span className="red_t">*</span>
+                    </th>
+                    <td colSpan={3}>
+                      <textarea
+                        name=""
+                        id=""
+                        rows={5}
+                        placeholder="500자 이내"
+                        maxLength={500}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>TH</th>
+                    <td colSpan={3}>
+                      <Attachment id="attach_01" maxText={10} />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="table_wrap">
+              {/* 오른쪽 영역에 버튼만 있을 때 */}
+              {/* <div className="table_top flex justify_start">
+                  <p className="num">총 갯수</p>
+                </div> */}
+              {/* 양쪽 영역에 버튼만 있을 때 */}
+              <div className="table_top flex align_center justify_between">
+                <p className="num">총 갯수</p>
+                <div>
+                  <Button
+                    title="버튼버튼"
+                    size="h_28"
+                    bg_color="btn-bg-bk1"
+                    bd_color="btn-bd-bk1"
+                    color="btn-text-wh1"
+                  />
+                  <Button
+                    title="버튼버튼"
+                    size="h_28"
+                    bg_color="transparent"
+                    bd_color="btn-bd-bk1"
+                    color="btn-text-bk1"
+                  />
+                  <Button
+                    title="버튼버튼"
+                    size="h_28"
+                    bg_color="btn-bg-blue1"
+                    bd_color="btn-bd-blue1"
+                    color="btn-text-wh1"
+                  />
+                  <Button
+                    title="버튼버튼"
+                    size="h_28"
+                    bg_color="transparent"
+                    bd_color="btn-bd-blue1"
+                    color="btn-text-blue1"
+                  />
+                  <Button
+                    title="버튼버튼"
+                    size="h_28"
+                    bg_color="btn-bg-green1"
+                    bd_color="btn-bd-green1"
+                    color="btn-text-wh1"
+                  />
+                  <Button
+                    title="버튼버튼"
+                    size="h_28"
+                    bg_color="transparent"
+                    bd_color="btn-bd-green1"
+                    color="btn-text-green1"
+                  />
+                </div>
+              </div>
+              {/* 왼쪽 영역에 버튼만 있을 때 */}
+              {/* <div className="table_top flex justify_end">
+                  <Button title="버튼버튼" size="h_28" color="black" />
+                  <Button title="버튼버튼" size="h_28" color="black_line" />
+                  <Button title="버튼버튼" size="h_28" color="blue" />
+                  <Button title="버튼버튼" size="h_28" color="blue_line" />
+                  <Button title="버튼버튼" size="h_28" color="green" />
+                  <Button title="버튼버튼" size="h_28" color="green_line" />
+                </div> */}
+              <div className="scroll_area">
+                <table className="list">
+                  <colgroup>
+                    <col width={50} />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                      <th>TH</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td>-</td>
+                      <td>사원</td>
+                      <td>010-1234-1234</td>
+                      <td>test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td>-</td>
+                      <td>사원</td>
+                      <td>010-1234-1234</td>
+                      <td>test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td>-</td>
+                      <td>사원</td>
+                      <td>010-1234-1234</td>
+                      <td>test@hubdnc.com</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button className="icon ham_btn"></button>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis">
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                        </p>
+                      </td>
+                      <td>홍길동</td>
+                      <td>-</td>
+                      <td>사원</td>
+                      <td>010-1234-1234</td>
+                      <td>test@hubdnc.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <Pagination totalPage={5} />
           </div>
         </div>
       </Container>

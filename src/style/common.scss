@@ -2,14 +2,7 @@
   공통이 자리 👻
 ================================================================== */
 
-/* ===== 📌 Size ===== */
-:root {
-  --header_height: 56px;
-}
-
-/* ===== 📌 정렬 ===== */
-
-/* flex */
+/* ===== 📌 Flex ===== */
 .flex {
   display: flex;
 }
@@ -31,7 +24,8 @@
 .justify_between {
   justify-content: space-between;
 }
-/* Text Overflow */
+
+/* ===== 📌 Ellipsis ===== */
 .ellipsis {
   white-space: nowrap;
   overflow: hidden;
@@ -66,7 +60,8 @@
     text-align: left;
   }
 }
-/* Text Align */
+
+/* ===== 📌 TEXT Align ===== */
 .center_t {
   text-align: center !important;
 }
@@ -77,52 +72,7 @@
   text-align: right !important;
 }
 
-/* ===== 📌 컬러 ===== */
-
-/* black 계열 */
-.black1 {
-  color: var(--black1) !important;
-}
-.black2 {
-  color: var(--black2) !important;
-}
-.black3 {
-  color: var(--black3) !important;
-}
-/* gray 계열 */
-.gray1 {
-  color: var(--gray1) !important;
-}
-.gray2 {
-  color: var(--gray2) !important;
-}
-.gray3 {
-  color: var(--gray3) !important;
-}
-/* white 계열 */
-.white1 {
-  color: var(--white1) !important;
-}
-.white2 {
-  color: var(--white2) !important;
-}
-.white3 {
-  color: var(--white3) !important;
-}
-/* red 계열 */
-.red1 {
-  color: var(--red1) !important;
-}
-/* blue 계열 */
-.blue1 {
-  color: var(--blue1) !important;
-}
-/* green 계열 */
-.green1 {
-  color: var(--green1) !important;
-}
-
-/* ===== 📌 버튼 ===== */
+/* ===== 📌 Button ===== */
 .btn {
   padding: 0 1.1429rem;
   border-radius: 0.4286rem;
@@ -131,38 +81,6 @@
   & + .btn {
     margin-left: 0.5714rem;
   }
-  /* 컬러(Background) */
-  // &.black {
-  //   background-color: var(--btn-bg-bk1);
-  //   color: var(--btn-text-wh1);
-  // }
-  // &.blue {
-  //   background-color: var(--btn-bg-blue1);
-  //   color: var(--text-wh1);
-  // }
-  // &.green {
-  //   background-color: var(--btn-bg-green1);
-  //   color: var(--text-wh1);
-  // }
-  // /* 컬러(Line) */
-  // &.black_line {
-  //   border-color: var(--btn-bd-bk1);
-  //   color: var(--btn-text-bk1);
-  // }
-  // &.blue_line {
-  //   border-color: var(--btn-bd-blue1);
-  //   color: var(--btn-text-blue1);
-  // }
-  // &.green_line {
-  //   border-color: var(--btn-bd-green1);
-  //   color: var(--btn-text-green1);
-  // }
-  // /* 컬러(Background + Line) */
-  // &.gray_bg_line {
-  //   background-color: var(--btn-bg-gr2);
-  //   border-color: var(--btn-bd-gr2);
-  //   color: var(--btn-text-gr2);
-  // }
   /* 사이즈 */
   &.h_28 {
     height: 2rem;
@@ -985,12 +903,7 @@ header {
           cursor: pointer;
           &:nth-child(even) {
             td {
-              background-color: var(--white2);
-            }
-          }
-          &:hover {
-            td {
-              background-color: var(--white3);
+              background-color: var(--table-list-td-bg);
             }
           }
         }
@@ -1009,20 +922,20 @@ header {
         position: sticky;
         top: 0;
         z-index: 1;
-        background-color: var(--black3);
-        color: var(--white1);
-        border-top: 1px solid var(--white3);
-        border-bottom: 1px solid var(--white3);
+        background-color: var(--table-list-th-bg);
+        color: var(--table-text-wh1);
+        border-top: 1px solid var(--table-bd-wh5);
+        border-bottom: 1px solid var(--table-bd-wh5);
         &:not(:first-child) {
-          border-left: 1px solid var(--white3);
+          border-left: 1px solid var(--table-bd-wh5);
         }
       }
       td {
-        background-color: var(--white1);
-        color: var(--black2);
-        border-bottom: 1px solid var(--white3);
+        background-color: var(--transparent);
+        color: var(--table-text-bk-to-wh3);
+        border-bottom: 1px solid var(--table-bd-wh5);
         &:not(:first-child) {
-          border-left: 1px solid var(--white3);
+          border-left: 1px solid var(--table-bd-wh5);
         }
       }
     }
@@ -1047,18 +960,18 @@ header {
       th {
         padding: 0.7143rem;
         line-height: 1rem;
-        background-color: var(--white2);
-        color: var(--black3);
-        border-top: 1px solid var(--white3);
-        border-left: 1px solid var(--white3);
-        border-bottom: 1px solid var(--white3);
+        background-color: var(--table-detail-th-bg);
+        color: var(--table-text-bk-to-wh1);
+        border-top: 1px solid var(--table-bd-wh5);
+        border-left: 1px solid var(--table-bd-wh5);
+        border-bottom: 1px solid var(--table-bd-wh5);
       }
       td {
+        background-color: var(--transparent);
         padding: 0.4286rem 0.7143rem;
-        background-color: var(--white1);
-        border-top: 1px solid var(--white3);
-        border-right: 1px solid var(--white3);
-        border-bottom: 1px solid var(--white3);
+        border-top: 1px solid var(--table-bd-wh5);
+        border-right: 1px solid var(--table-bd-wh5);
+        border-bottom: 1px solid var(--table-bd-wh5);
         &.no_form {
           padding: 0.7143rem;
         }
@@ -1135,17 +1048,20 @@ header {
 
 /* 페이지네이션 */
 .pagination {
-  display: flex;
-  justify-content: center;
+  display: block;
+  width: 100%;
+  text-align: center;
   margin-top: 2.8571rem;
   li {
+    display: inline-block;
+    vertical-align: top;
     &:not(:last-child) {
       margin-right: 0.4286rem;
     }
     &.single {
       a {
         background: url("../../public/img/icon/icon_pagination_single.svg")
-          no-repeat calc(50% - 1px) center;
+          no-repeat calc(50% - 0.0714rem) center;
       }
       &.prev {
         margin-right: 1.1429rem;
@@ -1193,8 +1109,8 @@ header {
       line-height: calc(2rem - 2px);
       text-align: center;
       border-radius: 0.5714rem;
-      border: 1px solid var(--white3);
-      color: var(--black3);
+      border: 1px solid var(--bd-wh-to-gr9);
+      color: var(--text-bk-to-wh3);
     }
   }
 }
