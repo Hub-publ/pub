@@ -729,6 +729,16 @@ header {
 }
 .container {
   padding-left: 4.2857rem;
+  /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
+  // &.search_on {
+  //   .search_area {
+  //     background-color: rgba(250, 250, 210, 0.5);
+  //   }
+  // }
+  // &.search_not {
+  //   background-color: rgba(173, 216, 230, 0.5);
+  // }
+  /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
 }
 .area:not(:first-child) {
   margin-top: 2.8571rem;
@@ -826,6 +836,15 @@ header {
     background: url("../../public/img/icon/icon_search_toggle.svg") no-repeat
       center;
     border: 1px solid var(--gray2);
+    &.open {
+      transform: scaleY(-1);
+    }
+    // &.hide {
+    //   /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
+    //   // display: none;
+    //   background-color: lightgreen;
+    //   /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
+    // }
   }
   .btn {
     padding: 0 0.5714rem;

@@ -22,7 +22,8 @@ function TabSample() {
   return (
     <>
       <Header />
-      <Container className="index_page">
+      <Container className="tab_sample_page">
+        {/*
         <div className="search_area">
           <ul>
             <li>
@@ -83,6 +84,7 @@ function TabSample() {
             </li>
           </ul>
         </div>
+        */}
         <div className="contents_wrap">
           <div className="area">
             {/*

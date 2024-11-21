@@ -25,7 +25,7 @@ function Table() {
   return (
     <>
       <Header />
-      <Container className="index_page">
+      <Container className="table_page">
         <div className="search_area">
           <ul>
             <li>
