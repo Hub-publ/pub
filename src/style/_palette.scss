@@ -964,32 +964,90 @@
 
   /* 🌟 Black 계열 */
   --card-bd-bk1: #000;
-  --card-bd-bk2: #111;
-  --card-bd-bk3: #222;
-  --card-bd-bk4: #333;
-  --card-bd-bk5: #444;
-  --card-bd-bk6: #555;
-  --card-bd-bk7: #666;
-  --card-bd-bk8: #777;
-  --card-bd-bk9: #888;
+  --card-bd-bk-to-wh1: #000;
+  --card-bd-bk-to-gr1: #000;
+  --card-bd-bk2: #040404;
+  --card-bd-bk-to-wh2: #040404;
+  --card-bd-bk-to-gr2: #040404;
+  --card-bd-bk3: #080808;
+  --card-bd-bk-to-wh3: #080808;
+  --card-bd-bk-to-gr3: #080808;
+  --card-bd-bk4: #121212;
+  --card-bd-bk-to-wh4: #121212;
+  --card-bd-bk-to-gr4: #121212;
+  --card-bd-bk5: #161616;
+  --card-bd-bk-to-wh5: #161616;
+  --card-bd-bk-to-gr5: #161616;
+  --card-bd-bk6: #202020;
+  --card-bd-bk-to-wh6: #202020;
+  --card-bd-bk-to-gr6: #202020;
+  --card-bd-bk7: #242424;
+  --card-bd-bk-to-wh7: #242424;
+  --card-bd-bk-to-gr7: #242424;
+  --card-bd-bk8: #282828;
+  --card-bd-bk-to-wh8: #282828;
+  --card-bd-bk-to-gr8: #282828;
+  --card-bd-bk9: #323232;
+  --card-bd-bk-to-wh9: #323232;
+  --card-bd-bk-to-gr9: #323232;
 
   /* 🌟 Gray 계열 */
-  --card-bd-gr1: #808080;
-  --card-bd-gr2: #909090;
-  --card-bd-gr3: #a0a0a0;
-  --card-bd-gr4: #a9a9a9;
-  --card-bd-gr5: #bebebe;
-  --card-bd-gr6: #c8c8c8;
-  --card-bd-gr7: #d3d3d3;
+  --card-bd-gr1: #696969;
+  --card-bd-gr-to-bk1: #696969;
+  --card-bd-gr-to-wh1: #696969;
+  --card-bd-gr2: #707070;
+  --card-bd-gr-to-bk2: #707070;
+  --card-bd-gr-to-wh2: #707070;
+  --card-bd-gr3: #787878;
+  --card-bd-gr-to-bk3: #787878;
+  --card-bd-gr-to-wh3: #787878;
+  --card-bd-gr4: #888888;
+  --card-bd-gr-to-bk4: #888888;
+  --card-bd-gr-to-wh4: #888888;
+  --card-bd-gr5: #909090;
+  --card-bd-gr-to-bk5: #909090;
+  --card-bd-gr-to-wh5: #909090;
+  --card-bd-gr6: #989898;
+  --card-bd-gr-to-bk6: #989898;
+  --card-bd-gr-to-wh6: #989898;
+  --card-bd-gr7: #a0a0a0;
+  --card-bd-gr-to-bk7: #a0a0a0;
+  --card-bd-gr-to-wh7: #a0a0a0;
+  --card-bd-gr8: #a8a8a8;
+  --card-bd-gr-to-bk8: #a8a8a8;
+  --card-bd-gr-to-wh8: #a8a8a8;
+  --card-bd-gr9: #a9a9a9;
+  --card-bd-gr-to-bk9: #a9a9a9;
+  --card-bd-gr-to-wh9: #a9a9a9;
 
   /* 🌟 White 계열 */
   --card-bd-wh1: #ffffff;
+  --card-bd-wh-to-bk1: #ffffff;
+  --card-bd-wh-to-gr1: #ffffff;
   --card-bd-wh2: #f8f8f8;
+  --card-bd-wh-to-bk2: #f8f8f8;
+  --card-bd-wh-to-gr2: #f8f8f8;
   --card-bd-wh3: #f5f5f5;
+  --card-bd-wh-to-bk3: #f5f5f5;
+  --card-bd-wh-to-gr3: #f5f5f5;
   --card-bd-wh4: #f0f0f0;
+  --card-bd-wh-to-bk4: #f0f0f0;
+  --card-bd-wh-to-gr4: #f0f0f0;
   --card-bd-wh5: #e8e8e8;
+  --card-bd-wh-to-bk5: #e8e8e8;
+  --card-bd-wh-to-gr5: #e8e8e8;
   --card-bd-wh6: #e0e0e0;
+  --card-bd-wh-to-bk6: #e0e0e0;
+  --card-bd-wh-to-gr6: #e0e0e0;
   --card-bd-wh7: #dcdcdc;
+  --card-bd-wh-to-bk7: #dcdcdc;
+  --card-bd-wh-to-gr7: #dcdcdc;
+  --card-bd-wh8: #d8d8d8;
+  --card-bd-wh-to-bk8: #d8d8d8;
+  --card-bd-wh-to-gr8: #d8d8d8;
+  --card-bd-wh9: #d3d3d3;
+  --card-bd-wh-to-bk9: #d3d3d3;
+  --card-bd-wh-to-gr9: #d3d3d3;
 
   /* 🌟 red 계열 */
   --card-bd-red1: #dc143c;
@@ -1812,6 +1870,92 @@
   --bd-wh-opc-to-bk7: var(--bd-bk-opc7);
   --bd-wh-opc-to-bk8: var(--bd-bk-opc8);
   --bd-wh-opc-to-bk9: var(--bd-bk-opc9);
+
+  /* =============================
+    Card Border Color
+  ============================= */
+
+  /* 🌟 Black 계열 */
+  --card-bd-bk-to-wh1: var(--card-bd-wh1);
+  --card-bd-bk-to-gr1: var(--card-bd-gr1);
+  --card-bd-bk-to-wh2: var(--card-bd-wh2);
+  --card-bd-bk-to-gr2: var(--card-bd-gr2);
+  --card-bd-bk-to-wh3: var(--card-bd-wh3);
+  --card-bd-bk-to-gr3: var(--card-bd-gr3);
+  --card-bd-bk-to-wh4: var(--card-bd-wh4);
+  --card-bd-bk-to-gr4: var(--card-bd-gr4);
+  --card-bd-bk-to-wh5: var(--card-bd-wh5);
+  --card-bd-bk-to-gr5: var(--card-bd-gr5);
+  --card-bd-bk-to-wh6: var(--card-bd-wh6);
+  --card-bd-bk-to-gr6: var(--card-bd-gr6);
+  --card-bd-bk-to-wh7: var(--card-bd-wh7);
+  --card-bd-bk-to-gr7: var(--card-bd-gr7);
+  --card-bd-bk-to-wh8: var(--card-bd-wh8);
+  --card-bd-bk-to-gr8: var(--card-bd-gr8);
+  --card-bd-bk-to-wh9: var(--card-bd-wh9);
+  --card-bd-bk-to-gr9: var(--card-bd-gr9);
+
+  /* 🌟 Gray 계열 */
+  --card-bd-gr-to-wh1: var(--card-bd-wh1);
+  --card-bd-gr-to-bk1: var(--card-bd-bk1);
+  --card-bd-gr-to-wh2: var(--card-bd-wh2);
+  --card-bd-gr-to-bk2: var(--card-bd-bk2);
+  --card-bd-gr-to-wh3: var(--card-bd-wh3);
+  --card-bd-gr-to-bk3: var(--card-bd-bk3);
+  --card-bd-gr-to-wh4: var(--card-bd-wh4);
+  --card-bd-gr-to-bk4: var(--card-bd-bk4);
+  --card-bd-gr-to-wh5: var(--card-bd-wh5);
+  --card-bd-gr-to-bk5: var(--card-bd-bk5);
+  --card-bd-gr-to-wh6: var(--card-bd-wh6);
+  --card-bd-gr-to-bk6: var(--card-bd-bk6);
+  --card-bd-gr-to-wh7: var(--card-bd-wh7);
+  --card-bd-gr-to-bk7: var(--card-bd-bk7);
+  --card-bd-gr-to-wh8: var(--card-bd-wh8);
+  --card-bd-gr-to-bk8: var(--card-bd-bk8);
+  --card-bd-gr-to-wh9: var(--card-bd-wh9);
+  --card-bd-gr-to-bk9: var(--card-bd-bk9);
+
+  /* 🌟 White 계열 */
+  --card-bd-wh-to-gr1: var(--card-bd-gr1);
+  --card-bd-wh-to-bk1: var(--card-bd-bk1);
+  --card-bd-wh-to-gr2: var(--card-bd-gr2);
+  --card-bd-wh-to-bk2: var(--card-bd-bk2);
+  --card-bd-wh-to-gr3: var(--card-bd-gr3);
+  --card-bd-wh-to-bk3: var(--card-bd-bk3);
+  --card-bd-wh-to-gr4: var(--card-bd-gr4);
+  --card-bd-wh-to-bk4: var(--card-bd-bk4);
+  --card-bd-wh-to-gr5: var(--card-bd-gr5);
+  --card-bd-wh-to-bk5: var(--card-bd-bk5);
+  --card-bd-wh-to-gr6: var(--card-bd-gr6);
+  --card-bd-wh-to-bk6: var(--card-bd-bk6);
+  --card-bd-wh-to-gr7: var(--card-bd-gr7);
+  --card-bd-wh-to-bk7: var(--card-bd-bk7);
+  --card-bd-wh-to-gr8: var(--card-bd-gr8);
+  --card-bd-wh-to-bk8: var(--card-bd-bk8);
+  --card-bd-wh-to-gr9: var(--card-bd-gr9);
+  --card-bd-wh-to-bk9: var(--card-bd-bk9);
+
+  /* 🌟 Black 계열 (투명도) */
+  --card-bd-bk-opc-to-wh1: var(--card-bd-wh-opc1);
+  --card-bd-bk-opc-to-wh2: var(--card-bd-wh-opc2);
+  --card-bd-bk-opc-to-wh3: var(--card-bd-wh-opc3);
+  --card-bd-bk-opc-to-wh4: var(--card-bd-wh-opc4);
+  --card-bd-bk-opc-to-wh5: var(--card-bd-wh-opc5);
+  --card-bd-bk-opc-to-wh6: var(--card-bd-wh-opc6);
+  --card-bd-bk-opc-to-wh7: var(--card-bd-wh-opc7);
+  --card-bd-bk-opc-to-wh8: var(--card-bd-wh-opc8);
+  --card-bd-bk-opc-to-wh9: var(--card-bd-wh-opc9);
+
+  /* 🌟 White 계열 (투명도) */
+  --card-bd-wh-opc-to-bk1: var(--card-bd-bk-opc1);
+  --card-bd-wh-opc-to-bk2: var(--card-bd-bk-opc2);
+  --card-bd-wh-opc-to-bk3: var(--card-bd-bk-opc3);
+  --card-bd-wh-opc-to-bk4: var(--card-bd-bk-opc4);
+  --card-bd-wh-opc-to-bk5: var(--card-bd-bk-opc5);
+  --card-bd-wh-opc-to-bk6: var(--card-bd-bk-opc6);
+  --card-bd-wh-opc-to-bk7: var(--card-bd-bk-opc7);
+  --card-bd-wh-opc-to-bk8: var(--card-bd-bk-opc8);
+  --card-bd-wh-opc-to-bk9: var(--card-bd-bk-opc9);
 
   /* =============================
     Button Border Color

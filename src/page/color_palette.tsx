@@ -700,369 +700,810 @@ function ColorPalette() {
             </div>
           </div>
           <div className="color_palette_template background card">
-            {/* Black */}
+            {/* Bg : Black / Border : Black */}
             <div>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk1)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-gr1)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk1)",
+                    border: "1px solid var(--card-bd-bk-to-wh1)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-wh1)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk2)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-gr2)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-gr1)",
+                    border: "1px solid var(--card-bd-bk1)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-wh2)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk3)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-gr3)" }}
-                ></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-wh3)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-wh1)",
+                    border: "1px solid var(--card-bd-bk-to-gr1)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk4)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-gr4)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk2)",
+                    border: "1px solid var(--card-bd-bk-to-wh2)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-wh4)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk5)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-gr5)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-gr2)",
+                    border: "1px solid var(--card-bd-bk2)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-wh5)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk6)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-gr6)" }}
-                ></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-wh6)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-wh2)",
+                    border: "1px solid var(--card-bd-bk-to-gr2)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk7)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-gr7)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk3)",
+                    border: "1px solid var(--card-bd-bk-to-wh3)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-wh7)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-gr3)",
+                    border: "1px solid var(--card-bd-bk3)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-wh3)",
+                    border: "1px solid var(--card-bd-bk-to-gr3)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk8)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-gr8)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk4)",
+                    border: "1px solid var(--card-bd-bk-to-wh4)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-wh8)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-gr4)",
+                    border: "1px solid var(--card-bd-bk4)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-wh4)",
+                    border: "1px solid var(--card-bd-bk-to-gr4)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk9)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-gr9)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk5)",
+                    border: "1px solid var(--card-bd-bk-to-wh5)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-to-wh9)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-gr5)",
+                    border: "1px solid var(--card-bd-bk5)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-wh5)",
+                    border: "1px solid var(--card-bd-bk-to-gr5)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk6)",
+                    border: "1px solid var(--card-bd-bk-to-wh6)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-gr6)",
+                    border: "1px solid var(--card-bd-bk6)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-wh6)",
+                    border: "1px solid var(--card-bd-bk-to-gr6)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk7)",
+                    border: "1px solid var(--card-bd-bk-to-wh7)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-gr7)",
+                    border: "1px solid var(--card-bd-bk7)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-wh7)",
+                    border: "1px solid var(--card-bd-bk-to-gr7)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk8)",
+                    border: "1px solid var(--card-bd-bk-to-wh8)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-gr8)",
+                    border: "1px solid var(--card-bd-bk8)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-wh8)",
+                    border: "1px solid var(--card-bd-bk-to-gr8)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk9)",
+                    border: "1px solid var(--card-bd-bk-to-wh9)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-gr9)",
+                    border: "1px solid var(--card-bd-bk9)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-to-wh9)",
+                    border: "1px solid var(--card-bd-bk-to-gr9)",
+                  }}
                 ></li>
               </ul>
             </div>
-            {/* Gray */}
+            {/* Bg : Gray / Border : White */}
             <div>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-gr1)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-wh1)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr1)",
+                    border: "1px solid var(--card-bd-wh1)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-bk1)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-gr2)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-wh2)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-wh1)",
+                    border: "1px solid var(--card-bd-wh-to-bk1)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-bk2)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-gr3)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-wh3)" }}
-                ></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-bk3)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-bk1)",
+                    border: "1px solid var(--card-bd-wh-to-gr1)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-gr4)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-wh4)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr2)",
+                    border: "1px solid var(--card-bd-wh2)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-bk4)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-gr5)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-wh5)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-wh2)",
+                    border: "1px solid var(--card-bd-wh-to-bk2)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-bk5)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-gr6)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-wh6)" }}
-                ></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-bk6)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-bk2)",
+                    border: "1px solid var(--card-bd-wh-to-gr2)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-gr7)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-wh7)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr3)",
+                    border: "1px solid var(--card-bd-wh3)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-bk7)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-wh3)",
+                    border: "1px solid var(--card-bd-wh-to-bk3)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-bk3)",
+                    border: "1px solid var(--card-bd-wh-to-gr3)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-gr8)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-wh8)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr4)",
+                    border: "1px solid var(--card-bd-wh4)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-bk8)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-wh4)",
+                    border: "1px solid var(--card-bd-wh-to-bk4)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-bk4)",
+                    border: "1px solid var(--card-bd-wh-to-gr4)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-gr9)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-wh9)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr5)",
+                    border: "1px solid var(--card-bd-wh5)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-gr-to-bk9)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-wh5)",
+                    border: "1px solid var(--card-bd-wh-to-bk5)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-bk5)",
+                    border: "1px solid var(--card-bd-wh-to-gr5)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr6)",
+                    border: "1px solid var(--card-bd-wh6)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-wh6)",
+                    border: "1px solid var(--card-bd-wh-to-bk6)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-bk6)",
+                    border: "1px solid var(--card-bd-wh-to-gr6)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr7)",
+                    border: "1px solid var(--card-bd-wh7)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-wh7)",
+                    border: "1px solid var(--card-bd-wh-to-bk7)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-bk7)",
+                    border: "1px solid var(--card-bd-wh-to-gr7)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr8)",
+                    border: "1px solid var(--card-bd-wh8)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-wh8)",
+                    border: "1px solid var(--card-bd-wh-to-bk8)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-bk8)",
+                    border: "1px solid var(--card-bd-wh-to-gr8)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr9)",
+                    border: "1px solid var(--card-bd-wh9)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-wh9)",
+                    border: "1px solid var(--card-bd-wh-to-bk9)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-gr-to-bk9)",
+                    border: "1px solid var(--card-bd-wh-to-gr9)",
+                  }}
                 ></li>
               </ul>
             </div>
-            {/* White */}
+            {/* Bg : White / Border : Gray */}
             <div>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh1)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-gr1)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh1)",
+                    border: "1px solid var(--card-bd-gr-to-bk1)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-bk1)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh2)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-gr2)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-gr1)",
+                    border: "1px solid var(--card-bd-gr-to-wh1)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-bk2)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh3)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-gr3)" }}
-                ></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-bk3)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-bk1)",
+                    border: "1px solid var(--card-bd-gr1)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh4)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-gr4)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh2)",
+                    border: "1px solid var(--card-bd-gr-to-bk2)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-bk4)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh5)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-gr5)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-gr2)",
+                    border: "1px solid var(--card-bd-gr-to-wh2)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-bk5)" }}
-                ></li>
-              </ul>
-              <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh6)" }}></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-gr6)" }}
-                ></li>
-                <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-bk6)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-bk2)",
+                    border: "1px solid var(--card-bd-gr2)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh7)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-gr7)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh3)",
+                    border: "1px solid var(--card-bd-gr-to-bk3)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-bk7)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-gr3)",
+                    border: "1px solid var(--card-bd-gr-to-wh3)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-bk3)",
+                    border: "1px solid var(--card-bd-gr3)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh8)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-gr8)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh4)",
+                    border: "1px solid var(--card-bd-gr-to-bk4)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-bk8)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-gr4)",
+                    border: "1px solid var(--card-bd-gr-to-wh4)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-bk4)",
+                    border: "1px solid var(--card-bd-gr4)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh9)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-gr9)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh5)",
+                    border: "1px solid var(--card-bd-gr-to-bk5)",
+                  }}
                 ></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-to-bk9)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-gr5)",
+                    border: "1px solid var(--card-bd-gr-to-wh5)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-bk5)",
+                    border: "1px solid var(--card-bd-gr5)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh6)",
+                    border: "1px solid var(--card-bd-gr-to-bk6)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-gr6)",
+                    border: "1px solid var(--card-bd-gr-to-wh6)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-bk6)",
+                    border: "1px solid var(--card-bd-gr6)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh7)",
+                    border: "1px solid var(--card-bd-gr-to-bk7)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-gr7)",
+                    border: "1px solid var(--card-bd-gr-to-wh7)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-bk7)",
+                    border: "1px solid var(--card-bd-gr7)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh8)",
+                    border: "1px solid var(--card-bd-gr-to-bk8)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-gr8)",
+                    border: "1px solid var(--card-bd-gr-to-wh8)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-bk8)",
+                    border: "1px solid var(--card-bd-gr8)",
+                  }}
+                ></li>
+              </ul>
+              <ul>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh9)",
+                    border: "1px solid var(--card-bd-gr-to-bk9)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-gr9)",
+                    border: "1px solid var(--card-bd-gr-to-wh9)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-to-bk9)",
+                    border: "1px solid var(--card-bd-gr9)",
+                  }}
                 ></li>
               </ul>
             </div>
             {/* Black Opacity */}
             <div>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk-opc1)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh1)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc1)",
+                    border: "1px solid var(--card-bd-wh-opc1)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc-to-wh1)",
+                    border: "1px solid var(--card-bd-bk-opc1)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk-opc2)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh2)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc2)",
+                    border: "1px solid var(--card-bd-wh-opc2)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc-to-wh2)",
+                    border: "1px solid var(--card-bd-bk-opc2)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk-opc3)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh3)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc3)",
+                    border: "1px solid var(--card-bd-wh-opc3)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc-to-wh3)",
+                    border: "1px solid var(--card-bd-bk-opc3)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk-opc4)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh4)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc4)",
+                    border: "1px solid var(--card-bd-wh-opc4)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc-to-wh4)",
+                    border: "1px solid var(--card-bd-bk-opc4)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk-opc5)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh5)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc5)",
+                    border: "1px solid var(--card-bd-wh-opc5)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc-to-wh5)",
+                    border: "1px solid var(--card-bd-bk-opc5)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk-opc6)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh6)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc6)",
+                    border: "1px solid var(--card-bd-wh-opc6)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc-to-wh6)",
+                    border: "1px solid var(--card-bd-bk-opc6)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk-opc7)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh7)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc7)",
+                    border: "1px solid var(--card-bd-wh-opc7)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc-to-wh7)",
+                    border: "1px solid var(--card-bd-bk-opc7)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk-opc8)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh8)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc8)",
+                    border: "1px solid var(--card-bd-wh-opc8)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc-to-wh8)",
+                    border: "1px solid var(--card-bd-bk-opc8)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-bk-opc9)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-bk-opc-to-wh9)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc9)",
+                    border: "1px solid var(--card-bd-wh-opc9)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-bk-opc-to-wh9)",
+                    border: "1px solid var(--card-bd-bk-opc9)",
+                  }}
                 ></li>
               </ul>
             </div>
             {/* White Opacity */}
             <div>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh-opc1)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk1)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc1)",
+                    border: "1px solid var(--card-bd-bk-opc1)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc-to-bk1)",
+                    border: "1px solid var(--card-bd-wh-opc1)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh-opc2)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk2)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc2)",
+                    border: "1px solid var(--card-bd-bk-opc2)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc-to-bk2)",
+                    border: "1px solid var(--card-bd-wh-opc2)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh-opc3)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk3)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc3)",
+                    border: "1px solid var(--card-bd-bk-opc3)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc-to-bk3)",
+                    border: "1px solid var(--card-bd-wh-opc3)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh-opc4)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk4)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc4)",
+                    border: "1px solid var(--card-bd-bk-opc4)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc-to-bk4)",
+                    border: "1px solid var(--card-bd-wh-opc4)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh-opc5)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk5)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc5)",
+                    border: "1px solid var(--card-bd-bk-opc5)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc-to-bk5)",
+                    border: "1px solid var(--card-bd-wh-opc5)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh-opc6)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk6)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc6)",
+                    border: "1px solid var(--card-bd-bk-opc6)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc-to-bk6)",
+                    border: "1px solid var(--card-bd-wh-opc6)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh-opc7)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk7)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc7)",
+                    border: "1px solid var(--card-bd-bk-opc7)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc-to-bk7)",
+                    border: "1px solid var(--card-bd-wh-opc7)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh-opc8)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk8)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc8)",
+                    border: "1px solid var(--card-bd-bk-opc8)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc-to-bk8)",
+                    border: "1px solid var(--card-bd-wh-opc8)",
+                  }}
                 ></li>
               </ul>
               <ul>
-                <li style={{ backgroundColor: "var(--card-bg-wh-opc9)" }}></li>
                 <li
-                  style={{ backgroundColor: "var(--card-bg-wh-opc-to-bk9)" }}
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc9)",
+                    border: "1px solid var(--card-bd-bk-opc9)",
+                  }}
+                ></li>
+                <li
+                  style={{
+                    backgroundColor: "var(--card-bg-wh-opc-to-bk9)",
+                    border: "1px solid var(--card-bd-wh-opc9)",
+                  }}
                 ></li>
               </ul>
             </div>
