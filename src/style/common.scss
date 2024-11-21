@@ -37,6 +37,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
 }
 .ellipsis3 {
@@ -45,6 +46,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
 }
 .ellipsis_td {

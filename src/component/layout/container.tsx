@@ -10,6 +10,31 @@ function Container(props: Props) {
   const [hasSearch, setHasSearch] = useState(false); // 확인용 클래스로 삭제해도 OK
   const [searchHeight, setSearchHeight] = useState<number | null>(null);
 
+  const [dimensions, setDimensions] = useState({
+    searchPaddingTop: 0,
+    searchPaddingBottom: 0,
+    toggleHeight: 0,
+    toggleMarginTop: 0,
+  });
+
+  const calcDimensions = () => {
+    const container = containerRef.current;
+    if (!container) return;
+  };
+
+  useEffect(() => {
+    // 처음 렌더링 시 계산
+    calcDimensions();
+    // Resize 이벤트 리스너
+    const handleResize = () => {
+      calcDimensions();
+    };
+    window.addEventListener("resize", calcDimensions);
+    return () => {
+      window.removeEventListener("resize", calcDimensions);
+    };
+  }, [props.children]);
+
   useEffect(() => {
     // console.log("실행");
     // 검색영역 확인
@@ -30,14 +55,22 @@ function Container(props: Props) {
         setHasSearch(true); // 확인용 클래스로 삭제해도 OK
         setSearchHeight(searchArea.getBoundingClientRect().height); // height 중복
         // console.log("검색영역 높이값", searchHeight);
+        // 검색영역 상,하 패딩 값
+        const searchStyle = window.getComputedStyle(searchArea);
+        const searchPadding =
+          parseFloat(searchStyle.paddingTop) +
+          parseFloat(searchStyle.paddingBottom);
+        // console.log("검색영역 패딩", searchPadding);
 
         // 검색영역 높이가 특정 값 이상일 경우 클래스 부여
         const search_h = searchArea.getBoundingClientRect().height; // height 중복
-        // if (search_h > 100) {
-        //   searchArea.classList.add("over_height");
-        // } else {
-        //   searchArea.classList.remove("over_height");
-        // }
+        if (search_h > 100) {
+          searchArea.classList.remove("under_height");
+          searchArea.classList.add("over_height");
+        } else {
+          searchArea.classList.remove("over_height");
+          searchArea.classList.add("under_height");
+        }
 
         const resizeObserver = new ResizeObserver(entries => {
           for (let entry of entries) {
@@ -50,6 +83,7 @@ function Container(props: Props) {
         // console.log("리사이즈 확인1");
         resizeObserver.observe(searchArea);
         // console.log("리사이즈 확인2");
+        return () => resizeObserver.disconnect;
       } else {
         // 검색영역 없는 페이지
         setHasSearch(false); // 확인용 클래스로 삭제해도 OK
