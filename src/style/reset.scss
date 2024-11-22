@@ -219,13 +219,21 @@ select {
   padding: 0 0.8571rem;
   font-weight: 400;
   border-radius: 0.5714rem;
-  border: 1px solid var(--white3);
+  border: 1px solid var(--bd-gr-to-wh9);
   background-color: var(--transparent);
   color: var(--text-bk-to-wh1);
   transition: all 0.3s;
   &:disabled {
-    background-color: var(--bg-wh3);
-    color: var(text-bk-to-gr9);
+    background-color: var(--bg-disabled);
+    color: var(--text-disabled);
+  }
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea {
+  &:focus {
+    border-color: var(--bd-focus);
   }
 }
 
@@ -239,12 +247,12 @@ textarea {
 
 input[type="text"]:read-only:focus,
 textarea:read-only:focus {
-  border-color: var(--white3);
+  border-color: var(--bd-readonly);
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: var(--placeholer);
+  color: var(--text-placeholer);
 }
 
 input[type="file"],
@@ -287,6 +295,7 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    color: var(--text-placeholer);
   }
   .css-13cymwt-control,
   .css-t3ipsp-control,
@@ -294,10 +303,13 @@ body {
     height: 2.2857rem;
     min-height: auto;
     border-radius: 0.5714rem;
+    border-color: var(--bd-gr-to-wh9);
+    background-color: var(--transparent);
   }
   .css-1dimb5e-singleValue,
   .css-1mkvw8y {
     margin: 0.1429rem 0 0 0;
+    color: var(--text-bk-to-wh1);
   }
   .css-b62m3t-container {
     .css-hlgwow {
@@ -305,8 +317,33 @@ body {
       padding: 0.1429rem 0.5714rem;
     }
   }
+  // disabled select
+  .css-3iigni-container {
+    .css-16xfy0z-control {
+      background-color: var(--bg-disabled);
+    }
+    .css-1jqq78o-placeholder {
+      color: var(--text-placeholer);
+    }
+    .css-1xc3v61-indicatorContainer {
+      background-image: url("../../public/img/icon/icon_select_arrow_disabled.svg");
+    }
+  }
+  // option
   .css-1nmdiq5-menu {
     z-index: 30;
+    border: 1px solid var(--bg-gr-to-wh7);
+    background-color: var(--bg-wh-to-gr1);
+    box-shadow: 0 0.2857rem 0.4286rem 0 var(--shadow-bk-opc1);
+  }
+  .css-10wo9uf-option {
+    background-color: var(--transparent);
+    color: var(--text-bk-to-wh1);
+  }
+  // option hover
+  .css-d7l1ni-option {
+    background-color: var(--bg-wh-to-gr7);
+    color: var(--text-bk-to-wh1);
   }
   /* 텍스트 영역 클릭 시 옵션노출 */
   .css-19bb58m,

@@ -1415,6 +1415,14 @@
 
 /* Darkmode 시 변수 재 설정 */
 [data-theme="dark"] {
+  /*===================
+    Color
+  ====================*/
+
+  /* 🌟 특정 Attributes Color */
+  --text-placeholer: #d3d3d3;
+  --bg-disabled: #808080;
+
   /* 🌟 Layout Background Color */
   --body-bg: #5a5a5a;
   --header-bg: #333;
@@ -2283,4 +2291,30 @@
   --table-bd-wh7: var(--table-bd-gr7);
   --table-bd-wh8: var(--table-bd-gr8);
   --table-bd-wh9: var(--table-bd-gr9);
+
+  /* =============================
+    Icon Color
+  ============================= */
+  body {
+    .css-1xc3v61-indicatorContainer,
+    .css-15lsz6c-indicatorContainer {
+      background-image: url("../../public/img/icon/icon_select_arrow_white.svg");
+    }
+  }
+  .checkbox {
+    input {
+      &:checked {
+        & + label {
+          i {
+            background-image: url("../../public/img/icon/icon_chk_white.svg");
+          }
+        }
+      }
+    }
+  }
+  .search_tool {
+    .toggle {
+      background-image: url("../../public/img/icon/icon_search_toggle_white.svg");
+    }
+  }
 }

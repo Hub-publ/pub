@@ -30,15 +30,15 @@ function Table() {
           <ul>
             <li>
               <p className="label">input</p>
-              <input type="text" />
+              <input type="text" placeholder="placeholder" />
             </li>
             <li>
               <p className="label">input disabled</p>
-              <input type="text" disabled />
+              <input type="text" placeholder="placeholder" disabled />
             </li>
             <li>
               <p className="label">search input</p>
-              <SearchInput />
+              <SearchInput placeholder="placeholder" />
             </li>
             <li>
               <p className="label">select</p>
@@ -49,6 +49,7 @@ function Table() {
                   { value: "vanilla", label: "Vanilla" },
                 ]}
                 onChange={handleChange}
+                // menuIsOpen
               />
             </li>
             <li>
@@ -302,7 +303,6 @@ function Table() {
                           { value: "Publishing", label: "퍼블팀" },
                         ]}
                         onChange={handleChange}
-                        isDisabled
                       />
                     </td>
                     <th>
