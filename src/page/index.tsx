@@ -33,11 +33,11 @@ function Main() {
             </li>
             <li>
               <p className="label">input disabled</p>
-              <input type="text" disabled />
+              <input type="text" placeholder="placeholder" disabled />
             </li>
             <li>
               <p className="label">search input</p>
-              <SearchInput />
+              <SearchInput placeholder="placeholder" />
             </li>
             <li>
               <p className="label">select</p>
