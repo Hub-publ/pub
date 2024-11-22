@@ -90,23 +90,23 @@ function Table() {
             <Button
               title="검색"
               size="h_32"
-              bg_color="btn-bg-bk-opc1"
-              bd_color="btn-bg-gr1"
-              color="btn-text-bk4"
+              bg_color="btn-bg-wh-to-gr3"
+              bd_color="btn-bd-gr-to-wh9"
+              color="btn-text-bk-to-wh3"
             />
             <Button
               title="입력"
               size="h_32"
-              bg_color="btn-bg-bk-opc1"
-              bd_color="btn-bg-gr1"
-              color="btn-text-bk4"
+              bg_color="btn-bg-wh-to-gr3"
+              bd_color="btn-bd-gr-to-wh9"
+              color="btn-text-bk-to-wh3"
             />
             <Button
               title="입력 취소"
               size="h_32"
-              bg_color="btn-bg-bk-opc1"
-              bd_color="btn-bg-gr1"
-              color="btn-text-bk4"
+              bg_color="btn-bg-wh-to-gr3"
+              bd_color="btn-bd-gr-to-wh9"
+              color="btn-text-bk-to-wh3"
             />
           </div>
         </div>
