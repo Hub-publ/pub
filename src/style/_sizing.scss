@@ -1,4 +1,46 @@
-/* ===== 📌 Size ===== */
 :root {
+  /* ===== 📌 Width ===== */
+  // Gnb
+
+  // Side Quick Menu
+
+  /* ===== 📌 Height ===== */
+
+  // 레이아웃
   --header_height: 56px;
+
+  // input, select, search input
+
+  // button (유진)
+
+  // tag (지연)
+
+  // ...
+
+  /* ===== 📌 Margin, Padding ===== */
+
+  // margin
+  --base_ml: 12px;
+  --card_ml: 12px;
+  --tag_ml: 12px;
+  --btn_ml: 12px;
+
+  // padding
+  --horizontal_pd: 24px;
+  --horizontal_pd_large: 48px;
+  --horizontal_pd_small: 12px;
+
+  // 이미지 비율 별 padding top (4:3, 16:9...)
+
+  // line-height
+  --line_normal: 1;
+  --line_medium: 1.4;
+  --line_large: 1.6;
+}
+
+.card {
+  width: calc(
+    100% + #{var(--horizontal_pd_left)} + #{var(--horizontal_pd_right)}
+  );
+  margin-left: -#{var(--horizontal_pd_left)};
 }

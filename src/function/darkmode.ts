@@ -1,4 +1,5 @@
 // ts 파일에서는 useState를 사용할 수 없음 ➡️ javascript로 대체
+import { useEffect } from "react";
 import { SingleValue } from "react-select";
 
 type OptionType = {
@@ -51,3 +52,18 @@ export function FontReSize(event: SingleValue<OptionType>) {
     }
   }
 }
+// 1024 아래로 비율맞춰 줄어들게
+function resizeApply() {
+  const minWidth = 1024;
+  if (window.innerWidth < minWidth) {
+    if (body) {
+      (body.style as any).zoom = `${window.innerWidth / minWidth}`;
+    }
+  } else {
+    if (body) {
+      (body as any).style.zoom = "1";
+    }
+  }
+}
+resizeApply();
+window.addEventListener("resize", resizeApply);

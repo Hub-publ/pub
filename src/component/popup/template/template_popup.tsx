@@ -12,7 +12,6 @@ interface OptionType {
 }
 
 function TemplatePopup() {
-  const [popup, setPopup] = useState<Number | undefined>();
   const handleChange = (selectedOption: OptionType | null) => {
     console.log(selectedOption);
   };
@@ -84,36 +83,6 @@ function TemplatePopup() {
             <div className="table_top flex align_center justify_between">
               <p className="num">총 갯수</p>
               <div>
-                <Button
-                  title="Main Popup Open"
-                  size="h_28"
-                  bg_color="btn-bg-bk1"
-                  bd_color="btn-bd-bk1"
-                  color="btn-text-wh1"
-                  onClick={() => {
-                    setPopup(1);
-                  }}
-                />
-                <Button
-                  title="Side Popup Open"
-                  size="h_28"
-                  bg_color="transparent"
-                  bd_color="btn-bd-bk1"
-                  color="btn-text-bk1"
-                  onClick={() => {
-                    setPopup(2);
-                  }}
-                />
-                <Button
-                  title="Bottom Popup Open"
-                  size="h_28"
-                  bg_color="btn-bg-blue1"
-                  bd_color="btn-bd-blue1"
-                  color="btn-text-wh1"
-                  onClick={() => {
-                    setPopup(3);
-                  }}
-                />
                 <Button
                   title="버튼버튼"
                   size="h_28"
@@ -585,9 +554,8 @@ function TemplatePopup() {
           size="h_38"
           bg_color="transparent"
           bd_color="btn-bd-gr6"
-          color="btn-text-bk9"
+          color="btn-text-bk-to-wh9"
           title="닫기"
-          onClick={() => setPopup(undefined)}
         />
         <Button
           size="h_38"
