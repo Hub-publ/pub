@@ -1,8 +1,8 @@
 import useWidth from "../../function/use_width";
 
 interface Props {
-  mb_pd?: string;
   img_size_type: "type_16_9" | "type_4_3";
+  img_name: string;
   children: React.ReactNode;
 }
 
@@ -16,7 +16,7 @@ function ProdCard(props: Props) {
       >
         <div
           className={`img_area ${props.img_size_type}`}
-          style={{ backgroundImage: "url(/img/img_test.jpg)" }}
+          style={{ backgroundImage: `url(/img/${props.img_name})` }}
         ></div>
         <div className="cont_area">{props.children}</div>
       </div>

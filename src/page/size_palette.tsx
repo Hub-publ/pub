@@ -51,22 +51,52 @@ function SizePalette() {
           </div>
           <div className="size_palette_template">
             <div className="board_wrap langth_2">
-              <ProdCard img_size_type="type_16_9">123</ProdCard>
-              <ProdCard img_size_type="type_16_9">123</ProdCard>
-              <ProdCard img_size_type="type_16_9">123</ProdCard>
-              <ProdCard img_size_type="type_16_9">123</ProdCard>
+              <ProdCard img_size_type="type_16_9" img_name="img_test.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_16_9" img_name="img_test.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_16_9" img_name="img_test.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_16_9" img_name="img_test.jpg">
+                123
+              </ProdCard>
             </div>
             <div className="board_wrap langth_3">
-              <ProdCard img_size_type="type_4_3">123</ProdCard>
-              <ProdCard img_size_type="type_4_3">123</ProdCard>
-              <ProdCard img_size_type="type_4_3">123</ProdCard>
-              <ProdCard img_size_type="type_4_3">123</ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test2.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test2.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test2.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test2.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test2.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test2.jpg">
+                123
+              </ProdCard>
             </div>
             <div className="board_wrap langth_4">
-              <ProdCard img_size_type="type_4_3">123</ProdCard>
-              <ProdCard img_size_type="type_4_3">123</ProdCard>
-              <ProdCard img_size_type="type_4_3">123</ProdCard>
-              <ProdCard img_size_type="type_4_3">123</ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test3.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test3.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test3.jpg">
+                123
+              </ProdCard>
+              <ProdCard img_size_type="type_4_3" img_name="img_test3.jpg">
+                123
+              </ProdCard>
             </div>
           </div>
         </div>
