@@ -75,7 +75,6 @@ export const CeduAuthProvider = ({
 
     // 가로모드 작업용 설정 변경
     setdevice2("PC");
-    // setdevice2('IOS')
   };
 
   useEffect(() => {
@@ -100,13 +99,6 @@ export const CeduAuthProvider = ({
     }
     const head = document.head;
     const link = document.createElement("link");
-
-    // 가로모드 작업용 설정 변경
-    // link.className = 'mobile-landscape-stylesheet'
-    // link.type = 'text/css'
-    // link.rel = 'stylesheet'
-    // link.href = '/mobile-landscape.css'
-
     head.appendChild(link);
 
     return () => {

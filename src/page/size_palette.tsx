@@ -2,6 +2,7 @@ import useWidth from "../function/use_width";
 import Header from "../component/layout/header";
 import Container from "../component/layout/container";
 import MainCard from "../component/card/main_card";
+import ProdCard from "../component/card/prod_card";
 
 function SizePalette() {
   const { device } = useWidth();
@@ -47,6 +48,26 @@ function SizePalette() {
             <MainCard pd="var(--card-pd-large-up) var(--card-pd-large-up)">
               {device === "P" ? "[PC]" : "[MB]"} 안녕하세요? 홍팀장이에요?
             </MainCard>
+          </div>
+          <div className="size_palette_template">
+            <div className="board_wrap langth_2">
+              <ProdCard img_size_type="type_16_9">123</ProdCard>
+              <ProdCard img_size_type="type_16_9">123</ProdCard>
+              <ProdCard img_size_type="type_16_9">123</ProdCard>
+              <ProdCard img_size_type="type_16_9">123</ProdCard>
+            </div>
+            <div className="board_wrap langth_3">
+              <ProdCard img_size_type="type_4_3">123</ProdCard>
+              <ProdCard img_size_type="type_4_3">123</ProdCard>
+              <ProdCard img_size_type="type_4_3">123</ProdCard>
+              <ProdCard img_size_type="type_4_3">123</ProdCard>
+            </div>
+            <div className="board_wrap langth_4">
+              <ProdCard img_size_type="type_4_3">123</ProdCard>
+              <ProdCard img_size_type="type_4_3">123</ProdCard>
+              <ProdCard img_size_type="type_4_3">123</ProdCard>
+              <ProdCard img_size_type="type_4_3">123</ProdCard>
+            </div>
           </div>
         </div>
       </Container>

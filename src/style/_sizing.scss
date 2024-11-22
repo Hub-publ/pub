@@ -54,9 +54,43 @@
   --card-mg-big-up: 2.1429rem; // 30px
   --card-mg-big-down: 2.1429rem; // 30px
 
+  // List
+  --list-mg-mini: 0.5714rem; // 8px
+  --list-mg-mini-up: 0.5714rem; // 8px
+  --list-mg-mini-down: 0.5714rem; // 8px
+  --list-mg-small: 0.8571rem; // 12px
+  --list-mg-small-up: 0.8571rem; // 12px
+  --list-mg-small-down: 0.8571rem; // 12px
+  --list-mg-normal: 1.1429rem; // 16px
+  --list-mg-normal-up: 1.1429rem; // 16px
+  --list-mg-normal-down: 1.1429rem; // 16px
+  --list-mg-large: 1.7143rem; // 24px
+  --list-mg-large-up: 1.7143rem; // 24px
+  --list-mg-large-down: 1.7143rem; // 24px
+  --list-mg-big: 2.1429rem; // 30px
+  --list-mg-big-up: 2.1429rem; // 30px
+  --list-mg-big-down: 2.1429rem; // 30px
+
+  // Board
+  --board-mg-mini: 0.5714rem; // 8px
+  --board-mg-mini-up: 0.5714rem; // 8px
+  --board-mg-mini-down: 0.5714rem; // 8px
+  --board-mg-small: 0.8571rem; // 12px
+  --board-mg-small-up: 0.8571rem; // 12px
+  --board-mg-small-down: 0.8571rem; // 12px
+  --board-mg-normal: 1.1429rem; // 16px
+  --board-mg-normal-up: 1.1429rem; // 16px
+  --board-mg-normal-down: 1.1429rem; // 16px
+  --board-mg-large: 1.7143rem; // 24px
+  --board-mg-large-up: 1.7143rem; // 24px
+  --board-mg-large-down: 1.7143rem; // 24px
+  --board-mg-big: 2.1429rem; // 30px
+  --board-mg-big-up: 2.1429rem; // 30px
+  --board-mg-big-down: 2.1429rem; // 30px
+
   /* ===== 📌 Padding ===== */
 
-  // 기본
+  // 일반
   --pd-mini: 0.8571rem; // 12px
   --pd-mini-up: 0.8571rem; // 12px
   --pd-mini-down: 0.8571rem; // 12px
@@ -84,7 +118,37 @@
   --card-pd-large-up: 2.2857rem; // 32px
   --card-pd-large-down: 2.2857rem; // 32px
 
+  //List
+  --list-pd-mini: 0.8571rem; // 12px
+  --list-pd-mini-up: 0.8571rem; // 12px
+  --list-pd-mini-down: 0.8571rem; // 12px
+  --list-pd-small: 1.4286rem; // 20px
+  --list-pd-small-up: 1.4286rem; // 20px
+  --list-pd-small-down: 1.4286rem; // 20px
+  --list-pd-normal: 1.7143rem; // 24px
+  --list-pd-normal-up: 1.7143rem; // 24px
+  --list-pd-normal-down: 1.7143rem; // 24px
+  --list-pd-large: 2.2857rem; // 32px
+  --list-pd-large-up: 2.2857rem; // 32px
+  --list-pd-large-down: 2.2857rem; // 32px
+
+  //Board
+  --board-pd-mini: 0.8571rem; // 12px
+  --board-pd-mini-up: 0.8571rem; // 12px
+  --board-pd-mini-down: 0.8571rem; // 12px
+  --board-pd-small: 1.4286rem; // 20px
+  --board-pd-small-up: 1.4286rem; // 20px
+  --board-pd-small-down: 1.4286rem; // 20px
+  --board-pd-normal: 1.7143rem; // 24px
+  --board-pd-normal-up: 1.7143rem; // 24px
+  --board-pd-normal-down: 1.7143rem; // 24px
+  --board-pd-large: 2.2857rem; // 32px
+  --board-pd-large-up: 2.2857rem; // 32px
+  --board-pd-large-down: 2.2857rem; // 32px
+
   // 이미지 비율 별 padding top (4:3, 16:9...)
+  --img-area-4: 75%;
+  --img-area-16: 25%;
 
   // line-height
   --line-normal: 1;
@@ -96,7 +160,7 @@
   :root {
     /* ===== 📌 Margin ===== */
 
-    // 기본
+    // 일반
     --mg-mini-up: 0.7143rem; // 8px ➡️ 10px
     --mg-mini-down: 0.4286rem; // 8px ➡️ 6px
     --mg-small-up: 1rem; // 12px ➡️ 14px
@@ -120,9 +184,33 @@
     --card-mg-big-up: 2.4286rem; // 30px ➡️ 34px
     --card-mg-big-down: 1.8571rem; // 30px ➡️ 26px
 
+    // List
+    --list-mg-mini-up: 0.7143rem; // 8px ➡️ 10px
+    --list-mg-mini-down: 0.4286rem; // 8px ➡️ 6px
+    --list-mg-small-up: 1rem; // 12px ➡️ 14px
+    --list-mg-small-down: 0.7143rem; // 12px ➡️ 10px
+    --list-mg-normal-up: 1.2857rem; // 16px ➡️ 18px
+    --list-mg-normal-down: 1rem; // 16px ➡️ 14px
+    --list-mg-large-up: 2rem; // 24px ➡️ 28px
+    --list-mg-large-down: 1.4286rem; // 24px ➡️ 20px
+    --list-mg-big-up: 2.4286rem; // 30px ➡️ 34px
+    --list-mg-big-down: 1.8571rem; // 30px ➡️ 26px
+
+    // Board
+    --board-mg-mini-up: 0.7143rem; // 8px ➡️ 10px
+    --board-mg-mini-down: 0.4286rem; // 8px ➡️ 6px
+    --board-mg-small-up: 1rem; // 12px ➡️ 14px
+    --board-mg-small-down: 0.7143rem; // 12px ➡️ 10px
+    --board-mg-normal-up: 1.2857rem; // 16px ➡️ 18px
+    --board-mg-normal-down: 1rem; // 16px ➡️ 14px
+    --board-mg-large-up: 2rem; // 24px ➡️ 28px
+    --board-mg-large-down: 1.4286rem; // 24px ➡️ 20px
+    --board-mg-big-up: 2.4286rem; // 30px ➡️ 34px
+    --board-mg-big-down: 1.8571rem; // 30px ➡️ 26px
+
     /* ===== 📌 Padding ===== */
 
-    // 기본
+    // 일반
     --pd-mini-up: 1.1429rem; // 12px ➡️ 16px
     --pd-mini-down: 0.5714rem; // 12px ➡️8px
     --pd-small-up: 1.7143rem; // 20px ➡️ 24px
@@ -133,14 +221,34 @@
     --pd-large-down: 2rem; // 32px ➡️ 28px
 
     // Card
-    --Card-pd-mini-up: 1.1429rem; // 12px ➡️ 16px
-    --Card-pd-mini-down: 0.5714rem; // 12px ➡️8px
-    --Card-pd-small-up: 1.7143rem; // 20px ➡️ 24px
-    --Card-pd-small-down: 1.1429rem; // 20px ➡️16px
-    --Card-pd-normal-up: 2rem; // 24px ➡️ 28px
-    --Card-pd-normal-down: 1.4286rem; // 24px ➡️ 20px
-    --Card-pd-large-up: 2.2857rem; // 32px ➡️ 40px
-    --Card-pd-large-down: 2rem; // 32px ➡️ 28px
+    --card-pd-mini-up: 1.1429rem; // 12px ➡️ 16px
+    --card-pd-mini-down: 0.5714rem; // 12px ➡️8px
+    --card-pd-small-up: 1.7143rem; // 20px ➡️ 24px
+    --card-pd-small-down: 1.1429rem; // 20px ➡️16px
+    --card-pd-normal-up: 2rem; // 24px ➡️ 28px
+    --card-pd-normal-down: 1.4286rem; // 24px ➡️ 20px
+    --card-pd-large-up: 2.2857rem; // 32px ➡️ 40px
+    --card-pd-large-down: 2rem; // 32px ➡️ 28px
+
+    // List
+    --list-pd-mini-up: 1.1429rem; // 12px ➡️ 16px
+    --list-pd-mini-down: 0.5714rem; // 12px ➡️8px
+    --list-pd-small-up: 1.7143rem; // 20px ➡️ 24px
+    --list-pd-small-down: 1.1429rem; // 20px ➡️16px
+    --list-pd-normal-up: 2rem; // 24px ➡️ 28px
+    --list-pd-normal-down: 1.4286rem; // 24px ➡️ 20px
+    --list-pd-large-up: 2.2857rem; // 32px ➡️ 40px
+    --list-pd-large-down: 2rem; // 32px ➡️ 28px
+
+    // Board
+    --board-pd-mini-up: 1.1429rem; // 12px ➡️ 16px
+    --board-pd-mini-down: 0.5714rem; // 12px ➡️8px
+    --board-pd-small-up: 1.7143rem; // 20px ➡️ 24px
+    --board-pd-small-down: 1.1429rem; // 20px ➡️16px
+    --board-pd-normal-up: 2rem; // 24px ➡️ 28px
+    --board-pd-normal-down: 1.4286rem; // 24px ➡️ 20px
+    --board-pd-large-up: 2.2857rem; // 32px ➡️ 40px
+    --board-pd-large-down: 2rem; // 32px ➡️ 28px
   }
 }
 
