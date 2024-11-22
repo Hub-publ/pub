@@ -753,7 +753,9 @@ header {
 .search_area {
   display: flex;
   padding: 0.8571rem 1.7143rem;
-  border-bottom: 1px solid var(--white3);
+  border-bottom: 1px solid var(--bd-gr5);
+  background-color: var(--transparent);
+
   & > ul {
     display: flex;
     flex-wrap: wrap;
@@ -768,8 +770,8 @@ header {
       }
       .label {
         font-size: 0.92857rem;
-        // font-size: 0.8125rem;
         margin-bottom: 0.4286rem;
+        color: var(--text-bk-to-wh1);
       }
       input,
       select,
