@@ -1,4 +1,4 @@
-import { DarkMode, FontReSize } from "../../function/darkmode";
+import { DarkMode, FontReSize } from "../../function/style";
 import React, { useEffect, useRef, useState } from "react";
 import Switch from "../form/switch";
 import Select from "react-select";
@@ -16,6 +16,14 @@ function Header(props: Props) {
 
   // [Ref]
   const subMenuRefs = useRef<{ [key: number]: HTMLUListElement | null }>({}); // 각 서브 메뉴별 높이에 대한 ref 배열
+
+  function GnbWidthHandler() {
+    if (fold === true) {
+      document.documentElement.style.setProperty("--gnb-width", "4.2857rem");
+    } else {
+      document.documentElement.style.setProperty("--gnb-width", "20rem");
+    }
+  }
 
   // 각 서브 메뉴별 높이 계산 및 반영
   useEffect(() => {
@@ -53,6 +61,7 @@ function Header(props: Props) {
             onClick={() => {
               setFold(!fold);
               setOpenMenus([]);
+              GnbWidthHandler();
             }}
           >
             <div className="inner">

@@ -1,13 +1,14 @@
 :root {
   /* ===== 📌 Width ===== */
   // Gnb
+  --gnb-width: 4.2857rem;
 
   // Side Quick Menu
 
   /* ===== 📌 Height ===== */
 
   // 레이아웃
-  --header_height: 56px;
+  --header-height: 4rem;
 
   // input, select, search input
 
@@ -17,30 +18,135 @@
 
   // ...
 
-  /* ===== 📌 Margin, Padding ===== */
+  /* ===== 📌 Margin ===== */
 
-  // margin
-  --base_ml: 12px;
-  --card_ml: 12px;
-  --tag_ml: 12px;
-  --btn_ml: 12px;
+  // 일반
+  --mg-mini: 0.5714rem; // 8px
+  --mg-mini-up: 0.5714rem; // 8px
+  --mg-mini-down: 0.5714rem; // 8px
+  --mg-small: 0.8571rem; // 12px
+  --mg-small-up: 0.8571rem; // 12px
+  --mg-small-down: 0.8571rem; // 12px
+  --mg-normal: 1.1429rem; // 16px
+  --mg-normal-up: 1.1429rem; // 16px
+  --mg-normal-down: 1.1429rem; // 16px
+  --mg-large: 1.7143rem; // 24px
+  --mg-large-up: 1.7143rem; // 24px
+  --mg-large-down: 1.7143rem; // 24px
+  --mg-big: 2.1429rem; // 30px
+  --mg-big-up: 2.1429rem; // 30px
+  --mg-big-down: 2.1429rem; // 30px
 
-  // padding
-  --horizontal_pd: 24px;
-  --horizontal_pd_large: 48px;
-  --horizontal_pd_small: 12px;
+  // Card
+  --card-mg-mini: 0.5714rem; // 8px
+  --card-mg-mini-up: 0.5714rem; // 8px
+  --card-mg-mini-down: 0.5714rem; // 8px
+  --card-mg-small: 0.8571rem; // 12px
+  --card-mg-small-up: 0.8571rem; // 12px
+  --card-mg-small-down: 0.8571rem; // 12px
+  --card-mg-normal: 1.1429rem; // 16px
+  --card-mg-normal-up: 1.1429rem; // 16px
+  --card-mg-normal-down: 1.1429rem; // 16px
+  --card-mg-large: 1.7143rem; // 24px
+  --card-mg-large-up: 1.7143rem; // 24px
+  --card-mg-large-down: 1.7143rem; // 24px
+  --card-mg-big: 2.1429rem; // 30px
+  --card-mg-big-up: 2.1429rem; // 30px
+  --card-mg-big-down: 2.1429rem; // 30px
+
+  /* ===== 📌 Padding ===== */
+
+  // 기본
+  --pd-mini: 0.8571rem; // 12px
+  --pd-mini-up: 0.8571rem; // 12px
+  --pd-mini-down: 0.8571rem; // 12px
+  --pd-small: 1.4286rem; // 20px
+  --pd-small-up: 1.4286rem; // 20px
+  --pd-small-down: 1.4286rem; // 20px
+  --pd-normal: 1.7143rem; // 24px
+  --pd-normal-up: 1.7143rem; // 24px
+  --pd-normal-down: 1.7143rem; // 24px
+  --pd-large: 2.2857rem; // 32px
+  --pd-large-up: 2.2857rem; // 32px
+  --pd-large-down: 2.2857rem; // 32px
+
+  //Card
+  --card-pd-mini: 0.8571rem; // 12px
+  --card-pd-mini-up: 0.8571rem; // 12px
+  --card-pd-mini-down: 0.8571rem; // 12px
+  --card-pd-small: 1.4286rem; // 20px
+  --card-pd-small-up: 1.4286rem; // 20px
+  --card-pd-small-down: 1.4286rem; // 20px
+  --card-pd-normal: 1.7143rem; // 24px
+  --card-pd-normal-up: 1.7143rem; // 24px
+  --card-pd-normal-down: 1.7143rem; // 24px
+  --card-pd-large: 2.2857rem; // 32px
+  --card-pd-large-up: 2.2857rem; // 32px
+  --card-pd-large-down: 2.2857rem; // 32px
 
   // 이미지 비율 별 padding top (4:3, 16:9...)
 
   // line-height
-  --line_normal: 1;
-  --line_medium: 1.4;
-  --line_large: 1.6;
+  --line-normal: 1;
+  --line-medium: 1.4;
+  --line-large: 1.6;
 }
 
-.card {
-  width: calc(
-    100% + #{var(--horizontal_pd_left)} + #{var(--horizontal_pd_right)}
-  );
-  margin-left: -#{var(--horizontal_pd_left)};
+@media screen and(min-width: 1920px) {
+  :root {
+    /* ===== 📌 Margin ===== */
+
+    // 기본
+    --mg-mini-up: 0.7143rem; // 8px ➡️ 10px
+    --mg-mini-down: 0.4286rem; // 8px ➡️ 6px
+    --mg-small-up: 1rem; // 12px ➡️ 14px
+    --mg-small-down: 0.7143rem; // 12px ➡️ 10px
+    --mg-normal-up: 1.2857rem; // 16px ➡️ 18px
+    --mg-normal-down: 1rem; // 16px ➡️ 14px
+    --mg-large-up: 2rem; // 24px ➡️ 28px
+    --mg-large-down: 1.4286rem; // 24px ➡️ 20px
+    --mg-big-up: 2.4286rem; // 30px ➡️ 34px
+    --mg-big-down: 1.8571rem; // 30px ➡️ 26px
+
+    // card
+    --card-mg-mini-up: 0.7143rem; // 8px ➡️ 10px
+    --card-mg-mini-down: 0.4286rem; // 8px ➡️ 6px
+    --card-mg-small-up: 1rem; // 12px ➡️ 14px
+    --card-mg-small-down: 0.7143rem; // 12px ➡️ 10px
+    --card-mg-normal-up: 1.2857rem; // 16px ➡️ 18px
+    --card-mg-normal-down: 1rem; // 16px ➡️ 14px
+    --card-mg-large-up: 2rem; // 24px ➡️ 28px
+    --card-mg-large-down: 1.4286rem; // 24px ➡️ 20px
+    --card-mg-big-up: 2.4286rem; // 30px ➡️ 34px
+    --card-mg-big-down: 1.8571rem; // 30px ➡️ 26px
+
+    /* ===== 📌 Padding ===== */
+
+    // 기본
+    --pd-mini-up: 1.1429rem; // 12px ➡️ 16px
+    --pd-mini-down: 0.5714rem; // 12px ➡️8px
+    --pd-small-up: 1.7143rem; // 20px ➡️ 24px
+    --pd-small-down: 1.1429rem; // 20px ➡️16px
+    --pd-normal-up: 2rem; // 24px ➡️ 28px
+    --pd-normal-down: 1.4286rem; // 24px ➡️ 20px
+    --pd-large-up: 2.2857rem; // 32px ➡️ 40px
+    --pd-large-down: 2rem; // 32px ➡️ 28px
+
+    // Card
+    --Card-pd-mini-up: 1.1429rem; // 12px ➡️ 16px
+    --Card-pd-mini-down: 0.5714rem; // 12px ➡️8px
+    --Card-pd-small-up: 1.7143rem; // 20px ➡️ 24px
+    --Card-pd-small-down: 1.1429rem; // 20px ➡️16px
+    --Card-pd-normal-up: 2rem; // 24px ➡️ 28px
+    --Card-pd-normal-down: 1.4286rem; // 24px ➡️ 20px
+    --Card-pd-large-up: 2.2857rem; // 32px ➡️ 40px
+    --Card-pd-large-down: 2rem; // 32px ➡️ 28px
+  }
 }
+
+// .card {
+//   width: calc(
+//     100% + #{var(--horizontal_pd_left)} + #{var(--horizontal_pd_right)}
+//   );
+//   margin-left: -#{var(--horizontal_pd_left)};
+// }
