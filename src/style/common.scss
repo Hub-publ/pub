@@ -976,9 +976,10 @@ header {
     .detail_option {
       display: flex;
       flex-wrap: wrap;
-      margin-top: var(--board-mg-mini);
+      margin-top: calc(#{var(--board-mg-mini)} - #{var(--mg-very-mini)});
       li {
-        font-size: 0.9286rem;
+        font-size: 0.7857rem;
+        margin-top: var(--mg-very-mini);
         &:not(:last-of-type) {
           margin-right: var(--board-mg-mini);
         }
@@ -1011,6 +1012,9 @@ header {
       .cont_area {
         width: calc(100% - #{var(--prof-img-big)} - 1.1429rem);
         margin-left: 1.1429rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
       }
     }
   }
