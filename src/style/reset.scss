@@ -107,7 +107,7 @@ br {
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  line-height: 1.2;
+  line-height: var(--line-normal);
   font-size: 1rem;
   font-weight: 400;
   font-family: "Pretendard", sans-serif;
@@ -218,7 +218,7 @@ select {
   height: 2.2857rem;
   padding: 0 0.8571rem;
   font-weight: 400;
-  border-radius: 0.5714rem;
+  border-radius: var(--radius-normal);
   border: 1px solid var(--bd-gr-to-wh9);
   background-color: var(--transparent);
   color: var(--text-bk-to-wh1);
@@ -302,7 +302,7 @@ body {
   .css-16xfy0z-control {
     height: 2.2857rem;
     min-height: auto;
-    border-radius: 0.5714rem;
+    border-radius: var(--radius-normal);
     border-color: var(--bd-gr-to-wh9);
     background-color: var(--transparent);
   }
@@ -392,5 +392,5 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--gray1);
-  border-radius: 0.1429rem;
+  border-radius: var(--radius-mini);
 }

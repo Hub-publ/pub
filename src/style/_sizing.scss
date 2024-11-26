@@ -3,6 +3,11 @@
   // Gnb
   --gnb-width: 4.2857rem;
 
+  //Profile Image
+  --prof-img-normal: 3.8571rem;
+  --prof-img-large: 4.2857rem;
+  --prof-img-big: 8.5714rem;
+
   // Side Quick Menu
 
   /* ===== 📌 Height ===== */
@@ -21,6 +26,7 @@
   /* ===== 📌 Margin ===== */
 
   // 일반
+  --mg-very-mini: 0.2857rem; // 4px
   --mg-mini: 0.5714rem; // 8px
   --mg-mini-up: 0.5714rem; // 8px
   --mg-mini-down: 0.5714rem; // 8px
@@ -72,6 +78,7 @@
   --list-mg-big-down: 2.1429rem; // 30px
 
   // Board
+  --board-mg-very-mini: 0.2857rem; // 4px
   --board-mg-mini: 0.5714rem; // 8px
   --board-mg-mini-up: 0.5714rem; // 8px
   --board-mg-mini-down: 0.5714rem; // 8px
@@ -147,13 +154,29 @@
   --board-pd-large-down: 2.2857rem; // 32px
 
   // 이미지 비율 별 padding top (4:3, 16:9...)
-  --img-area-4: 75%;
-  --img-area-16: 25%;
+  --board-img-area-4: 75%;
+  --board-img-area-16: 25%;
+  --board-text-area-small: 1.1429rem; // 16px
+  --board-text-area-basic: 1.4286rem; // 20px
+  --board-text-area-large: 1.7143rem; // 24px
 
-  // line-height
+  /* ===== 📌 Line Height ===== */
+
+  // 일반
   --line-normal: 1;
   --line-medium: 1.4;
   --line-large: 1.6;
+
+  // Tag
+  --line-tag-normal: 1.1429rem;
+  --line-tag-large: 1.4286rem;
+
+  /* ===== 📌 Border Radius ===== */
+  --radius-mini: 0.2857rem;
+  --radius-small: 0.4286rem;
+  --radius-normal: 0.5714rem;
+  --radius-only_9999: 714.2143rem;
+  --radius-circle: 50%;
 }
 
 @media screen and(min-width: 1920px) {

@@ -1,57 +1,40 @@
-import useWidth from "../../function/use_width";
 import Tag from "../_common/tag";
 
 interface Props {
-  img_size_type: "type_16_9" | "type_4_3";
   img_name: string;
   main_title: string;
   sub_title: string;
+  tag_title: string;
+  tag_bg_color: string;
+  tag_bd_color: string;
+  tag_color: string;
   detail_option1?: string;
   detail_option2?: string;
   detail_option3?: string;
-  tag?: boolean;
+  square_type?: boolean;
   children: React.ReactNode;
 }
 
-function ProdCard(props: Props) {
-  const { device } = useWidth();
+function RowCard(props: Props) {
   return (
     <>
-      <div
-        className={`card prod`}
-        // style={{ padding: `${device === "P" ? props.pd : props.mb_pd}` }}
-      >
+      <div className={`card row ${props.square_type ? "img_square_type" : ""}`}>
         <div
-          className={`img_area ${props.img_size_type}`}
+          className={`img_area`}
           style={{ backgroundImage: `url(/img/${props.img_name})` }}
         ></div>
         <div className="cont_area">
-          {props.tag ? (
-            <div className="tag_wrap">
-              <Tag
-                title="Best"
-                bg_color="transparent"
-                bd_color="tag-bd-red1"
-                color="tag-text-red1"
-              />
-              <Tag
-                title="New"
-                bg_color="transparent"
-                bd_color="tag-bd-blue1"
-                color="tag-text-blue1"
-              />
-              <Tag
-                title="귀여움"
-                bg_color="transparent"
-                bd_color="tag-bd-green1"
-                color="tag-text-green1"
-              />
-            </div>
-          ) : (
-            <></>
-          )}
           {props.main_title ? (
-            <h1 className="main_title">
+            <h1 className="main_title ellipsis">
+              <Tag
+                title={props.tag_title}
+                bg_color={props.tag_bg_color}
+                bd_color={props.tag_bd_color}
+                color={props.tag_color}
+                // bg_color="transparent"
+                // bd_color="tag-bd-red1"
+                // color="tag-text-red1"
+              />
               <span className="ellipsis">{props.main_title}</span>
             </h1>
           ) : (
@@ -68,21 +51,21 @@ function ProdCard(props: Props) {
             <ul className="detail_option">
               {props.detail_option1 ? (
                 <li>
-                  대견함 : <span>{props.detail_option1}</span>
+                  장난끼 : <span>{props.detail_option1}</span>
                 </li>
               ) : (
                 <></>
               )}
               {props.detail_option2 ? (
                 <li>
-                  따뜻함 : <span>{props.detail_option2}</span>
+                  진지함 : <span>{props.detail_option2}</span>
                 </li>
               ) : (
                 <></>
               )}
               {props.detail_option3 ? (
                 <li>
-                  용감함 : <span>{props.detail_option3}</span>
+                  어른스러움 : <span>{props.detail_option3}</span>
                 </li>
               ) : (
                 <></>
@@ -97,4 +80,4 @@ function ProdCard(props: Props) {
   );
 }
 
-export default ProdCard;
+export default RowCard;

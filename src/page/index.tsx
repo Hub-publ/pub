@@ -127,18 +127,20 @@ function Main() {
                     }}
                   />
                   <Button
-                    title="버튼버튼"
+                    title="Color Palette 보러가기"
                     size="h_28"
                     bg_color="transparent"
                     bd_color="btn-bd-blue1"
                     color="btn-text-blue1"
+                    onClick={() => window.open("/color_palette")}
                   />
                   <Button
-                    title="버튼버튼"
+                    title="Size Palette 보러가기"
                     size="h_28"
                     bg_color="btn-bg-green1"
                     bd_color="btn-bd-green1"
                     color="btn-text-wh1"
+                    onClick={() => window.open("/size_palette")}
                   />
                   <Button
                     title="버튼버튼"
