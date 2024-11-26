@@ -26,7 +26,9 @@
   /* ===== 📌 Margin ===== */
 
   // 일반
-  --mg-very-mini: 0.2857rem; // 4px
+  --mg-reset: 0; // 0
+  --mg-very-mini: 0.1429rem; // 2px
+  --mg-little-mini: 0.4286rem; // 6px
   --mg-mini: 0.5714rem; // 8px
   --mg-mini-up: 0.5714rem; // 8px
   --mg-mini-down: 0.5714rem; // 8px
@@ -42,6 +44,29 @@
   --mg-big: 2.1429rem; // 30px
   --mg-big-up: 2.1429rem; // 30px
   --mg-big-down: 2.1429rem; // 30px
+  --mg-very-big: 4.2857rem; // 60px
+  --mg-very-big-up: 4.2857rem; // 60px
+  --mg-very-big-down: 4.2857rem; // 60px
+
+  // Button
+  --btn-mg-reset: 0; // 0
+  --btn-mg-very-mini: 0.2857rem; // 4px
+  --btn-mg-mini: 0.5714rem; // 8px
+  --btn-mg-mini: 0.5714rem; // 8px
+  --btn-mg-mini-up: 0.5714rem; // 8px
+  --btn-mg-mini-down: 0.5714rem; // 8px
+  --btn-mg-small: 0.8571rem; // 12px
+  --btn-mg-small-up: 0.8571rem; // 12px
+  --btn-mg-small-down: 0.8571rem; // 12px
+  --btn-mg-normal: 1.1429rem; // 16px
+  --btn-mg-normal-up: 1.1429rem; // 16px
+  --btn-mg-normal-down: 1.1429rem; // 16px
+  --btn-mg-large: 1.7143rem; // 24px
+  --btn-mg-large-up: 1.7143rem; // 24px
+  --btn-mg-large-down: 1.7143rem; // 24px
+  --btn-mg-big: 2.1429rem; // 30px
+  --btn-mg-big-up: 2.1429rem; // 30px
+  --btn-mg-big-down: 2.1429rem; // 30px
 
   // Card
   --card-mg-mini: 0.5714rem; // 8px
@@ -78,6 +103,7 @@
   --list-mg-big-down: 2.1429rem; // 30px
 
   // Board
+  --board-mg-reset: 0; // 8px
   --board-mg-very-mini: 0.2857rem; // 4px
   --board-mg-mini: 0.5714rem; // 8px
   --board-mg-mini-up: 0.5714rem; // 8px
@@ -94,6 +120,9 @@
   --board-mg-big: 2.1429rem; // 30px
   --board-mg-big-up: 2.1429rem; // 30px
   --board-mg-big-down: 2.1429rem; // 30px
+
+  // 기타
+  --mg-search-tool: 1.5714rem; //22px
 
   /* ===== 📌 Padding ===== */
 
