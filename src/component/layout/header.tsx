@@ -25,6 +25,18 @@ function Header(props: Props) {
     }
   }
 
+  // gnb 딤 영역 left 조정
+  useEffect(() => {
+    const gnbDim = document.querySelector<HTMLElement>(".gnb_dim");
+    if (gnbDim) {
+      if (fold === true) {
+        gnbDim.style.setProperty("--gnb-width", "4.2857rem");
+      } else {
+        gnbDim.style.setProperty("--gnb-width", "0");
+      }
+    }
+  }, [fold]);
+
   // 각 서브 메뉴별 높이 계산 및 반영
   useEffect(() => {
     Object.keys(subMenuRefs.current).forEach(menuId => {
@@ -70,7 +82,9 @@ function Header(props: Props) {
               <span></span>
             </div>
           </button>
-          <h1 className="logo">HUBDNC PUBLISHING GUIDE</h1>
+          <h1 className="logo">
+            <a href="/">HUBDNC PUBLISHING GUIDE</a>
+          </h1>
         </div>
         <div className="right flex align_center">
           <CommonDim
@@ -117,11 +131,14 @@ function Header(props: Props) {
           <Switch id="dark_switch" onChange={(event) => DarkMode(event)} /> */}
         </div>
       </header>
-      {fold === true ? (
-        <div className="gnb_dim" onClick={() => setFold(false)}></div>
-      ) : (
-        ""
-      )}
+      <div
+        className={`gnb_dim ${fold === true ? "on" : ""}`}
+        onClick={() => {
+          setFold(false);
+          setOpenMenus([]);
+          GnbWidthHandler();
+        }}
+      ></div>
       <nav className={`gnb ${fold === true ? "active" : ""}`}>
         {/*
         <button className="nav_close" onClick={() => setFold(false)}>

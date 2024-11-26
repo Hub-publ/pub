@@ -272,18 +272,11 @@ input[type="radio"] {
 }
 
 select {
-  background: right 0.8571rem center/0.7143rem no-repeat var(--white1)
+  background: right 0.8571rem center/0.7143rem no-repeat var(--transparent)
     url("../../public/img/icon/icon_select_arrow.svg");
   padding-right: 2.4286rem;
   font-family: "Pretendard", sans-serif;
   cursor: pointer;
-
-  &.type2 {
-    // background-image: url("../../public/icon/icon_select_arrow_type4.svg");
-    background-position: center right 0;
-    border: none;
-    padding-right: 1.2857rem;
-  }
 }
 
 /*reset end*/
@@ -391,6 +384,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gray1);
+  background: var(--bg-gr1);
   border-radius: 0.1429rem;
 }

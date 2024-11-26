@@ -255,7 +255,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--black-opc1);
+  background-color: var(--bg-bk-opc1);
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s;
@@ -460,7 +460,6 @@ body {
 header {
   height: var(--header-height);
   padding: 1.1429rem 1.4286rem;
-  border-bottom: 1px solid var(--black3);
   position: sticky;
   top: 0;
   z-index: 40;
@@ -493,7 +492,7 @@ header {
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
-    margin-right: 1.1429rem;
+    margin-right: 1.4286rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -689,7 +688,7 @@ header {
         line-height: 1.4286rem;
         white-space: nowrap;
         color: var(--transparent);
-        background-color: var(--black-opc1);
+        background-color: var(--bg-bk-opc2);
         transition: all 0.4s;
         &:before {
           content: "";
@@ -701,12 +700,12 @@ header {
           left: 1.4286rem;
           top: 50%;
           transform: translateY(-50%);
-          background-color: var(--white-opc3);
+          background-color: var(--bg-wh1);
         }
       }
       &:hover {
         a {
-          background-color: var(--black-opc2);
+          background-color: var(--bg-bk-opc4);
         }
       }
     }
@@ -725,12 +724,17 @@ header {
   */
 }
 .gnb_dim {
+  display: none;
   position: fixed;
-  left: 0;
+  left: var(--gnb-width);
   top: 0;
   z-index: 45;
   width: 100%;
   height: 100%;
+  transition: all 0.4s;
+  &.on {
+    display: block;
+  }
 }
 .container {
   transition: all 0.4s;
@@ -943,7 +947,6 @@ header {
   align-items: center;
   justify-content: flex-end;
   padding: 1rem;
-  border-top: 1px solid var(--black-opc2);
   transition: all 0.4s;
   p {
     display: none;
