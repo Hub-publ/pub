@@ -52,6 +52,13 @@ export function FontReSize(event: SingleValue<OptionType>) {
     }
   }
 }
+
+// 검색영역 Toggle
+// export function SearchToggle() {
+//   console.log("SearchToggle 함수 실행");
+// }
+// SearchToggle();
+
 // 1024 아래로 비율맞춰 줄어들게
 function resizeApply() {
   const minWidth = 1024;

@@ -713,18 +713,6 @@ header {
       }
     }
   }
-  /* 미사용으로 인한 주석 */
-  /* 
-  .nav_close {
-    position: absolute;
-    top: 1.1429rem;
-    right: 1.1429rem;
-    width: 1.1429rem;
-    img {
-      width: 100%;
-    }
-  }
-  */
 }
 .gnb_dim {
   display: none;
@@ -858,11 +846,14 @@ header {
     border: 1px solid var(--bd-gr-to-wh9);
     &.open {
       transform: scaleY(-1);
+      /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
+      // border: 1px solid orange;
+      /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
     }
     // &.hide {
     //   /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
     //   // display: none;
-    //   background-color: lightgreen;
+    //   // background-color: lightgreen;
     //   /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
     // }
   }
