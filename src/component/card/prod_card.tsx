@@ -65,7 +65,7 @@ function ProdCard(props: Props) {
           {props.detail_option1 ||
           props.detail_option2 ||
           props.detail_option3 ? (
-            <ul className="detail_option">
+            <ul className="devide_ul">
               {props.detail_option1 ? (
                 <li>
                   대견함 : <span>{props.detail_option1}</span>

@@ -121,15 +121,48 @@
   --board-mg-big-up: 2.1429rem; // 30px
   --board-mg-big-down: 2.1429rem; // 30px
 
+  // Popup
+  --pop-mg-reset: 0; // 0
+  --pop-mg-very-mini: 0.1429rem; // 2px
+  --pop-mg-little-mini: 0.4286rem; // 6px
+  --pop-mg-mini: 0.5714rem; // 8px
+  --pop-mg-mini-up: 0.5714rem; // 8px
+  --pop-mg-mini-down: 0.5714rem; // 8px
+  --pop-mg-small: 0.8571rem; // 12px
+  --pop-mg-small-up: 0.8571rem; // 12px
+  --pop-mg-small-down: 0.8571rem; // 12px
+  --pop-mg-normal: 1.1429rem; // 16px
+  --pop-mg-normal-up: 1.1429rem; // 16px
+  --pop-mg-normal-down: 1.1429rem; // 16px
+  --pop-mg-large: 1.7143rem; // 24px
+  --pop-mg-large-up: 1.7143rem; // 24px
+  --pop-mg-large-down: 1.7143rem; // 24px
+  --pop-mg-big: 2.1429rem; // 30px
+  --pop-mg-big-up: 2.1429rem; // 30px
+  --pop-mg-big-down: 2.1429rem; // 30px
+  --pop-mg-very-big: 4.2857rem; // 60px
+  --pop-mg-very-big-up: 4.2857rem; // 60px
+  --pop-mg-very-big-down: 4.2857rem; // 60px
+
   // 기타
   --mg-search-tool: 1.5714rem; //22px
 
   /* ===== 📌 Padding ===== */
 
   // 일반
+  --pd-reset: 0; // 0
+  --pd-very-mini: 0.1429rem; // 2px
+  --pd-very-mini-up: 0.1429rem; // 2px
+  --pd-very-mini-down: 0.1429rem; // 2px
+  --pd-little-mini: 0.5714rem; // 8px
+  --pd-little-mini-up: 0.5714rem; // 8px
+  --pd-little-mini-down: 0.5714rem; // 8px
   --pd-mini: 0.8571rem; // 12px
   --pd-mini-up: 0.8571rem; // 12px
   --pd-mini-down: 0.8571rem; // 12px
+  --pd-very-small: 1.1429rem; // 16px
+  --pd-very-small-up: 1.1429rem; // 16px
+  --pd-very-small-down: 1.1429rem; // 16px
   --pd-small: 1.4286rem; // 20px
   --pd-small-up: 1.4286rem; // 20px
   --pd-small-down: 1.4286rem; // 20px
@@ -139,8 +172,42 @@
   --pd-large: 2.2857rem; // 32px
   --pd-large-up: 2.2857rem; // 32px
   --pd-large-down: 2.2857rem; // 32px
+  --pd-very-large: 3rem; // 42px
+  --pd-very-large-up: 3rem; // 42px
+  --pd-very-large-down: 3rem; // 42px
+
+  //Button
+  --btn-pd-reset: 0; // 0px
+  --btn-pd-very-mini: 0.5714rem; // 8px
+  --btn-pd-very-mini-up: 0.5714rem; // 8px
+  --btn-pd-very-mini-down: 0.5714rem; // 8px
+  --btn-pd-mini: 0.8571rem; // 12px
+  --btn-pd-mini-up: 0.8571rem; // 12px
+  --btn-pd-mini-down: 0.8571rem; // 12px
+  --btn-pd-small: 1.4286rem; // 20px
+  --btn-pd-small-up: 1.4286rem; // 20px
+  --btn-pd-small-down: 1.4286rem; // 20px
+  --btn-pd-normal: 1.7143rem; // 24px
+  --btn-pd-normal-up: 1.7143rem; // 24px
+  --btn-pd-normal-down: 1.7143rem; // 24px
+  --btn-pd-large: 2.2857rem; // 32px
+  --btn-pd-large-up: 2.2857rem; // 32px
+  --btn-pd-large-down: 2.2857rem; // 32px
+
+  //Tag
+  --tag-pd-reset: 0; // 0px
+  --tag-pd-small: 0.2857rem; // 4px
+  --tag-pd-small-up: 0.2857rem; // 4px
+  --tag-pd-small-down: 0.2857rem; // 4px
+  --tag-pd-normal: 0.5714rem; // 8px
+  --tag-pd-normal-up: 0.5714rem; // 8px
+  --tag-pd-normal-down: 0.5714rem; // 8px
+  --tag-pd-large: 0.8571rem; // 12px
+  --tag-pd-large-up: 0.8571rem; // 12px
+  --tag-pd-large-down: 0.8571rem; // 12px
 
   //Card
+  --card-pd-reset: 0; // 0
   --card-pd-mini: 0.8571rem; // 12px
   --card-pd-mini-up: 0.8571rem; // 12px
   --card-pd-mini-down: 0.8571rem; // 12px
@@ -184,10 +251,28 @@
 
   // 이미지 비율 별 padding top (4:3, 16:9...)
   --board-img-area-4: 75%;
-  --board-img-area-16: 25%;
+  --board-img-area-16: 56.25%;
   --board-text-area-small: 1.1429rem; // 16px
   --board-text-area-basic: 1.4286rem; // 20px
   --board-text-area-large: 1.7143rem; // 24px
+
+  //Popup
+  --pop-pd-reset: 0; // 0
+  --pop-pd-very-mini: 0.5714rem; // 8px
+  --pop-pd-very-mini-up: 0.5714rem; // 8px
+  --pop-pd-very-mini-down: 0.5714rem; // 8px
+  --pop-pd-mini: 0.8571rem; // 12px
+  --pop-pd-mini-up: 0.8571rem; // 12px
+  --pop-pd-mini-down: 0.8571rem; // 12px
+  --pop-pd-small: 1.4286rem; // 20px
+  --pop-pd-small-up: 1.4286rem; // 20px
+  --pop-pd-small-down: 1.4286rem; // 20px
+  --pop-pd-normal: 1.7143rem; // 24px
+  --pop-pd-normal-up: 1.7143rem; // 24px
+  --pop-pd-normal-down: 1.7143rem; // 24px
+  --pop-pd-large: 2.2857rem; // 32px
+  --pop-pd-large-up: 2.2857rem; // 32px
+  --pop-pd-large-down: 2.2857rem; // 32px
 
   /* ===== 📌 Line Height ===== */
 

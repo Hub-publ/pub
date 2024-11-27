@@ -104,7 +104,7 @@ button,
 input,
 br {
   margin: var(--mg-reset);
-  padding: 0;
+  padding: var(--pd-reset);
   border: 0;
   box-sizing: border-box;
   line-height: var(--line-normal);
@@ -174,7 +174,7 @@ legend {
 
 button,
 input[type="button"] {
-  padding: 0;
+  padding: var(--pd-reset);
   margin: var(--mg-reset);
   border: none;
   vertical-align: middle;
@@ -184,7 +184,7 @@ input[type="button"] {
 
 input {
   margin: var(--mg-reset);
-  padding: 0;
+  padding: var(--pd-reset);
   border: 0;
 }
 
@@ -216,7 +216,7 @@ textarea,
 select {
   width: 100%;
   height: 2.2857rem;
-  padding: 0 0.8571rem;
+  padding: var(--pd-reset) var(--pd-mini);
   font-weight: 400;
   border-radius: var(--radius-normal);
   border: 1px solid var(--bd-gr-to-wh9);
@@ -242,7 +242,7 @@ textarea {
   resize: none;
   font-family: "Pretendard", sans-serif;
   box-sizing: border-box;
-  padding: 0.625rem 0.75rem;
+  padding: var(--pd-little-mini) var(--pd-mini);
 }
 
 input[type="text"]:read-only:focus,
@@ -274,7 +274,7 @@ input[type="radio"] {
 select {
   background: right 0.8571rem center/0.7143rem no-repeat var(--transparent)
     url("../../public/img/icon/icon_select_arrow.svg");
-  padding-right: 2.4286rem;
+  padding-right: var(--pd-large);
   font-family: "Pretendard", sans-serif;
   cursor: pointer;
 }
@@ -307,7 +307,7 @@ body {
   .css-b62m3t-container {
     .css-hlgwow {
       // display: block;
-      padding: 0.1429rem 0.5714rem;
+      padding: var(--pd-very-mini) var(--pd-little-mini);
     }
   }
   // disabled select
