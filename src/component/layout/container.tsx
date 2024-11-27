@@ -13,31 +13,89 @@ function Container(props: Props) {
   // 검색영역 관련 수치
   const [dimensions, setDimensions] = useState({
     paddingTop: 0, // searchPaddingTop
-    PaddingBottom: 0, // searchPaddingBottom
-    marginTop: 0, // toggleMarginTop
-    buttonHeight: 0, // toggleHeight
+    paddingBottom: 0, // searchPaddingBottom
+    areaPadding: 0, // [추가] 검색영역 상하 패딩
+    areaHeight: 0, // searchHeight
+    areaBorderWidth: 0, // searchBorderWidth
+    toolHeight: 0, // searchToolHeight
+    fixToolHeight: 0, // searchToolHeight (소수점 2자리 까지)
+    changePoint: 0, // toggle 버튼 노출 여부 지점
+    fixChangePoint: 0, // toggle 버튼 노출 여부 지점 (소수점 2자리 까지)
   });
 
   // 검색영역 관련 수치 계산 함수
   const calcDimensions = () => {
+    console.log("calc 함수 시작🐀");
     const containerElement = containerRef.current;
     if (!containerElement) return;
 
     const areaElement = containerElement.querySelector(".search_area"); // searchArea
+    const areaTool = containerElement.querySelector(".search_tool"); // searchArea
     const toggleButton = containerElement.querySelector<HTMLButtonElement>(
       ".search_tool .toggle"
-    );
+    ); // searchArea > Toggle Button
 
     let paddingTop = 0;
     let paddingBottom = 0;
-    let marginTop = 0;
-    let buttonHeight = 0;
+    let areaPadding = 0; // [추가] 검색영역 상하 패딩
+    let areaHeight = 0;
+    let areaBorderWidth = 0;
+    let toolHeight = 0;
+    let fixToolHeight = 0;
+    let changePoint = 0;
+    let fixChangePoint = 0;
 
-    if (areaElement) {
-      const areaStyle = window.getComputedStyle(areaElement);
-      paddingTop = parseFloat(areaStyle.paddingTop);
-      paddingBottom = parseFloat(areaStyle.paddingBottom);
+    if (areaElement && areaTool && toggleButton) {
+      // 정확한 계산을 위해 정수로 변환 후 계산
+      const scaleFactor = 1000;
+
+      // 검색영역
+      const areaStyles = window.getComputedStyle(areaElement);
+      paddingTop = parseFloat(areaStyles.paddingTop);
+      paddingBottom = parseFloat(areaStyles.paddingBottom);
+      areaPadding =
+        parseFloat(areaStyles.paddingTop) +
+        parseFloat(areaStyles.paddingBottom);
+      areaHeight = parseFloat(areaStyles.height);
+      areaBorderWidth = parseFloat(areaStyles.borderBottomWidth);
+      // 검색 버튼 영역
+      const areaToolStyle = window.getComputedStyle(areaTool);
+      toolHeight = parseFloat(areaToolStyle.height);
+      fixToolHeight = parseFloat(toolHeight.toFixed(2));
+      // 변경 기준점
+      changePoint =
+        (paddingTop * scaleFactor + paddingBottom * scaleFactor) / scaleFactor +
+        areaBorderWidth +
+        fixToolHeight;
+      fixChangePoint = parseFloat(changePoint.toFixed(2));
+
+      if (changePoint >= areaHeight) {
+        console.log("토글❌");
+      } else {
+        console.log("토글⭕");
+      }
     }
+
+    setDimensions({
+      paddingTop,
+      paddingBottom,
+      areaHeight,
+      areaPadding,
+      areaBorderWidth,
+      toolHeight,
+      fixToolHeight,
+      changePoint,
+      fixChangePoint,
+    });
+    console.log("⭐1. paddingTop ?", paddingTop);
+    console.log("⭐2. paddingBottom ?", paddingBottom);
+    console.log("⭐3. areaHeight ?", areaHeight);
+    console.log("⭐4. areaBorderWidth ?", areaBorderWidth);
+    console.log("⭐5. areaToolHeight ?", toolHeight);
+    console.log("⭐6. fixToolHeight ?", fixToolHeight);
+    console.log("⭐9. changePoint ?", changePoint);
+    console.log("⭐10. fixChangePoint ?", fixChangePoint);
+    console.log("calc 함수 끝🧀");
   };
 
   useEffect(() => {

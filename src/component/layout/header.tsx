@@ -140,11 +140,6 @@ function Header(props: Props) {
         }}
       ></div>
       <nav className={`gnb ${fold === true ? "active" : ""}`}>
-        {/*
-        <button className="nav_close" onClick={() => setFold(false)}>
-          <img src="/img/icon/icon_close.svg" alt="" />
-        </button>
-        */}
         <ul className="main">
           <li className={`${openMenus.includes(1) ? "on" : ""}`}>
             <a href="javascript:;" onClick={() => toggleSubMenu(1)}>
