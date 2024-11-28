@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "../component/layout/container";
 import Header from "../component/layout/header";
 import Select from "react-select";
@@ -12,6 +12,8 @@ import Pagination from "../component/form/pagination";
 import PopupManage from "../component/popup/popup_manage";
 import TemplatePopup from "../component/popup/template/template_popup";
 import CustomTooltip from "../component/tooltip/custom_tooltip";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 interface OptionType {
   label: string;
   value: string;
@@ -19,9 +21,48 @@ interface OptionType {
 
 function Main() {
   const [popup, setPopup] = useState<Number | undefined>(undefined);
-  const handleChange = (selectedOption: OptionType | null) => {
-    console.log(selectedOption);
+  // Date Picker
+  const [selectedDate, setSelectedDate] = useState<Date | null>(null);
+  // Year Picker
+  const [selectedYear, setSelectedYear] = useState<Date | null>(null);
+  // Month Picker
+  const [selectedMonth, setSelectedMonth] = useState<Date | null>(null);
+  // Date Time Picker
+  const [selectedDateTime, setSelectedDateTime] = useState<Date | null>(null);
+  // Time Picker
+  const [selectedTime, setSelectedTime] = useState<Date | null>(null);
+  // Date Picker Change
+  const handleDateChange = (date: Date | null) => {
+    setSelectedDate(date);
   };
+  // Year Picker Change
+  const handleYearChange = (date: Date | null) => {
+    setSelectedYear(date);
+  };
+  // Month Picker Change
+  const handleMonthChange = (date: Date | null) => {
+    setSelectedMonth(date);
+  };
+  // Date Time Picker Change
+  const handleDateTimeChange = (date: Date | null) => {
+    setSelectedDateTime(date);
+  };
+  // Time Picker Change
+  const handleTimeChange = (time: Date | null) => {
+    setSelectedTime(time);
+  };
+  // Time Picker Change
+  const TimePickerClassHandler = () => {
+    const time_wrap = document.querySelectorAll(".time_picker");
+    for (let i = 0; time_wrap.length > i; i++) {
+      const time = time_wrap[i] as HTMLElement;
+      const target = time.parentNode?.parentNode as HTMLElement;
+      target.classList.add("time_picker_wrap");
+    }
+  };
+  setTimeout(() => {
+    TimePickerClassHandler();
+  }, 500);
 
   return (
     <>
@@ -42,6 +83,75 @@ function Main() {
               <SearchInput placeholder="placeholder" />
             </li>
             <li>
+              <p className="label">DatePicker</p>
+              <DatePicker
+                id="date_picker"
+                selected={selectedDate}
+                onChange={handleDateChange}
+                dateFormat="yyyy-MM-dd"
+                placeholderText="Select a date"
+              />
+            </li>
+            <li>
+              <p className="label">YearPicker</p>
+              <DatePicker
+                id="year_picker"
+                selected={selectedYear}
+                onChange={handleYearChange}
+                dateFormat="yyyy" // 연도만 선택하도록 포맷 설정
+                showYearPicker={true} // 연도 선택만 가능
+                placeholderText="Select a year"
+                minDate={new Date("2020-01-01")} // 최소 선택 연도
+                maxDate={new Date("2030-01-01")} // 최대 선택 연도
+              />
+            </li>
+            <li>
+              <p className="label">MonthPicker</p>
+              <DatePicker
+                id="month_picker"
+                selected={selectedMonth}
+                onChange={handleMonthChange}
+                dateFormat="yyyy-MM"
+                showMonthYearPicker={true}
+                placeholderText="Select a date"
+              />
+            </li>
+            <li>
+              <p className="label">DateTimePicker</p>
+              <DatePicker
+                id="date_time_picker"
+                selected={selectedDateTime}
+                onChange={handleDateTimeChange}
+                dateFormat="yyyy-MM-dd HH:mm" // 날짜와 시간 포맷
+                showTimeSelect={true} // 시간 선택 UI 활성화
+                timeFormat="HH:mm" // 시간 포맷 (24시간 형식)
+                timeIntervals={15} // 시간을 선택할 수 있는 간격 (예: 15분 간격)
+                timeCaption="Time" // 시간 선택 항목 제목
+                placeholderText="Select a date and time"
+              />
+            </li>
+            <li>
+              <p className="label">TimePicker</p>
+              <DatePicker
+                id="time_picker"
+                className="time_picker"
+                selected={selectedTime}
+                onChange={handleTimeChange}
+                showTimeSelect={true} // 시간 선택 UI 활성화
+                timeFormat="HH:mm" // 시간 포맷 (24시간 형식)
+                timeIntervals={15} // 시간을 15분 간격으로 선택 가능
+                timeCaption="Time" // 시간 선택 항목 제목
+                dateFormat="HH:mm" // 시간 포맷
+                placeholderText="Select a time"
+                showMonthYearPicker={false} // 월/연도 선택 비활성화
+                showYearPicker={false} // 연도 선택 비활성화
+                shouldCloseOnSelect={true} // 시간 선택 후 팝업 닫기
+                inline={false} // 인라인 달력 비활성화
+                showPopperArrow={false} // 팝업 화살표 숨기기
+                popperPlacement="bottom" // 팝업 위치 설정 (bottom)
+              />
+            </li>
+            <li>
               <p className="label">select</p>
               <Select
                 options={[
@@ -49,7 +159,6 @@ function Main() {
                   { value: "strawberry", label: "Strawberry" },
                   { value: "vanilla", label: "Vanilla" },
                 ]}
-                onChange={handleChange}
               />
             </li>
             <li>
@@ -61,7 +170,6 @@ function Main() {
                   { value: "Macadamia", label: "Macadamia" },
                 ]}
                 value={{ value: "Almond", label: "Almond" }}
-                onChange={handleChange}
                 isDisabled
               />
             </li>

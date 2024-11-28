@@ -4,6 +4,7 @@ import Container from "../component/layout/container";
 import MainCard from "../component/card/main_card";
 import ProdCard from "../component/card/prod_card";
 import RowCard from "../component/card/row_card";
+import InfoText from "../component/tooltip/info_text";
 
 function SizePalette() {
   const { device } = useWidth();
@@ -333,6 +334,24 @@ function SizePalette() {
                 123
               </RowCard>
             </div>
+          </div>
+          <div className="size_palette_template">
+            <InfoText
+              contents="숨을 죽이고 너의 대답을 기다릴게<br/>턴을 너에게 넘긴채로~"
+              size="small"
+            />
+            <InfoText
+              contents="만약 아니라 하더라도 말해 줘<br/>Baby Love Me Or Leave Me Tonight"
+              size="normal"
+            />
+            <InfoText
+              contents="So 대답해줘!어!어!어↗️어!어!어!어~!<br/>숨김 없이 솔직하게"
+              size="normal"
+            />
+            <InfoText
+              contents="So 대답해줘!어!어!어↗️어!어!어!어~!<br/>Baby Love Me Or Leave Me Tonight"
+              size="large"
+            />
           </div>
         </div>
       </Container>

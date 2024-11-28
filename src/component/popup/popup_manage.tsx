@@ -65,7 +65,7 @@ function PopupManage(props: Props) {
     }
   };
   useEffect(() => {
-    console.log(props.popup);
+    // console.log(props.popup);
     popSizeHandler();
     window.addEventListener("resize", popSizeHandler);
     return () => {
