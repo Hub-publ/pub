@@ -23,68 +23,6 @@ function TabSample() {
     <>
       <Header />
       <Container className="tab_sample_page">
-        {/*
-        <div className="search_area">
-          <ul>
-            <li>
-              <p className="label">input</p>
-              <input type="text" placeholder="placeholder" />
-            </li>
-            <li>
-              <p className="label">input disabled</p>
-              <input type="text" disabled />
-            </li>
-            <li>
-              <p className="label">search input</p>
-              <SearchInput />
-            </li>
-            <li>
-              <p className="label">select</p>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                onChange={handleChange}
-              />
-            </li>
-            <li>
-              <p className="label">select disabled</p>
-              <Select
-                options={[
-                  { value: "Almond", label: "Almond" },
-                  { value: "Peanut", label: "Peanut" },
-                  { value: "Macadamia", label: "Macadamia" },
-                ]}
-                value={{ value: "Almond", label: "Almond" }}
-                onChange={handleChange}
-                isDisabled
-              />
-            </li>
-            <li>
-              <p className="label">switch</p>
-              <Switch id="switch" />
-            </li>
-            <li>
-              <p className="label">checkbox</p>
-              <div className="form_wrap">
-                <Checkbox id="checkbox1" label="체크박스1" />
-                <Checkbox id="checkbox2" label="체크박스2" />
-                <Checkbox id="checkbox3" label="체크박스3" />
-              </div>
-            </li>
-            <li>
-              <p className="label">radio</p>
-              <div className="form_wrap">
-                <Radio id="radio1" name="radio" label="라디오1" />
-                <Radio id="radio2" name="radio" label="라디오2" />
-                <Radio id="radio3" name="radio" label="라디오3" />
-              </div>
-            </li>
-          </ul>
-        </div>
-        */}
         <div className="contents_wrap">
           <div className="area">
             {/*
