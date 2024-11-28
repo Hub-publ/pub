@@ -46,10 +46,26 @@ function SwiperPage() {
               //   991: {},
               // }}
             >
-              <SwiperSlide key={"slide_1"}>Slide 1</SwiperSlide>
-              <SwiperSlide key={"slide_2"}>Slide 2</SwiperSlide>
-              <SwiperSlide key={"slide_3"}>Slide 3</SwiperSlide>
-              <SwiperSlide key={"slide_4"}>Slide 4</SwiperSlide>
+              <SwiperSlide
+                key={"slide_1"}
+                style={{ backgroundImage: "url('/img/img_test6.jpg')" }}
+              ></SwiperSlide>
+              <SwiperSlide
+                key={"slide_2"}
+                style={{ backgroundImage: "url('/img/img_test7.png')" }}
+              ></SwiperSlide>
+              <SwiperSlide
+                key={"slide_3"}
+                style={{ backgroundImage: "url('/img/img_test8.jpg')" }}
+              ></SwiperSlide>
+              <SwiperSlide
+                key={"slide_4"}
+                style={{ backgroundImage: "url('/img/img_test9.jpg')" }}
+              ></SwiperSlide>
+              <SwiperSlide
+                key={"slide_5"}
+                style={{ backgroundImage: "url('/img/img_test10.jpg')" }}
+              ></SwiperSlide>
             </Swiper>
           </div>
         </div>

@@ -7,9 +7,11 @@ import Checkbox from "../component/form/checkbox";
 import Radio from "../component/form/radio";
 import SearchInput from "../component/form/search_input";
 import Button from "../component/form/button";
+import BasicTooltip from "../component/tooltip/basic_tooltip";
 import Pagination from "../component/form/pagination";
 import PopupManage from "../component/popup/popup_manage";
 import TemplatePopup from "../component/popup/template/template_popup";
+import CustomTooltip from "../component/tooltip/custom_tooltip";
 interface OptionType {
   label: string;
   value: string;
@@ -65,7 +67,10 @@ function Main() {
             </li>
             <li>
               <p className="label">switch</p>
-              <Switch id="switch" />
+              <div className="form_wrap">
+                <Switch id="switch" />
+                <BasicTooltip contents="왜요, <strong>뭘봐요</strong>😠" />
+              </div>
             </li>
             <li>
               <p className="label">checkbox</p>
@@ -73,6 +78,7 @@ function Main() {
                 <Checkbox id="checkbox1" label="체크박스1" />
                 <Checkbox id="checkbox2" label="체크박스2" />
                 <Checkbox id="checkbox3" label="체크박스3" />
+                <BasicTooltip contents="꽝,<br/>풉킼풉킼😠" right />
               </div>
             </li>
             <li>
@@ -81,6 +87,7 @@ function Main() {
                 <Radio id="radio1" name="radio" label="라디오1" />
                 <Radio id="radio2" name="radio" label="라디오2" />
                 <Radio id="radio3" name="radio" label="라디오3" />
+                <BasicTooltip contents="<strong>메롱</strong>, 저리갓!👻" top />
               </div>
             </li>
           </ul>
@@ -94,7 +101,17 @@ function Main() {
                 </div> */}
               {/* 양쪽 영역에 버튼만 있을 때 */}
               <div className="table_top flex align_center justify_between">
-                <p className="num">총 갯수</p>
+                <p className="num">
+                  총 갯수
+                  <CustomTooltip>
+                    <img
+                      className="main_img"
+                      src="/img/img_test11.jpg"
+                      alt=""
+                    />
+                    <p>메롱~ 약오르지이~👻</p>
+                  </CustomTooltip>
+                </p>
                 <div>
                   <Button
                     title="Main Popup Open"

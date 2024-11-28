@@ -115,7 +115,7 @@
   margin-top: var(--mg-mini);
   & > * {
     flex-shrink: 0;
-    margin-top: var(--mg-mini);
+    // margin-top: var(--mg-mini);
     &:not(:last-child) {
       margin-right: var(--mg-small);
     }
@@ -298,7 +298,7 @@
     min-width: 28.5714rem;
     transition: all 0.6s;
     .pop_top {
-      margin-bottom: var(--pop-mg-large-small);
+      margin-bottom: var(--pop-mg-large);
       padding: var(--pop-pd-small-down) var(--pop-pd-normal-down);
       border-bottom: 1px solid var(--bd-wh-to-gr9);
       .pop_title {
@@ -749,6 +749,108 @@ header {
 /* ==================================================================
   유진이 자리 👻
 ================================================================== */
+.tooltip_wrap {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  .tooltip_btn {
+    display: inline-block;
+    width: var(--tooltip-icon-large);
+    height: var(--tooltip-icon-large);
+    background: url("../../public/img/icon/icon_tooltip_btn.svg") no-repeat
+      center / contain;
+  }
+  .tooltip_contents {
+    padding: var(--pd-mini-down);
+    border-radius: var(--radius-normal);
+    background-color: var(--tooltip-bg);
+    color: var(--tooltip-text);
+    position: absolute;
+    left: -0.7143rem;
+    width: max-content;
+    font-size: 0.9286rem;
+    line-height: var(--line-medium);
+    margin-top: 1.1429rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 1rem;
+      transform: translateY(-100%) rotateZ(180deg);
+      border-top: 0.4286rem solid var(--tooltip-bg);
+      border-left: 0.4286rem solid transparent;
+      border-right: 0.4286rem solid transparent;
+      border-bottom: 0 solid transparent;
+    }
+    .main_img {
+      margin-bottom: var(--mg-mini);
+    }
+    p {
+      line-height: inherit;
+      font-size: inherit;
+      color: inherit;
+    }
+  }
+  &.active {
+    .tooltip_contents {
+      margin-top: 0.5714rem;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &.right_version {
+    .tooltip_contents {
+      top: -0.2857rem;
+      left: calc(#{var(--tooltip-icon-large)} + 1.4286rem);
+      transform: translateY(0);
+      margin-top: 0;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0.8571rem;
+        left: 0;
+        transform: translate(-75%, 0) rotateZ(90deg);
+        border-top: 0.4286rem solid var(--tooltip-bg);
+        border-left: 0.4286rem solid transparent;
+        border-right: 0.4286rem solid transparent;
+        border-bottom: 0 solid transparent;
+      }
+    }
+    &.active {
+      .tooltip_contents {
+        left: calc(#{var(--tooltip-icon-large)} + 0.8571rem);
+      }
+    }
+  }
+  &.top_version {
+    .tooltip_contents {
+      top: 0;
+      left: -0.7143rem;
+      transform: translateY(-100%);
+      margin-top: -1.7143rem;
+      &:after {
+        content: "";
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 1rem;
+        transform: translateY(100%) rotateZ(0);
+        border-top: 0.4286rem solid var(--tooltip-bg);
+        border-left: 0.4286rem solid transparent;
+        border-right: 0.4286rem solid transparent;
+        border-bottom: 0 solid transparent;
+      }
+    }
+    &.active {
+      .tooltip_contents {
+        margin-top: -0.8571rem;
+      }
+    }
+  }
+}
 .search_area {
   display: flex;
   padding: var(--pd-mini) var(--pd-normal);
@@ -768,6 +870,8 @@ header {
         margin-right: var(--mg-normal-down);
       }
       .label {
+        display: flex;
+        align-items: center;
         font-size: 0.92857rem;
         margin-bottom: var(--mg-little-mini);
         color: var(--text-bk-to-wh1);
@@ -1084,8 +1188,13 @@ header {
   .table_top {
     margin-bottom: 0.5714rem;
     .num {
+      display: flex;
+      align-items: center;
       font-size: 0.9286rem;
       color: var(--text-bk-to-wh1);
+      .tooltip_wrap {
+        margin-left: var(--mg-little-mini);
+      }
     }
     .btn {
       & + .btn {
