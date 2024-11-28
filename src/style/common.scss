@@ -777,7 +777,7 @@ header {
       .toggle {
         transform: scaleY(-1);
         /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
-        border: 1px solid orange;
+        // border: 1px solid orange;
         /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
       }
     }
@@ -846,12 +846,12 @@ header {
     background: url("../../public/img/icon/icon_search_toggle.svg") no-repeat
       center;
     border: 1px solid var(--bd-gr-to-wh9);
-    &.hide {
-      /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
-      display: none;
-      border: 1px solid lightgreen;
-      /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
-    }
+    // &.hide {
+    //   /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
+    //   display: none;
+    //   border: 1px solid lightgreen;
+    //   /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
+    // }
   }
   .btn {
     padding: var(--btn-pd-reset) var(--btn-pd-mini-down);
