@@ -7,21 +7,27 @@
   display: flex;
 }
 .align_start {
+  display: flex;
   align-items: start;
 }
 .align_end {
+  display: flex;
   align-items: end;
 }
 .align_center {
+  display: flex;
   align-items: center;
 }
 .justify_start {
+  display: flex;
   justify-content: start;
 }
 .justify_end {
+  display: flex;
   justify-content: end;
 }
 .justify_between {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -877,14 +883,6 @@ header {
   }
   &.fold {
     overflow: hidden;
-    .search_tool {
-      .toggle {
-        transform: scaleY(-1);
-        /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
-        // border: 1px solid orange;
-        /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
-      }
-    }
   }
 }
 .search_input {
@@ -933,9 +931,9 @@ header {
 }
 /* [241114 AJY] 검색영역 관련 추가 */
 .search_tool {
+  display: flex;
   flex-shrink: 0;
   margin-top: calc(#{var(--mg-normal)} * -1);
-  // background-color: lightsalmon;
   button {
     border-radius: var(--radius-mini);
     // margin-top: var(--mg-search-tool);
@@ -950,12 +948,16 @@ header {
     background: url("../../public/img/icon/icon_search_toggle.svg") no-repeat
       center;
     border: 1px solid var(--bd-gr-to-wh9);
-    // &.hide {
-    //   /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
-    //   display: none;
-    //   border: 1px solid lightgreen;
-    //   /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
-    // }
+    &.open {
+      // transform: scaleY(-1);
+      background-image: url("../../public/img/icon/icon_search_toggle_down.svg");
+    }
+    &.hide {
+      display: none;
+      &.open {
+        display: block;
+      }
+    }
   }
   .btn {
     padding: var(--btn-pd-reset) var(--btn-pd-mini-down);
