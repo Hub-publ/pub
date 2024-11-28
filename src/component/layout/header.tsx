@@ -11,17 +11,33 @@ interface Props {
 
 function Header(props: Props) {
   const [fold, setFold] = useState(false);
+  const [quickFold, setQuickFold] = useState(false);
   const [innerPopup, setInnerPopup] = useState<number | undefined>(undefined);
   const [openMenus, setOpenMenus] = useState<number[]>([]);
 
   // [Ref]
   const subMenuRefs = useRef<{ [key: number]: HTMLUListElement | null }>({}); // 각 서브 메뉴별 높이에 대한 ref 배열
 
+  // Gnb 메뉴 펼침/접힘에 따라 container padding-left
   function GnbWidthHandler() {
     if (fold === true) {
       document.documentElement.style.setProperty("--gnb-width", "4.2857rem");
     } else {
       document.documentElement.style.setProperty("--gnb-width", "20rem");
+    }
+  }
+  // Quick 메뉴 펼침/접힘에 따라 container padding-right
+  function QuickWidthHandler() {
+    const quick_ul = document.querySelector(".quick_menu ul") as HTMLElement;
+    const quick_btn = document.querySelector(".quick_btn") as HTMLElement;
+    if (quickFold === true) {
+      document.documentElement.style.setProperty("--quick-width", "1rem");
+      quick_ul.style.display = "none";
+      quick_btn.style.transform = "translateX(-100%) rotateZ(-180deg)";
+    } else {
+      document.documentElement.style.setProperty("--quick-width", "5rem");
+      quick_ul.style.display = "block";
+      quick_btn.style.transform = "translateX(-100%) rotateZ(0deg)";
     }
   }
 
@@ -157,6 +173,8 @@ function Header(props: Props) {
           setFold(false);
           setOpenMenus([]);
           GnbWidthHandler();
+          setQuickFold(false);
+          QuickWidthHandler();
         }}
       ></div>
       <nav className={`gnb ${fold === true ? "active" : ""}`}>
@@ -343,7 +361,13 @@ function Header(props: Props) {
             </a>
           </li>
         </ul>
-        <button className="quick_btn">
+        <button
+          className="quick_btn"
+          onClick={() => {
+            setQuickFold(!quickFold);
+            QuickWidthHandler();
+          }}
+        >
           <img src="/img/icon/icon_horizontal_arrow.svg" alt="" />
         </button>
       </div>
