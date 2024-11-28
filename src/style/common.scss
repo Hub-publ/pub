@@ -112,7 +112,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: var(--mg-mini);
+  margin-top: calc(#{var(--mg-mini)} * -1);
   & > * {
     flex-shrink: 0;
     // margin-top: var(--mg-mini);
@@ -589,7 +589,17 @@ header {
             var(--pd-very-small-down) var(--pd-very-large-down);
           color: var(--text-wh1);
           &:after {
-            opacity: 1;
+            content: "";
+            display: inline-block;
+            width: 1.7143rem;
+            height: 1.7143rem;
+            background: url("../../public/img/icon/icon_gnb_arrow_gray.svg")
+              no-repeat center;
+            position: absolute;
+            right: 1.1429rem;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: opacity 0.4s;
           }
         }
       }
@@ -644,20 +654,6 @@ header {
         overflow: hidden;
         color: var(--transparent);
         transition: all 0.4s;
-        &:after {
-          content: "";
-          display: inline-block;
-          width: 1.7143rem;
-          height: 1.7143rem;
-          background: url("../../public/img/icon/icon_gnb_arrow_gray.svg")
-            no-repeat center;
-          position: absolute;
-          right: 1.1429rem;
-          top: 50%;
-          transform: translateY(-50%);
-          opacity: 0;
-          transition: opacity 0.4s;
-        }
         img {
           width: 1.1429rem;
           height: 1.1429rem;
@@ -731,16 +727,6 @@ header {
   transition: all 0.4s;
   padding-left: var(--gnb-width);
   // padding-left: calc(#{var(--gnb-width)} + #{var(--pd_normal)});
-  /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
-  // &.search_on {
-  //   .search_area {
-  //     background-color: rgba(250, 250, 210, 0.5);
-  //   }
-  // }
-  // &.search_not {
-  //   background-color: rgba(173, 216, 230, 0.5);
-  // }
-  /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
 }
 .area:not(:first-child) {
   margin-top: var(--mg-very-big-down);
@@ -853,6 +839,7 @@ header {
 }
 .search_area {
   display: flex;
+  align-items: flex-start;
   padding: var(--pd-mini) var(--pd-normal);
   border-bottom: 1px solid var(--bd-gr5);
   background-color: var(--transparent);
@@ -884,6 +871,18 @@ header {
       }
       .form_wrap {
         min-height: 2.1429rem;
+        margin-top: var(--mg-mini);
+      }
+    }
+  }
+  &.fold {
+    overflow: hidden;
+    .search_tool {
+      .toggle {
+        transform: scaleY(-1);
+        /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
+        // border: 1px solid orange;
+        /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
       }
     }
   }
@@ -935,9 +934,12 @@ header {
 /* [241114 AJY] 검색영역 관련 추가 */
 .search_tool {
   flex-shrink: 0;
+  margin-top: calc(#{var(--mg-normal)} * -1);
+  // background-color: lightsalmon;
   button {
     border-radius: var(--radius-mini);
-    margin-top: var(--mg-search-tool);
+    // margin-top: var(--mg-search-tool);
+    margin-top: calc(var(--mg-search-tool) + var(--mg-normal));
     &:not(:last-child) {
       margin-right: var(--mg-little-mini);
     }
@@ -948,16 +950,10 @@ header {
     background: url("../../public/img/icon/icon_search_toggle.svg") no-repeat
       center;
     border: 1px solid var(--bd-gr-to-wh9);
-    &.open {
-      transform: scaleY(-1);
-      /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
-      // border: 1px solid orange;
-      /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
-    }
     // &.hide {
     //   /* 작업확인용(머지전 주석/삭제 필요) :: 시작 */
-    //   // display: none;
-    //   // background-color: lightgreen;
+    //   display: none;
+    //   border: 1px solid lightgreen;
     //   /* 작업확인용(머지전 주석/삭제 필요) :: 끝 */
     // }
   }
@@ -1221,8 +1217,8 @@ header {
       th,
       td {
         padding: var(--pd-very-mini) var(--pd-little-mini);
-        font-size: 0.92857rem;
-        line-height: 1.42857rem;
+        font-size: 0.9286rem;
+        line-height: 1.4286rem;
         text-align: center;
         span {
           font: inherit;

@@ -91,6 +91,16 @@ function Main() {
               </div>
             </li>
           </ul>
+          <div className="search_tool">
+            <button type="button" className="toggle hide"></button>
+            <Button
+              title="검색"
+              size="h_32"
+              bg_color="btn-bg-wh-to-gr3"
+              bd_color="btn-bd-gr-to-wh9"
+              color="btn-text-bk-to-wh3"
+            />
+          </div>
         </div>
         <div className="contents_wrap">
           <div className="area">
