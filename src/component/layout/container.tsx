@@ -7,183 +7,177 @@ interface Props {
 
 function Container(props: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [hasSearch, setHasSearch] = useState(false); // 확인용 클래스로 삭제해도 OK
-  const [searchHeight, setSearchHeight] = useState<number | null>(null);
+  const [searchFold, setSearchFold] = useState(false); // 검색영역 접힙 여부
 
   // 검색영역 관련 수치
   const [dimensions, setDimensions] = useState({
-    paddingTop: 0, // searchPaddingTop
-    paddingBottom: 0, // searchPaddingBottom
     areaPadding: 0, // [추가] 검색영역 상하 패딩
+    fixAreaPadding: 0, // [추가] 검색영역 상하 패딩 (소수점 4자리 까지)
     areaHeight: 0, // searchHeight
+    fixAreaHeight: 0,
     areaBorderWidth: 0, // searchBorderWidth
     toolHeight: 0, // searchToolHeight
-    fixToolHeight: 0, // searchToolHeight (소수점 2자리 까지)
-    changePoint: 0, // toggle 버튼 노출 여부 지점
-    fixChangePoint: 0, // toggle 버튼 노출 여부 지점 (소수점 2자리 까지)
+    fixToolHeight: 0, // searchToolHeight (소수점 4자리 까지)
+    toolMarginTop: 0, // searchToolMarginTop
+    fixToolMarginTop: 0, // searchToolMarginTop (소수점 4자리 까지)
+    changePoint: 0,
+    fixChangePoint: 0,
   });
+
+  const handleToggleClick = () => {
+    // 기존 소스
+    // console.log("토글버튼 클릭함");
+    // if (toggleButton) {
+    //   toggleButton.classList.toggle("DDDDDDDDDDD");
+    // }
+    // 수정 진행중
+    setSearchFold(prev => {
+      const newFoldState = !prev;
+
+      const containerElement = containerRef.current;
+      if (containerElement) {
+        const areaElement =
+          containerElement.querySelector<HTMLDivElement>(".search_area");
+        const toggleButton = containerElement.querySelector<HTMLButtonElement>(
+          ".search_tool .toggle"
+        );
+
+        // 버튼에 open 클래스 추가/제거
+        if (toggleButton) {
+          if (newFoldState === true) {
+            toggleButton.classList.add("open");
+            console.log("open 클래스 추가");
+          } else {
+            toggleButton.classList.remove("open");
+            console.log("open 클래스 제거");
+          }
+        }
+
+        // areaElement에 Fold 클래스 추가/제거
+        if (areaElement) {
+          if (newFoldState === true) {
+            areaElement.classList.add("fold");
+            console.log("fold 클래스 추가");
+          } else {
+            areaElement.classList.remove("fold");
+            console.log("fold 클래스 제거");
+          }
+        }
+      }
+      return newFoldState;
+    });
+  };
 
   // 검색영역 관련 수치 계산 함수
   const calcDimensions = () => {
-    console.log("calc 함수 시작🐀");
     const containerElement = containerRef.current;
     if (!containerElement) return;
 
-    const areaElement = containerElement.querySelector(".search_area"); // searchArea
+    const areaElement =
+      containerElement.querySelector<HTMLDivElement>(".search_area"); // searchArea
     const areaTool = containerElement.querySelector(".search_tool"); // searchArea
     const toggleButton = containerElement.querySelector<HTMLButtonElement>(
       ".search_tool .toggle"
     ); // searchArea > Toggle Button
 
-    let paddingTop = 0;
-    let paddingBottom = 0;
-    let areaPadding = 0; // [추가] 검색영역 상하 패딩
+    let areaPadding = 0;
+    let fixAreaPadding = 0;
     let areaHeight = 0;
+    let fixAreaHeight = 0;
     let areaBorderWidth = 0;
     let toolHeight = 0;
     let fixToolHeight = 0;
+    let toolMarginTop = 0;
+    let fixToolMarginTop = 0;
     let changePoint = 0;
     let fixChangePoint = 0;
 
     if (areaElement && areaTool && toggleButton) {
-      // 정확한 계산을 위해 정수로 변환 후 계산
-      const scaleFactor = 1000;
+      // 1. 검색영역이 있는 페이지
+      // console.log("검색영역 ⭕");
 
       // 검색영역
       const areaStyles = window.getComputedStyle(areaElement);
-      paddingTop = parseFloat(areaStyles.paddingTop);
-      paddingBottom = parseFloat(areaStyles.paddingBottom);
       areaPadding =
         parseFloat(areaStyles.paddingTop) +
         parseFloat(areaStyles.paddingBottom);
+      fixAreaPadding = parseFloat(areaPadding.toFixed(4));
       areaHeight = parseFloat(areaStyles.height);
+      fixAreaHeight = parseFloat(areaHeight.toFixed(4));
+
       areaBorderWidth = parseFloat(areaStyles.borderBottomWidth);
       // 검색 버튼 영역
       const areaToolStyle = window.getComputedStyle(areaTool);
       toolHeight = parseFloat(areaToolStyle.height);
-      fixToolHeight = parseFloat(toolHeight.toFixed(2));
+      fixToolHeight = parseFloat(toolHeight.toFixed(4));
+      toolMarginTop = parseFloat(areaToolStyle.marginTop);
+      fixToolMarginTop = parseFloat(toolMarginTop.toFixed(4));
       // 변경 기준점
       changePoint =
-        (paddingTop * scaleFactor + paddingBottom * scaleFactor) / scaleFactor +
-        areaBorderWidth +
-        fixToolHeight;
-      fixChangePoint = parseFloat(changePoint.toFixed(2));
+        fixAreaPadding + fixToolHeight + fixToolMarginTop + areaBorderWidth;
+      fixChangePoint = parseFloat(changePoint.toFixed(4));
 
-      if (changePoint >= areaHeight) {
-        console.log("토글❌");
+      if (fixChangePoint > fixAreaHeight) {
+        toggleButton.classList.add("hide");
       } else {
-        console.log("토글⭕");
+        toggleButton.classList.remove("hide");
       }
+
+      if (searchFold === true) {
+        // 1. 검색영역이 접힌 경우
+        areaElement.classList.add("fold");
+        // areaElement.style.maxHeight = `${fixChangePoint}px`;
+      } else {
+        // 2. 검색영역이 열린 경우
+        areaElement.classList.remove("fold");
+        // areaElement.style.maxHeight = "auto";
+      }
+    } else {
+      // 2. 검색영역이 없는 페이지
+      // console.log("검색영역 ❌");
     }
 
     setDimensions({
-      paddingTop,
-      paddingBottom,
-      areaHeight,
       areaPadding,
+      fixAreaPadding,
+      areaHeight,
+      fixAreaHeight,
       areaBorderWidth,
       toolHeight,
       fixToolHeight,
+      toolMarginTop,
+      fixToolMarginTop,
       changePoint,
       fixChangePoint,
     });
-    console.log("⭐1. paddingTop ?", paddingTop);
-    console.log("⭐2. paddingBottom ?", paddingBottom);
-    console.log("⭐3. areaHeight ?", areaHeight);
-    console.log("⭐4. areaBorderWidth ?", areaBorderWidth);
-    console.log("⭐5. areaToolHeight ?", toolHeight);
-    console.log("⭐6. fixToolHeight ?", fixToolHeight);
-    console.log("⭐9. changePoint ?", changePoint);
-    console.log("⭐10. fixChangePoint ?", fixChangePoint);
-    console.log("calc 함수 끝🧀");
+    // console.log("📌 fixAreaHeight ? ", fixAreaHeight);
+    // console.log("🐿️ fixChangePoint ? ", fixChangePoint);
+    if (toggleButton) {
+      toggleButton.removeEventListener("click", handleToggleClick); // 기존 리스너 제거
+      toggleButton.addEventListener("click", handleToggleClick); // 새 리스너 등록
+    }
+    return () => {
+      if (toggleButton) {
+        toggleButton.removeEventListener("click", handleToggleClick);
+      }
+    };
   };
 
   useEffect(() => {
-    // 처음 렌더링 시 계산
+    //  // 처음 렌더링 시 계산
     calcDimensions();
     // Resize 이벤트 리스너
     const handleResize = () => {
       calcDimensions();
     };
-    window.addEventListener("resize", calcDimensions);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener("resize", calcDimensions);
+      window.removeEventListener("resize", handleResize);
     };
   }, [props.children]);
 
-  useEffect(() => {
-    // console.log("실행");
-    // 검색영역 확인
-    const containerElement = containerRef.current;
-    if (containerElement) {
-      const areaElement = containerElement.querySelector(".search_area"); // searchArea
-      const toggleButton = containerElement.querySelector<HTMLButtonElement>(
-        ".search_tool .toggle"
-      );
-      const handleToggleClick = () => {
-        if (toggleButton) {
-          toggleButton.classList.toggle("open");
-        }
-        // console.log("토글 버튼 클릭!!");
-      };
-      if (areaElement) {
-        // 검색영역 있는 페이지
-        setHasSearch(true); // 확인용 클래스로 삭제해도 OK
-        setSearchHeight(areaElement.getBoundingClientRect().height); // height 중복
-        // console.log("검색영역 높이값", searchHeight);
-        // 검색영역 상,하 패딩 값
-        const searchStyle = window.getComputedStyle(areaElement);
-        const searchPadding =
-          parseFloat(searchStyle.paddingTop) +
-          parseFloat(searchStyle.paddingBottom);
-        // console.log("검색영역 패딩", searchPadding);
-
-        // 검색영역 높이가 특정 값 이상일 경우 클래스 부여
-        const search_h = areaElement.getBoundingClientRect().height; // height 중복
-        if (search_h > 100) {
-          areaElement.classList.remove("under_height");
-          areaElement.classList.add("over_height");
-        } else {
-          areaElement.classList.remove("over_height");
-          areaElement.classList.add("under_height");
-        }
-
-        const resizeObserver = new ResizeObserver(entries => {
-          for (let entry of entries) {
-            if (entry.target === areaElement) {
-              const resizeHeight = entry.contentRect.height;
-              // console.log("리사이즈 새로운 높이는?", resizeHeight);
-            }
-          }
-        });
-        // console.log("리사이즈 확인1");
-        resizeObserver.observe(areaElement);
-        // console.log("리사이즈 확인2");
-        return () => resizeObserver.disconnect;
-      } else {
-        // 검색영역 없는 페이지
-        setHasSearch(false); // 확인용 클래스로 삭제해도 OK
-        setSearchHeight(null);
-        // console.log("검색영역 없음", searchHeight);
-      }
-      if (toggleButton) {
-        toggleButton.addEventListener("click", handleToggleClick);
-      }
-      return () => {
-        if (toggleButton) {
-          toggleButton.removeEventListener("click", handleToggleClick);
-        }
-      };
-    }
-  }, [props.children]);
   return (
-    <div
-      ref={containerRef}
-      // search_on, search_not 는 확인용 클래스로 삭제해도 OK
-      className={`container ${hasSearch ? "search_on" : "search_not"} ${
-        props.className
-      }`}
-    >
+    <div ref={containerRef} className={`container ${props.className}`}>
       <div className="container_inner">{props.children}</div>
     </div>
   );

@@ -145,7 +145,8 @@
   --pop-mg-very-big-down: 4.2857rem; // 60px
 
   // 기타
-  --mg-search-tool: 1.5714rem; //22px
+  // --mg-search-tool: 1.5714rem; //22px
+  --mg-search-tool: 0.9286rem + var(--mg-little-mini); // 19px
 
   /* ===== 📌 Padding ===== */
 
