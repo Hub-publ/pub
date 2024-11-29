@@ -745,15 +745,11 @@ header {
   height: calc(100% - #{var(--header-height)});
   background-color: var(--bg-wh-to-gr1);
   border-left: 1px solid var(--bd-wh9);
-<<<<<<< HEAD
-  padding: var(--pd-very-small-down);
+  padding: var(--pd-very-small-down) var(--pd-reset);
+  transition: width 0.4s;
   /*작업확인용(머지 전 삭제 필요)*/
   // display: none;
   /*작업확인용(머지 전 삭제 필요)*/
-=======
-  padding: var(--pd-very-small-down) var(--pd-reset);
-  transition: width 0.4s;
->>>>>>> 385881effef828e3f15f700bbd34226f19e7f93f
   ul {
     li {
       &:not(:first-of-type) {
