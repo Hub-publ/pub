@@ -106,7 +106,10 @@
 
 /* ===== 📌 요소 ===== */
 .page_btn {
-  margin-top: var(--mg-very-big-down);
+  margin-top: calc(#{var(--mg-very-big-down)} - #{var(--btn-mg-mini)});
+  button {
+    margin-top: var(--btn-mg-mini);
+  }
 }
 .form_wrap {
   display: flex;
@@ -397,6 +400,42 @@
           position: static;
           transform: none;
           background-image: url("../../public/img/icon/icon_close_gray.svg");
+        }
+      }
+    }
+  }
+}
+.only_more_pop_wrap {
+  position: absolute;
+  transform: translateX(-100%);
+  z-index: 10;
+  .only_more_pop {
+    background-color: var(--pop-bg-wh-to-gr1);
+    box-shadow: 0 0 0.8571rem 0 var(--shadow-bk-opc1);
+    border-radius: var(--radius-normal);
+    display: none;
+    &.on {
+      display: block;
+    }
+    &.medium {
+      min-width: 5.7143rem;
+    }
+    &.large {
+      min-width: 10rem;
+    }
+    li {
+      &:not(:first-of-type) {
+        border-top: 1px solid var(--bd-wh5);
+      }
+      .only_more_link {
+        display: flex;
+        align-items: center;
+        padding: var(--pop-pd-mini-down) var(--pop-pd-mini-down);
+        font-size: 0.9286rem;
+        font-weight: 500;
+        color: var(--text-gr-to-wh1);
+        img {
+          margin-right: var(--mg-mini-down);
         }
       }
     }
@@ -736,6 +775,11 @@ header {
 /* ==================================================================
   유진이 자리 👻
 ================================================================== */
+.only_more_btn {
+  width: var(--more-btn-width);
+  height: var(--more-btn-width);
+  background: url("../../public/img/icon/icon_more.svg") no-repeat center;
+}
 .quick_menu {
   position: fixed;
   bottom: 0;
@@ -748,6 +792,7 @@ header {
   padding: var(--pd-very-small-down) var(--pd-reset);
   transition: width 0.4s;
   ul {
+    display: none;
     li {
       &:not(:first-of-type) {
         margin-top: var(--mg-normal-down);
@@ -778,7 +823,7 @@ header {
     position: absolute;
     bottom: 0.8571rem;
     left: -0.8571rem;
-    transform: translateX(-100%);
+    transform: translateX(-100%) rotateZ(-180deg);
     width: 2.8571rem;
     height: 2.8571rem;
     border-radius: var(--radius-circle);

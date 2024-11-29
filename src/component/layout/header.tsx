@@ -68,7 +68,6 @@ function Header(props: Props) {
       }
     });
   }, [openMenus]);
-
   const toggleSubMenu = (menuId: number) => {
     setOpenMenus((prevState) => {
       // 메뉴가 이미 열린 상태라면 배열에서 제거, 닫힌 상태라면 배열에 추가
@@ -79,6 +78,49 @@ function Header(props: Props) {
       }
     });
   };
+
+  // 더보기 팝업 관련 스크립트
+  useEffect(() => {
+    window.addEventListener("click", function (event) {
+      const clickedElement = event.target as HTMLElement;
+      const classes = Array.from(clickedElement.classList);
+      const more_wrap = this.document.querySelector(
+        ".only_more_pop_wrap"
+      ) as HTMLElement;
+
+      if (classes.some((className) => className.includes("only_more_btn"))) {
+        const rect = clickedElement.getBoundingClientRect();
+        const left = rect.left + window.scrollX;
+        const top = rect.top + window.scrollY;
+        const width = rect.width;
+        const height = rect.height;
+        const right = left + width;
+        const bottom = top + height;
+
+        more_wrap.style.cssText = `left: ${right}px; top: ${bottom + 8}px;`;
+      } else {
+        setTimeout(() => {
+          if (
+            !classes.some((className) => className.includes("only_more_link"))
+          ) {
+            const more_pop = more_wrap.querySelectorAll(".only_more_pop");
+            for (let i = 0; more_pop.length > i; i++) {
+              more_pop[i].classList.remove("on");
+            }
+          }
+        }, 100);
+      }
+    });
+    window.addEventListener("resize", function () {
+      const more_wrap = this.document.querySelector(
+        ".only_more_pop_wrap"
+      ) as HTMLElement;
+      const more_pop = more_wrap.querySelectorAll(".only_more_pop");
+      for (let i = 0; more_pop.length > i; i++) {
+        more_pop[i].classList.remove("on");
+      }
+    });
+  }, []);
 
   return (
     <>

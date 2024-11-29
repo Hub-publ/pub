@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Container from "../component/layout/container";
 import Header from "../component/layout/header";
 import Select from "react-select";
@@ -14,12 +15,14 @@ import TemplatePopup from "../component/popup/template/template_popup";
 import CustomTooltip from "../component/tooltip/custom_tooltip";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import MorePopup from "../component/popup/more_popup";
 interface OptionType {
   label: string;
   value: string;
 }
 
 function Main() {
+  const [more, setMore] = useState<Number | undefined>(undefined);
   const [popup, setPopup] = useState<Number | undefined>(undefined);
   // Date Picker
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
@@ -224,61 +227,50 @@ function Main() {
                   <CustomTooltip>
                     <img
                       className="main_img"
-                      src="/img/img_test11.jpg"
+                      src="/img/img_test12.png"
                       alt=""
                     />
-                    <p>메롱~ 약오르지이~👻</p>
+                    <p>어디보자~</p>
                   </CustomTooltip>
                 </p>
                 <div>
                   <Button
-                    title="Main Popup Open"
+                    title="버튼"
                     size="h_28"
                     bg_color="btn-bg-bk1"
                     bd_color="btn-bd-bk1"
                     color="btn-text-wh1"
-                    onClick={() => {
-                      setPopup(1);
-                    }}
                   />
                   <Button
-                    title="Side Popup Open"
+                    title="버튼"
                     size="h_28"
                     bg_color="transparent"
                     bd_color="btn-bd-bk1"
                     color="btn-text-bk1"
-                    onClick={() => {
-                      setPopup(2);
-                    }}
                   />
                   <Button
-                    title="Bottom Popup Open"
+                    title="버튼"
                     size="h_28"
                     bg_color="btn-bg-blue1"
                     bd_color="btn-bd-blue1"
                     color="btn-text-wh1"
-                    onClick={() => {
-                      setPopup(3);
-                    }}
                   />
                   <Button
-                    title="Color Palette 보러가기"
+                    title="버튼"
                     size="h_28"
                     bg_color="transparent"
                     bd_color="btn-bd-blue1"
                     color="btn-text-blue1"
-                    onClick={() => window.open("/color_palette")}
                   />
                   <Button
-                    title="Size Palette 보러가기"
+                    title="버튼"
                     size="h_28"
                     bg_color="btn-bg-green1"
                     bd_color="btn-bd-green1"
                     color="btn-text-wh1"
-                    onClick={() => window.open("/size_palette")}
                   />
                   <Button
-                    title="버튼버튼"
+                    title="버튼"
                     size="h_28"
                     bg_color="transparent"
                     bd_color="btn-bd-green1"
@@ -299,10 +291,18 @@ function Main() {
                 <table className="list">
                   <colgroup>
                     <col width={50} />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col width={50} />
                   </colgroup>
                   <thead>
                     <tr>
                       <th>#</th>
+                      <th>TH</th>
                       <th>TH</th>
                       <th>TH</th>
                       <th>TH</th>
@@ -327,8 +327,20 @@ function Main() {
                       <td>홍길동</td>
                       <td>-</td>
                       <td>사원</td>
-                      <td>010-1234-1234</td>
-                      <td>test@hubdnc.com</td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">010-1234-5678</p>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">test@hubdnc.com</p>
+                      </td>
+                      <td>
+                        <button
+                          className="only_more_btn"
+                          onClick={() => {
+                            setMore(1);
+                          }}
+                        ></button>
+                      </td>
                     </tr>
                     <tr>
                       <td>
@@ -342,8 +354,20 @@ function Main() {
                       <td>홍길동</td>
                       <td>-</td>
                       <td>사원</td>
-                      <td>010-1234-1234</td>
-                      <td>test@hubdnc.com</td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">010-1234-5678</p>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">test@hubdnc.com</p>
+                      </td>
+                      <td>
+                        <button
+                          className="only_more_btn"
+                          onClick={() => {
+                            setMore(2);
+                          }}
+                        ></button>
+                      </td>
                     </tr>
                     <tr>
                       <td>
@@ -357,8 +381,20 @@ function Main() {
                       <td>홍길동</td>
                       <td>-</td>
                       <td>사원</td>
-                      <td>010-1234-1234</td>
-                      <td>test@hubdnc.com</td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">010-1234-5678</p>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">test@hubdnc.com</p>
+                      </td>
+                      <td>
+                        <button
+                          className="only_more_btn"
+                          onClick={() => {
+                            setMore(3);
+                          }}
+                        ></button>
+                      </td>
                     </tr>
                     <tr>
                       <td>
@@ -372,8 +408,20 @@ function Main() {
                       <td>홍길동</td>
                       <td>-</td>
                       <td>사원</td>
-                      <td>010-1234-1234</td>
-                      <td>test@hubdnc.com</td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">010-1234-5678</p>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">test@hubdnc.com</p>
+                      </td>
+                      <td>
+                        <button
+                          className="only_more_btn"
+                          onClick={() => {
+                            setMore(4);
+                          }}
+                        ></button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -412,18 +460,20 @@ function Main() {
                 }}
               />
               <Button
-                title="버튼버튼"
+                title="Color Palette 보러가기"
                 size="h_38"
                 bg_color="transparent"
                 bd_color="btn-bd-blue1"
                 color="btn-text-blue1"
+                onClick={() => window.open("/color_palette")}
               />
               <Button
-                title="버튼버튼"
+                title="Size Palette 보러가기"
                 size="h_38"
                 bg_color="btn-bg-green1"
                 bd_color="btn-bd-green1"
                 color="btn-text-wh1"
+                onClick={() => window.open("/size_palette")}
               />
               <Button
                 title="버튼버튼"
@@ -461,6 +511,97 @@ function Main() {
       >
         <TemplatePopup />
       </PopupManage>
+
+      <MorePopup>
+        {more === 1 && (
+          <ul className={`only_more_pop medium ${more === 1 ? "on" : ""}`}>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_reg.svg" alt="" />
+                등록1
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_edit.svg" alt="" />
+                수정1
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_delete.svg" alt="" />
+                삭제1
+              </Link>
+            </li>
+          </ul>
+        )}
+        {more === 2 && (
+          <ul className={`only_more_pop medium ${more === 2 ? "on" : ""}`}>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_reg.svg" alt="" />
+                등록2
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_edit.svg" alt="" />
+                수정2
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_delete.svg" alt="" />
+                삭제2
+              </Link>
+            </li>
+          </ul>
+        )}
+        {more === 3 && (
+          <ul className={`only_more_pop medium ${more === 3 ? "on" : ""}`}>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_reg.svg" alt="" />
+                등록3
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_edit.svg" alt="" />
+                수정3
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_delete.svg" alt="" />
+                삭제3
+              </Link>
+            </li>
+          </ul>
+        )}
+        {more === 4 && (
+          <ul className={`only_more_pop medium ${more === 4 ? "on" : ""}`}>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_reg.svg" alt="" />
+                등록4
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_edit.svg" alt="" />
+                수정4
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_delete.svg" alt="" />
+                삭제4
+              </Link>
+            </li>
+          </ul>
+        )}
+      </MorePopup>
     </>
   );
 }
