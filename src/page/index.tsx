@@ -203,7 +203,7 @@ function Main() {
             </li>
           </ul>
           <div className="search_tool">
-            <button type="button" className="toggle hide"></button>
+            <button type="button" className="toggle"></button>
             <Button
               title="검색"
               size="h_32"
