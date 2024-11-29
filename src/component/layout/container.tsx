@@ -8,6 +8,7 @@ interface Props {
 function Container(props: Props) {
   // useState
   const [searchFold, setSearchFold] = useState(false); // 검색영역 접힙 여부
+  const [searchOver, setSearchOver] = useState(false); // 검색영역 줄바뀜 여부
   const [togglePoint, setTogglePoint] = useState<number>(120); // 검색영역 접힙 기준점
 
   // useRef
@@ -100,9 +101,15 @@ function Container(props: Props) {
 
       // 토글 버튼 가시성 처리
       if (fixChangePoint > fixAreaHeight) {
-        toggleButton.classList.add("hide");
+        // toggleButton.classList.add("hide");
+        setSearchOver(false);
+        areaElement.classList.remove("over_height");
+        areaElement.classList.add("under_height");
       } else {
-        toggleButton.classList.remove("hide");
+        // toggleButton.classList.remove("hide");
+        setSearchOver(true);
+        areaElement.classList.remove("under_height");
+        areaElement.classList.add("over_height");
       }
     }
 
@@ -153,7 +160,12 @@ function Container(props: Props) {
   }, [props.children]);
 
   return (
-    <div ref={containerRef} className={`container ${props.className}`}>
+    <div
+      ref={containerRef}
+      className={`container ${searchOver ? "search_over" : ""} ${
+        props.className
+      }`}
+    >
       <div className="container_inner">{props.children}</div>
     </div>
   );
