@@ -53,7 +53,7 @@ export function FontReSize(event: SingleValue<OptionType>) {
   }
 }
 
-// 1024 아래로 비율맞춰 줄어들게
+// 1024 아래로 비율맞춰 줄어들게 :: zoom을 줄여주는 방식이라 zoom이 조정될 때 More Popup의 위치를 잡을 수 없어 주석처리 함.
 /* function resizeApply() {
   const minWidth = 1024;
   if (window.innerWidth < minWidth) {
