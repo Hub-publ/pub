@@ -11,7 +11,7 @@ function Pagination(props: Props) {
       <ul className="pagination">
         {/* 이전 페이지 */}
         <li className="prev double disabled">
-          <a href="javascript:;">
+          <a href="javascript">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="10.992"
@@ -49,7 +49,7 @@ function Pagination(props: Props) {
           </a>
         </li>
         <li className="prev single disabled">
-          <a href="javascript:;">
+          <a href="javascript">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="5.996"
@@ -71,23 +71,23 @@ function Pagination(props: Props) {
         </li>
         {/* 페이지 번호 */}
         <li className="on">
-          <a href="#">1</a>
+          <a href="javascript">1</a>
         </li>
         <li>
-          <a href="#">2</a>
+          <a href="javascript">2</a>
         </li>
         <li>
-          <a href="#">3</a>
+          <a href="javascript">3</a>
         </li>
         <li>
-          <a href="#">4</a>
+          <a href="javascript">4</a>
         </li>
         <li>
-          <a href="#">5</a>
+          <a href="javascript">5</a>
         </li>
         {/* 다음 페이지 */}
         <li className="next single">
-          <a href="javascript:;">
+          <a href="javascript">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="5.996"
@@ -108,7 +108,7 @@ function Pagination(props: Props) {
           </a>
         </li>
         <li className="next double">
-          <a href="javascript:;">
+          <a href="javascript">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="10.992"
