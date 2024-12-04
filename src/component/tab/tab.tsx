@@ -18,7 +18,7 @@ function Tab(props: Props) {
           {options.map((text, index) => (
             <li key={index} className={tab === index ? "on" : ""}>
               <a
-                href="javascript:;"
+                href="javascript"
                 onClick={e => {
                   e.preventDefault();
                   setTab(index);
