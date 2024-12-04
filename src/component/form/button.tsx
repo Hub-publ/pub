@@ -1,4 +1,4 @@
-interface Props {
+export interface Props {
   title: string;
   size: "h_44" | "h_38" | "h_32" | "h_28";
   bg_color: string;
