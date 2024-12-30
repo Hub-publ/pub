@@ -49,7 +49,6 @@ function Container(props: Props) {
 
   // 검생영역 수치 계산 함수
   const calcDimensions = () => {
-    ////// console.log("✅ calcDimensions 실행 시작");
     const containerElement = containerRef.current;
     if (!containerElement) return;
     // 검색영역
@@ -62,23 +61,6 @@ function Container(props: Props) {
 
     if (areaElement && item) {
       ////// console.log("검색영역 ⭕");
-      // const areaStyle = window.getComputedStyle(areaElement);
-      // const areaPadding = parseFloat(areaStyle.paddingTop);
-      // const areaBorder = parseFloat(areaStyle.borderBottomWidth);
-      // const areaHeight = parseFloat(areaStyle.height);
-      // const itemStyle = window.getComputedStyle(item);
-      // const itemHeight = parseFloat(itemStyle.height);
-      // console.log("area의 패딩", areaPadding);
-      // console.log("area의 패딩", areaPadding);
-      // console.log("area의 보더", areaBorder);
-      // console.log("item의 높이", itemHeight);
-      // console.log("===============================");
-      // console.log("area의 높이", areaHeight);
-      // console.log("===============================");
-      // const standard = areaPadding * 2 + areaBorder + itemHeight; // 토글 기준점
-      // console.log("토글 기준점은?", standard);
-
-      // 수정 후
 
       const areaStyle = window.getComputedStyle(areaElement);
       const itemStyle = window.getComputedStyle(item);
@@ -94,9 +76,6 @@ function Container(props: Props) {
         areaPadding * 2 + areaBorder + itemHeight
       );
 
-      // console.log("1. areaPadding", areaPadding);
-      // console.log("2. areaBorder", areaBorder);
-      // console.log("3. itemHeight", itemHeight);
       ////// console.log("A. areaHeight", areaHeight);
       ////// console.log("4. standard", standard);
 
@@ -108,6 +87,7 @@ function Container(props: Props) {
         // 토글 버튼 노출
         if (toggleButton) {
           toggleButton.style.display = "block";
+          ////// console.log("🍇토글 버튼 있음~~~@@");
         }
       } else {
         // 1줄 노출
@@ -117,13 +97,12 @@ function Container(props: Props) {
         // 토글 버튼 미노출
         if (toggleButton) {
           toggleButton.style.display = "none";
+          ////// console.log("🥕토글 버튼 없음!!!!");
         }
       }
     } else {
       ////// console.log("검색영역 ❌");
     }
-    ////// console.log("✅ calcDimensions 실행 종료 끝");
-    ////// console.log("===================================================");
   };
 
   useEffect(() => {

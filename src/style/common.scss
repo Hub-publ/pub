@@ -1010,18 +1010,25 @@ header {
       }
     }
   }
+  /*작업확인용(머지 전 삭제 필요)*/
+  // 검색영역 2단 이상시, 토글 버튼 노출
+  &.over_height {
+    ////// .search_tool {
+    //////   .toggle {
+    //////     border: 1px solid blue;
+    //////     &.down {
+    //////       border: 1px solid yellow;
+    //////     }
+    //////   }
+    ////// }
+    // 토글 버튼으로 접은 경우
+    &.over_fold {
+      background-color: lightgoldenrodyellow;
+    }
+  }
   // &.fold {
   //   // overflow: hidden;
   // }
-  /*작업확인용(머지 전 삭제 필요)*/
-  // 검색영역 2단 이상시, 토글 버튼 노출
-  ////// &.over_height {
-  //////   .search_tool {
-  //////     .toggle {
-  //////       border: 1px solid blue;
-  //////     }
-  //////   }
-  ////// }
   /*작업확인용(머지 전 삭제 필요)*/
 }
 .search_input {
@@ -1082,7 +1089,7 @@ header {
     }
   }
   .toggle {
-    ////// // display: none;
+    // display: none;
     width: 2.2857rem;
     height: 2.2857rem;
     background: url("../../public/img/icon/icon_search_toggle.svg") no-repeat
@@ -1471,7 +1478,7 @@ header {
       font-size: 0.9286rem;
       line-height: 1.4286rem;
       padding: var(--pd-very-mini) var(--pd-normal) var(--pd-very-mini)
-        var(--pd-very-mini);
+        var(--pd-little-mini);
       border-radius: var(--radius-mini);
       border: 1px solid var(--bd-gr-to-wh9);
       color: var(--text-bk-to-wh1);
