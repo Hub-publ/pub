@@ -6,6 +6,9 @@ interface Props {
 }
 
 function Container(props: Props) {
+  // useRef
+  // const searchOvertRef = useRef(false);
+  // const togglePointRef = useRef(togglePoint);
   // useState
   // const [searchFold, setSearchFold] = useState(false); // 검색영역 접힙 여부
   // const [searchOver, setSearchOver] = useState(false); // 검색영역 넘침(줄바뀜) 여부
@@ -13,8 +16,8 @@ function Container(props: Props) {
 
   // useRef
   const containerRef = useRef<HTMLDivElement>(null);
-  // const searchOvertRef = useRef(false);
-  // const togglePointRef = useRef(togglePoint);
+  // useState
+  const [isFolded, setIsFolded] = useState(false); // fold 상태 관리
 
   // 소수점 반올림 함수
   const roundToPrecision = (value: number, precision = 4) => {
@@ -46,15 +49,19 @@ function Container(props: Props) {
 
   // 검생영역 수치 계산 함수
   const calcDimensions = () => {
-    // console.log("✅ calcDimensions 실행 시작");
+    ////// console.log("✅ calcDimensions 실행 시작");
     const containerElement = containerRef.current;
     if (!containerElement) return;
-
+    // 검색영역
     const areaElement = containerElement.querySelector(".search_area");
     const item = containerElement.querySelector(".search_area > ul > li");
+    // 토글 버튼
+    const toggleButton = containerElement.querySelector<HTMLButtonElement>(
+      ".search_tool .toggle"
+    );
 
     if (areaElement && item) {
-      // console.log("검색영역 ⭕");
+      ////// console.log("검색영역 ⭕");
       // const areaStyle = window.getComputedStyle(areaElement);
       // const areaPadding = parseFloat(areaStyle.paddingTop);
       // const areaBorder = parseFloat(areaStyle.borderBottomWidth);
@@ -90,12 +97,33 @@ function Container(props: Props) {
       // console.log("1. areaPadding", areaPadding);
       // console.log("2. areaBorder", areaBorder);
       // console.log("3. itemHeight", itemHeight);
-      // console.log("A. areaHeight", areaHeight);
-      // console.log("4. standard", standard);
+      ////// console.log("A. areaHeight", areaHeight);
+      ////// console.log("4. standard", standard);
+
+      // 검색영역 넘침 여부
+      if (areaHeight > standard) {
+        // 2줄 이상 노출
+        areaElement.classList.remove("under_height");
+        areaElement.classList.add("over_height");
+        // 토글 버튼 노출
+        if (toggleButton) {
+          toggleButton.style.display = "block";
+        }
+      } else {
+        // 1줄 노출
+        areaElement.classList.remove("over_height");
+        areaElement.classList.add("under_height");
+
+        // 토글 버튼 미노출
+        if (toggleButton) {
+          toggleButton.style.display = "none";
+        }
+      }
     } else {
-      // console.log("검색영역 ❌");
+      ////// console.log("검색영역 ❌");
     }
-    // console.log("✅ calcDimensions 실행 종료 ==== 끝");
+    ////// console.log("✅ calcDimensions 실행 종료 끝");
+    ////// console.log("===================================================");
   };
 
   useEffect(() => {
