@@ -1655,9 +1655,9 @@ header {
       line-height: 2rem;
       font-size: 0.8571rem;
       font-weight: 500;
-      color: #444;
-      background-color: #fff;
-      border: 1px solid #444;
+      color: var(--text-bk-to-wh9);
+      background-color: var(--bg-wh-to-gr1);
+      border: 1px solid var(--bd-bk-to-gr9);
     }
     &:not(:first-child) {
       a {
@@ -1676,8 +1676,8 @@ header {
     }
     &.on {
       a {
-        color: #fff;
-        background-color: #444;
+        color: var(--text-wh1);
+        background-color: var(--bg-bk1);
       }
     }
   }
@@ -1685,7 +1685,7 @@ header {
 .tab_contents {
   padding: var(--pd-small);
   border-radius: var(--radius-mini);
-  border: 1px solid #444;
+  border: 1px solid var(--bd-wh-to-gr9);
 }
 
 @media screen and (min-width: 1921px) {

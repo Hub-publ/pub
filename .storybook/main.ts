@@ -18,6 +18,15 @@ const config: StorybookConfig = {
     });
     return config;
   },
+  options: {
+    storySort: {
+      method: "alphabetical", // 기본적으로 알파벳 순서로 정렬
+      order: [
+        "Button", // 단일 형태를 상단에 배치
+        "Form", // 계층 구조를 이후에 배치
+      ],
+    },
+  },
 };
 
 export default config;

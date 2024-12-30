@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/color_palette" element={<ColorPalette />}></Route>
           <Route path="/size_palette" element={<SizePalette />}></Route>
           <Route path="/table" element={<Table />}></Route>
-          <Route path="/tab_sample" element={<TabSample />}></Route>
+          <Route path="/tab" element={<TabSample />}></Route>
           <Route path="/swiper" element={<Swiper />}></Route>
         </Routes>
       </BrowserRouter>

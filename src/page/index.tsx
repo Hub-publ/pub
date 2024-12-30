@@ -426,8 +426,8 @@ function Main() {
                   </tbody>
                 </table>
               </div>
+              <Pagination totalPage={5} />
             </div>
-            <Pagination totalPage={5} />
             <div className="page_btn center_t">
               <Button
                 title="Main Popup Open"

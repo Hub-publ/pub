@@ -1,6 +1,5 @@
-import React from "react";
-import { Meta, StoryFn } from "@storybook/react";
-import Button, { Props } from "../../form/button"; // Button과 Props를 가져옵니다
+import { Meta } from "@storybook/react";
+import Button from "../../form/button"; // Button과 Props를 가져옵니다
 
 // Storybook 설정
 export default {
@@ -9,13 +8,278 @@ export default {
 } as Meta<typeof Button>; // 타입을 Button 컴포넌트에 맞게 설정
 
 // StoryFn에 Props 타입을 지정하여 명시적으로 맞추기
-const Template: StoryFn<Props> = (args) => <Button {...args} />;
+const Template1 = () => (
+  <>
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr1"
+      bd_color="btn-bd-gr-to-wh1"
+      color="btn-text-bk-to-wh1"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr2"
+      bd_color="btn-bd-gr-to-wh2"
+      color="btn-text-bk-to-wh2"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr3"
+      bd_color="btn-bd-gr-to-wh9"
+      color="btn-text-bk-to-wh3"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr4"
+      bd_color="btn-bd-gr-to-wh4"
+      color="btn-text-bk-to-wh4"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr5"
+      bd_color="btn-bd-gr-to-wh5"
+      color="btn-text-bk-to-wh5"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr6"
+      bd_color="btn-bd-gr-to-wh6"
+      color="btn-text-bk-to-wh6"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr7"
+      bd_color="btn-bd-gr-to-wh7"
+      color="btn-text-bk-to-wh7"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr8"
+      bd_color="btn-bd-gr-to-wh8"
+      color="btn-text-bk-to-wh8"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr9"
+      bd_color="btn-bd-gr-to-wh9"
+      color="btn-text-bk-to-wh9"
+    />
+  </>
+);
+export const line = Template1.bind({});
 
-export const Default = Template.bind({});
-Default.args = {
-  title: "Click Me", // title prop에 맞춰서 수정
-  size: "h_32",
-  bg_color: "btn-bg-wh-to-gr3",
-  bd_color: "btn-bd-gr-to-wh9",
-  color: "btn-text-bk-to-wh3",
-};
+const Template2 = () => (
+  <>
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr1"
+      bd_color="btn-bd-gr-to-wh1"
+      color="btn-text-bk-to-wh1"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr2"
+      bd_color="btn-bd-gr-to-wh2"
+      color="btn-text-bk-to-wh2"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr3"
+      bd_color="btn-bd-gr-to-wh9"
+      color="btn-text-bk-to-wh3"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr4"
+      bd_color="btn-bd-gr-to-wh4"
+      color="btn-text-bk-to-wh4"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr5"
+      bd_color="btn-bd-gr-to-wh5"
+      color="btn-text-bk-to-wh5"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr6"
+      bd_color="btn-bd-gr-to-wh6"
+      color="btn-text-bk-to-wh6"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr7"
+      bd_color="btn-bd-gr-to-wh7"
+      color="btn-text-bk-to-wh7"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr8"
+      bd_color="btn-bd-gr-to-wh8"
+      color="btn-text-bk-to-wh8"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bg_color="btn-bg-wh-to-gr9"
+      bd_color="btn-bd-gr-to-wh9"
+      color="btn-text-bk-to-wh9"
+    />
+  </>
+);
+export const lineOpacity = Template2.bind({});
+
+const Template3 = () => (
+  <>
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh1"
+      color="btn-text-bk-to-wh1"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh2"
+      color="btn-text-bk-to-wh2"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh3"
+      color="btn-text-bk-to-wh3"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh4"
+      color="btn-text-bk-to-wh4"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh5"
+      color="btn-text-bk-to-wh5"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh6"
+      color="btn-text-bk-to-wh6"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh7"
+      color="btn-text-bk-to-wh7"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh8"
+      color="btn-text-bk-to-wh8"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh9"
+      color="btn-text-bk-to-wh9"
+    />
+  </>
+);
+export const background = Template3.bind({});
+
+const Template4 = () => (
+  <>
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh1"
+      color="btn-text-bk-to-wh1"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh2"
+      color="btn-text-bk-to-wh2"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh3"
+      color="btn-text-bk-to-wh3"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh4"
+      color="btn-text-bk-to-wh4"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh5"
+      color="btn-text-bk-to-wh5"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh6"
+      color="btn-text-bk-to-wh6"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh7"
+      color="btn-text-bk-to-wh7"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh8"
+      color="btn-text-bk-to-wh8"
+    />
+    <Button
+      title="Button"
+      size="h_32"
+      bd_color="transparent"
+      bg_color="btn-bg-gr-to-wh9"
+      color="btn-text-bk-to-wh9"
+    />
+  </>
+);
+export const backgroundOpacity = Template4.bind({});
