@@ -7,6 +7,7 @@ import CommonDim from "../common_dim";
 interface Props {
   className?: string;
   children?: React.ReactNode;
+  setMore?: React.Dispatch<React.SetStateAction<Number | undefined>>;
 }
 
 function Header(props: Props) {
@@ -14,6 +15,7 @@ function Header(props: Props) {
   const [quickFold, setQuickFold] = useState(false);
   const [innerPopup, setInnerPopup] = useState<number | undefined>(undefined);
   const [openMenus, setOpenMenus] = useState<number[]>([]);
+  const [more, setLocalMore] = useState<Number | undefined>(undefined);
 
   // [Ref]
   const subMenuRefs = useRef<{ [key: number]: HTMLUListElement | null }>({}); // 각 서브 메뉴별 높이에 대한 ref 배열
@@ -55,7 +57,7 @@ function Header(props: Props) {
 
   // 각 서브 메뉴별 높이 계산 및 반영
   useEffect(() => {
-    Object.keys(subMenuRefs.current).forEach(menuId => {
+    Object.keys(subMenuRefs.current).forEach((menuId) => {
       const menu = subMenuRefs.current[parseInt(menuId)];
       if (menu) {
         const subMenuHeight = menu.scrollHeight;
@@ -69,58 +71,70 @@ function Header(props: Props) {
     });
   }, [openMenus]);
   const toggleSubMenu = (menuId: number) => {
-    setOpenMenus(prevState => {
+    setOpenMenus((prevState) => {
       // 메뉴가 이미 열린 상태라면 배열에서 제거, 닫힌 상태라면 배열에 추가
       if (prevState.includes(menuId)) {
-        return prevState.filter(id => id !== menuId);
+        return prevState.filter((id) => id !== menuId);
       } else {
         return [...prevState, menuId];
       }
     });
   };
 
-  // 더보기 팝업 관련 스크립트
-  // useEffect(() => {
-  //   window.addEventListener("click", function (event) {
-  //     const clickedElement = event.target as HTMLElement;
-  //     const classes = Array.from(clickedElement.classList);
-  //     const more_wrap = this.document.querySelector(
-  //       ".only_more_pop_wrap"
-  //     ) as HTMLElement;
+  // Custom Select
+  const more_pop = document.querySelector(".only_more_pop_wrap") as HTMLElement;
+  setTimeout(() => {
+    document.addEventListener("click", (event) => {
+      if (event.target instanceof HTMLElement) {
+        if (event.target.closest(".only_more_td")) {
+          // 클릭한 더보기 버튼 Element
+          const _target = event.target.closest(".only_more_td") as HTMLElement;
+          // 클릭한 더보기 버튼의 부모 Table Element
+          const parent_table = _target.closest("table") as HTMLTableElement;
+          const parent_data_value = Number(_target.dataset.value);
+          // 더보기 팝업이 배치 될 위치 (테이블 offsetTop + td height + td offsetTop + td offsetLeft)
+          const table_top = parent_table.offsetTop;
+          const height = _target.clientHeight;
+          const top = _target.offsetTop;
+          const table_left = parent_table.offsetLeft;
+          const table_width = parent_table.clientWidth;
+          const right = window.outerWidth - table_left - table_width;
 
-  //     if (classes.some((className) => className.includes("only_more_btn"))) {
-  //       const rect = clickedElement.getBoundingClientRect();
-  //       const left = rect.left + window.scrollX;
-  //       const top = rect.top + window.scrollY;
-  //       const width = rect.width;
-  //       const height = rect.height;
-  //       const right = left + width;
-  //       const bottom = top + height;
-
-  //       more_wrap.style.cssText = `left: ${right}px; top: ${bottom + 8}px;`;
-  //     } else {
-  //       setTimeout(() => {
-  //         if (
-  //           !classes.some((className) => className.includes("only_more_link"))
-  //         ) {
-  //           const more_pop = more_wrap.querySelectorAll(".only_more_pop");
-  //           for (let i = 0; more_pop.length > i; i++) {
-  //             more_pop[i].classList.remove("on");
-  //           }
-  //         }
-  //       }, 100);
-  //     }
-  //   });
-  //   window.addEventListener("resize", function () {
-  //     const more_wrap = this.document.querySelector(
-  //       ".only_more_pop_wrap"
-  //     ) as HTMLElement;
-  //     const more_pop = more_wrap.querySelectorAll(".only_more_pop");
-  //     for (let i = 0; more_pop.length > i; i++) {
-  //       more_pop[i].classList.remove("on");
-  //     }
-  //   });
-  // }, []);
+          // data-value에 따라서 리스트 노출
+          if (props.setMore) {
+            props.setMore(parent_data_value);
+            setLocalMore(parent_data_value);
+          }
+          if (more_pop) {
+            more_pop.style.cssText = `right: ${right}px; top: ${
+              table_top + height + top + 4
+            }px`;
+          }
+        } else {
+          // 리스트 Reset
+          if (props.setMore) {
+            props.setMore(undefined);
+            setLocalMore(undefined);
+          }
+          // 팝업 위치 Reset
+          if (more_pop) {
+            more_pop.style.cssText = `right: 0; top: 0`;
+          }
+        }
+      }
+    });
+  }, 200);
+  window.addEventListener("resize", function () {
+    // 리스트 Reset
+    if (props.setMore) {
+      props.setMore(undefined);
+      setLocalMore(undefined);
+    }
+    // 팝업 위치 Reset
+    if (more_pop) {
+      more_pop.style.cssText = `right: 0; top: 0`;
+    }
+  });
 
   return (
     <>
@@ -185,12 +199,15 @@ function Header(props: Props) {
                     label: "Font Size Normal",
                   }}
                   placeholder="Font Size ReSizing"
-                  onChange={event => FontReSize(event)}
+                  onChange={(event) => FontReSize(event)}
                 />
               </li>
               <li className="flex align_center justify_between">
                 <span>Dark Mode</span>
-                <Switch id="dark_switch" onChange={event => DarkMode(event)} />
+                <Switch
+                  id="dark_switch"
+                  onChange={(event) => DarkMode(event)}
+                />
               </li>
             </ul>
           </div>
@@ -223,7 +240,7 @@ function Header(props: Props) {
               <img src="/img/icon/icon_gnb01.svg" alt="상위메뉴1" />
               상위메뉴1
             </a>
-            <ul className="sub" ref={el => (subMenuRefs.current[1] = el)}>
+            <ul className="sub" ref={(el) => (subMenuRefs.current[1] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -246,7 +263,7 @@ function Header(props: Props) {
               <img src="/img/icon/icon_gnb02.svg" alt="상위메뉴2" />
               상위메뉴2
             </a>
-            <ul className="sub" ref={el => (subMenuRefs.current[2] = el)}>
+            <ul className="sub" ref={(el) => (subMenuRefs.current[2] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -269,7 +286,7 @@ function Header(props: Props) {
               <img src="/img/icon/icon_gnb03.svg" alt="상위메뉴3" />
               상위메뉴3
             </a>
-            <ul className="sub" ref={el => (subMenuRefs.current[3] = el)}>
+            <ul className="sub" ref={(el) => (subMenuRefs.current[3] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -292,7 +309,7 @@ function Header(props: Props) {
               <img src="/img/icon/icon_gnb04.svg" alt="상위메뉴4" />
               상위메뉴4
             </a>
-            <ul className="sub" ref={el => (subMenuRefs.current[4] = el)}>
+            <ul className="sub" ref={(el) => (subMenuRefs.current[4] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -315,7 +332,7 @@ function Header(props: Props) {
               <img src="/img/icon/icon_gnb05.svg" alt="상위메뉴5" />
               상위메뉴5
             </a>
-            <ul className="sub" ref={el => (subMenuRefs.current[5] = el)}>
+            <ul className="sub" ref={(el) => (subMenuRefs.current[5] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>
@@ -338,7 +355,7 @@ function Header(props: Props) {
               <img src="/img/icon/icon_gnb06.svg" alt="상위메뉴6" />
               상위메뉴6
             </a>
-            <ul className="sub" ref={el => (subMenuRefs.current[6] = el)}>
+            <ul className="sub" ref={(el) => (subMenuRefs.current[6] = el)}>
               <li>
                 <a href="javascript:;">하위메뉴1</a>
               </li>

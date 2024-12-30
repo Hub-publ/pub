@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "../component/layout/header";
 import Container from "../component/layout/container";
 import Select from "react-select";
@@ -11,6 +12,7 @@ import Attachment from "../component/form/attachment";
 import Pagination from "../component/form/pagination";
 import PopupManage from "../component/popup/popup_manage";
 import TemplatePopup from "../component/popup/template/template_popup";
+import MorePopup from "../component/popup/more_popup";
 interface OptionType {
   label: string;
   value: string;
@@ -18,13 +20,14 @@ interface OptionType {
 
 function Table() {
   const [popup, setPopup] = useState<Number | undefined>(undefined);
+  const [more, setMore] = useState<Number | undefined>(undefined);
   const handleChange = (selectedOption: OptionType | null) => {
     console.log(selectedOption);
   };
 
   return (
     <>
-      <Header />
+      <Header setMore={setMore} />
       <Container className="table_page">
         <div className="search_area">
           <ul>
@@ -187,10 +190,18 @@ function Table() {
                 <table className="list">
                   <colgroup>
                     <col width={50} />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col width={50} />
                   </colgroup>
                   <thead>
                     <tr>
                       <th>#</th>
+                      <th>TH</th>
                       <th>TH</th>
                       <th>TH</th>
                       <th>TH</th>
@@ -209,13 +220,21 @@ function Table() {
                           텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                           텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                           텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
+                          텍스트가 들어갑니다. 길어지면 말줄임처리됩니다.
                         </p>
                       </td>
                       <td>홍길동</td>
                       <td>-</td>
                       <td>사원</td>
-                      <td>010-1234-1234</td>
-                      <td>test@hubdnc.com</td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">010-1234-5678</p>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">test@hubdnc.com</p>
+                      </td>
+                      <td className="only_more_td" data-value={1}>
+                        <button className="only_more_btn"></button>
+                      </td>
                     </tr>
                     <tr>
                       <td>
@@ -229,8 +248,15 @@ function Table() {
                       <td>홍길동</td>
                       <td>-</td>
                       <td>사원</td>
-                      <td>010-1234-1234</td>
-                      <td>test@hubdnc.com</td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">010-1234-5678</p>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">test@hubdnc.com</p>
+                      </td>
+                      <td className="only_more_td" data-value={2}>
+                        <button className="only_more_btn"></button>
+                      </td>
                     </tr>
                     <tr>
                       <td>
@@ -244,8 +270,15 @@ function Table() {
                       <td>홍길동</td>
                       <td>-</td>
                       <td>사원</td>
-                      <td>010-1234-1234</td>
-                      <td>test@hubdnc.com</td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">010-1234-5678</p>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">test@hubdnc.com</p>
+                      </td>
+                      <td className="only_more_td" data-value={3}>
+                        <button className="only_more_btn"></button>
+                      </td>
                     </tr>
                     <tr>
                       <td>
@@ -259,8 +292,15 @@ function Table() {
                       <td>홍길동</td>
                       <td>-</td>
                       <td>사원</td>
-                      <td>010-1234-1234</td>
-                      <td>test@hubdnc.com</td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">010-1234-5678</p>
+                      </td>
+                      <td className="ellipsis_td">
+                        <p className="ellipsis center_t">test@hubdnc.com</p>
+                      </td>
+                      <td className="only_more_td" data-value={4}>
+                        <button className="only_more_btn"></button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -431,6 +471,96 @@ function Table() {
       >
         <TemplatePopup />
       </PopupManage>
+      <MorePopup>
+        {more === 1 && (
+          <ul className={`only_more_pop medium ${more === 1 ? "on" : ""}`}>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_reg.svg" alt="" />
+                등록1
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_edit.svg" alt="" />
+                수정1
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_delete.svg" alt="" />
+                삭제1
+              </Link>
+            </li>
+          </ul>
+        )}
+        {more === 2 && (
+          <ul className={`only_more_pop large ${more === 2 ? "on" : ""}`}>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_reg.svg" alt="" />
+                등록2
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_edit.svg" alt="" />
+                수정2
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_delete.svg" alt="" />
+                삭제2
+              </Link>
+            </li>
+          </ul>
+        )}
+        {more === 3 && (
+          <ul className={`only_more_pop medium ${more === 3 ? "on" : ""}`}>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_reg.svg" alt="" />
+                등록3
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_edit.svg" alt="" />
+                수정3
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_delete.svg" alt="" />
+                삭제3
+              </Link>
+            </li>
+          </ul>
+        )}
+        {more === 4 && (
+          <ul className={`only_more_pop medium ${more === 4 ? "on" : ""}`}>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_reg.svg" alt="" />
+                등록4
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_edit.svg" alt="" />
+                수정4
+              </Link>
+            </li>
+            <li className="">
+              <Link className="only_more_link" to={""}>
+                <img src="/img/icon/icon_delete.svg" alt="" />
+                삭제4
+              </Link>
+            </li>
+          </ul>
+        )}
+      </MorePopup>
     </>
   );
 }

@@ -69,7 +69,7 @@ function Main() {
 
   return (
     <>
-      <Header />
+      <Header setMore={setMore} />
       <Container className="index_page">
         <div className="search_area">
           <ul>
@@ -333,13 +333,8 @@ function Main() {
                       <td className="ellipsis_td">
                         <p className="ellipsis center_t">test@hubdnc.com</p>
                       </td>
-                      <td>
-                        <button
-                          className="only_more_btn"
-                          onClick={() => {
-                            setMore(1);
-                          }}
-                        ></button>
+                      <td className="only_more_td" data-value={1}>
+                        <button className="only_more_btn"></button>
                       </td>
                     </tr>
                     <tr>
@@ -360,13 +355,8 @@ function Main() {
                       <td className="ellipsis_td">
                         <p className="ellipsis center_t">test@hubdnc.com</p>
                       </td>
-                      <td>
-                        <button
-                          className="only_more_btn"
-                          onClick={() => {
-                            setMore(2);
-                          }}
-                        ></button>
+                      <td className="only_more_td" data-value={2}>
+                        <button className="only_more_btn"></button>
                       </td>
                     </tr>
                     <tr>
@@ -387,13 +377,8 @@ function Main() {
                       <td className="ellipsis_td">
                         <p className="ellipsis center_t">test@hubdnc.com</p>
                       </td>
-                      <td>
-                        <button
-                          className="only_more_btn"
-                          onClick={() => {
-                            setMore(3);
-                          }}
-                        ></button>
+                      <td className="only_more_td" data-value={3}>
+                        <button className="only_more_btn"></button>
                       </td>
                     </tr>
                     <tr>
@@ -414,13 +399,8 @@ function Main() {
                       <td className="ellipsis_td">
                         <p className="ellipsis center_t">test@hubdnc.com</p>
                       </td>
-                      <td>
-                        <button
-                          className="only_more_btn"
-                          onClick={() => {
-                            setMore(4);
-                          }}
-                        ></button>
+                      <td className="only_more_td" data-value={4}>
+                        <button className="only_more_btn"></button>
                       </td>
                     </tr>
                   </tbody>
@@ -536,7 +516,7 @@ function Main() {
           </ul>
         )}
         {more === 2 && (
-          <ul className={`only_more_pop medium ${more === 2 ? "on" : ""}`}>
+          <ul className={`only_more_pop large ${more === 2 ? "on" : ""}`}>
             <li className="">
               <Link className="only_more_link" to={""}>
                 <img src="/img/icon/icon_reg.svg" alt="" />
