@@ -289,399 +289,19 @@ function TemplatePopup() {
                       </p>
                     </td>
                     <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
                     <td>
-                      <button className="icon ham_btn"></button>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
                     </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button className="icon ham_btn"></button>
-                    </td>
-                    <td className="ellipsis_td">
-                      <p className="ellipsis">
-                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
-                        들어갑니다. 길어지면 말줄임처리됩니다.
-                      </p>
-                    </td>
-                    <td>홍길동</td>
-                    <td>사원</td>
                   </tr>
                   <tr>
                     <td>
@@ -704,7 +324,735 @@ function TemplatePopup() {
                           className="select_value"
                           aria-placeholder="셀렉트 기본값"
                         >
-                          사과 🍎
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button className="icon ham_btn"></button>
+                    </td>
+                    <td className="ellipsis_td">
+                      <p className="ellipsis">
+                        텍스트가 들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다. 텍스트가
+                        들어갑니다. 길어지면 말줄임처리됩니다.
+                      </p>
+                    </td>
+                    <td>홍길동</td>
+                    <td>
+                      <div
+                        className="select_area"
+                        data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                      >
+                        <p
+                          className="select_value"
+                          aria-placeholder="셀렉트 기본값"
+                        >
+                          셀렉트 기본값
                         </p>
                       </div>
                     </td>

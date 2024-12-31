@@ -205,7 +205,27 @@ function Header(props: Props) {
     };
     addEventListeners();
 
+    const popup_scroll_area = document.querySelectorAll(".popup_scroll_area");
     const scroll_area = document.querySelectorAll(".scroll_area");
+    for (let i = 0; popup_scroll_area.length > i; i++) {
+      popup_scroll_area[i].addEventListener("scroll", function () {
+        const select_option = document.querySelector(
+          ".select_option"
+        ) as HTMLElement;
+        // 리스트 Reset
+        if (props.setMore) {
+          props.setMore(undefined);
+          setLocalMore(undefined);
+        }
+        // 팝업 위치 Reset
+        if (more_pop) {
+          more_pop.style.cssText = `right: 0; top: 0`;
+        }
+        // Select Reset
+        select_option.innerHTML = "";
+        select_option.style.cssText = "width:0; top:0; left:0;";
+      });
+    }
     for (let i = 0; scroll_area.length > i; i++) {
       scroll_area[i].addEventListener("scroll", function () {
         const select_option = document.querySelector(
