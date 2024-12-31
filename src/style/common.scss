@@ -293,7 +293,7 @@
   }
   .pop_contents {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 12px);
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--pop-bg-wh-to-gr1);
@@ -328,16 +328,14 @@
           padding: var(--pop-pd-reset);
           margin-bottom: var(--pop-mg-big-down);
           border-bottom: none;
-          & > ul {
-            & > li {
-              input,
-              select,
-              .css-b62m3t-container,
-              .css-3iigni-container {
-                width: 8.5714rem;
-              }
-            }
-          }
+          // & > ul {
+          //   & > li {
+          //     input,
+          //     .select_area {
+          //       width: 8.5714rem;
+          //     }
+          //   }
+          // }
         }
       }
     }
@@ -698,7 +696,7 @@ header {
           width: 1.1429rem;
           height: 1.1429rem;
           position: absolute;
-          left: var(--pd-very-small-down);
+          left: var(--pd-small-down);
           top: 50%;
           transform: translateY(-50%);
         }
@@ -861,6 +859,7 @@ header {
     .react-datepicker__time-container,
     .react-datepicker__time-box {
       width: 100%;
+      z-index: 2;
     }
     .react-datepicker {
       width: 100%;
@@ -1002,9 +1001,7 @@ header {
         color: var(--text-bk-to-wh1);
       }
       input,
-      select,
-      .css-b62m3t-container,
-      .css-3iigni-container {
+      .select_area {
         width: 11.4286rem;
       }
       .form_wrap {
@@ -1357,6 +1354,9 @@ header {
         margin-left: var(--btn-mg-very-mini);
       }
     }
+  }
+  .scroll_area {
+    overflow: auto;
   }
   table {
     width: 100%;

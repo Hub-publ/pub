@@ -282,92 +282,136 @@ select {
 /*reset end*/
 
 /* Custom Select */
-body {
-  .css-1jqq78o-placeholder {
-    max-width: 100%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    color: var(--text-placeholer);
-  }
-  .css-13cymwt-control,
-  .css-t3ipsp-control,
-  .css-16xfy0z-control {
-    height: 2.2857rem;
-    min-height: auto;
-    border-radius: var(--radius-normal);
-    border-color: var(--bd-gr-to-wh9);
-    background-color: var(--transparent);
-  }
-  .css-1dimb5e-singleValue,
-  .css-1mkvw8y {
-    margin: var(--mg-very-mini) var(--mg-reset) var(--mg-reset) var(--mg-reset);
-    color: var(--text-bk-to-wh1);
-  }
-  .css-b62m3t-container {
-    .css-hlgwow {
-      // display: block;
-      padding: var(--pd-very-mini) var(--pd-little-mini);
+.select_option {
+  max-height: 250px;
+  background-color: var(--pop-bg-wh-to-gr1);
+  box-shadow: 0 0 0.8571rem 0 var(--shadow-bk-opc1);
+  border-radius: var(--radius-normal);
+  overflow-y: auto;
+  z-index: 30;
+  li {
+    position: relative;
+    padding: var(--pop-pd-mini-down) var(--pop-pd-mini-down);
+    font-size: 0.9286rem;
+    font-weight: 500;
+    color: var(--text-gr-to-wh1);
+    cursor: pointer;
+    &:not(:first-of-type) {
+      border-top: 1px solid var(--bd-wh5);
     }
-  }
-  // disabled select
-  .css-3iigni-container {
-    .css-16xfy0z-control {
-      background-color: var(--bg-disabled);
-    }
-    .css-1jqq78o-placeholder {
-      color: var(--text-placeholer);
-    }
-    .css-1xc3v61-indicatorContainer {
-      background-image: url("../../public/img/icon/icon_select_arrow_disabled.svg");
-    }
-  }
-  // option
-  .css-1nmdiq5-menu {
-    z-index: 30;
-    border: 1px solid var(--bg-gr-to-wh7);
-    background-color: var(--bg-wh-to-gr1);
-    box-shadow: 0 0.2857rem 0.4286rem 0 var(--shadow-bk-opc1);
-  }
-  .css-10wo9uf-option {
-    background-color: var(--transparent);
-    color: var(--text-bk-to-wh1);
-  }
-  // option hover
-  .css-d7l1ni-option {
-    background-color: var(--bg-wh-to-gr7);
-    color: var(--text-bk-to-wh1);
-  }
-  /* 텍스트 영역 클릭 시 옵션노출 */
-  .css-19bb58m,
-  .css-1mkvw8y input {
-    position: absolute;
-    width: calc(100% + 1rem);
-    height: 2.2857rem;
-    left: -0.5714rem;
-    margin: var(--mg-reset);
-    opacity: 0;
-  }
-  .css-t3ipsp-control:hover {
-    border-color: var(--transparent);
-  }
-  /* 화살표 옆 바 삭제 */
-  .css-1u9des2-indicatorSeparator,
-  .css-894a34-indicatorSeparator {
-    display: none;
-  }
-  .css-1xc3v61-indicatorContainer,
-  .css-15lsz6c-indicatorContainer {
-    margin: var(--mg-reset) var(--mg-little-mini);
-    width: 0.8571rem;
-    height: 0.8571rem;
-    background: center/0.7143rem no-repeat
-      url("../../public/img/icon/icon_select_arrow.svg");
-    svg {
-      display: none;
+    &:hover {
+      background-color: var(--bg-bk-opc-to-wh1);
     }
   }
 }
+.select_area {
+  height: 2.2857rem;
+  padding: var(--pd-little-mini) var(--pd-large) var(--pd-little-mini)
+    var(--pd-mini);
+  border: 1px solid var(--bd-gr-to-wh9);
+  border-radius: var(--radius-normal);
+  background: url("../../public/img/icon/icon_select_arrow.svg") no-repeat
+    center right 0.8571rem;
+  .select_value {
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &.placeholder {
+      color: var(--text-gr-to-wh8);
+    }
+  }
+  &[aria-disabled="true"] {
+    pointer-events: none;
+    background-color: var(--bg-disabled);
+  }
+}
+// body {
+//   .css-1jqq78o-placeholder {
+//     max-width: 100%;
+//     white-space: nowrap;
+//     text-overflow: ellipsis;
+//     overflow: hidden;
+//     color: var(--text-placeholer);
+//   }
+//   .css-13cymwt-control,
+//   .css-t3ipsp-control,
+//   .css-16xfy0z-control {
+//     height: 2.2857rem;
+//     min-height: auto;
+//     border-radius: var(--radius-normal);
+//     border-color: var(--bd-gr-to-wh9);
+//     background-color: var(--transparent);
+//   }
+//   .css-1dimb5e-singleValue,
+//   .css-1mkvw8y {
+//     margin: var(--mg-very-mini) var(--mg-reset) var(--mg-reset) var(--mg-reset);
+//     color: var(--text-bk-to-wh1);
+//   }
+//   .css-b62m3t-container {
+//     .css-hlgwow {
+//       // display: block;
+//       padding: var(--pd-very-mini) var(--pd-little-mini);
+//     }
+//   }
+//   // disabled select
+//   .css-3iigni-container {
+//     .css-16xfy0z-control {
+//       background-color: var(--bg-disabled);
+//     }
+//     .css-1jqq78o-placeholder {
+//       color: var(--text-placeholer);
+//     }
+//     .css-1xc3v61-indicatorContainer {
+//       background-image: url("../../public/img/icon/icon_select_arrow_disabled.svg");
+//     }
+//   }
+//   // option
+//   .css-1nmdiq5-menu {
+//     z-index: 30;
+//     border: 1px solid var(--bg-gr-to-wh7);
+//     background-color: var(--bg-wh-to-gr1);
+//     box-shadow: 0 0.2857rem 0.4286rem 0 var(--shadow-bk-opc1);
+//   }
+//   .css-10wo9uf-option {
+//     background-color: var(--transparent);
+//     color: var(--text-bk-to-wh1);
+//   }
+//   // option hover
+//   .css-d7l1ni-option {
+//     background-color: var(--bg-wh-to-gr7);
+//     color: var(--text-bk-to-wh1);
+//   }
+//   /* 텍스트 영역 클릭 시 옵션노출 */
+//   .css-19bb58m,
+//   .css-1mkvw8y input {
+//     position: absolute;
+//     width: calc(100% + 1rem);
+//     height: 2.2857rem;
+//     left: -0.5714rem;
+//     margin: var(--mg-reset);
+//     opacity: 0;
+//   }
+//   .css-t3ipsp-control:hover {
+//     border-color: var(--transparent);
+//   }
+//   /* 화살표 옆 바 삭제 */
+//   .css-1u9des2-indicatorSeparator,
+//   .css-894a34-indicatorSeparator {
+//     display: none;
+//   }
+//   .css-1xc3v61-indicatorContainer,
+//   .css-15lsz6c-indicatorContainer {
+//     margin: var(--mg-reset) var(--mg-little-mini);
+//     width: 0.8571rem;
+//     height: 0.8571rem;
+//     background: center/0.7143rem no-repeat
+//       url("../../public/img/icon/icon_select_arrow.svg");
+//     svg {
+//       display: none;
+//     }
+//   }
+// }
 
 @font-face {
   font-family: "KOTRA_BOLD";

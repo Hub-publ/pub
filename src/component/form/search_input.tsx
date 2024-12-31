@@ -10,7 +10,6 @@ function SearchInput(props: Props) {
   const [inputValue, setInputValue] = useState("");
   const handleChange = (e: any) => {
     setInputValue(e.target.value);
-    console.log(e.target.value);
   };
   return (
     <div className="search_input">
@@ -28,7 +27,7 @@ function SearchInput(props: Props) {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g id="magnifyingglass" clip-path="url(#clip0_2614_10960)">
+            <g id="magnifyingglass" clipPath="url(#clip0_2614_10960)">
               <g id="Group">
                 <path
                   id="Vector"

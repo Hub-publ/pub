@@ -156,17 +156,47 @@ function Main() {
             </li>
             <li>
               <p className="label">select</p>
-              <Select
+              <div
+                className="select_area"
+                data-value={[
+                  "딸기 🍓",
+                  "사과 🍎",
+                  "오렌지 🍊",
+                  "키위 🥝",
+                  "포도 🍇",
+                ]}
+              >
+                <p className="select_value" aria-placeholder="셀렉트 기본값">
+                  셀렉트 기본값
+                </p>
+              </div>
+              {/* <Select
                 options={[
                   { value: "chocolate", label: "Chocolate" },
                   { value: "strawberry", label: "Strawberry" },
                   { value: "vanilla", label: "Vanilla" },
                 ]}
-              />
+              /> */}
             </li>
             <li>
               <p className="label">select disabled</p>
-              <Select
+              <div
+                className="select_area"
+                aria-disabled
+                data-value={[
+                  "원숭이 🐵",
+                  "여우 🦊",
+                  "늑대 🐺",
+                  "호랑이 🐯",
+                  "강아지 🐶",
+                  "고양이 🐱",
+                ]}
+              >
+                <p className="select_value" aria-placeholder="셀렉트 기본값">
+                  호랑이 🐯
+                </p>
+              </div>
+              {/* <Select
                 options={[
                   { value: "Almond", label: "Almond" },
                   { value: "Peanut", label: "Peanut" },
@@ -174,7 +204,7 @@ function Main() {
                 ]}
                 value={{ value: "Almond", label: "Almond" }}
                 isDisabled
-              />
+              /> */}
             </li>
             <li>
               <p className="label">switch</p>
@@ -222,7 +252,7 @@ function Main() {
                 </div> */}
               {/* 양쪽 영역에 버튼만 있을 때 */}
               <div className="table_top flex align_center justify_between">
-                <p className="num">
+                <div className="num">
                   총 갯수
                   <CustomTooltip>
                     <img
@@ -232,7 +262,7 @@ function Main() {
                     />
                     <p>어디보자~</p>
                   </CustomTooltip>
-                </p>
+                </div>
                 <div>
                   <Button
                     title="버튼"
@@ -288,7 +318,7 @@ function Main() {
                   <Button title="버튼버튼" size="h_28" color="green_line" />
                 </div> */}
               <div className="scroll_area">
-                <table className="list">
+                <table className="list" style={{ minWidth: 1500 }}>
                   <colgroup>
                     <col width={50} />
                     <col />
@@ -325,7 +355,26 @@ function Main() {
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td>-</td>
+                      <td>
+                        <div
+                          className="select_area"
+                          data-value={[
+                            "셀렉트 기본값",
+                            "딸기 🍓",
+                            "사과 🍎",
+                            "오렌지 🍊",
+                            "키위 🥝",
+                            "포도 🍇",
+                          ]}
+                        >
+                          <p
+                            className="select_value"
+                            aria-placeholder="셀렉트 기본값"
+                          >
+                            셀렉트 기본값
+                          </p>
+                        </div>
+                      </td>
                       <td>사원</td>
                       <td className="ellipsis_td">
                         <p className="ellipsis center_t">010-1234-5678</p>
@@ -347,7 +396,26 @@ function Main() {
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td>-</td>
+                      <td>
+                        <div
+                          className="select_area"
+                          data-value={[
+                            "원숭이 🐵",
+                            "여우 🦊",
+                            "늑대 🐺",
+                            "호랑이 🐯",
+                            "강아지 🐶",
+                            "고양이 🐱",
+                          ]}
+                        >
+                          <p
+                            className="select_value"
+                            aria-placeholder="셀렉트 기본값"
+                          >
+                            셀렉트 기본값
+                          </p>
+                        </div>
+                      </td>
                       <td>사원</td>
                       <td className="ellipsis_td">
                         <p className="ellipsis center_t">010-1234-5678</p>

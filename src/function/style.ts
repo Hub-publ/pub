@@ -35,23 +35,48 @@ export function DarkMode(event: React.ChangeEvent<HTMLInputElement>) {
 }
 
 // Font Size Change
-export function FontReSize(event: SingleValue<OptionType>) {
-  // 선택된 옵션이 단일 값인지 배열인지 확인
-  if (!Array.isArray(event) && event !== null) {
-    if (html) {
-      if (event.value === "Font Size Small") {
-        html.classList.remove("font_size_large");
-        html.classList.add("font_size_small");
-      } else if (event.value === "Font Size Large") {
-        html.classList.remove("font_size_small");
-        html.classList.add("font_size_large");
-      } else if (event.value === "Font Size Normal") {
-        html.classList.remove("font_size_small");
-        html.classList.remove("font_size_large");
+export function FontReSize() {
+  const fs_sizing_select = document.querySelector(
+    ".fs_sizing_select"
+  ) as HTMLElement;
+  const dataValue = fs_sizing_select.dataset.value;
+  const valueArray = dataValue ? dataValue.split(",") : [];
+  valueArray.forEach((value) => {
+    if (html && value.trim() !== "") {
+      const select_option = document.querySelector(
+        ".select_option"
+      ) as HTMLElement;
+      const list = select_option.querySelectorAll("li");
+      for (let i = 0; list.length > i; i++) {
+        list[i].addEventListener("click", function () {
+          if (list[i].textContent === "Font Size Small") {
+            html.classList.remove("font_size_large");
+            html.classList.add("font_size_small");
+          } else if (list[i].textContent === "Font Size Large") {
+            html.classList.remove("font_size_small");
+            html.classList.add("font_size_large");
+          } else if (list[i].textContent === "Font Size Normal") {
+            html.classList.remove("font_size_small");
+            html.classList.remove("font_size_large");
+          }
+          console.log(list[i].textContent);
+        });
+      }
+    }
+  });
+}
+
+document.addEventListener("click", (event) => {
+  const pop_wrap = document.querySelectorAll(".pop_wrap");
+  for (let i = 0; pop_wrap.length > i; i++) {
+    if (pop_wrap[i].classList.contains("on")) {
+      if (html && body) {
+        html.style.cssText = `height:100%; overflow:hidden;`;
+        body.style.cssText = `height:100%; overflow:hidden;`;
       }
     }
   }
-}
+});
 
 // 1024 아래로 비율맞춰 줄어들게 :: zoom을 줄여주는 방식이라 zoom이 조정될 때 More Popup의 위치를 잡을 수 없어 주석처리 함.
 /* function resizeApply() {
