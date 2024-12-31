@@ -328,14 +328,14 @@
           padding: var(--pop-pd-reset);
           margin-bottom: var(--pop-mg-big-down);
           border-bottom: none;
-          // & > ul {
-          //   & > li {
-          //     input,
-          //     .select_area {
-          //       width: 8.5714rem;
-          //     }
-          //   }
-          // }
+          & > ul {
+            & > li {
+              input,
+              .select_area {
+                width: 8.5714rem;
+              }
+            }
+          }
         }
       }
     }

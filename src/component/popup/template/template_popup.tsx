@@ -266,7 +266,7 @@ function TemplatePopup() {
                   <col width={50} />
                   <col />
                   <col width={100} />
-                  <col width={180} />
+                  <col width={120} />
                 </colgroup>
                 <thead>
                   <tr>
