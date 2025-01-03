@@ -437,7 +437,19 @@ function Main() {
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td>-</td>
+                      <td>
+                        <div
+                          className="select_area"
+                          data-value="딸기 🍓,사과 🍎,오렌지 🍊,키위 🥝,포도 🍇"
+                        >
+                          <p
+                            className="select_value"
+                            aria-placeholder="셀렉트 기본값"
+                          >
+                            셀렉트 기본값
+                          </p>
+                        </div>
+                      </td>
                       <td>사원</td>
                       <td className="ellipsis_td">
                         <p className="ellipsis center_t">010-1234-5678</p>
@@ -459,7 +471,26 @@ function Main() {
                         </p>
                       </td>
                       <td>홍길동</td>
-                      <td>-</td>
+                      <td>
+                        <div
+                          className="select_area"
+                          data-value={[
+                            "원숭이 🐵",
+                            "여우 🦊",
+                            "늑대 🐺",
+                            "호랑이 🐯",
+                            "강아지 🐶",
+                            "고양이 🐱",
+                          ]}
+                        >
+                          <p
+                            className="select_value"
+                            aria-placeholder="셀렉트 기본값"
+                          >
+                            셀렉트 기본값
+                          </p>
+                        </div>
+                      </td>
                       <td>사원</td>
                       <td className="ellipsis_td">
                         <p className="ellipsis center_t">010-1234-5678</p>

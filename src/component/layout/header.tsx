@@ -154,11 +154,9 @@ function Header(props: Props) {
 
     const pop_wrap = document.querySelectorAll(".pop_wrap");
     const inner_popup_wrap = document.querySelectorAll(".inner_popup_wrap");
-    for (let i = 0; inner_popup_wrap.length > i; i++) {
+    for (let i = 0; pop_wrap.length > i; i++) {
       if (pop_wrap[i].classList.contains("on")) {
         select_option.style.zIndex = `100`;
-      } else {
-        console.log("팝업 관련되지 않은 셀렉트");
       }
     }
     for (let i = 0; inner_popup_wrap.length > i; i++) {
@@ -207,6 +205,23 @@ function Header(props: Props) {
 
     const popup_scroll_area = document.querySelectorAll(".popup_scroll_area");
     const scroll_area = document.querySelectorAll(".scroll_area");
+    window.addEventListener("scroll", function () {
+      const select_option = document.querySelector(
+        ".select_option"
+      ) as HTMLElement;
+      // 리스트 Reset
+      if (props.setMore) {
+        props.setMore(undefined);
+        setLocalMore(undefined);
+      }
+      // 팝업 위치 Reset
+      if (more_pop) {
+        more_pop.style.cssText = `right: 0; top: 0`;
+      }
+      // Select Reset
+      select_option.innerHTML = "";
+      select_option.style.cssText = "width:0; top:0; left:0;";
+    });
     for (let i = 0; popup_scroll_area.length > i; i++) {
       popup_scroll_area[i].addEventListener("scroll", function () {
         const select_option = document.querySelector(
@@ -336,19 +351,19 @@ function Header(props: Props) {
           </h1>
           <ul className="header_gnb flex align_center">
             <li>
-              <a href="javascript">딸기 🍓</a>
+              <a href="#">딸기 🍓</a>
             </li>
             <li>
-              <a href="javascript">사과 🍎</a>
+              <a href="#">사과 🍎</a>
             </li>
             <li>
-              <a href="javascript">오렌지 🍊</a>
+              <a href="#">오렌지 🍊</a>
             </li>
             <li>
-              <a href="javascript">키위 🥝</a>
+              <a href="#">키위 🥝</a>
             </li>
             <li>
-              <a href="javascript">포도 🍇</a>
+              <a href="#">포도 🍇</a>
             </li>
           </ul>
         </div>
@@ -559,37 +574,37 @@ function Header(props: Props) {
       <div className="quick_menu">
         <ul>
           <li>
-            <a href="">
+            <a href="#">
               <img src="/img/icon/icon_tooltip_btn.svg" alt="" />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <img src="/img/icon/icon_tooltip_btn.svg" alt="" />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <img src="/img/icon/icon_tooltip_btn.svg" alt="" />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <img src="/img/icon/icon_tooltip_btn.svg" alt="" />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <img src="/img/icon/icon_tooltip_btn.svg" alt="" />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <img src="/img/icon/icon_tooltip_btn.svg" alt="" />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <img src="/img/icon/icon_tooltip_btn.svg" alt="" />
             </a>
           </li>

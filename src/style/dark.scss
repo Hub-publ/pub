@@ -286,3 +286,14 @@ body {
   //   }
   // }
 }
+
+[data-theme="dark"] {
+  .tooltip_wrap {
+    .tooltip_btn {
+      background-image: url("../../public/img/icon/icon_tooltip_btn_white.svg");
+    }
+  }
+  .select_area {
+    background-image: url("../../public/img/icon/icon_select_arrow_white.svg");
+  }
+}

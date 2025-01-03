@@ -251,6 +251,42 @@
   }
 }
 
+.react-datepicker,
+.react-datepicker-popper,
+.react-datepicker__month-container,
+.react-datepicker__time {
+  background-color: var(--pop-bg-wh-to-gr1) !important;
+}
+.react-datepicker__header {
+  color: var(--text-bk-to-wh1);
+  background-color: var(--pop-bg-wh-to-gr9) !important;
+  h2,
+  div {
+    color: var(--text-bk-to-wh1);
+  }
+}
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  border-color: var(--bd-gr-to-wh9);
+}
+.react-datepicker__navigation-icon {
+  &::before {
+    border-color: var(--bd-gr-to-wh9);
+  }
+}
+
+.react-datepicker__current-month {
+  line-height: 1.7;
+}
+.react-datepicker-year-header {
+  &:not(.react-datepicker__header--has-time-select) {
+    min-height: 36px;
+    line-height: 36px;
+    padding: var(--pd-reset);
+  }
+}
+
 /* ===== 📌 공통 Dim ===== */
 .common_dim {
   position: fixed;
