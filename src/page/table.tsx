@@ -45,6 +45,22 @@ function Table() {
             </li>
             <li>
               <p className="label">select</p>
+              <div
+                className="select_area"
+                data-value={[
+                  "옵션1",
+                  "옵션2",
+                  "옵션3",
+                  "옵션4",
+                  "옵션5",
+                  "옵션6",
+                ]}
+              >
+                <p className="select_value" aria-placeholder="선택">
+                  선택
+                </p>
+              </div>
+              {/*
               <Select
                 options={[
                   { value: "chocolate", label: "Chocolate" },
@@ -54,9 +70,27 @@ function Table() {
                 onChange={handleChange}
                 // menuIsOpen
               />
+              */}
             </li>
             <li>
               <p className="label">select disabled</p>
+              <div
+                className="select_area"
+                aria-disabled="true"
+                data-value={[
+                  "옵션A",
+                  "옵션B",
+                  "옵션C",
+                  "옵션D",
+                  "옵션E",
+                  "옵션F",
+                ]}
+              >
+                <p className="select_value" aria-placeholder="선택">
+                  선택
+                </p>
+              </div>
+              {/*
               <Select
                 options={[
                   { value: "Almond", label: "Almond" },
@@ -66,6 +100,7 @@ function Table() {
                 onChange={handleChange}
                 isDisabled
               />
+              */}
             </li>
             <li>
               <p className="label">switch</p>
@@ -334,6 +369,22 @@ function Table() {
                       TH<span className="red_t">*</span>
                     </th>
                     <td>
+                      <div
+                        className="select_area"
+                        data-value={[
+                          "옵션a",
+                          "옵션b",
+                          "옵션c",
+                          "옵션d",
+                          "옵션e",
+                          "옵션f",
+                        ]}
+                      >
+                        <p className="select_value" aria-placeholder="선택">
+                          선택
+                        </p>
+                      </div>
+                      {/*
                       <Select
                         placeholder="선택"
                         options={[
@@ -344,6 +395,7 @@ function Table() {
                         ]}
                         onChange={handleChange}
                       />
+                      */}
                     </td>
                     <th>
                       TH<span className="red_t">*</span>

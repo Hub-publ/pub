@@ -36,6 +36,7 @@ function Container(props: Props) {
   const toggleFold = () => {
     const containerElement = containerRef.current;
     if (!containerElement) return;
+
     const areaElement =
       containerElement.querySelector<HTMLDivElement>(".search_area");
 
@@ -44,17 +45,36 @@ function Container(props: Props) {
         const newFoldState = !prevState;
 
         if (newFoldState) {
-          // console.log("🚪접혓슝슝");
-          // areaElement.classList.add("over_fold");
-          // areaElement.style.height = `${standard}px`;
+          // 접힘 상태: 높이를 기준 값으로 제한
+          areaElement.classList.add("over_fold");
+          ////// console.log("1. 접힘");
+
+          areaElement.style.height = `${standard}px`;
+          ////// console.log("케이스 000");
+          if (!isNaN(standard) && standard > 0) {
+            ////// console.log("케이스 A!!!");
+          } else {
+            ////// console.log("케이스 BBBBBBBBBBBBBBBBBB!!!");
+          }
+          ////// console.log("케이스 111");
         } else {
-          // console.log("🪟열렷슝슝");
-          // areaElement.classList.remove("over_fold");
-          // areaElement.style.height = "";
+          // 펼쳐짐 상태: 높이를 auto로 설정
+          areaElement.classList.remove("over_fold");
+          ////// console.log("2. 펼쳐짐");
+          areaElement.style.height = "auto";
+          ////// console.log("⭐");
         }
 
         return newFoldState;
       });
+
+      // 토글 버튼 노출 유지
+      const toggleButton = containerElement.querySelector<HTMLButtonElement>(
+        ".search_tool .toggle"
+      );
+      if (toggleButton) {
+        toggleButton.style.display = "block";
+      }
     }
   };
 
@@ -71,7 +91,7 @@ function Container(props: Props) {
     );
 
     if (areaElement && item) {
-      // console.log("검색영역 ⭕");
+      ////// console.log("검색영역 ⭕");
       const areaStyle = window.getComputedStyle(areaElement);
       const itemStyle = window.getComputedStyle(item);
       // 검색 영역
@@ -92,25 +112,43 @@ function Container(props: Props) {
       );
       setStandard(newStandard);
 
-      // 검색영역 넘침 여부
-      if (areaHeight > newStandard) {
-        // 1) 2줄 이상 노출
+      const isOverHeight =
+        areaHeight > newStandard || areaElement.classList.contains("over_fold");
+
+      if (isOverHeight) {
         areaElement.classList.remove("under_height");
         areaElement.classList.add("over_height");
-        // 토글 버튼 노출
         if (toggleButton) {
           toggleButton.style.display = "block";
         }
       } else {
-        // 2) 1줄 노출
         areaElement.classList.remove("over_height");
         areaElement.classList.add("under_height");
 
-        // 토글 버튼 미노출
-        if (toggleButton) {
+        if (!areaElement.classList.contains("over_fold") && toggleButton) {
           toggleButton.style.display = "none";
         }
       }
+
+      // 검색영역 넘침 여부
+      // if (areaHeight > newStandard) {
+      //   // 1) 2줄 이상 노출
+      //   areaElement.classList.remove("under_height");
+      //   areaElement.classList.add("over_height");
+      //   // 토글 버튼 노출
+      //   if (toggleButton) {
+      //     toggleButton.style.display = "block";
+      //   }
+      // } else {
+      //   // 2) 1줄 노출
+      //   areaElement.classList.remove("over_height");
+      //   areaElement.classList.add("under_height");
+      //
+      //   // 토글 버튼 미노출
+      //   if (toggleButton) {
+      //     toggleButton.style.display = "none";
+      //   }
+      // }
 
       // 토글 버튼 클릭릭
       if (toggleButton) {
@@ -122,7 +160,7 @@ function Container(props: Props) {
         }
       };
     } else {
-      // console.log("검색영역 ❌");
+      ////// console.log("검색영역 ❌");
     }
   };
 
@@ -140,20 +178,20 @@ function Container(props: Props) {
   }, []);
 
   // html, body의 font-size 변경시 수치 재계산
-  useEffect(() => {
-    const htmlElement = document.documentElement;
-
-    const resizeObserver = new ResizeObserver(() => {
-      const fontSize = getComputedStyle(htmlElement).fontSize;
-      calcDimensions(); // 폰트 변경 시 dimensions 다시 계산
-      // console.log("🌱font-size 변경됨!!", fontSize);
-    });
-
-    resizeObserver.observe(htmlElement); // html 요소 감지 시작
-    return () => {
-      resizeObserver.disconnect(); // Observer 해제
-    };
-  }, [FontReSize]);
+  // useEffect(() => {
+  //   const htmlElement = document.documentElement;
+  //
+  //   const resizeObserver = new ResizeObserver(() => {
+  //     const fontSize = getComputedStyle(htmlElement).fontSize;
+  //     calcDimensions(); // 폰트 변경 시 dimensions 다시 계산
+  //     // console.log("🌱font-size 변경됨!!", fontSize);
+  //   });
+  //
+  //   resizeObserver.observe(htmlElement); // html 요소 감지 시작
+  //   return () => {
+  //     resizeObserver.disconnect(); // Observer 해제
+  //   };
+  // }, [FontReSize]);
 
   return (
     <div ref={containerRef} className={`container ${props.className}`}>
