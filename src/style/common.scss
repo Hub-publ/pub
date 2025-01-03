@@ -1012,27 +1012,24 @@ header {
   }
   /*작업확인용(머지 전 삭제 필요)*/
   // 검색영역 2단 이상시, 토글 버튼 노출
-  &.over_height {
-    .search_tool {
-      .toggle {
-        display: block;
-      }
-    }
-  }
+  // &.over_height {
+  //   .search_tool {
+  //     .toggle {
+  //       // display: block;
+  //     }
+  //   }
+  // }
   // 토글 버튼으로 접은 경우
   &.over_fold {
     overflow: hidden;
     background-color: lightgoldenrodyellow;
     .search_tool {
       .toggle {
-        display: block !important;
+        // display: block !important;
         background-image: url("../../public/img/icon/icon_search_toggle_down.svg");
       }
     }
   }
-  // &.fold {
-  //   // overflow: hidden;
-  // }
   /*작업확인용(머지 전 삭제 필요)*/
 }
 .search_input {
