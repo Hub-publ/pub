@@ -1,6 +1,7 @@
 interface Props {
   contents: string;
   size: string;
+  color: string;
 }
 
 function InfoText(props: Props) {
@@ -9,7 +10,10 @@ function InfoText(props: Props) {
   return (
     <p
       className="info_text"
-      style={{ fontSize: `var(--text-tooltip-${props.size})` }}
+      style={{
+        fontSize: `var(--text-tooltip-${props.size})`,
+        color: `var(--text-${props.color})`,
+      }}
       dangerouslySetInnerHTML={{ __html: contents }}
     />
   );

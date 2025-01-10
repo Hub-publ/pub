@@ -518,11 +518,11 @@
         flex-shrink: 0;
         color: var(--text-bk-to-wh1);
       }
-      .css-b62m3t-container {
-        min-width: auto;
-        flex: 1;
-        margin-left: var(--mg-small-down);
-      }
+      // .css-b62m3t-container {
+      //   min-width: auto;
+      //   flex: 1;
+      //   margin-left: var(--mg-small-down);
+      // }
     }
   }
 }
@@ -547,9 +547,9 @@ header {
     }
   }
   & > .right {
-    .css-b62m3t-container {
-      min-width: 12.5rem;
-    }
+    // .css-b62m3t-container {
+    //   min-width: 12.5rem;
+    // }
     & > * {
       &:not(:first-child) {
         margin-left: var(--mg-small-down);
@@ -662,18 +662,20 @@ header {
           padding: var(--pd-very-small-down) var(--pd-large-down)
             var(--pd-very-small-down) var(--pd-very-large-down);
           color: var(--text-wh1);
-          &:after {
-            content: "";
-            display: inline-block;
-            width: 1.7143rem;
-            height: 1.7143rem;
-            background: url("../../public/img/icon/icon_gnb_arrow_gray.svg")
-              no-repeat center;
-            position: absolute;
-            right: 1.1429rem;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: opacity 0.4s;
+          &:not(.arrow_none) {
+            &:after {
+              content: "";
+              display: inline-block;
+              width: 1.7143rem;
+              height: 1.7143rem;
+              background: url("../../public/img/icon/icon_gnb_arrow_gray.svg")
+                no-repeat center;
+              position: absolute;
+              right: 1.1429rem;
+              top: 50%;
+              transform: translateY(-50%);
+              transition: opacity 0.4s;
+            }
           }
         }
       }
@@ -810,6 +812,7 @@ header {
 /* ==================================================================
   유진이 자리 👻
 ================================================================== */
+/* 더보기 버튼 스타일링 */
 .only_more_btn {
   width: var(--more-btn-width);
   height: var(--more-btn-width);
@@ -1010,6 +1013,7 @@ header {
     }
   }
 }
+/* 검색영역 */
 .search_area {
   display: flex;
   align-items: flex-start;
@@ -1068,6 +1072,35 @@ header {
   }
   /*작업확인용(머지 전 삭제 필요)*/
 }
+/* [241114 AJY] 검색영역 관련 추가 */
+.search_tool {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: calc(#{var(--mg-normal)} * -1);
+  button {
+    border-radius: var(--radius-mini);
+    // margin-top: var(--mg-search-tool);
+    margin-top: calc(var(--mg-search-tool) + var(--mg-normal));
+    &:not(:last-child) {
+      margin-right: var(--mg-little-mini);
+    }
+  }
+  .toggle {
+    display: none;
+    width: 2.2857rem;
+    height: 2.2857rem;
+    background: url("../../public/img/icon/icon_search_toggle.svg") no-repeat
+      center;
+    border: 1px solid var(--bd-gr-to-wh9);
+  }
+  .btn {
+    padding: var(--btn-pd-reset) var(--btn-pd-mini-down);
+    & + .btn {
+      margin-left: var(--btn-mg-reset);
+    }
+  }
+}
+/* 입력검색 */
 .search_input {
   position: relative;
   .parent {
@@ -1109,34 +1142,6 @@ header {
       &:not(:first-of-type) {
         border-top: 1px solid var(--bg-gr-to-wh7);
       }
-    }
-  }
-}
-/* [241114 AJY] 검색영역 관련 추가 */
-.search_tool {
-  display: flex;
-  flex-shrink: 0;
-  margin-top: calc(#{var(--mg-normal)} * -1);
-  button {
-    border-radius: var(--radius-mini);
-    // margin-top: var(--mg-search-tool);
-    margin-top: calc(var(--mg-search-tool) + var(--mg-normal));
-    &:not(:last-child) {
-      margin-right: var(--mg-little-mini);
-    }
-  }
-  .toggle {
-    display: none;
-    width: 2.2857rem;
-    height: 2.2857rem;
-    background: url("../../public/img/icon/icon_search_toggle.svg") no-repeat
-      center;
-    border: 1px solid var(--bd-gr-to-wh9);
-  }
-  .btn {
-    padding: var(--btn-pd-reset) var(--btn-pd-mini-down);
-    & + .btn {
-      margin-left: var(--btn-mg-reset);
     }
   }
 }
@@ -1184,6 +1189,8 @@ header {
     }
   }
 }
+
+/* 태그 감싸는 wrap */
 .tag_wrap {
   margin-top: calc(-1 * var(--mg-little-mini));
   .tag {
@@ -1193,6 +1200,7 @@ header {
     }
   }
 }
+/* 태그 */
 .tag {
   display: inline-block;
   font-size: 0.7857rem;
@@ -1201,6 +1209,7 @@ header {
   border-radius: var(--radius-mini);
   border: 1px solid;
 }
+/* 카드드 */
 .card {
   box-shadow: 0 0.2857rem 0.4286rem 0 var(--shadow-bk-opc1);
   border-radius: var(--radius-normal);
@@ -1292,13 +1301,16 @@ header {
     }
   }
 }
+/* 가운데 | 있는 텍스트 */
 .devide_ul {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-top: calc(var(--board-mg-mini) - var(--mg-little-mini));
   li {
     position: relative;
-    font-size: 0.7857rem;
+    font-size: 1rem;
+    // font-size: 0.7857rem;
     margin-top: var(--mg-little-mini);
     &:not(:last-of-type) {
       padding-right: var(--list-pd-mini);
@@ -1314,14 +1326,160 @@ header {
         transform: translateY(-50%);
       }
     }
-    span {
+    * {
       font: inherit;
     }
   }
 }
+/* 설명/안내문구 */
 .info_text {
   margin-top: var(--mg-mini);
 }
+/* 채팅 */
+.chat_wrap {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 7.1429rem);
+  border: 1px solid var(--bd-wh5);
+  border-radius: var(--radius-normal);
+  overflow: hidden;
+  .chat_body {
+    flex: 1;
+    padding: var(--pd-very-small-down);
+    overflow-y: auto;
+    .chat_item {
+      display: flex;
+      align-items: end;
+      &:not(:first-of-type) {
+        margin-top: var(--mg-normal-down);
+      }
+      &.my_chat {
+        justify-content: end;
+        text-align: right;
+        .chat_balloon {
+          text-align: left;
+        }
+      }
+      .chat_date {
+        font-size: 0.7857rem;
+        color: var(--text-gr-to-wh1);
+        margin: 0 var(--mg-mini) var(--mg-little-mini);
+      }
+    }
+    .chat_balloon {
+      display: inline-block;
+      width: max-content;
+      line-height: var(--line-medium);
+      max-width: calc(100% - 10.7143rem);
+      padding: var(--pd-little-mini) var(--pd-mini);
+      border: 1px solid var(--bd-wh-to-gr7);
+      border-radius: var(--radius-normal);
+      background-color: var(--bg-wh-to-gr5);
+      white-space: pre-line;
+    }
+    .day_line {
+      position: relative;
+      text-align: center;
+      margin-top: var(--mg-large-down);
+      &.mg_reset {
+        margin-top: var(--mg-reset);
+      }
+      & + .chat_item {
+        margin-top: var(--mg-large-down);
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: var(--bg-wh7);
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+      span {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding: 0 var(--pd-mini);
+        background-color: var(--body-bg);
+      }
+    }
+  }
+  .chat_foot {
+    display: flex;
+    align-items: center;
+    padding: var(--pd-reset) var(--pd-very-small-down);
+    border-top: 1px solid var(--bd-wh5);
+    textarea {
+      height: 4.2857rem;
+      border-radius: 0;
+      border: none;
+      padding: var(--pd-mini-down) var(--pd-reset);
+    }
+    button {
+      flex-shrink: 0;
+      margin-left: var(--mg-large-down);
+    }
+  }
+}
+/* 댓글 */
+.list_nodata {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pd-normal) var(--pd-reset) var(--pd-very-large);
+  font-size: 0.9286rem;
+  color: var(--text-gr-to-wh9) !important;
+  svg {
+    width: 1rem;
+    margin-right: var(--mg-mini);
+    fill: var(--text-gr-to-wh9) !important;
+  }
+}
+.comment_wrap {
+  .comment_num {
+    font-weight: 500;
+  }
+  .comment_list {
+    margin-bottom: var(--mg-big-down);
+    li {
+      position: relative;
+      margin-top: var(--mg-big);
+      padding-right: var(--pd-very-large);
+      p {
+        line-height: var(--line-medium);
+        white-space: pre-line;
+      }
+      .date {
+        display: inline-block;
+        font-size: 0.7857rem;
+        color: var(--text-gr-to-wh1);
+        margin-top: var(--mg-little-mini);
+      }
+      .comment_btn_wrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        button {
+          & + button {
+            margin-left: var(--mg-mini);
+          }
+        }
+      }
+    }
+  }
+  .comment_write {
+    display: flex;
+    button {
+      min-width: 70px;
+      height: 60px;
+      flex-shrink: 0;
+      margin-left: var(--mg-little-mini);
+    }
+  }
+}
+
 /* ==================================================================
   우리 지연님 자리 👻
 ================================================================== */

@@ -219,7 +219,8 @@ select {
   padding: var(--pd-reset) var(--pd-mini);
   font-weight: 400;
   border-radius: var(--radius-normal);
-  border: 1px solid var(--bd-gr-to-wh9);
+  border: 1px solid var(--bd-wh-to-gr7);
+  // border: 1px solid var(--bd-gr-to-wh9);
   background-color: var(--transparent);
   color: var(--text-bk-to-wh1);
   transition: all 0.3s;
@@ -308,7 +309,7 @@ select {
   height: 2.2857rem;
   padding: var(--pd-little-mini) var(--pd-large) var(--pd-little-mini)
     var(--pd-mini);
-  border: 1px solid var(--bd-gr-to-wh9);
+  border: 1px solid var(--bd-wh-to-gr7);
   border-radius: var(--radius-normal);
   background: url("../../public/img/icon/icon_select_arrow.svg") no-repeat
     center right 0.8571rem;

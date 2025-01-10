@@ -497,50 +497,16 @@ function Header(props: Props) {
             </ul>
           </li>
           <li className={`${openMenus.includes(4) ? "on" : ""}`}>
-            <a href="#" onClick={() => toggleSubMenu(4)}>
-              <img src="/img/icon/icon_gnb04.svg" alt="상위메뉴4" />
-              상위메뉴4
+            <a href="/chatting" className="arrow_none">
+              <img src="/img/icon/icon_gnb04.svg" alt="채팅" />
+              채팅
             </a>
-            <ul className="sub" ref={(el) => (subMenuRefs.current[4] = el)}>
-              <li>
-                <a href="#">하위메뉴1</a>
-              </li>
-              <li>
-                <a href="#">하위메뉴2</a>
-              </li>
-              <li>
-                <a href="#">하위메뉴3</a>
-              </li>
-              <li>
-                <a href="#">하위메뉴4</a>
-              </li>
-              <li>
-                <a href="#">하위메뉴5</a>
-              </li>
-            </ul>
           </li>
           <li className={`${openMenus.includes(5) ? "on" : ""}`}>
-            <a href="#" onClick={() => toggleSubMenu(5)}>
-              <img src="/img/icon/icon_gnb05.svg" alt="상위메뉴5" />
-              상위메뉴5
+            <a href="/comment" className="arrow_none">
+              <img src="/img/icon/icon_gnb05.svg" alt="댓글" />
+              댓글
             </a>
-            <ul className="sub" ref={(el) => (subMenuRefs.current[5] = el)}>
-              <li>
-                <a href="#">하위메뉴1</a>
-              </li>
-              <li>
-                <a href="#">하위메뉴2</a>
-              </li>
-              <li>
-                <a href="#">하위메뉴3</a>
-              </li>
-              <li>
-                <a href="#">하위메뉴4</a>
-              </li>
-              <li>
-                <a href="#">하위메뉴5</a>
-              </li>
-            </ul>
           </li>
           <li className={`${openMenus.includes(6) ? "on" : ""}`}>
             <a href="#" onClick={() => toggleSubMenu(6)}>

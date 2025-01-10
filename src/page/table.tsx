@@ -13,6 +13,8 @@ import Pagination from "../component/form/pagination";
 import PopupManage from "../component/popup/popup_manage";
 import TemplatePopup from "../component/popup/template/template_popup";
 import MorePopup from "../component/popup/more_popup";
+import ArrayText from "../component/form/array_text";
+import InfoText from "../component/tooltip/info_text";
 interface OptionType {
   label: string;
   value: string;
@@ -362,6 +364,21 @@ function Table() {
                         placeholder="100자 이내"
                         maxLength={100}
                       />
+                      <InfoText
+                        contents="집중하세요."
+                        size="small"
+                        color="green1"
+                      />
+                      <InfoText
+                        contents="더 집중하세요."
+                        size="normal"
+                        color="blue1"
+                      />
+                      <InfoText
+                        contents="더욱 집중하세요."
+                        size="large"
+                        color="red1"
+                      />
                     </td>
                   </tr>
                   <tr>
@@ -412,7 +429,18 @@ function Table() {
                     <th>
                       TH / TH<span className="red_t">*</span>
                     </th>
-                    <td>홍길동 / 2024-11-14</td>
+                    <td>
+                      <ArrayText
+                        text={[
+                          <input type="text" />,
+                          <Checkbox id="checkbox1" label="체크박스" />,
+                          <Radio id="test2" name="test2" label="라디오" />,
+                          <strong key="1">강감찬</strong>,
+                          "홍길동",
+                          "홍길동",
+                        ]}
+                      />
+                    </td>
                     <th>
                       TH<span className="red_t">*</span>
                     </th>
