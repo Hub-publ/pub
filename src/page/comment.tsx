@@ -14,6 +14,7 @@ interface ChatComment {
 function Comment() {
   const [commentValue, setCommentValue] = useState<string>("");
   const [comment, setComment] = useState<ChatComment[]>([]);
+  const [edit, setEdit] = useState<number | null>(null);
   const chatBodyRef = useRef<HTMLDivElement>(null);
 
   const commentRegist = () => {
@@ -64,6 +65,37 @@ function Comment() {
       }
     }
   };
+
+  // 댓글 수정
+  const saveEdit = (id: number, newValue: string) => {
+    if (newValue.trim() === "") {
+      alert("내용을 입력해주세요.");
+      return;
+    }
+
+    const today = new Date();
+    const date =
+      today.toISOString().split("T")[0] +
+      " " +
+      today.toTimeString().split(" ")[0];
+
+    setComment((prevComment) =>
+      prevComment.map((comment) =>
+        comment.id === id ? { ...comment, content: newValue, date } : comment
+      )
+    );
+
+    setEdit(null); // 수정 종료
+  };
+
+  // 댓글 삭제
+  const handleDelete = (id: number) => {
+    if (window.confirm("정말 삭제하시겠습니까?")) {
+      setComment((prevComment) =>
+        prevComment.filter((comment) => comment.id !== id)
+      );
+    }
+  };
   return (
     <>
       <Header />
@@ -83,13 +115,26 @@ function Comment() {
                 )}
                 {comment.map((item) => (
                   <li key={item.id}>
-                    <p>{item.content}</p>
+                    {edit === item.id ? (
+                      <input
+                        type="text"
+                        defaultValue={item.content}
+                        onBlur={(e) => saveEdit(item.id, e.target.value)} // Focus out 시 저장
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter")
+                            saveEdit(item.id, e.currentTarget.value); // Enter 시 저장
+                        }}
+                        autoFocus
+                      />
+                    ) : (
+                      <p>{item.content}</p>
+                    )}
                     <span className="date">{item.date}</span>
                     <div className="comment_btn_wrap">
-                      <button>
+                      <button onClick={() => setEdit(item.id)}>
                         <img src="/img/icon/icon_edit.svg" alt="" />
                       </button>
-                      <button>
+                      <button onClick={() => handleDelete(item.id)}>
                         <img src="/img/icon/icon_delete.svg" alt="" />
                       </button>
                     </div>
